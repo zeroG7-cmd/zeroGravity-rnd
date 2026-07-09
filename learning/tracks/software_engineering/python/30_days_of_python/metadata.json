@@ -1,0 +1,12 @@
+{
+    "id": "python_30_days",
+    "title": "30 Days of Python",
+    "provider": "Asabeneh Yetayeh",
+    "category": "Python",
+    "stat": "INT",
+    "branch": "Software Engineering",
+    "skill": "Python",
+    "difficulty": "Beginner",
+    "lessons": 30,
+    "resource": "../../../resources/github/python/30-Days-Of-Python"
+}
