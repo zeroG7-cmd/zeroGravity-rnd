@@ -1,0 +1,21 @@
+{
+    "resources": [
+        {
+            "id": "computer_vision_opencv_computer_vision_1",
+            "title": "OpenCV Computer Vision 1",
+            "provider": "OpenCV University / 5starkarma archive",
+            "stat": "INT",
+            "hierarchy": [
+                "Robotics",
+                "Perception",
+                "Computer Vision"
+            ],
+            "skill": "Computer Vision",
+            "difficulty": "Beginner",
+            "resource": "learning/resources/github/computer_vision/opencv_courses/opencv_103_computer_vision_1",
+            "track_path": "learning/tracks/int/robotics/perception/computer_vision/opencv_computer_vision_1",
+            "import_method": "resource_scan",
+            "date_added": "2026-07-10T04:50:24.966485+00:00"
+        }
+    ]
+}

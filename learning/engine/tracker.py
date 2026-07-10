@@ -1,23 +1,19 @@
 """
-Operator Zero R&D Learning Engine
-Universal Track Tracker v3.0
+Operator Zero Learning Engine
+Universal Tracker v5.0
 
-Purpose
--------
-This script:
+All tracks now use one data model:
 
-1. Searches the learning/tracks directory.
-2. Finds every folder containing metadata.json and progress.json.
-3. Displays all available learning tracks.
-4. Lets the operator select a track.
-5. Loads that track's metadata and progress.
-6. Checks the current lesson evidence.
-7. Awards XP once when the lesson is complete.
-8. Updates progress.json.
-9. Moves to the next lesson.
+Metadata:
+- units
+- unit_count
+- evidence_requirements
 
-This means the tracker is no longer hardcoded to one Python course.
-It can manage Python, HTML, SQL, networking, ROS2, CAD, and future tracks.
+Progress:
+- current_unit_index
+- completed_units
+- total_xp
+- status
 """
 
 import json
@@ -25,23 +21,8 @@ from pathlib import Path
 from typing import Any
 
 
-# ============================================================
-# CONFIGURATION
-# ============================================================
-
-# Root directory containing every Operator Zero learning track.
 TRACKS_ROOT = Path("learning/tracks")
-
-# XP awarded for completing one lesson.
-XP_PER_LESSON = 40
-
-# Evidence required for a lesson to count as complete.
-REQUIRED_EVIDENCE = {
-    "notes": Path("notes.md"),
-    "solution": Path("solution.py"),
-    "reflection": Path("reflection.md"),
-    "terminal_output": Path("evidence/terminal_output.txt"),
-}
+XP_PER_UNIT = 40
 
 
 # ============================================================
@@ -49,9 +30,7 @@ REQUIRED_EVIDENCE = {
 # ============================================================
 
 def load_json(file_path: Path) -> dict[str, Any]:
-    """
-    Read a JSON file and return its contents as a Python dictionary.
-    """
+    """Load JSON as a Python dictionary."""
 
     try:
         with file_path.open("r", encoding="utf-8") as file:
@@ -59,20 +38,20 @@ def load_json(file_path: Path) -> dict[str, Any]:
 
     except FileNotFoundError as error:
         raise FileNotFoundError(
-            f"Required JSON file was not found:\n{file_path}"
+            f"Required file not found:\n{file_path}"
         ) from error
 
     except json.JSONDecodeError as error:
         raise ValueError(
-            f"Invalid JSON inside:\n{file_path}\n\n"
-            f"JSON error: {error}"
+            f"Invalid JSON inside:\n{file_path}\n\n{error}"
         ) from error
 
 
-def save_json(file_path: Path, data: dict[str, Any]) -> None:
-    """
-    Save a Python dictionary into a readable JSON file.
-    """
+def save_json(
+    file_path: Path,
+    data: dict[str, Any],
+) -> None:
+    """Save a dictionary as formatted JSON."""
 
     with file_path.open("w", encoding="utf-8") as file:
         json.dump(data, file, indent=4)
@@ -83,66 +62,82 @@ def save_json(file_path: Path, data: dict[str, Any]) -> None:
 # ============================================================
 
 def discover_tracks() -> list[Path]:
-    """
-    Search recursively beneath learning/tracks.
+    """Find every valid learning track."""
 
-    A folder counts as a valid learning track when it contains:
-
-    - metadata.json
-    - progress.json
-    """
-
-    discovered_tracks = []
+    tracks = []
 
     if not TRACKS_ROOT.exists():
-        return discovered_tracks
+        return tracks
 
     for metadata_path in TRACKS_ROOT.rglob("metadata.json"):
         track_path = metadata_path.parent
-        progress_path = track_path / "progress.json"
 
-        if progress_path.exists():
-            discovered_tracks.append(track_path)
+        if (track_path / "progress.json").exists():
+            tracks.append(track_path)
 
-    return sorted(discovered_tracks)
+    return sorted(tracks)
 
 
-def select_track(track_paths: list[Path]) -> Path | None:
-    """
-    Display available tracks and ask the operator to choose one.
+def build_knowledge_path(
+    metadata: dict[str, Any],
+) -> str:
+    """Build the display path for a track."""
 
-    Returns:
-        Path to the selected track.
+    hierarchy = metadata.get("hierarchy", [])
 
-    Returns None when no valid selection is made.
-    """
+    if hierarchy:
+        parts = [
+            metadata.get("stat", "Unknown"),
+            *hierarchy,
+        ]
+    else:
+        # Compatibility for tracks not yet using hierarchy.
+        parts = [
+            metadata.get("stat", "Unknown"),
+            metadata.get("branch"),
+            metadata.get("category"),
+            metadata.get("skill"),
+        ]
+
+    return " > ".join(
+        str(part)
+        for part in parts
+        if part
+    )
+
+
+def select_track(
+    track_paths: list[Path],
+) -> Path | None:
+    """Display tracks and ask the operator to select one."""
 
     if not track_paths:
-        print("No learning tracks were found.")
-        print(f"Expected tracks beneath: {TRACKS_ROOT}")
+        print("No learning tracks found.")
         return None
 
     print()
     print("Available learning tracks")
-    print("-" * 64)
+    print("-" * 68)
 
-    for index, track_path in enumerate(track_paths, start=1):
-        try:
-            metadata = load_json(track_path / "metadata.json")
+    for index, track_path in enumerate(
+        track_paths,
+        start=1,
+    ):
+        metadata = load_json(
+            track_path / "metadata.json"
+        )
 
-            title = metadata.get("title", track_path.name)
-            skill = metadata.get("skill", "Unknown skill")
-            branch = metadata.get("branch", "Unknown branch")
-            category = metadata.get("category", "Unknown category")
+        title = metadata.get(
+            "title",
+            track_path.name,
+        )
 
-            print(
-                f"{index}. {title}\n"
-                f"   {branch} > {category} > {skill}"
-            )
+        knowledge_path = build_knowledge_path(
+            metadata
+        )
 
-        except (FileNotFoundError, ValueError) as error:
-            print(f"{index}. Invalid track: {track_path}")
-            print(f"   {error}")
+        print(f"{index}. {title}")
+        print(f"   {knowledge_path}")
 
     print()
 
@@ -161,11 +156,49 @@ def select_track(track_paths: list[Path]) -> Path | None:
                 return track_paths[selected_number - 1]
 
             print(
-                f"Choose a number between 1 and {len(track_paths)}."
+                f"Choose a number from 1 to "
+                f"{len(track_paths)}."
             )
 
         except ValueError:
-            print("Enter a valid track number or Q.")
+            print("Enter a valid number or Q.")
+
+
+# ============================================================
+# VALIDATION
+# ============================================================
+
+def validate_metadata(
+    metadata: dict[str, Any],
+) -> None:
+    """Ensure metadata uses the unified format."""
+
+    units = metadata.get("units")
+    requirements = metadata.get(
+        "evidence_requirements"
+    )
+
+    if not isinstance(units, list) or not units:
+        raise ValueError(
+            "metadata.json has no valid 'units' list.\n"
+            "Run migrate_tracks.py first."
+        )
+
+    if not isinstance(requirements, list) or not requirements:
+        raise ValueError(
+            "metadata.json has no evidence requirements."
+        )
+
+
+def ensure_progress_structure(
+    progress: dict[str, Any],
+) -> None:
+    """Ensure progress contains the unified fields."""
+
+    progress.setdefault("current_unit_index", 0)
+    progress.setdefault("completed_units", [])
+    progress.setdefault("total_xp", 0)
+    progress.setdefault("status", "In Progress")
 
 
 # ============================================================
@@ -174,9 +207,10 @@ def select_track(track_paths: list[Path]) -> Path | None:
 
 def file_has_content(file_path: Path) -> bool:
     """
-    Return True only when the file exists and contains real text.
+    Return True when evidence exists and is non-empty.
 
-    Empty placeholder files do not count as evidence.
+    Text files are checked for actual text.
+    Binary files such as images only need a non-zero size.
     """
 
     if not file_path.exists():
@@ -185,79 +219,80 @@ def file_has_content(file_path: Path) -> bool:
     if not file_path.is_file():
         return False
 
+    if file_path.stat().st_size == 0:
+        return False
+
     try:
-        content = file_path.read_text(encoding="utf-8").strip()
+        content = file_path.read_text(
+            encoding="utf-8"
+        ).strip()
+
         return bool(content)
 
     except UnicodeDecodeError:
+        return file_path.stat().st_size > 0
+
+
+def check_evidence(
+    unit_path: Path,
+    requirements: list[dict[str, str]],
+) -> dict[str, bool]:
+    """Check every evidence requirement."""
+
+    status = {}
+
+    for requirement in requirements:
+        name = requirement["name"]
+        relative_path = Path(
+            requirement["path"]
+        )
+
+        status[name] = file_has_content(
+            unit_path / relative_path
+        )
+
+    return status
+
+
+def unit_is_complete(
+    evidence_status: dict[str, bool],
+) -> bool:
+    """Return True only when every requirement passes."""
+
+    if not evidence_status:
         return False
-
-
-def check_evidence(lesson_path: Path) -> dict[str, bool]:
-    """
-    Check every required evidence file in the current lesson.
-    """
-
-    evidence_status = {}
-
-    for evidence_name, relative_path in REQUIRED_EVIDENCE.items():
-        full_path = lesson_path / relative_path
-        evidence_status[evidence_name] = file_has_content(full_path)
-
-    return evidence_status
-
-
-def lesson_is_complete(evidence_status: dict[str, bool]) -> bool:
-    """
-    Return True only when every required evidence item is complete.
-    """
 
     return all(evidence_status.values())
 
 
 # ============================================================
-# PROGRESS MANAGEMENT
+# PROGRESS
 # ============================================================
 
-def ensure_progress_structure(progress: dict[str, Any]) -> None:
-    """
-    Add required fields if progress.json is missing any of them.
-    """
-
-    progress.setdefault("current_lesson", 1)
-    progress.setdefault("completed_lessons", [])
-    progress.setdefault("total_xp", 0)
-    progress.setdefault("status", "In Progress")
-
-
-def complete_current_lesson(
+def complete_current_unit(
     progress: dict[str, Any],
-    lesson_number: int,
-    total_lessons: int,
+    unit_id: str,
+    current_index: int,
+    total_units: int,
 ) -> bool:
     """
-    Complete the current lesson and award XP.
-
-    Returns False if the lesson was already completed.
-    This prevents duplicate XP awards.
+    Mark the current unit complete and award XP once.
     """
 
-    completed_lessons = progress["completed_lessons"]
+    completed_units = progress["completed_units"]
 
-    if lesson_number in completed_lessons:
+    if unit_id in completed_units:
         return False
 
-    completed_lessons.append(lesson_number)
-    completed_lessons.sort()
+    completed_units.append(unit_id)
+    progress["total_xp"] += XP_PER_UNIT
 
-    progress["total_xp"] += XP_PER_LESSON
-
-    if lesson_number >= total_lessons:
-        progress["current_lesson"] = total_lessons
+    if current_index >= total_units - 1:
         progress["status"] = "Complete"
     else:
-        progress["current_lesson"] = lesson_number + 1
-        progress["status"] = "In Progress"
+        progress["current_unit_index"] = (
+            current_index + 1
+        )
 
     return True
 
@@ -266,79 +301,71 @@ def complete_current_lesson(
 # DISPLAY
 # ============================================================
 
-def status_symbol(is_complete: bool) -> str:
-    """
-    Convert a Boolean value into a readable terminal label.
-    """
-
-    return "[PASS]" if is_complete else "[MISSING]"
-
-
 def display_header() -> None:
-    """
-    Display the Learning Engine heading.
-    """
+    """Display the application heading."""
 
-    print("=" * 64)
+    print("=" * 68)
     print("              OPERATOR ZERO LEARNING ENGINE")
-    print("=" * 64)
+    print("=" * 68)
 
 
 def display_track_information(
     metadata: dict[str, Any],
     progress: dict[str, Any],
-    lesson_folder: str,
+    current_unit: dict[str, Any],
     track_path: Path,
 ) -> None:
-    """
-    Display the selected track's current state.
-    """
+    """Display the selected track state."""
 
-    total_lessons = int(metadata.get("lessons", 0))
-    completed_count = len(progress["completed_lessons"])
+    units = metadata["units"]
+    completed_count = len(
+        progress["completed_units"]
+    )
 
     print()
     print(f"Track          : {metadata.get('title', 'Unknown')}")
     print(f"Provider       : {metadata.get('provider', 'Unknown')}")
-    print(f"Stat           : {metadata.get('stat', 'Unknown')}")
-    print(f"Branch         : {metadata.get('branch', 'Unknown')}")
-    print(f"Category       : {metadata.get('category', 'Unknown')}")
-    print(f"Skill          : {metadata.get('skill', 'Unknown')}")
+    print(f"Knowledge path : {build_knowledge_path(metadata)}")
     print(f"Difficulty     : {metadata.get('difficulty', 'Unknown')}")
     print(f"Track folder   : {track_path}")
     print()
-    print(f"Current lesson : {lesson_folder}")
-    print(f"Progress       : {completed_count}/{total_lessons}")
+    print(f"Current unit   : {current_unit['title']}")
+    print(f"Unit path      : {current_unit['path']}")
+    print(f"Unit type      : {current_unit.get('source_type', 'manual')}")
+    print(f"Progress       : {completed_count}/{len(units)}")
     print(f"Total XP       : {progress['total_xp']}")
     print(f"Track status   : {progress['status']}")
 
 
-def display_evidence(evidence_status: dict[str, bool]) -> None:
-    """
-    Display every evidence requirement.
-    """
+def display_evidence(
+    evidence_status: dict[str, bool],
+) -> None:
+    """Display each evidence result."""
 
     print()
     print("Evidence check")
-    print("-" * 64)
+    print("-" * 68)
 
-    for evidence_name, is_complete in evidence_status.items():
-        readable_name = evidence_name.replace("_", " ").title()
+    for evidence_name, passed in evidence_status.items():
+        label = "[PASS]" if passed else "[MISSING]"
+        print(f"{evidence_name:<32}{label}")
 
-        print(
-            f"{readable_name:<24}"
-            f"{status_symbol(is_complete)}"
-        )
+    print("-" * 68)
+    print(
+        f"Evidence complete : "
+        f"{sum(evidence_status.values())}/"
+        f"{len(evidence_status)}"
+    )
 
 
 # ============================================================
 # TRACKING CYCLE
 # ============================================================
 
-def track_selected_course(track_path: Path) -> None:
-    """
-    Run one complete tracking cycle for the chosen course.
-    """
+def track_selected_course(
+    track_path: Path,
+) -> None:
+    """Run one tracking cycle."""
 
     metadata_path = track_path / "metadata.json"
     progress_path = track_path / "progress.json"
@@ -346,90 +373,98 @@ def track_selected_course(track_path: Path) -> None:
     metadata = load_json(metadata_path)
     progress = load_json(progress_path)
 
+    validate_metadata(metadata)
     ensure_progress_structure(progress)
 
-    total_lessons = int(metadata["lessons"])
-    current_lesson = int(progress["current_lesson"])
+    units = metadata["units"]
+    requirements = metadata["evidence_requirements"]
 
-    lesson_folder = f"day_{current_lesson:02}"
-    lesson_path = track_path / lesson_folder
+    current_index = int(
+        progress["current_unit_index"]
+    )
+
+    if current_index < 0 or current_index >= len(units):
+        print()
+        print("ERROR")
+        print("Current unit index is out of range.")
+        return
+
+    current_unit = units[current_index]
+    unit_path = track_path / current_unit["path"]
 
     display_track_information(
         metadata=metadata,
         progress=progress,
-        lesson_folder=lesson_folder,
+        current_unit=current_unit,
         track_path=track_path,
     )
 
     if progress["status"] == "Complete":
         print()
-        print("This learning track is already complete.")
+        print("This track is already complete.")
         return
 
-    if not lesson_path.exists():
+    if not unit_path.exists():
         print()
         print("ERROR")
-        print(f"Lesson folder does not exist:\n{lesson_path}")
+        print(f"Unit folder does not exist:\n{unit_path}")
         return
 
-    evidence_status = check_evidence(lesson_path)
+    evidence_status = check_evidence(
+        unit_path=unit_path,
+        requirements=requirements,
+    )
 
     display_evidence(evidence_status)
 
-    completed_evidence = sum(evidence_status.values())
-    required_evidence = len(evidence_status)
-
-    print("-" * 64)
-    print(
-        f"Evidence complete : "
-        f"{completed_evidence}/{required_evidence}"
-    )
-
-    if not lesson_is_complete(evidence_status):
+    if not unit_is_complete(evidence_status):
         print()
-        print("Lesson is still in progress.")
-        print("Complete the missing evidence and run the tracker again.")
+        print("Unit is still in progress.")
+        print("Complete the missing evidence and run again.")
         return
 
-    progress_changed = complete_current_lesson(
+    progress_changed = complete_current_unit(
         progress=progress,
-        lesson_number=current_lesson,
-        total_lessons=total_lessons,
+        unit_id=current_unit["id"],
+        current_index=current_index,
+        total_units=len(units),
     )
 
     if not progress_changed:
         print()
-        print("This lesson was already completed.")
+        print("This unit was already completed.")
         print("No additional XP was awarded.")
         return
 
     save_json(progress_path, progress)
 
+    skill = metadata.get("skill", "Skill")
+
     print()
-    print("LESSON COMPLETE")
-    print(f"+{XP_PER_LESSON} {metadata['skill']} XP awarded.")
+    print("UNIT COMPLETE")
+    print(f"+{XP_PER_UNIT} {skill} XP awarded.")
     print("progress.json has been updated.")
 
     if progress["status"] == "Complete":
         print()
         print("TRACK COMPLETE")
-        print(f"You completed all {total_lessons} lessons.")
-    else:
-        next_lesson = int(progress["current_lesson"])
-        next_folder = f"day_{next_lesson:02}"
+        return
 
-        print(f"Next lesson: {next_folder}")
+    next_index = int(
+        progress["current_unit_index"]
+    )
+
+    next_unit = units[next_index]
+
+    print(f"Next unit: {next_unit['title']}")
 
 
 # ============================================================
-# MAIN PROGRAM
+# MAIN
 # ============================================================
 
 def main() -> None:
-    """
-    Discover tracks, let the operator choose one,
-    and run the tracker against that selection.
-    """
+    """Start the Learning Engine."""
 
     display_header()
 
@@ -441,12 +476,14 @@ def main() -> None:
         print("Learning Engine closed.")
         return
 
-    track_selected_course(selected_track)
+    try:
+        track_selected_course(selected_track)
 
+    except (FileNotFoundError, ValueError, KeyError) as error:
+        print()
+        print("LEARNING ENGINE ERROR")
+        print(error)
 
-# ============================================================
-# PROGRAM ENTRY POINT
-# ============================================================
 
 if __name__ == "__main__":
     main()

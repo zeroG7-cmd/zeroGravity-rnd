@@ -4,9 +4,210 @@
     "provider": "Asabeneh Yetayeh",
     "stat": "INT",
     "branch": "Software Engineering",
-    "category": "Programming Languages", 
+    "category": "Programming Languages",
     "skill": "Python",
     "difficulty": "Beginner",
-    "lessons": 30,
-    "resource": "../../../../resources/github/python/30-Days-Of-Python"
+    "resource": "../../../../resources/github/python/30-Days-Of-Python",
+    "evidence_requirements": [
+        {
+            "name": "Notes",
+            "path": "notes.md"
+        },
+        {
+            "name": "Python Solution",
+            "path": "solution.py"
+        },
+        {
+            "name": "Reflection",
+            "path": "reflection.md"
+        },
+        {
+            "name": "Terminal Output",
+            "path": "evidence/terminal_output.txt"
+        }
+    ],
+    "units": [
+        {
+            "id": "day_01",
+            "title": "Day 1",
+            "path": "day_01",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_02",
+            "title": "Day 2",
+            "path": "day_02",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_03",
+            "title": "Day 3",
+            "path": "day_03",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_04",
+            "title": "Day 4",
+            "path": "day_04",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_05",
+            "title": "Day 5",
+            "path": "day_05",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_06",
+            "title": "Day 6",
+            "path": "day_06",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_07",
+            "title": "Day 7",
+            "path": "day_07",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_08",
+            "title": "Day 8",
+            "path": "day_08",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_09",
+            "title": "Day 9",
+            "path": "day_09",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_10",
+            "title": "Day 10",
+            "path": "day_10",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_11",
+            "title": "Day 11",
+            "path": "day_11",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_12",
+            "title": "Day 12",
+            "path": "day_12",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_13",
+            "title": "Day 13",
+            "path": "day_13",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_14",
+            "title": "Day 14",
+            "path": "day_14",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_15",
+            "title": "Day 15",
+            "path": "day_15",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_16",
+            "title": "Day 16",
+            "path": "day_16",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_17",
+            "title": "Day 17",
+            "path": "day_17",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_18",
+            "title": "Day 18",
+            "path": "day_18",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_19",
+            "title": "Day 19",
+            "path": "day_19",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_20",
+            "title": "Day 20",
+            "path": "day_20",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_21",
+            "title": "Day 21",
+            "path": "day_21",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_22",
+            "title": "Day 22",
+            "path": "day_22",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_23",
+            "title": "Day 23",
+            "path": "day_23",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_24",
+            "title": "Day 24",
+            "path": "day_24",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_25",
+            "title": "Day 25",
+            "path": "day_25",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_26",
+            "title": "Day 26",
+            "path": "day_26",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_27",
+            "title": "Day 27",
+            "path": "day_27",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_28",
+            "title": "Day 28",
+            "path": "day_28",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_29",
+            "title": "Day 29",
+            "path": "day_29",
+            "source_type": "manual"
+        },
+        {
+            "id": "day_30",
+            "title": "Day 30",
+            "path": "day_30",
+            "source_type": "manual"
+        }
+    ],
+    "unit_count": 30,
+    "structure_type": "flat"
 }

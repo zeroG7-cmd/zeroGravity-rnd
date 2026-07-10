@@ -1,0 +1,462 @@
+{
+    "id": "computer_vision_opencv_computer_vision_1",
+    "title": "OpenCV Computer Vision 1",
+    "provider": "OpenCV University / 5starkarma archive",
+    "stat": "INT",
+    "hierarchy": [
+        "Robotics",
+        "Perception",
+        "Computer Vision"
+    ],
+    "domain": "Robotics",
+    "skill": "Computer Vision",
+    "difficulty": "Beginner",
+    "resource": "learning/resources/github/computer_vision/opencv_courses/opencv_103_computer_vision_1",
+    "import_method": "resource_scan",
+    "structure_type": "imported",
+    "unit_count": 52,
+    "units": [
+        {
+            "id": "week_01_basic_image_operations",
+            "title": "Week 1 - Basic Image Operations",
+            "path": "week_01/basic_image_operations",
+            "source": "week1_getting_started/notebooks/basic_image_operations.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_01_basic_math_operations",
+            "title": "Week 1 - Basic Math Operations",
+            "path": "week_01/basic_math_operations",
+            "source": "week1_getting_started/notebooks/basic_math_operations.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_01_bitwise_operations",
+            "title": "Week 1 - Bitwise Operations",
+            "path": "week_01/bitwise_operations",
+            "source": "week1_getting_started/notebooks/bitwise_operations.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_01_getting_started_with_images",
+            "title": "Week 1 - Getting Started With Images",
+            "path": "week_01/getting_started_with_images",
+            "source": "week1_getting_started/notebooks/getting_started_with_images.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_01_image_annotation",
+            "title": "Week 1 - Image Annotation",
+            "path": "week_01/image_annotation",
+            "source": "week1_getting_started/notebooks/Image_Annotation.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_01_qr_code_detector",
+            "title": "Week 1 - Qr Code Detector",
+            "path": "week_01/qr_code_detector",
+            "source": "week1_getting_started/assignments/qr_code_detector/QR-Code-Detector.ipynb",
+            "source_type": "assignment",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_02_adding_a_trackbar_as_controller",
+            "title": "Week 2 - Adding A Trackbar As Controller",
+            "path": "week_02/adding_a_trackbar_as_controller",
+            "source": "week2_video_io_and_gui/assignments/adding_a_trackbar_as_controller/submission.py",
+            "source_type": "assignment",
+            "source_extension": ".py"
+        },
+        {
+            "id": "week_02_highgui",
+            "title": "Week 2 - Highgui",
+            "path": "week_02/highgui",
+            "source": "week2_video_io_and_gui/notebooks/highGUI.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_02_using_mouse_for_annotation",
+            "title": "Week 2 - Using Mouse For Annotation",
+            "path": "week_02/using_mouse_for_annotation",
+            "source": "week2_video_io_and_gui/assignments/using_mouse_for_annotation/submission.py",
+            "source_type": "assignment",
+            "source_extension": ".py"
+        },
+        {
+            "id": "week_02_video_processing",
+            "title": "Week 2 - Video Processing",
+            "path": "week_02/video_processing",
+            "source": "week2_video_io_and_gui/notebooks/Video_Processing.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_03_blob_detection",
+            "title": "Week 3 - Blob Detection",
+            "path": "week_03/blob_detection",
+            "source": "week3_binary_image_processing/notebooks/Blob_Detection.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_03_coin_detection_assignment",
+            "title": "Week 3 - Coin Detection Assignment",
+            "path": "week_03/coin_detection_assignment",
+            "source": "week3_binary_image_processing/assignments/Coin-Detection-Assignment.ipynb",
+            "source_type": "assignment",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_03_contours",
+            "title": "Week 3 - Contours",
+            "path": "week_03/contours",
+            "source": "week3_binary_image_processing/notebooks/Contours.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_03_erosion_dilation",
+            "title": "Week 3 - Erosion Dilation",
+            "path": "week_03/erosion_dilation",
+            "source": "week3_binary_image_processing/notebooks/Erosion_Dilation.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_03_implementation_of_morphological_operations",
+            "title": "Week 3 - Implementation Of Morphological Operations",
+            "path": "week_03/implementation_of_morphological_operations",
+            "source": "week3_binary_image_processing/notebooks/Implementation_of_Morphological_Operations.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_03_opening_closing",
+            "title": "Week 3 - Opening Closing",
+            "path": "week_03/opening_closing",
+            "source": "week3_binary_image_processing/notebooks/Opening_Closing.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_03_thresholding",
+            "title": "Week 3 - Thresholding",
+            "path": "week_03/thresholding",
+            "source": "week3_binary_image_processing/notebooks/Thresholding.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_04_canny_edge_detection",
+            "title": "Week 4 - Canny Edge Detection",
+            "path": "week_04/canny_edge_detection",
+            "source": "week4_image_enhancement_and_filtering/canny_edge_detection",
+            "source_type": "script_topic",
+            "source_extension": null
+        },
+        {
+            "id": "week_04_color_spaces",
+            "title": "Week 4 - Color Spaces",
+            "path": "week_04/color_spaces",
+            "source": "week4_image_enhancement_and_filtering/color_spaces",
+            "source_type": "script_topic",
+            "source_extension": null
+        },
+        {
+            "id": "week_04_color_transformations",
+            "title": "Week 4 - Color Transformations",
+            "path": "week_04/color_transformations",
+            "source": "week4_image_enhancement_and_filtering/color_transformations",
+            "source_type": "script_topic",
+            "source_extension": null
+        },
+        {
+            "id": "week_04_image_filtering",
+            "title": "Week 4 - Image Filtering",
+            "path": "week_04/image_filtering",
+            "source": "week4_image_enhancement_and_filtering/image_filtering",
+            "source_type": "script_topic",
+            "source_extension": null
+        },
+        {
+            "id": "week_04_image_gradients",
+            "title": "Week 4 - Image Gradients",
+            "path": "week_04/image_gradients",
+            "source": "week4_image_enhancement_and_filtering/image_gradients",
+            "source_type": "script_topic",
+            "source_extension": null
+        },
+        {
+            "id": "week_04_image_smoothing",
+            "title": "Week 4 - Image Smoothing",
+            "path": "week_04/image_smoothing",
+            "source": "week4_image_enhancement_and_filtering/image_smoothing",
+            "source_type": "script_topic",
+            "source_extension": null
+        },
+        {
+            "id": "week_05_application_face_blening",
+            "title": "Week 5 - Application Face Blening",
+            "path": "week_05/application_face_blening",
+            "source": "week5_advanced_image_processing_and_computational_photography/notebooks/Application-Face_Blening.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_05_hdr",
+            "title": "Week 5 - Hdr",
+            "path": "week_05/hdr",
+            "source": "week5_advanced_image_processing_and_computational_photography/notebooks/hdr.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_05_hough_transform",
+            "title": "Week 5 - Hough Transform",
+            "path": "week_05/hough_transform",
+            "source": "week5_advanced_image_processing_and_computational_photography/notebooks/Hough_Transform.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_05_image_inpainting",
+            "title": "Week 5 - Image Inpainting",
+            "path": "week_05/image_inpainting",
+            "source": "week5_advanced_image_processing_and_computational_photography/notebooks/Image_Inpainting.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_05_seamless_cloning",
+            "title": "Week 5 - Seamless Cloning",
+            "path": "week_05/seamless_cloning",
+            "source": "week5_advanced_image_processing_and_computational_photography/notebooks/Seamless_Cloning.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_07_application_find_object_using_image_features",
+            "title": "Week 7 - Application Find Object Using Image Features",
+            "path": "week_07/application_find_object_using_image_features",
+            "source": "week7_geometric_transformations_and_image_features/notebooks/Application_Find_Object_using_Image_Features.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_07_application_image_alignment_document_scanner",
+            "title": "Week 7 - Application Image Alignment Document Scanner",
+            "path": "week_07/application_image_alignment_document_scanner",
+            "source": "week7_geometric_transformations_and_image_features/notebooks/Application_Image_Alignment_Document_Scanner.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_07_application_panorama",
+            "title": "Week 7 - Application Panorama",
+            "path": "week_07/application_panorama",
+            "source": "week7_geometric_transformations_and_image_features/notebooks/Application_Panorama.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_07_feature_matching",
+            "title": "Week 7 - Feature Matching",
+            "path": "week_07/feature_matching",
+            "source": "week7_geometric_transformations_and_image_features/notebooks/Feature_Matching.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_07_geometric_transform",
+            "title": "Week 7 - Geometric Transform",
+            "path": "week_07/geometric_transform",
+            "source": "week7_geometric_transformations_and_image_features/notebooks/Geometric_Transform.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_07_image_features_orb",
+            "title": "Week 7 - Image Features Orb",
+            "path": "week_07/image_features_orb",
+            "source": "week7_geometric_transformations_and_image_features/notebooks/Image_Features_ORB.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_08_grabcut",
+            "title": "Week 8 - Grabcut",
+            "path": "week_08/grabcut",
+            "source": "week8_image_recognition/notebooks/Grabcut.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_08_haar_cascades",
+            "title": "Week 8 - Haar Cascades",
+            "path": "week_08/haar_cascades",
+            "source": "week8_image_recognition/notebooks/HAAR_Cascades.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_08_image_classification_hog_svm",
+            "title": "Week 8 - Image Classification Hog Svm",
+            "path": "week_08/image_classification_hog_svm",
+            "source": "week8_image_recognition/notebooks/Image_Classification_HOG_SVM.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_08_object_detection_using_hog_svm",
+            "title": "Week 8 - Object Detection Using Hog Svm",
+            "path": "week_08/object_detection_using_hog_svm",
+            "source": "week8_image_recognition/notebooks/Object_Detection_using_HOG_SVM.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_09_lucas_kanade_tracker",
+            "title": "Week 9 - Lucas Kanade Tracker",
+            "path": "week_09/lucas_kanade_tracker",
+            "source": "week9_video_analysis/scripts/Lucas_Kanade_tracker.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_09_mil_tracker_theory",
+            "title": "Week 9 - Mil Tracker Theory",
+            "path": "week_09/mil_tracker_theory",
+            "source": "week9_video_analysis/scripts/MIL_Tracker_Theory.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_09_object_tracking_using_meanshift_and_camshift",
+            "title": "Week 9 - Object Tracking Using Meanshift And Camshift",
+            "path": "week_09/object_tracking_using_meanshift_and_camshift",
+            "source": "week9_video_analysis/scripts/Object_Tracking_using_Meanshift_and_CAMshift.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_09_opencv_object_tracking_api",
+            "title": "Week 9 - Opencv Object Tracking Api",
+            "path": "week_09/opencv_object_tracking_api",
+            "source": "week9_video_analysis/scripts/OpenCV_Object_Tracking_API.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_09_tracking_multiple_objects",
+            "title": "Week 9 - Tracking Multiple Objects",
+            "path": "week_09/tracking_multiple_objects",
+            "source": "week9_video_analysis/scripts/Tracking_Multiple_Objects.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_09_tracking_using_kalman_filter",
+            "title": "Week 9 - Tracking Using Kalman Filter",
+            "path": "week_09/tracking_using_kalman_filter",
+            "source": "week9_video_analysis/scripts/Tracking_using_Kalman_Filter.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_09_video_stabilization",
+            "title": "Week 9 - Video Stabilization",
+            "path": "week_09/video_stabilization",
+            "source": "week9_video_analysis/scripts/Video_Stabilization.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_10_dl_face_detection",
+            "title": "Week 10 - Dl Face Detection",
+            "path": "week_10/dl_face_detection",
+            "source": "week10_deep_learning_in_opencv/notebooks/DL_Face_Detection.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_10_dl_image_classification",
+            "title": "Week 10 - Dl Image Classification",
+            "path": "week_10/dl_image_classification",
+            "source": "week10_deep_learning_in_opencv/notebooks/DL_Image_Classification.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_10_dl_object_detection",
+            "title": "Week 10 - Dl Object Detection",
+            "path": "week_10/dl_object_detection",
+            "source": "week10_deep_learning_in_opencv/notebooks/DL_Object_Detection.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_10_openpose",
+            "title": "Week 10 - Openpose",
+            "path": "week_10/openpose",
+            "source": "week10_deep_learning_in_opencv/notebooks/OpenPose.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "week_10_yolo_object_detection",
+            "title": "Week 10 - Yolo Object Detection",
+            "path": "week_10/yolo_object_detection",
+            "source": "week10_deep_learning_in_opencv/notebooks/YOLO_Object_Detection.ipynb",
+            "source_type": "notebook",
+            "source_extension": ".ipynb"
+        },
+        {
+            "id": "project_document_scanner",
+            "title": "Project - Document Scanner",
+            "path": "projects/document_scanner",
+            "source": "projects/document_scanner.py",
+            "source_type": "project",
+            "source_extension": ".py"
+        },
+        {
+            "id": "project_face_smoothing",
+            "title": "Project - Face Smoothing",
+            "path": "projects/face_smoothing",
+            "source": "projects/face_smoothing.ipynb",
+            "source_type": "project",
+            "source_extension": ".ipynb"
+        }
+    ],
+    "evidence_requirements": [
+        {
+            "name": "Computer Vision Notes",
+            "path": "notes.md"
+        },
+        {
+            "name": "Practice Work",
+            "path": "practice.ipynb"
+        },
+        {
+            "name": "Reflection",
+            "path": "reflection.md"
+        },
+        {
+            "name": "Result Image",
+            "path": "evidence/result.png"
+        },
+        {
+            "name": "Execution Output",
+            "path": "evidence/output.txt"
+        },
+        {
+            "name": "Screenshot",
+            "path": "evidence/screenshot.png"
+        }
+    ]
+}

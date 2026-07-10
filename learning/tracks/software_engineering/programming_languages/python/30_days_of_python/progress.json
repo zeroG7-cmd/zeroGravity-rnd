@@ -1,6 +1,6 @@
 {
-    "current_lesson": 1,
-    "completed_lessons": [],
     "total_xp": 0,
-    "status": "In Progress"
+    "status": "In Progress",
+    "current_unit_index": 0,
+    "completed_units": []
 }
