@@ -1,0 +1,81 @@
+{
+    "stats": {
+        "CON": {},
+        "INT": {
+            "Software Engineering": {
+                "Programming Languages": {
+                    "Python": {},
+                    "C++": {},
+                    "JavaScript": {}
+                },
+                "Web Development": {
+                    "HTML": {},
+                    "CSS": {},
+                    "Flask": {}
+                },
+                "Version Control": {
+                    "Git": {}
+                },
+                "Testing": {},
+                "APIs & Backend": {}
+            },
+            "Computer Science": {
+                "Data Structures": {},
+                "Algorithms": {},
+                "Complexity": {}
+            },
+            "Robotics": {
+                "Mechanical Design": {
+                    "Statics": {},
+                    "Dynamics": {},
+                    "Mechanics of Materials": {},
+                    "CAD": {}
+                },
+                "Mechatronics": {},
+                "Perception": {
+                    "Computer Vision": {},
+                    "Sensor Fusion": {},
+                    "Camera Systems": {},
+                    "LIDAR Systems": {}
+                },
+                "Navigation & Mapping": {
+                    "Navigation": {},
+                    "Path Planning": {}
+                },
+                "Robot Software": {
+                    "Robot Middleware": {
+                        "ROS2": {},
+                        "Linux": {}
+                    },
+                    "Simulation": {
+                        "Gazebo": {}
+                    },
+                    "Localization": {
+                        "SLAM": {}
+                    },
+                    "Deployment": {}
+                }
+            },
+            "Networking": {
+                "TCP/IP": {},
+                "Wi-Fi": {},
+                "Client/Server": {},
+                "SSH": {},
+                "VPN": {},
+                "Network Security": {}
+            },
+            "Data & Databases": {
+                "Database Systems": {
+                    "SQLite": {},
+                    "PostgreSQL": {}
+                },
+                "Data Pipelines": {},
+                "Database Design": {},
+                "SQL": {}
+            }
+        },
+        "STR": {},
+        "DEX": {},
+        "DIS": {}
+    }
+}
