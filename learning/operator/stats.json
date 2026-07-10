@@ -1,0 +1,383 @@
+{
+    "stats": {
+        "CON": {
+            "name": "CON",
+            "node_type": "skill",
+            "xp": 0,
+            "level": 0
+        },
+        "INT": {
+            "name": "INT",
+            "node_type": "parent",
+            "average_level": 0.0,
+            "children": {
+                "Software Engineering": {
+                    "name": "Software Engineering",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Programming Languages": {
+                            "name": "Programming Languages",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Python": {
+                                    "name": "Python",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "C++": {
+                                    "name": "C++",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "JavaScript": {
+                                    "name": "JavaScript",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        },
+                        "Web Development": {
+                            "name": "Web Development",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "HTML": {
+                                    "name": "HTML",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "CSS": {
+                                    "name": "CSS",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Flask": {
+                                    "name": "Flask",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        },
+                        "Version Control": {
+                            "name": "Version Control",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Git": {
+                                    "name": "Git",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        },
+                        "Testing": {
+                            "name": "Testing",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "APIs & Backend": {
+                            "name": "APIs & Backend",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        }
+                    }
+                },
+                "Computer Science": {
+                    "name": "Computer Science",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Data Structures": {
+                            "name": "Data Structures",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Algorithms": {
+                            "name": "Algorithms",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Complexity": {
+                            "name": "Complexity",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        }
+                    }
+                },
+                "Robotics": {
+                    "name": "Robotics",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Mechanical Design": {
+                            "name": "Mechanical Design",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Statics": {
+                                    "name": "Statics",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Dynamics": {
+                                    "name": "Dynamics",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Mechanics of Materials": {
+                                    "name": "Mechanics of Materials",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "CAD": {
+                                    "name": "CAD",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        },
+                        "Mechatronics": {
+                            "name": "Mechatronics",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Perception": {
+                            "name": "Perception",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Computer Vision": {
+                                    "name": "Computer Vision",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Sensor Fusion": {
+                                    "name": "Sensor Fusion",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Camera Systems": {
+                                    "name": "Camera Systems",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "LIDAR Systems": {
+                                    "name": "LIDAR Systems",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        },
+                        "Navigation & Mapping": {
+                            "name": "Navigation & Mapping",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Navigation": {
+                                    "name": "Navigation",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Path Planning": {
+                                    "name": "Path Planning",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        },
+                        "Robot Software": {
+                            "name": "Robot Software",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Robot Middleware": {
+                                    "name": "Robot Middleware",
+                                    "node_type": "parent",
+                                    "average_level": 0.0,
+                                    "children": {
+                                        "ROS2": {
+                                            "name": "ROS2",
+                                            "node_type": "skill",
+                                            "xp": 0,
+                                            "level": 0
+                                        },
+                                        "Linux": {
+                                            "name": "Linux",
+                                            "node_type": "skill",
+                                            "xp": 0,
+                                            "level": 0
+                                        }
+                                    }
+                                },
+                                "Simulation": {
+                                    "name": "Simulation",
+                                    "node_type": "parent",
+                                    "average_level": 0.0,
+                                    "children": {
+                                        "Gazebo": {
+                                            "name": "Gazebo",
+                                            "node_type": "skill",
+                                            "xp": 0,
+                                            "level": 0
+                                        }
+                                    }
+                                },
+                                "Localization": {
+                                    "name": "Localization",
+                                    "node_type": "parent",
+                                    "average_level": 0.0,
+                                    "children": {
+                                        "SLAM": {
+                                            "name": "SLAM",
+                                            "node_type": "skill",
+                                            "xp": 0,
+                                            "level": 0
+                                        }
+                                    }
+                                },
+                                "Deployment": {
+                                    "name": "Deployment",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        }
+                    }
+                },
+                "Networking": {
+                    "name": "Networking",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "TCP/IP": {
+                            "name": "TCP/IP",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Wi-Fi": {
+                            "name": "Wi-Fi",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Client/Server": {
+                            "name": "Client/Server",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "SSH": {
+                            "name": "SSH",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "VPN": {
+                            "name": "VPN",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Network Security": {
+                            "name": "Network Security",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        }
+                    }
+                },
+                "Data & Databases": {
+                    "name": "Data & Databases",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Database Systems": {
+                            "name": "Database Systems",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "SQLite": {
+                                    "name": "SQLite",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "PostgreSQL": {
+                                    "name": "PostgreSQL",
+                                    "node_type": "skill",
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        },
+                        "Data Pipelines": {
+                            "name": "Data Pipelines",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Database Design": {
+                            "name": "Database Design",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "SQL": {
+                            "name": "SQL",
+                            "node_type": "skill",
+                            "xp": 0,
+                            "level": 0
+                        }
+                    }
+                }
+            }
+        },
+        "STR": {
+            "name": "STR",
+            "node_type": "skill",
+            "xp": 0,
+            "level": 0
+        },
+        "DEX": {
+            "name": "DEX",
+            "node_type": "skill",
+            "xp": 0,
+            "level": 0
+        },
+        "DIS": {
+            "name": "DIS",
+            "node_type": "skill",
+            "xp": 0,
+            "level": 0
+        }
+    },
+    "total_xp": 0,
+    "level": 0
+}

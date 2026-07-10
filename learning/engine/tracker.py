@@ -1,8 +1,8 @@
 """
 Operator Zero Learning Engine
-Universal Tracker v5.0
+Universal Tracker v5.1
 
-All tracks now use one data model:
+All tracks use one data model:
 
 Metadata:
 - units
@@ -14,16 +14,24 @@ Progress:
 - completed_units
 - total_xp
 - status
+
+This version also connects:
+- track-aware XP
+- leaf-skill progression
+- operator stats
+- completion history
 """
 
 import json
 from pathlib import Path
 from typing import Any
 
+from history import record_completion
+from stats import get_skill_stats, update_operator_stats
 from xp import calculate_unit_xp
 
-TRACKS_ROOT = Path("learning/tracks")
 
+TRACKS_ROOT = Path("learning/tracks")
 
 
 # ============================================================
@@ -178,6 +186,7 @@ def validate_metadata(
     requirements = metadata.get(
         "evidence_requirements"
     )
+    hierarchy = metadata.get("hierarchy")
 
     if not isinstance(units, list) or not units:
         raise ValueError(
@@ -188,6 +197,16 @@ def validate_metadata(
     if not isinstance(requirements, list) or not requirements:
         raise ValueError(
             "metadata.json has no evidence requirements."
+        )
+
+    if not isinstance(hierarchy, list) or not hierarchy:
+        raise ValueError(
+            "metadata.json has no valid 'hierarchy' list."
+        )
+
+    if not metadata.get("stat"):
+        raise ValueError(
+            "metadata.json has no valid 'stat' value."
         )
 
 
@@ -278,7 +297,7 @@ def complete_current_unit(
     xp_award: int,
 ) -> bool:
     """
-    Mark the current unit complete and award XP once.
+    Mark the current unit complete and award track XP once.
 
     Returns False if the unit was already completed.
     """
@@ -291,7 +310,7 @@ def complete_current_unit(
 
     completed_units.append(unit_id)
 
-    # XP is calculated by xp.py and passed into this function.
+    # Track-specific XP total.
     progress["total_xp"] += xp_award
 
     if current_index >= total_units - 1:
@@ -299,7 +318,7 @@ def complete_current_unit(
     else:
         progress["current_unit_index"] = current_index + 1
 
-    return True   
+    return True
 
 
 # ============================================================
@@ -338,7 +357,7 @@ def display_track_information(
     print(f"Unit path      : {current_unit['path']}")
     print(f"Unit type      : {current_unit.get('source_type', 'manual')}")
     print(f"Progress       : {completed_count}/{len(units)}")
-    print(f"Total XP       : {progress['total_xp']}")
+    print(f"Track XP       : {progress['total_xp']}")
     print(f"Track status   : {progress['status']}")
 
 
@@ -427,10 +446,12 @@ def track_selected_course(
         print("Unit is still in progress.")
         print("Complete the missing evidence and run again.")
         return
+
     xp_award = calculate_unit_xp(
-       metadata=metadata,
-       unit=current_unit,
+        metadata=metadata,
+        unit=current_unit,
     )
+
     progress_changed = complete_current_unit(
         progress=progress,
         unit_id=current_unit["id"],
@@ -445,14 +466,46 @@ def track_selected_course(
         print("No additional XP was awarded.")
         return
 
+    # Update the Operator progression model.
+    # Only the leaf skill receives XP.
+    operator_stats = update_operator_stats(
+        metadata=metadata,
+        xp_award=xp_award,
+    )
+
+    skill_stats = get_skill_stats(
+        stats=operator_stats,
+        stat_name=metadata["stat"],
+        hierarchy=metadata["hierarchy"],
+    )
+
+    # Record the permanent completion event.
+    record_completion(
+        metadata=metadata,
+        unit=current_unit,
+        xp_award=xp_award,
+    )
+
+    # Save track progress only after progression and history succeed.
     save_json(progress_path, progress)
 
-    skill = metadata.get("skill", "Skill")
+    skill_name = metadata.get(
+        "skill",
+        metadata["hierarchy"][-1],
+    )
 
     print()
     print("UNIT COMPLETE")
-    print(f"+{xp_award} {skill} XP awarded.")
-    print("progress.json has been updated.")
+    print("-" * 68)
+    print(f"+{xp_award} {skill_name} XP awarded.")
+    print(f"{skill_name} XP: {skill_stats['xp']}")
+    print(f"{skill_name} Level: {skill_stats['level']}")
+    print(f"Operator Total XP: {operator_stats['total_xp']}")
+    print(f"Operator Level: {operator_stats['level']}")
+    print()
+    print("progress.json updated.")
+    print("stats.json updated.")
+    print("history.json updated.")
 
     if progress["status"] == "Complete":
         print()
@@ -465,6 +518,7 @@ def track_selected_course(
 
     next_unit = units[next_index]
 
+    print()
     print(f"Next unit: {next_unit['title']}")
 
 
@@ -488,7 +542,12 @@ def main() -> None:
     try:
         track_selected_course(selected_track)
 
-    except (FileNotFoundError, ValueError, KeyError) as error:
+    except (
+        FileNotFoundError,
+        ValueError,
+        KeyError,
+        TypeError,
+    ) as error:
         print()
         print("LEARNING ENGINE ERROR")
         print(error)
