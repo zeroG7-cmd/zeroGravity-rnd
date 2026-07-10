@@ -3,11 +3,17 @@
     "title": "30 Days of Python",
     "provider": "Asabeneh Yetayeh",
     "stat": "INT",
-    "branch": "Software Engineering",
-    "category": "Programming Languages",
+    "hierarchy": [
+        "Software Engineering",
+        "Programming Languages",
+        "Python"
+    ],
+
+    "domain": "Software Engineering",
     "skill": "Python",
+
     "difficulty": "Beginner",
-    "resource": "../../../../resources/github/python/30-Days-Of-Python",
+    "resource": "learning/resources/github/python/30-Days-Of-Python",
     "evidence_requirements": [
         {
             "name": "Notes",
@@ -209,5 +215,16 @@
         }
     ],
     "unit_count": 30,
-    "structure_type": "flat"
+    "structure_type": "manual",
+    "xp_rules": {
+        "manual": 40,
+        "script": 30,
+        "script_topic": 50,
+        "notebook": 40,
+        "exercise": 45,
+        "challenge": 50,
+        "lab": 55,
+        "assignment": 60,
+        "project": 100
+    }
 }

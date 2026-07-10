@@ -20,9 +20,10 @@ import json
 from pathlib import Path
 from typing import Any
 
+from xp import calculate_unit_xp
 
 TRACKS_ROOT = Path("learning/tracks")
-XP_PER_UNIT = 40
+
 
 
 # ============================================================
@@ -274,27 +275,31 @@ def complete_current_unit(
     unit_id: str,
     current_index: int,
     total_units: int,
+    xp_award: int,
 ) -> bool:
     """
     Mark the current unit complete and award XP once.
+
+    Returns False if the unit was already completed.
     """
 
     completed_units = progress["completed_units"]
 
+    # Prevent duplicate XP if the tracker is run again.
     if unit_id in completed_units:
         return False
 
     completed_units.append(unit_id)
-    progress["total_xp"] += XP_PER_UNIT
+
+    # XP is calculated by xp.py and passed into this function.
+    progress["total_xp"] += xp_award
 
     if current_index >= total_units - 1:
         progress["status"] = "Complete"
     else:
-        progress["current_unit_index"] = (
-            current_index + 1
-        )
+        progress["current_unit_index"] = current_index + 1
 
-    return True
+    return True   
 
 
 # ============================================================
@@ -422,12 +427,16 @@ def track_selected_course(
         print("Unit is still in progress.")
         print("Complete the missing evidence and run again.")
         return
-
+    xp_award = calculate_unit_xp(
+       metadata=metadata,
+       unit=current_unit,
+    )
     progress_changed = complete_current_unit(
         progress=progress,
         unit_id=current_unit["id"],
         current_index=current_index,
         total_units=len(units),
+        xp_award=xp_award,
     )
 
     if not progress_changed:
@@ -442,7 +451,7 @@ def track_selected_course(
 
     print()
     print("UNIT COMPLETE")
-    print(f"+{XP_PER_UNIT} {skill} XP awarded.")
+    print(f"+{xp_award} {skill} XP awarded.")
     print("progress.json has been updated.")
 
     if progress["status"] == "Complete":

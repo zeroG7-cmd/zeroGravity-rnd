@@ -458,5 +458,16 @@
             "name": "Screenshot",
             "path": "evidence/screenshot.png"
         }
-    ]
+    ],
+    "xp_rules": {
+        "manual": 40,
+        "script": 30,
+        "script_topic": 50,
+        "notebook": 40,
+        "exercise": 45,
+        "challenge": 50,
+        "lab": 55,
+        "assignment": 60,
+        "project": 100
+    }
 }
