@@ -1,14 +1,15 @@
 {
+    "schema_version": 3,
     "stats": {
         "CON": {
             "name": "CON",
-            "node_type": "skill",
-            "xp": 0,
-            "level": 0
+            "node_type": "main_stat",
+            "average_level": 0.0,
+            "children": {}
         },
         "INT": {
             "name": "INT",
-            "node_type": "parent",
+            "node_type": "main_stat",
             "average_level": 0.0,
             "children": {
                 "Software Engineering": {
@@ -24,18 +25,24 @@
                                 "Python": {
                                     "name": "Python",
                                     "node_type": "skill",
+                                    "competency_id": "int.software_engineering.programming_languages.python",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "C++": {
                                     "name": "C++",
                                     "node_type": "skill",
+                                    "competency_id": "int.software_engineering.programming_languages.cpp",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "JavaScript": {
                                     "name": "JavaScript",
                                     "node_type": "skill",
+                                    "competency_id": "int.software_engineering.programming_languages.javascript",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 }
@@ -49,18 +56,16 @@
                                 "HTML": {
                                     "name": "HTML",
                                     "node_type": "skill",
+                                    "competency_id": "int.software_engineering.web_development.html",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "CSS": {
                                     "name": "CSS",
                                     "node_type": "skill",
-                                    "xp": 0,
-                                    "level": 0
-                                },
-                                "Flask": {
-                                    "name": "Flask",
-                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.web_development.css",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 }
@@ -74,6 +79,8 @@
                                 "Git": {
                                     "name": "Git",
                                     "node_type": "skill",
+                                    "competency_id": "int.software_engineering.version_control.git",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 }
@@ -81,15 +88,137 @@
                         },
                         "Testing": {
                             "name": "Testing",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Unit Testing": {
+                                    "name": "Unit Testing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.testing.unit_testing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Integration Testing": {
+                                    "name": "Integration Testing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.testing.integration_testing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "System Testing": {
+                                    "name": "System Testing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.testing.system_testing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Debugging": {
+                                    "name": "Debugging",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.testing.debugging",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Test Automation": {
+                                    "name": "Test Automation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.testing.test_automation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "CI/CD Testing": {
+                                    "name": "CI/CD Testing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.testing.ci_cd_testing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
                         "APIs & Backend": {
                             "name": "APIs & Backend",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "REST APIs": {
+                                    "name": "REST APIs",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.apis_and_backend.rest_apis",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Flask": {
+                                    "name": "Flask",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.apis_and_backend.flask",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "FastAPI": {
+                                    "name": "FastAPI",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.apis_and_backend.fastapi",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Authentication": {
+                                    "name": "Authentication",
+                                    "node_type": "skill",
+                                    "competency_id": "authentication",
+                                    "shared": true,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "JSON": {
+                                    "name": "JSON",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.apis_and_backend.json",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "HTTP": {
+                                    "name": "HTTP",
+                                    "node_type": "skill",
+                                    "competency_id": "http",
+                                    "shared": true,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "WebSockets": {
+                                    "name": "WebSockets",
+                                    "node_type": "skill",
+                                    "competency_id": "websockets",
+                                    "shared": true,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Database Integration": {
+                                    "name": "Database Integration",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.apis_and_backend.database_integration",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "API Design": {
+                                    "name": "API Design",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.apis_and_backend.api_design",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         }
                     }
                 },
@@ -100,19 +229,206 @@
                     "children": {
                         "Data Structures": {
                             "name": "Data Structures",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Arrays": {
+                                    "name": "Arrays",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.data_structures.arrays",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Linked Lists": {
+                                    "name": "Linked Lists",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.data_structures.linked_lists",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Stacks": {
+                                    "name": "Stacks",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.data_structures.stacks",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Queues": {
+                                    "name": "Queues",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.data_structures.queues",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Trees": {
+                                    "name": "Trees",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.data_structures.trees",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Graphs": {
+                                    "name": "Graphs",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.data_structures.graphs",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Hash Tables": {
+                                    "name": "Hash Tables",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.data_structures.hash_tables",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Heaps": {
+                                    "name": "Heaps",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.data_structures.heaps",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
                         "Algorithms": {
                             "name": "Algorithms",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Searching": {
+                                    "name": "Searching",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.algorithms.searching",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Sorting": {
+                                    "name": "Sorting",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.algorithms.sorting",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Recursion": {
+                                    "name": "Recursion",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.algorithms.recursion",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Dynamic Programming": {
+                                    "name": "Dynamic Programming",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.algorithms.dynamic_programming",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Greedy Algorithms": {
+                                    "name": "Greedy Algorithms",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.algorithms.greedy_algorithms",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Graph Algorithms": {
+                                    "name": "Graph Algorithms",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.algorithms.graph_algorithms",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Pathfinding": {
+                                    "name": "Pathfinding",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.algorithms.pathfinding",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
                         "Complexity": {
                             "name": "Complexity",
                             "node_type": "skill",
+                            "competency_id": "int.computer_science.complexity",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Operating Systems": {
+                            "name": "Operating Systems",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Processes": {
+                                    "name": "Processes",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.operating_systems.processes",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Threads": {
+                                    "name": "Threads",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.operating_systems.threads",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Memory Management": {
+                                    "name": "Memory Management",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.operating_systems.memory_management",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Scheduling": {
+                                    "name": "Scheduling",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.operating_systems.scheduling",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "File Systems": {
+                                    "name": "File Systems",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.operating_systems.file_systems",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        },
+                        "Software Architecture": {
+                            "name": "Software Architecture",
+                            "node_type": "skill",
+                            "competency_id": "int.computer_science.software_architecture",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Concurrent Programming": {
+                            "name": "Concurrent Programming",
+                            "node_type": "skill",
+                            "competency_id": "int.computer_science.concurrent_programming",
+                            "shared": false,
                             "xp": 0,
                             "level": 0
                         }
@@ -131,24 +447,32 @@
                                 "Statics": {
                                     "name": "Statics",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.mechanical_design.statics",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "Dynamics": {
                                     "name": "Dynamics",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.mechanical_design.dynamics",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "Mechanics of Materials": {
                                     "name": "Mechanics of Materials",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.mechanical_design.mechanics_of_materials",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "CAD": {
                                     "name": "CAD",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.mechanical_design.cad",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 }
@@ -157,6 +481,8 @@
                         "Mechatronics": {
                             "name": "Mechatronics",
                             "node_type": "skill",
+                            "competency_id": "int.robotics.mechatronics",
+                            "shared": false,
                             "xp": 0,
                             "level": 0
                         },
@@ -168,24 +494,56 @@
                                 "Computer Vision": {
                                     "name": "Computer Vision",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.perception.computer_vision",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "Sensor Fusion": {
                                     "name": "Sensor Fusion",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.perception.sensor_fusion",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "Camera Systems": {
                                     "name": "Camera Systems",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.perception.camera_systems",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "LIDAR Systems": {
                                     "name": "LIDAR Systems",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.perception.lidar_systems",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Object Detection": {
+                                    "name": "Object Detection",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.perception.object_detection",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Object Tracking": {
+                                    "name": "Object Tracking",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.perception.object_tracking",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Depth Estimation": {
+                                    "name": "Depth Estimation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.perception.depth_estimation",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 }
@@ -199,12 +557,16 @@
                                 "Navigation": {
                                     "name": "Navigation",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.navigation_and_mapping.navigation",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "Path Planning": {
                                     "name": "Path Planning",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.navigation_and_mapping.path_planning",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 }
@@ -223,12 +585,16 @@
                                         "ROS2": {
                                             "name": "ROS2",
                                             "node_type": "skill",
+                                            "competency_id": "int.robotics.robot_software.robot_middleware.ros2",
+                                            "shared": false,
                                             "xp": 0,
                                             "level": 0
                                         },
                                         "Linux": {
                                             "name": "Linux",
                                             "node_type": "skill",
+                                            "competency_id": "int.robotics.robot_software.robot_middleware.linux",
+                                            "shared": false,
                                             "xp": 0,
                                             "level": 0
                                         }
@@ -242,6 +608,8 @@
                                         "Gazebo": {
                                             "name": "Gazebo",
                                             "node_type": "skill",
+                                            "competency_id": "int.robotics.robot_software.simulation.gazebo",
+                                            "shared": false,
                                             "xp": 0,
                                             "level": 0
                                         }
@@ -255,6 +623,16 @@
                                         "SLAM": {
                                             "name": "SLAM",
                                             "node_type": "skill",
+                                            "competency_id": "int.robotics.robot_software.localization.slam",
+                                            "shared": false,
+                                            "xp": 0,
+                                            "level": 0
+                                        },
+                                        "GPS": {
+                                            "name": "GPS",
+                                            "node_type": "skill",
+                                            "competency_id": "int.robotics.robot_software.localization.gps",
+                                            "shared": false,
                                             "xp": 0,
                                             "level": 0
                                         }
@@ -263,6 +641,8 @@
                                 "Deployment": {
                                     "name": "Deployment",
                                     "node_type": "skill",
+                                    "competency_id": "int.robotics.robot_software.deployment",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 }
@@ -275,41 +655,200 @@
                     "node_type": "parent",
                     "average_level": 0.0,
                     "children": {
-                        "TCP/IP": {
-                            "name": "TCP/IP",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                        "Network Fundamentals": {
+                            "name": "Network Fundamentals",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "TCP/IP": {
+                                    "name": "TCP/IP",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.network_fundamentals.tcp_ip",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "UDP": {
+                                    "name": "UDP",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.network_fundamentals.udp",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "DNS": {
+                                    "name": "DNS",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.network_fundamentals.dns",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "DHCP": {
+                                    "name": "DHCP",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.network_fundamentals.dhcp",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Routing": {
+                                    "name": "Routing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.network_fundamentals.routing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
-                        "Wi-Fi": {
-                            "name": "Wi-Fi",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                        "Wireless": {
+                            "name": "Wireless",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Wi-Fi": {
+                                    "name": "Wi-Fi",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.wireless.wi_fi",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Bluetooth": {
+                                    "name": "Bluetooth",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.wireless.bluetooth",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "RF": {
+                                    "name": "RF",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.wireless.rf",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "ELRS": {
+                                    "name": "ELRS",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.wireless.elrs",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
                         "Client/Server": {
                             "name": "Client/Server",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Sockets": {
+                                    "name": "Sockets",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.client_server.sockets",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "HTTP": {
+                                    "name": "HTTP",
+                                    "node_type": "skill",
+                                    "competency_id": "http",
+                                    "shared": true,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "MQTT": {
+                                    "name": "MQTT",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.client_server.mqtt",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "WebSockets": {
+                                    "name": "WebSockets",
+                                    "node_type": "skill",
+                                    "competency_id": "websockets",
+                                    "shared": true,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
-                        "SSH": {
-                            "name": "SSH",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
-                        },
-                        "VPN": {
-                            "name": "VPN",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                        "Remote Access": {
+                            "name": "Remote Access",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "SSH": {
+                                    "name": "SSH",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.remote_access.ssh",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "VPN": {
+                                    "name": "VPN",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.remote_access.vpn",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "SCP": {
+                                    "name": "SCP",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.remote_access.scp",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
                         "Network Security": {
                             "name": "Network Security",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Firewalls": {
+                                    "name": "Firewalls",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.network_security.firewalls",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Encryption": {
+                                    "name": "Encryption",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.network_security.encryption",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Certificates": {
+                                    "name": "Certificates",
+                                    "node_type": "skill",
+                                    "competency_id": "int.networking.network_security.certificates",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Authentication": {
+                                    "name": "Authentication",
+                                    "node_type": "skill",
+                                    "competency_id": "authentication",
+                                    "shared": true,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         }
                     }
                 },
@@ -326,32 +865,230 @@
                                 "SQLite": {
                                     "name": "SQLite",
                                     "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.database_systems.sqlite",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 },
                                 "PostgreSQL": {
                                     "name": "PostgreSQL",
                                     "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.database_systems.postgresql",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "MySQL": {
+                                    "name": "MySQL",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.database_systems.mysql",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0
                                 }
                             }
                         },
-                        "Data Pipelines": {
-                            "name": "Data Pipelines",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                        "Data Engineering": {
+                            "name": "Data Engineering",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "ETL": {
+                                    "name": "ETL",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.data_engineering.etl",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Data Pipelines": {
+                                    "name": "Data Pipelines",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.data_engineering.data_pipelines",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Parsing": {
+                                    "name": "Parsing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.data_engineering.parsing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Data Validation": {
+                                    "name": "Data Validation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.data_engineering.data_validation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Data Cleaning": {
+                                    "name": "Data Cleaning",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.data_engineering.data_cleaning",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
                         "Database Design": {
                             "name": "Database Design",
-                            "node_type": "skill",
-                            "xp": 0,
-                            "level": 0
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "ER Diagrams": {
+                                    "name": "ER Diagrams",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.database_design.er_diagrams",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Normalization": {
+                                    "name": "Normalization",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.database_design.normalization",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Relationships": {
+                                    "name": "Relationships",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.database_design.relationships",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Schema Design": {
+                                    "name": "Schema Design",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.database_design.schema_design",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
                         },
                         "SQL": {
                             "name": "SQL",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Queries": {
+                                    "name": "Queries",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.sql.queries",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Joins": {
+                                    "name": "Joins",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.sql.joins",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Indexing": {
+                                    "name": "Indexing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.sql.indexing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Views": {
+                                    "name": "Views",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.sql.views",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                },
+                                "Transactions": {
+                                    "name": "Transactions",
+                                    "node_type": "skill",
+                                    "competency_id": "int.data_and_databases.sql.transactions",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0
+                                }
+                            }
+                        }
+                    }
+                },
+                "Systems Engineering": {
+                    "name": "Systems Engineering",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Systems Thinking": {
+                            "name": "Systems Thinking",
                             "node_type": "skill",
+                            "competency_id": "int.systems_engineering.systems_thinking",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Requirements Engineering": {
+                            "name": "Requirements Engineering",
+                            "node_type": "skill",
+                            "competency_id": "int.systems_engineering.requirements_engineering",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "System Architecture": {
+                            "name": "System Architecture",
+                            "node_type": "skill",
+                            "competency_id": "int.systems_engineering.system_architecture",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Interface Design": {
+                            "name": "Interface Design",
+                            "node_type": "skill",
+                            "competency_id": "int.systems_engineering.interface_design",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Trade-off Analysis": {
+                            "name": "Trade-off Analysis",
+                            "node_type": "skill",
+                            "competency_id": "int.systems_engineering.trade_off_analysis",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Verification & Validation": {
+                            "name": "Verification & Validation",
+                            "node_type": "skill",
+                            "competency_id": "int.systems_engineering.verification_and_validation",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Integration": {
+                            "name": "Integration",
+                            "node_type": "skill",
+                            "competency_id": "int.systems_engineering.integration",
+                            "shared": false,
+                            "xp": 0,
+                            "level": 0
+                        },
+                        "Lifecycle Management": {
+                            "name": "Lifecycle Management",
+                            "node_type": "skill",
+                            "competency_id": "int.systems_engineering.lifecycle_management",
+                            "shared": false,
                             "xp": 0,
                             "level": 0
                         }
@@ -361,23 +1098,25 @@
         },
         "STR": {
             "name": "STR",
-            "node_type": "skill",
-            "xp": 0,
-            "level": 0
+            "node_type": "main_stat",
+            "average_level": 0.0,
+            "children": {}
         },
         "DEX": {
             "name": "DEX",
-            "node_type": "skill",
-            "xp": 0,
-            "level": 0
+            "node_type": "main_stat",
+            "average_level": 0.0,
+            "children": {}
         },
         "DIS": {
             "name": "DIS",
-            "node_type": "skill",
-            "xp": 0,
-            "level": 0
+            "node_type": "main_stat",
+            "average_level": 0.0,
+            "children": {}
         }
     },
     "total_xp": 0,
-    "level": 0
+    "level": 0,
+    "competency_count": 106,
+    "migrated_competencies": []
 }
