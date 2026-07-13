@@ -226,31 +226,20 @@ def ensure_progress_structure(
 # ============================================================
 
 def file_has_content(file_path: Path) -> bool:
-    """
-    Return True when evidence exists and is non-empty.
-
-    Text files are checked for actual text.
-    Binary files such as images only need a non-zero size.
-    """
-
-    if not file_path.exists():
+    if not file_path.exists() or not file_path.is_file() or file_path.stat().st_size == 0:
         return False
-
-    if not file_path.is_file():
-        return False
-
-    if file_path.stat().st_size == 0:
-        return False
-
     try:
-        content = file_path.read_text(
-            encoding="utf-8"
-        ).strip()
-
-        return bool(content)
-
+        text = file_path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
         return file_path.stat().st_size > 0
+    for raw_line in text.splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line in {"...", "TODO", "TBD", "[ ]", "- [ ]"} or line.startswith("- [ ]"):
+            continue
+        return True
+    return False
 
 
 def check_evidence(

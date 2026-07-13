@@ -1,0 +1,1059 @@
+{
+  "schema_version": 1,
+  "resource": {
+    "provider": "Udemy",
+    "resource_type": "course",
+    "title": "Fusion 360 Beginners Course",
+    "instructor": "Jaiprakash Pandey",
+    "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true",
+    "access": "external",
+    "local_content": false,
+    "extracted_at": "2026-07-13T02:13:48.375Z"
+  },
+  "operator_mapping": {
+    "stat": "INT",
+    "hierarchy": [
+      "Robotics",
+      "Mechanical Design",
+      "CAD"
+    ],
+    "competency_id": "int.robotics.mechanical_design.cad"
+  },
+  "course": {
+    "difficulty": "Beginner",
+    "section_count": 12,
+    "lecture_count": 130,
+    "sections": [
+      {
+        "id": "section_01",
+        "number": 1,
+        "title": "Introduction to Fusion 360",
+        "slug": "introduction_to_fusion_360",
+        "expected_item_count": 10,
+        "extracted_item_count": 14,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Course Introduction",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Resources",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Fusion 360 student version",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Fusion 360 Tips",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Fusion files.zip",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Introduction to Fusion 360",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Getting familiar with User Interface",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Navigation tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Display and visual settings",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_010",
+            "title": "Drawing units and preferences",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_011",
+            "title": "Selection tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_012",
+            "title": "Understanding parametric nature",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_013",
+            "title": "Practice Exercise",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_014",
+            "title": "Quiz 1: Introduction to fusion 360 Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_02",
+        "number": 2,
+        "title": "Making Basic Sketches",
+        "slug": "making_basic_sketches",
+        "expected_item_count": 9,
+        "extracted_item_count": 9,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Workspace Update",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Making basic sketches",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Making rectangle and circle",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Understanding geometric constraints",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Using trim, extend and Offset tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Using fillet and Mirror tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Making Arc and ellipse",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Practice Exercise",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Quiz 2: Making basic sketches Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_03",
+        "number": 3,
+        "title": "Basic 3D Modelling",
+        "slug": "basic_3d_modelling",
+        "expected_item_count": 11,
+        "extracted_item_count": 11,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Making solid primitives",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Using extrude tool",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Using revolve tool",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Making fillet and chamfer",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Using shell, Mirror and Draft tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Presspull tool",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Using sweep tool",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Understanding Loft tool",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Move and copy",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_010",
+            "title": "Practice Exercise",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_011",
+            "title": "Quiz 3: Basic 3D modelling Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_04",
+        "number": 4,
+        "title": "Sketch features",
+        "slug": "sketch_features",
+        "expected_item_count": 9,
+        "extracted_item_count": 9,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Making Polygons",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Understanding splines and Attaching canvas",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Break and point tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Slot and Conic curves",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Text and Sketch scale tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Circular and rectangular sketch pattern",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Adding Parameters to sketches",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Practice Exercise",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Quiz 4: Sketch Features Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_05",
+        "number": 5,
+        "title": "Construction and Measurement",
+        "slug": "construction_and_measurement",
+        "expected_item_count": 8,
+        "extracted_item_count": 8,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Making construction Planes",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Making construction axis and point",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Taking measurements",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Interference and section analysis",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Understanding G0, G1, G2 and G3 continuity",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Zebra and Draft analysis",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Practice Exercise",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Quiz 5: Construction and Measurement Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_06",
+        "number": 6,
+        "title": "Modelling Features",
+        "slug": "modelling_features",
+        "expected_item_count": 9,
+        "extracted_item_count": 9,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Boolean operations using Combine tool",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Making stiffeners using Rib and Web tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Making hole",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Making thread",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Making Rectangular, circular and path patterns",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Scale and replace face tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Face, Body and Silhouette split",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Practice Exercise",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Quiz 6: Modelling Features Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_07",
+        "number": 7,
+        "title": "Advance Modelling tools",
+        "slug": "advance_modelling_tools",
+        "expected_item_count": 11,
+        "extracted_item_count": 13,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Boundary fill",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Project and Project to surface tools",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Include 3D geometry and Intersect tool",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Intersection curve",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Align tool",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Applying Appearance and Physical material",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Attaching decals",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Inserting external drawings and parts",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Inserting components",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_010",
+            "title": "Practice Exercise",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_011",
+            "title": "Resources",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_012",
+            "title": "7 advance modeling tools.zip",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_013",
+            "title": "Quiz 7: Advance Modelling tools Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_08",
+        "number": 8,
+        "title": "Working with Assemblies",
+        "slug": "working_with_assemblies",
+        "expected_item_count": 16,
+        "extracted_item_count": 16,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Top down and bottom up assembly",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Bodies and components",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Importing components for assembly",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Adding Revolute joint",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Adding Cylindrical joint",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Adding Slider joint",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Adding multiple joints on component",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Joint origin and Rigid joint",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Finishing Backhoe assembly",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_010",
+            "title": "Adding joint limit",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_011",
+            "title": "Adding Planar joint",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_012",
+            "title": "Making contact set",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_013",
+            "title": "Adding Ball joint",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_014",
+            "title": "Adding Pin and Slot joint",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_015",
+            "title": "Practice Exercise",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_016",
+            "title": "Quiz 8: Working with assemblies quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_09",
+        "number": 9,
+        "title": "Drawing from Component and assemblies",
+        "slug": "drawing_from_component_and_assemblies",
+        "expected_item_count": 15,
+        "extracted_item_count": 15,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Starting drawing from component",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Changing angle of projection",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Adding Geometries in drawing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Adding Dimensions",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Modifying Dimensions",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Adding text and symbols",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Adding Section and Detail view",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Making exploded view",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Creating exploded view drawing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_010",
+            "title": "Making different assembly views",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_011",
+            "title": "Creating simple Drawing Template",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_012",
+            "title": "Making title block",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_013",
+            "title": "Creating smart templates",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_014",
+            "title": "Generating output and printing drawing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_015",
+            "title": "Quiz 9: Drawing in Fusion 360 Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_10",
+        "number": 10,
+        "title": "Rendering and making textures",
+        "slug": "rendering_and_making_textures",
+        "expected_item_count": 13,
+        "extracted_item_count": 13,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Overview of rendering workspace",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Physical material and appearance",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Applying basic materials",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Applying advance materials",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Setting the scene",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Adding decals",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Local rendering",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Cloud rendering and turntable animation",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Texture map control",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_010",
+            "title": "Creating and modifying basic materials",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_011",
+            "title": "Creating advance materials",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_012",
+            "title": "Practice project",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_013",
+            "title": "Quiz 10: Rendering and making textures Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_11",
+        "number": 11,
+        "title": "Animation and motion studies",
+        "slug": "animation_and_motion_studies",
+        "expected_item_count": 12,
+        "extracted_item_count": 12,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Overview of animation workspace",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_002",
+            "title": "Recording view",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_003",
+            "title": "Transform simple components",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_004",
+            "title": "Complex transformation",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_005",
+            "title": "Exploding assemblies manually",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_006",
+            "title": "Auto-explode assembly",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_007",
+            "title": "Adding annotation and restore home",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_008",
+            "title": "Animating motion link",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_009",
+            "title": "Creating motion study",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_010",
+            "title": "Making animated videos",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_011",
+            "title": "Practice project",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          },
+          {
+            "id": "lecture_012",
+            "title": "Quiz 11: Animation and motion study Quiz",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "quiz"
+          }
+        ]
+      },
+      {
+        "id": "section_12",
+        "number": 12,
+        "title": "Final Notes",
+        "slug": "final_notes",
+        "expected_item_count": 1,
+        "extracted_item_count": 1,
+        "lectures": [
+          {
+            "id": "lecture_001",
+            "title": "Final notes",
+            "duration": null,
+            "duration_minutes": null,
+            "source_type": "video"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "events": [
+        {
+            "event_type": "unit_completed",
+            "track_id": "cad_fusion_360_beginners_course",
+            "track_title": "Fusion 360 Beginners Course",
+            "stat": "INT",
+            "hierarchy": [
+                "Robotics",
+                "Mechanical Design",
+                "CAD"
+            ],
+            "skill": "CAD",
+            "unit_id": "section_01_unit_001_course_introduction",
+            "unit_title": "Section 1: Introduction to Fusion 360 - Course Introduction",
+            "unit_type": "video",
+            "xp_awarded": 40,
+            "completed_at": "2026-07-13T03:15:46.596524+00:00"
+        }
+    ]
+}

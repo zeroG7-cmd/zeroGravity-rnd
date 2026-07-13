@@ -33,6 +33,25 @@
             "track_path": "learning/tracks/int/software_engineering/programming_languages/python/30_days_of_python",
             "import_method": "manual",
             "date_added": "2026-07-10T00:00:00+00:00"
+        },
+        {
+            "id": "cad_fusion_360_beginners_course",
+            "title": "Fusion 360 Beginners Course",
+            "provider": "Udemy",
+            "instructor": "Jaiprakash Pandey",
+            "stat": "INT",
+            "hierarchy": [
+                "Robotics",
+                "Mechanical Design",
+                "CAD"
+            ],
+            "skill": "CAD",
+            "difficulty": "Beginner",
+            "resource": "learning/resources/udemy/cad/fusion_360_beginners_course",
+            "manifest": "learning/resources/udemy/cad/fusion_360_beginners_course/fusion_360_beginners_course.json",
+            "track_path": "learning/tracks/int/robotics/mechanical_design/cad/fusion_360_beginners_course",
+            "import_method": "manifest",
+            "date_added": "2026-07-13T03:13:51.061077+00:00"
         }
     ]
 }

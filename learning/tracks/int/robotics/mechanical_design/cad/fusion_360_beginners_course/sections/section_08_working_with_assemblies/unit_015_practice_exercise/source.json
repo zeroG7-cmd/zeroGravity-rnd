@@ -1,0 +1,12 @@
+{
+    "source_type": "video",
+    "provider": "Udemy",
+    "instructor": "Jaiprakash Pandey",
+    "manifest": "learning/resources/udemy/cad/fusion_360_beginners_course/fusion_360_beginners_course.json",
+    "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true",
+    "section_number": 8,
+    "section_title": "Working with Assemblies",
+    "unit_number": 15,
+    "duration": null,
+    "duration_minutes": null
+}

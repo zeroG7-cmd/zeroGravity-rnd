@@ -438,8 +438,8 @@
         "int.robotics.mechanical_design.cad": {
             "id": "int.robotics.mechanical_design.cad",
             "name": "CAD",
-            "xp": 0,
-            "level": 0,
+            "xp": 40,
+            "level": 1,
             "shared": false
         },
         "int.robotics.mechanical_design.dynamics": {

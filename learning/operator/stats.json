@@ -10,7 +10,7 @@
         "INT": {
             "name": "INT",
             "node_type": "main_stat",
-            "average_level": 0.0,
+            "average_level": 0.01,
             "children": {
                 "Software Engineering": {
                     "name": "Software Engineering",
@@ -437,12 +437,12 @@
                 "Robotics": {
                     "name": "Robotics",
                     "node_type": "parent",
-                    "average_level": 0.0,
+                    "average_level": 0.05,
                     "children": {
                         "Mechanical Design": {
                             "name": "Mechanical Design",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.25,
                             "children": {
                                 "Statics": {
                                     "name": "Statics",
@@ -473,8 +473,8 @@
                                     "node_type": "skill",
                                     "competency_id": "int.robotics.mechanical_design.cad",
                                     "shared": false,
-                                    "xp": 0,
-                                    "level": 0
+                                    "xp": 40,
+                                    "level": 1
                                 }
                             }
                         },
@@ -1115,8 +1115,8 @@
             "children": {}
         }
     },
-    "total_xp": 0,
-    "level": 0,
+    "total_xp": 40,
+    "level": 1,
     "competency_count": 106,
     "migrated_competencies": []
 }
