@@ -1,0 +1,60 @@
+{
+    "schema_version": 1,
+    "providers": {
+        "bootdev": {
+            "name": "Boot.dev",
+            "mode": "live_bridge",
+            "supports": [
+                "manifest",
+                "historical_progress",
+                "live_events"
+            ],
+            "status": "connected"
+        },
+        "udemy": {
+            "name": "Udemy",
+            "mode": "manifest_snapshot",
+            "supports": [
+                "manifest",
+                "progress_snapshot"
+            ],
+            "status": "ready"
+        },
+        "github": {
+            "name": "GitHub",
+            "mode": "resource_scan",
+            "supports": [
+                "repository_scan",
+                "manifest"
+            ],
+            "status": "ready"
+        },
+        "youtube": {
+            "name": "YouTube",
+            "mode": "manifest_snapshot",
+            "supports": [
+                "playlist_manifest",
+                "manual_progress"
+            ],
+            "status": "ready"
+        },
+        "coursera": {
+            "name": "Coursera",
+            "mode": "manifest_snapshot",
+            "supports": [
+                "manifest",
+                "progress_snapshot"
+            ],
+            "status": "ready"
+        },
+        "manual": {
+            "name": "Manual / Other",
+            "mode": "manual",
+            "supports": [
+                "manifest",
+                "manual_progress"
+            ],
+            "status": "ready"
+        }
+    }
+}

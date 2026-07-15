@@ -1,0 +1,713 @@
+{
+    "schema_version": 2,
+    "terminology": {
+        "tree_leaf": "capability",
+        "legacy_alias": "competency",
+        "child_node": "concept"
+    },
+    "capabilities": {
+        "int.software_engineering.programming_languages.python": {
+            "id": "int.software_engineering.programming_languages.python",
+            "name": "Python",
+            "slug": "python",
+            "description": "Build reliable software and automation with the Python language.",
+            "concepts": {
+                "python.variables": {
+                    "name": "Variables",
+                    "description": "Names, assignment and state.",
+                    "prerequisites": []
+                },
+                "python.data_types": {
+                    "name": "Data Types",
+                    "description": "Numbers, strings, booleans and type conversion.",
+                    "prerequisites": [
+                        "python.variables"
+                    ]
+                },
+                "python.conditionals": {
+                    "name": "Conditionals",
+                    "description": "Branching logic with if, elif and else.",
+                    "prerequisites": [
+                        "python.data_types"
+                    ]
+                },
+                "python.loops": {
+                    "name": "Loops",
+                    "description": "Iteration with for and while.",
+                    "prerequisites": [
+                        "python.conditionals"
+                    ]
+                },
+                "python.collections": {
+                    "name": "Collections",
+                    "description": "Lists, tuples, dictionaries and sets.",
+                    "prerequisites": [
+                        "python.data_types"
+                    ]
+                },
+                "python.functions": {
+                    "name": "Functions",
+                    "description": "Reusable behaviour, parameters and return values.",
+                    "prerequisites": [
+                        "python.variables",
+                        "python.conditionals"
+                    ]
+                },
+                "python.modules": {
+                    "name": "Modules & Packages",
+                    "description": "Organise and reuse Python code.",
+                    "prerequisites": [
+                        "python.functions"
+                    ]
+                },
+                "python.exceptions": {
+                    "name": "Exceptions",
+                    "description": "Detect, raise and handle runtime failures.",
+                    "prerequisites": [
+                        "python.conditionals",
+                        "python.functions"
+                    ]
+                },
+                "python.file_io": {
+                    "name": "File I/O",
+                    "description": "Read and write persistent files safely.",
+                    "prerequisites": [
+                        "python.functions",
+                        "python.exceptions"
+                    ]
+                },
+                "python.oop": {
+                    "name": "Object-Oriented Programming",
+                    "description": "Classes, objects, methods and composition.",
+                    "prerequisites": [
+                        "python.functions",
+                        "python.collections"
+                    ]
+                },
+                "python.testing": {
+                    "name": "Testing",
+                    "description": "Verify behaviour with repeatable tests.",
+                    "prerequisites": [
+                        "python.functions",
+                        "python.exceptions"
+                    ]
+                },
+                "python.debugging": {
+                    "name": "Debugging",
+                    "description": "Inspect failures and reason about program state.",
+                    "prerequisites": [
+                        "python.conditionals",
+                        "python.functions"
+                    ]
+                },
+                "python.comprehensions": {
+                    "name": "Comprehensions",
+                    "description": "Concise transformations of collections.",
+                    "prerequisites": [
+                        "python.loops",
+                        "python.collections"
+                    ]
+                },
+                "python.decorators": {
+                    "name": "Decorators",
+                    "description": "Wrap and extend callable behaviour.",
+                    "prerequisites": [
+                        "python.functions",
+                        "python.modules"
+                    ]
+                },
+                "python.generators": {
+                    "name": "Generators",
+                    "description": "Lazy iteration with yield.",
+                    "prerequisites": [
+                        "python.functions",
+                        "python.loops"
+                    ]
+                },
+                "python.asyncio": {
+                    "name": "AsyncIO",
+                    "description": "Concurrent I/O with async and await.",
+                    "prerequisites": [
+                        "python.functions",
+                        "python.exceptions",
+                        "python.modules"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "http",
+                    "label": "HTTP"
+                },
+                {
+                    "capability_id": "int.software_engineering.apis_and_backend.json",
+                    "label": "JSON"
+                },
+                {
+                    "capability_id": "int.software_engineering.apis_and_backend.rest",
+                    "label": "REST APIs"
+                },
+                {
+                    "capability_id": "int.data_and_databases.database_systems.sqlite",
+                    "label": "SQLite"
+                }
+            ]
+        },
+        "int.robotics.mechanical_design.cad": {
+            "id": "int.robotics.mechanical_design.cad",
+            "name": "CAD",
+            "slug": "cad",
+            "description": "Design precise digital parts, assemblies, drawings and manufacturing-ready models.",
+            "concepts": {
+                "cad.sketching": {
+                    "name": "Sketching",
+                    "description": "Create controlled 2D profiles with dimensions and constraints.",
+                    "prerequisites": []
+                },
+                "cad.design_intent": {
+                    "name": "Design Intent",
+                    "description": "Build models that update predictably when requirements change.",
+                    "prerequisites": [
+                        "cad.sketching"
+                    ]
+                },
+                "cad.part_modelling": {
+                    "name": "Part Modelling",
+                    "description": "Create solid parts using extrude, revolve, sweep, loft and feature operations.",
+                    "prerequisites": [
+                        "cad.sketching"
+                    ]
+                },
+                "cad.parametric_design": {
+                    "name": "Parametric Design",
+                    "description": "Drive geometry using parameters, relationships and feature history.",
+                    "prerequisites": [
+                        "cad.design_intent",
+                        "cad.part_modelling"
+                    ]
+                },
+                "cad.assemblies": {
+                    "name": "Assemblies",
+                    "description": "Combine components using joints, mates and degrees of freedom.",
+                    "prerequisites": [
+                        "cad.part_modelling"
+                    ]
+                },
+                "cad.interference": {
+                    "name": "Interference & Motion",
+                    "description": "Inspect clearances, collisions and mechanical movement.",
+                    "prerequisites": [
+                        "cad.assemblies"
+                    ]
+                },
+                "cad.technical_drawings": {
+                    "name": "Technical Drawings",
+                    "description": "Communicate designs with orthographic, section and detail views.",
+                    "prerequisites": [
+                        "cad.part_modelling"
+                    ]
+                },
+                "cad.tolerancing": {
+                    "name": "Dimensions & Tolerances",
+                    "description": "Specify fit, allowable variation and manufacturing intent.",
+                    "prerequisites": [
+                        "cad.technical_drawings"
+                    ]
+                },
+                "cad.surface_modelling": {
+                    "name": "Surface Modelling",
+                    "description": "Create and control complex curved forms.",
+                    "prerequisites": [
+                        "cad.part_modelling"
+                    ]
+                },
+                "cad.rendering": {
+                    "name": "Rendering & Materials",
+                    "description": "Apply materials, lighting and presentation-quality visualisation.",
+                    "prerequisites": [
+                        "cad.part_modelling"
+                    ]
+                },
+                "cad.animation": {
+                    "name": "Animation & Exploded Views",
+                    "description": "Present motion, assembly sequence and exploded arrangements.",
+                    "prerequisites": [
+                        "cad.assemblies"
+                    ]
+                },
+                "cad.manufacturing": {
+                    "name": "Manufacturing Preparation",
+                    "description": "Prepare models for 3D printing, CAM and fabrication.",
+                    "prerequisites": [
+                        "cad.part_modelling",
+                        "cad.tolerancing"
+                    ]
+                },
+                "cad.data_exchange": {
+                    "name": "CAD Data Exchange",
+                    "description": "Use STEP, STL and native formats without losing design intent.",
+                    "prerequisites": [
+                        "cad.part_modelling"
+                    ]
+                },
+                "cad.version_control": {
+                    "name": "Design Data Management",
+                    "description": "Organise revisions, components and released design files.",
+                    "prerequisites": [
+                        "cad.data_exchange"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "int.robotics.mechanical_design.statics",
+                    "label": "Statics"
+                },
+                {
+                    "capability_id": "int.robotics.mechanical_design.dynamics",
+                    "label": "Dynamics"
+                },
+                {
+                    "capability_id": "int.robotics.mechatronics",
+                    "label": "Mechatronics"
+                },
+                {
+                    "capability_id": "int.software_engineering.version_control.git",
+                    "label": "Version Control"
+                }
+            ]
+        },
+        "int.software_engineering.apis_and_backend.rest_apis": {
+            "id": "int.software_engineering.apis_and_backend.rest_apis",
+            "name": "REST APIs",
+            "slug": "rest-apis",
+            "description": "Design and implement reliable resource-oriented web APIs.",
+            "concepts": {
+                "rest.resources": {
+                    "name": "Resource Modelling",
+                    "description": "Model domain resources and representations.",
+                    "prerequisites": []
+                },
+                "rest.endpoints": {
+                    "name": "Endpoints & URI Design",
+                    "description": "Design clear routes and identifiers.",
+                    "prerequisites": [
+                        "rest.resources"
+                    ]
+                },
+                "rest.methods": {
+                    "name": "HTTP Methods",
+                    "description": "Use GET, POST, PUT, PATCH and DELETE correctly.",
+                    "prerequisites": [
+                        "rest.endpoints"
+                    ]
+                },
+                "rest.status_codes": {
+                    "name": "Status Codes",
+                    "description": "Communicate outcomes with appropriate HTTP status codes.",
+                    "prerequisites": [
+                        "rest.methods"
+                    ]
+                },
+                "rest.requests": {
+                    "name": "Request Handling",
+                    "description": "Headers, parameters and request bodies.",
+                    "prerequisites": [
+                        "rest.methods"
+                    ]
+                },
+                "rest.responses": {
+                    "name": "Response Design",
+                    "description": "Representations, headers and consistent response bodies.",
+                    "prerequisites": [
+                        "rest.status_codes"
+                    ]
+                },
+                "rest.validation": {
+                    "name": "Validation",
+                    "description": "Validate input and report useful errors.",
+                    "prerequisites": [
+                        "rest.requests"
+                    ]
+                },
+                "rest.errors": {
+                    "name": "Error Handling",
+                    "description": "Design predictable error responses.",
+                    "prerequisites": [
+                        "rest.validation"
+                    ]
+                },
+                "rest.statelessness": {
+                    "name": "Statelessness",
+                    "description": "Keep requests self-contained.",
+                    "prerequisites": [
+                        "rest.requests"
+                    ]
+                },
+                "rest.idempotency": {
+                    "name": "Idempotency",
+                    "description": "Reason about repeatable requests.",
+                    "prerequisites": [
+                        "rest.methods"
+                    ]
+                },
+                "rest.pagination": {
+                    "name": "Pagination & Filtering",
+                    "description": "Expose large collections safely.",
+                    "prerequisites": [
+                        "rest.responses"
+                    ]
+                },
+                "rest.versioning": {
+                    "name": "Versioning",
+                    "description": "Evolve APIs without breaking clients.",
+                    "prerequisites": [
+                        "rest.endpoints"
+                    ]
+                },
+                "rest.documentation": {
+                    "name": "API Documentation",
+                    "description": "Document contracts with examples and schemas.",
+                    "prerequisites": [
+                        "rest.responses"
+                    ]
+                },
+                "rest.testing": {
+                    "name": "API Testing",
+                    "description": "Verify endpoints, contracts and failure paths.",
+                    "prerequisites": [
+                        "rest.errors"
+                    ]
+                }
+            },
+            "relationships": [
+                "http",
+                "json",
+                "authentication",
+                "int.software_engineering.apis_and_backend.fastapi",
+                "int.software_engineering.apis_and_backend.flask",
+                "int.software_engineering.testing.integration_testing"
+            ]
+        },
+        "int.data_and_databases.sql.queries": {
+            "id": "int.data_and_databases.sql.queries",
+            "name": "SQL",
+            "slug": "sql",
+            "description": "Query, modify and reason about relational data.",
+            "concepts": {
+                "sql.tables": {
+                    "name": "Tables & Rows",
+                    "description": "Understand relational structures.",
+                    "prerequisites": []
+                },
+                "sql.select": {
+                    "name": "SELECT Queries",
+                    "description": "Retrieve columns and rows.",
+                    "prerequisites": [
+                        "sql.tables"
+                    ]
+                },
+                "sql.filtering": {
+                    "name": "Filtering",
+                    "description": "Filter data with predicates.",
+                    "prerequisites": [
+                        "sql.select"
+                    ]
+                },
+                "sql.sorting": {
+                    "name": "Sorting & Limiting",
+                    "description": "Order and constrain result sets.",
+                    "prerequisites": [
+                        "sql.select"
+                    ]
+                },
+                "sql.aggregation": {
+                    "name": "Aggregation",
+                    "description": "Summarise data with aggregate functions.",
+                    "prerequisites": [
+                        "sql.select"
+                    ]
+                },
+                "sql.grouping": {
+                    "name": "GROUP BY",
+                    "description": "Aggregate data by groups.",
+                    "prerequisites": [
+                        "sql.aggregation"
+                    ]
+                },
+                "sql.joins": {
+                    "name": "Joins",
+                    "description": "Combine related tables.",
+                    "prerequisites": [
+                        "sql.tables",
+                        "sql.select"
+                    ]
+                },
+                "sql.subqueries": {
+                    "name": "Subqueries",
+                    "description": "Compose queries inside queries.",
+                    "prerequisites": [
+                        "sql.filtering",
+                        "sql.joins"
+                    ]
+                },
+                "sql.modification": {
+                    "name": "Data Modification",
+                    "description": "INSERT, UPDATE and DELETE safely.",
+                    "prerequisites": [
+                        "sql.tables"
+                    ]
+                },
+                "sql.constraints": {
+                    "name": "Constraints",
+                    "description": "Protect data integrity.",
+                    "prerequisites": [
+                        "sql.tables"
+                    ]
+                },
+                "sql.normalization": {
+                    "name": "Normalization",
+                    "description": "Structure relational schemas to reduce anomalies.",
+                    "prerequisites": [
+                        "sql.constraints"
+                    ]
+                },
+                "sql.transactions": {
+                    "name": "Transactions",
+                    "description": "Group changes atomically.",
+                    "prerequisites": [
+                        "sql.modification"
+                    ]
+                },
+                "sql.indexes": {
+                    "name": "Indexes",
+                    "description": "Improve lookup performance with trade-offs.",
+                    "prerequisites": [
+                        "sql.filtering"
+                    ]
+                },
+                "sql.views": {
+                    "name": "Views",
+                    "description": "Create reusable virtual tables.",
+                    "prerequisites": [
+                        "sql.select"
+                    ]
+                },
+                "sql.query_planning": {
+                    "name": "Query Planning",
+                    "description": "Interpret and improve execution plans.",
+                    "prerequisites": [
+                        "sql.indexes",
+                        "sql.joins"
+                    ]
+                }
+            },
+            "relationships": [
+                "int.data_and_databases.database_systems.sqlite",
+                "int.data_and_databases.database_systems.postgresql"
+            ]
+        },
+        "int.computer_science.operating_systems.linux": {
+            "id": "int.computer_science.operating_systems.linux",
+            "name": "Linux",
+            "slug": "linux",
+            "description": "Operate, automate and troubleshoot Linux systems.",
+            "concepts": {
+                "linux.filesystem": {
+                    "name": "Filesystem & Paths",
+                    "description": "Navigate and understand the Linux filesystem.",
+                    "prerequisites": []
+                },
+                "linux.shell": {
+                    "name": "Shell Navigation",
+                    "description": "Use the command line efficiently.",
+                    "prerequisites": [
+                        "linux.filesystem"
+                    ]
+                },
+                "linux.files": {
+                    "name": "Files & Directories",
+                    "description": "Create, copy, move and remove filesystem objects.",
+                    "prerequisites": [
+                        "linux.shell"
+                    ]
+                },
+                "linux.permissions": {
+                    "name": "Permissions",
+                    "description": "Understand ownership and access modes.",
+                    "prerequisites": [
+                        "linux.files"
+                    ]
+                },
+                "linux.users": {
+                    "name": "Users & Groups",
+                    "description": "Manage identities and privileges.",
+                    "prerequisites": [
+                        "linux.permissions"
+                    ]
+                },
+                "linux.processes": {
+                    "name": "Processes",
+                    "description": "Inspect and control running programs.",
+                    "prerequisites": [
+                        "linux.shell"
+                    ]
+                },
+                "linux.packages": {
+                    "name": "Package Management",
+                    "description": "Install and update software safely.",
+                    "prerequisites": [
+                        "linux.shell"
+                    ]
+                },
+                "linux.environment": {
+                    "name": "Environment Variables",
+                    "description": "Configure process environments and paths.",
+                    "prerequisites": [
+                        "linux.shell"
+                    ]
+                },
+                "linux.pipes": {
+                    "name": "Pipes & Redirection",
+                    "description": "Compose commands and redirect streams.",
+                    "prerequisites": [
+                        "linux.shell"
+                    ]
+                },
+                "linux.bash": {
+                    "name": "Bash Scripting",
+                    "description": "Automate repeatable shell workflows.",
+                    "prerequisites": [
+                        "linux.pipes",
+                        "linux.environment"
+                    ]
+                },
+                "linux.ssh": {
+                    "name": "SSH",
+                    "description": "Access and manage remote systems securely.",
+                    "prerequisites": [
+                        "linux.permissions"
+                    ]
+                },
+                "linux.services": {
+                    "name": "Services",
+                    "description": "Manage background services and startup.",
+                    "prerequisites": [
+                        "linux.processes"
+                    ]
+                },
+                "linux.logs": {
+                    "name": "System Logs",
+                    "description": "Inspect logs for diagnosis and audit.",
+                    "prerequisites": [
+                        "linux.processes"
+                    ]
+                },
+                "linux.networking": {
+                    "name": "Networking Tools",
+                    "description": "Diagnose connectivity from Linux.",
+                    "prerequisites": [
+                        "linux.shell"
+                    ]
+                }
+            },
+            "relationships": [
+                "int.networking.remote_access.ssh",
+                "int.software_engineering.programming_languages.python"
+            ]
+        }
+    },
+    "concept_progress": {
+        "python.variables": {
+            "xp": 326,
+            "level": 4,
+            "status": "Developing",
+            "last_mapping_confidence": "high",
+            "last_source": "bootdev_reconciliation"
+        },
+        "python.data_types": {
+            "xp": 243,
+            "level": 3,
+            "status": "Developing",
+            "last_mapping_confidence": "high",
+            "last_source": "bootdev_historical_import"
+        },
+        "python.debugging": {
+            "xp": 56,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "high",
+            "last_source": "bootdev_reconciliation"
+        },
+        "python.functions": {
+            "xp": 255,
+            "level": 3,
+            "status": "Developing",
+            "last_mapping_confidence": "high",
+            "last_source": "bootdev_reconciliation"
+        },
+        "linux.shell": {
+            "xp": 99,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "bootdev_historical_import"
+        },
+        "linux.environment": {
+            "xp": 36,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "bootdev_historical_import"
+        },
+        "linux.files": {
+            "xp": 81,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "provider_event"
+        },
+        "sql.select": {
+            "xp": 63,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "bootdev_historical_import"
+        },
+        "sql.tables": {
+            "xp": 71,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "bootdev_historical_import"
+        },
+        "sql.filtering": {
+            "xp": 28,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "bootdev_historical_import"
+        },
+        "sql.constraints": {
+            "xp": 10,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "bootdev_historical_import"
+        },
+        "sql.modification": {
+            "xp": 8,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "bootdev_historical_import"
+        },
+        "linux.filesystem": {
+            "xp": 44,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "provider_event"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "schema_version": 3,
+    "resource": {
+        "id": "provider_course_id",
+        "title": "Course Title",
+        "provider": "Provider",
+        "source_url": ""
+    },
+    "operator_mapping": {
+        "stat": "INT",
+        "hierarchy": ["Software Engineering", "Programming Languages", "Python"],
+        "competency_id": "int.software_engineering.programming_languages.python",
+        "capability_id": "int.software_engineering.programming_languages.python",
+        "mapping_confidence": "low",
+        "default_competency_awards": [
+            {"competency_id": "int.software_engineering.programming_languages.python", "weight": 1.0}
+        ],
+        "default_concept_awards": [],
+        "section_concept_awards": {
+            "1": {
+                "mapping_confidence": "medium",
+                "concept_awards": [
+                    {"concept_id": "python.variables", "weight": 0.5},
+                    {"concept_id": "python.data_types", "weight": 0.5}
+                ]
+            }
+        }
+    },
+    "course": {
+        "difficulty": "Beginner",
+        "sections": [
+            {
+                "title": "Foundations",
+                "lectures": [
+                    {
+                        "id": "lesson_001",
+                        "title": "Variables",
+                        "source_type": "exercise",
+                        "mapping_confidence": "high",
+                        "concept_awards": [
+                            {"concept_id": "python.variables", "weight": 0.7},
+                            {"concept_id": "python.data_types", "weight": 0.3}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

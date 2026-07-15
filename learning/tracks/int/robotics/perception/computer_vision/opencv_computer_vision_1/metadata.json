@@ -174,7 +174,13 @@
             "path": "week_04/color_transformations",
             "source": "week4_image_enhancement_and_filtering/color_transformations",
             "source_type": "script_topic",
-            "source_extension": null
+            "source_extension": null,
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.apis_and_backend.database_integration",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "week_04_image_filtering",
@@ -222,7 +228,13 @@
             "path": "week_05/hough_transform",
             "source": "week5_advanced_image_processing_and_computational_photography/notebooks/Hough_Transform.ipynb",
             "source_type": "notebook",
-            "source_extension": ".ipynb"
+            "source_extension": ".ipynb",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.apis_and_backend.database_integration",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "week_05_image_inpainting",
@@ -278,7 +290,13 @@
             "path": "week_07/geometric_transform",
             "source": "week7_geometric_transformations_and_image_features/notebooks/Geometric_Transform.ipynb",
             "source_type": "notebook",
-            "source_extension": ".ipynb"
+            "source_extension": ".ipynb",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.apis_and_backend.database_integration",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "week_07_image_features_orb",
@@ -310,7 +328,13 @@
             "path": "week_08/image_classification_hog_svm",
             "source": "week8_image_recognition/notebooks/Image_Classification_HOG_SVM.ipynb",
             "source_type": "notebook",
-            "source_extension": ".ipynb"
+            "source_extension": ".ipynb",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.programming_languages.python",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "week_08_object_detection_using_hog_svm",
@@ -350,7 +374,13 @@
             "path": "week_09/opencv_object_tracking_api",
             "source": "week9_video_analysis/scripts/OpenCV_Object_Tracking_API.ipynb",
             "source_type": "notebook",
-            "source_extension": ".ipynb"
+            "source_extension": ".ipynb",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.apis_and_backend.rest_apis",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "week_09_tracking_multiple_objects",
@@ -390,7 +420,13 @@
             "path": "week_10/dl_image_classification",
             "source": "week10_deep_learning_in_opencv/notebooks/DL_Image_Classification.ipynb",
             "source_type": "notebook",
-            "source_extension": ".ipynb"
+            "source_extension": ".ipynb",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.programming_languages.python",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "week_10_dl_object_detection",

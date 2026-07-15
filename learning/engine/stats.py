@@ -13,6 +13,8 @@ import json
 from pathlib import Path
 from typing import Any, Iterable
 
+from level import calculate_level, get_level_progress
+
 LEARNING_ROOT = Path("learning")
 SKILL_TREE_PATH = LEARNING_ROOT / "config" / "skill_tree.json"
 COMPETENCIES_PATH = LEARNING_ROOT / "config" / "competencies.json"
@@ -40,15 +42,13 @@ def save_json(file_path: Path, data: Any) -> None:
 
 
 def calculate_skill_level(xp: int) -> int:
-    if xp <= 0:
-        return 0
-    return (xp // 100) + 1
+    """Compatibility wrapper around the central progressive level engine."""
+    return calculate_level(xp)
 
 
 def calculate_operator_level(total_xp: int) -> int:
-    if total_xp <= 0:
-        return 0
-    return (total_xp // 100) + 1
+    """Compatibility wrapper around the central progressive level engine."""
+    return calculate_level(total_xp)
 
 
 def load_skill_tree() -> dict[str, Any]:
@@ -128,14 +128,18 @@ def resolve_competency_node(
         )
 
     xp = int(competency.get("xp", 0))
-    level = calculate_skill_level(xp)
+    progress = get_level_progress(xp)
     return {
         "name": str(tree_node.get("name", competency.get("name", competency_id))),
         "node_type": "skill",
         "competency_id": competency_id,
         "shared": bool(tree_node.get("shared", competency.get("shared", False))),
         "xp": xp,
-        "level": level,
+        "level": progress["level"],
+        "level_progress": progress["progress_percentage"],
+        "xp_into_level": progress["xp_into_level"],
+        "xp_to_next_level": progress["xp_to_next_level"],
+        "next_level_xp": progress["next_level_xp"],
     }
 
 
@@ -374,11 +378,17 @@ def build_operator_stats() -> dict[str, Any]:
     referenced_ids = collect_referenced_competency_ids(tree_stats)
     total_xp = calculate_total_xp(referenced_ids, registry)
 
+    operator_progress = get_level_progress(total_xp)
     result = {
-        "schema_version": 3,
+        "schema_version": 4,
         "stats": generated_stats,
         "total_xp": total_xp,
-        "level": calculate_operator_level(total_xp),
+        "level": operator_progress["level"],
+        "level_progress": operator_progress["progress_percentage"],
+        "xp_into_level": operator_progress["xp_into_level"],
+        "xp_to_next_level": operator_progress["xp_to_next_level"],
+        "next_level_xp": operator_progress["next_level_xp"],
+        "level_xp_required": operator_progress["level_xp_required"],
         "competency_count": len(referenced_ids),
         "migrated_competencies": migrated_progress,
     }
@@ -418,10 +428,62 @@ def find_leaf_skill(
     return current_node
 
 
+def update_operator_competencies(
+    xp_distribution: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """Award one completion across any number of competencies atomically."""
+    if not isinstance(xp_distribution, list) or not xp_distribution:
+        raise ValueError("XP distribution must be a non-empty list.")
+
+    competencies_data = load_competencies()
+    registry = competencies_data["competencies"]
+    merged: dict[str, int] = {}
+
+    for award in xp_distribution:
+        if not isinstance(award, dict):
+            raise ValueError("Every XP distribution entry must be an object.")
+
+        competency_id = str(award.get("competency_id", "")).strip()
+        if not competency_id:
+            raise ValueError("XP distribution entry has no competency_id.")
+
+        try:
+            xp_award = int(award.get("xp", 0))
+        except (TypeError, ValueError) as error:
+            raise ValueError(
+                f"Invalid XP award for competency: {competency_id}"
+            ) from error
+
+        if xp_award < 0:
+            raise ValueError("XP awards cannot be negative.")
+
+        competency = registry.get(competency_id)
+        if not isinstance(competency, dict):
+            raise KeyError(
+                "Competency not found in competencies.json:\n"
+                f"{competency_id}\n\nRun sync_skill_tree.py again."
+            )
+
+        merged[competency_id] = merged.get(competency_id, 0) + xp_award
+
+    for competency_id, xp_award in merged.items():
+        competency = registry[competency_id]
+        new_xp = int(competency.get("xp", 0)) + xp_award
+        progress = get_level_progress(new_xp)
+        competency["xp"] = new_xp
+        competency["level"] = progress["level"]
+        competency["level_progress"] = progress["progress_percentage"]
+        competency["xp_to_next_level"] = progress["xp_to_next_level"]
+
+    save_json(COMPETENCIES_PATH, competencies_data)
+    return build_operator_stats()
+
+
 def update_operator_stats(
     metadata: dict[str, Any],
     xp_award: int,
 ) -> dict[str, Any]:
+    """Backward-compatible single-competency award function."""
     if xp_award < 0:
         raise ValueError("XP award cannot be negative.")
 
@@ -430,29 +492,21 @@ def update_operator_stats(
 
     if not stat_name:
         raise ValueError("metadata has no valid 'stat' value.")
-    if not isinstance(hierarchy, list):
-        raise ValueError("metadata hierarchy must be a list.")
-    if not hierarchy:
-        raise ValueError("metadata hierarchy cannot be empty.")
+    if not isinstance(hierarchy, list) or not hierarchy:
+        raise ValueError("metadata hierarchy must be a non-empty list.")
 
     skill_tree = load_skill_tree()
     reference = find_competency_reference(skill_tree, stat_name, hierarchy)
-    competency_id = str(reference["competency_id"])
 
-    competencies_data = load_competencies()
-    registry = competencies_data["competencies"]
-    competency = registry.get(competency_id)
-    if not isinstance(competency, dict):
-        raise KeyError(
-            "Competency not found in competencies.json:\n"
-            f"{competency_id}\n\nRun sync_skill_tree.py again."
-        )
-
-    new_xp = int(competency.get("xp", 0)) + xp_award
-    competency["xp"] = new_xp
-    competency["level"] = calculate_skill_level(new_xp)
-    save_json(COMPETENCIES_PATH, competencies_data)
-    return build_operator_stats()
+    return update_operator_competencies(
+        [
+            {
+                "competency_id": str(reference["competency_id"]),
+                "xp": int(xp_award),
+                "weight": 1.0,
+            }
+        ]
+    )
 
 
 def get_skill_stats(

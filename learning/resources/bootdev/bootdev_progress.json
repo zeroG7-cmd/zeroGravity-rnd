@@ -1,0 +1,674 @@
+{
+    "schema_version": 1,
+    "captured_at": "2026-07-15T02:24:31.263359+00:00",
+    "mapping_note": "Python counts are exact from dashboard. Linux and SQL chapter allocation is inferred from current chapter/lesson screenshots; edit before applying if needed. Linux taxonomy corrected to INT > Computer Science > Operating Systems > Linux.",
+    "courses": {
+        "bootdev_learn_python": {
+            "title": "Learn to Code in Python",
+            "slug": "learn_python",
+            "capability_id": "int.software_engineering.programming_languages.python",
+            "stat": "INT",
+            "hierarchy": [
+                "Software Engineering",
+                "Programming Languages",
+                "Python"
+            ],
+            "total_units": 168,
+            "completed_units": 44,
+            "source_url": "https://www.boot.dev/courses/learn-code-python",
+            "xp_per_unit": 20,
+            "sections": [
+                {
+                    "number": 1,
+                    "title": "Introduction",
+                    "total_units": 11,
+                    "completed_units": 11,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.variables",
+                            "weight": 0.45
+                        },
+                        {
+                            "concept_id": "python.data_types",
+                            "weight": 0.45
+                        },
+                        {
+                            "concept_id": "python.debugging",
+                            "weight": 0.1
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 2,
+                    "title": "Variables",
+                    "total_units": 16,
+                    "completed_units": 16,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.variables",
+                            "weight": 0.55
+                        },
+                        {
+                            "concept_id": "python.data_types",
+                            "weight": 0.45
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 3,
+                    "title": "Functions",
+                    "total_units": 17,
+                    "completed_units": 17,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.functions",
+                            "weight": 0.75
+                        },
+                        {
+                            "concept_id": "python.variables",
+                            "weight": 0.15
+                        },
+                        {
+                            "concept_id": "python.debugging",
+                            "weight": 0.1
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 4,
+                    "title": "Scope",
+                    "total_units": 3,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.functions",
+                            "weight": 0.55
+                        },
+                        {
+                            "concept_id": "python.variables",
+                            "weight": 0.45
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 5,
+                    "title": "Testing and Debugging",
+                    "total_units": 6,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.testing",
+                            "weight": 0.6
+                        },
+                        {
+                            "concept_id": "python.debugging",
+                            "weight": 0.4
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 6,
+                    "title": "Computing",
+                    "total_units": 14,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.data_types",
+                            "weight": 0.5
+                        },
+                        {
+                            "concept_id": "python.debugging",
+                            "weight": 0.25
+                        },
+                        {
+                            "concept_id": "python.functions",
+                            "weight": 0.25
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 7,
+                    "title": "Comparisons",
+                    "total_units": 13,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.conditionals",
+                            "weight": 0.7
+                        },
+                        {
+                            "concept_id": "python.data_types",
+                            "weight": 0.3
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 8,
+                    "title": "Loops",
+                    "total_units": 15,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.loops",
+                            "weight": 0.75
+                        },
+                        {
+                            "concept_id": "python.conditionals",
+                            "weight": 0.25
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 9,
+                    "title": "Lists",
+                    "total_units": 24,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.collections",
+                            "weight": 0.7
+                        },
+                        {
+                            "concept_id": "python.loops",
+                            "weight": 0.2
+                        },
+                        {
+                            "concept_id": "python.comprehensions",
+                            "weight": 0.1
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 10,
+                    "title": "Dictionaries",
+                    "total_units": 11,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.collections",
+                            "weight": 0.8
+                        },
+                        {
+                            "concept_id": "python.loops",
+                            "weight": 0.2
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 11,
+                    "title": "Sets",
+                    "total_units": 4,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.collections",
+                            "weight": 1.0
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 12,
+                    "title": "Errors",
+                    "total_units": 9,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.exceptions",
+                            "weight": 0.7
+                        },
+                        {
+                            "concept_id": "python.debugging",
+                            "weight": 0.3
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 13,
+                    "title": "Type Hints",
+                    "total_units": 12,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.data_types",
+                            "weight": 0.65
+                        },
+                        {
+                            "concept_id": "python.debugging",
+                            "weight": 0.35
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 14,
+                    "title": "Practice",
+                    "total_units": 9,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.functions",
+                            "weight": 0.25
+                        },
+                        {
+                            "concept_id": "python.loops",
+                            "weight": 0.25
+                        },
+                        {
+                            "concept_id": "python.collections",
+                            "weight": 0.25
+                        },
+                        {
+                            "concept_id": "python.debugging",
+                            "weight": 0.25
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                },
+                {
+                    "number": 15,
+                    "title": "Quiz",
+                    "total_units": 4,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "python.testing",
+                            "weight": 0.5
+                        },
+                        {
+                            "concept_id": "python.debugging",
+                            "weight": 0.5
+                        }
+                    ],
+                    "mapping_confidence": "high"
+                }
+            ]
+        },
+        "bootdev_learn_linux": {
+            "title": "Learn Linux",
+            "slug": "learn_linux",
+            "capability_id": "int.computer_science.operating_systems.linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "total_units": 64,
+            "completed_units": 9,
+            "source_url": "https://www.boot.dev/courses/learn-linux",
+            "xp_per_unit": 20,
+            "sections": [
+                {
+                    "number": 1,
+                    "title": "The Command Line",
+                    "total_units": null,
+                    "completed_units": 9,
+                    "concept_awards": [
+                        {
+                            "concept_id": "linux.shell",
+                            "weight": 0.55
+                        },
+                        {
+                            "concept_id": "linux.environment",
+                            "weight": 0.2
+                        },
+                        {
+                            "concept_id": "linux.files",
+                            "weight": 0.25
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 2,
+                    "title": "Filesystems",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "linux.filesystem",
+                            "weight": 0.55
+                        },
+                        {
+                            "concept_id": "linux.files",
+                            "weight": 0.45
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 3,
+                    "title": "Programs",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "linux.processes",
+                            "weight": 0.45
+                        },
+                        {
+                            "concept_id": "linux.environment",
+                            "weight": 0.35
+                        },
+                        {
+                            "concept_id": "linux.bash",
+                            "weight": 0.2
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 4,
+                    "title": "Input/Output",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "linux.pipes",
+                            "weight": 0.65
+                        },
+                        {
+                            "concept_id": "linux.shell",
+                            "weight": 0.2
+                        },
+                        {
+                            "concept_id": "linux.bash",
+                            "weight": 0.15
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 5,
+                    "title": "Local CLI",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "linux.users",
+                            "weight": 0.2
+                        },
+                        {
+                            "concept_id": "linux.processes",
+                            "weight": 0.25
+                        },
+                        {
+                            "concept_id": "linux.logs",
+                            "weight": 0.2
+                        },
+                        {
+                            "concept_id": "linux.networking",
+                            "weight": 0.2
+                        },
+                        {
+                            "concept_id": "linux.ssh",
+                            "weight": 0.15
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 6,
+                    "title": "Permissions",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "linux.permissions",
+                            "weight": 0.7
+                        },
+                        {
+                            "concept_id": "linux.users",
+                            "weight": 0.3
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 7,
+                    "title": "Editors and Packages",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "linux.packages",
+                            "weight": 0.7
+                        },
+                        {
+                            "concept_id": "linux.environment",
+                            "weight": 0.3
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                }
+            ]
+        },
+        "bootdev_learn_sql": {
+            "title": "Learn SQL",
+            "slug": "learn_sql",
+            "capability_id": "int.data_and_databases.sql.queries",
+            "stat": "INT",
+            "hierarchy": [
+                "Data & Databases",
+                "SQL"
+            ],
+            "total_units": 97,
+            "completed_units": 9,
+            "source_url": "https://www.boot.dev/courses/learn-sql",
+            "xp_per_unit": 20,
+            "sections": [
+                {
+                    "number": 1,
+                    "title": "Introduction",
+                    "total_units": null,
+                    "completed_units": 7,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.select",
+                            "weight": 0.45
+                        },
+                        {
+                            "concept_id": "sql.tables",
+                            "weight": 0.35
+                        },
+                        {
+                            "concept_id": "sql.filtering",
+                            "weight": 0.2
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 2,
+                    "title": "Tables",
+                    "total_units": null,
+                    "completed_units": 2,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.tables",
+                            "weight": 0.55
+                        },
+                        {
+                            "concept_id": "sql.constraints",
+                            "weight": 0.25
+                        },
+                        {
+                            "concept_id": "sql.modification",
+                            "weight": 0.2
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 3,
+                    "title": "Constraints",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.constraints",
+                            "weight": 0.75
+                        },
+                        {
+                            "concept_id": "sql.tables",
+                            "weight": 0.25
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 4,
+                    "title": "CRUD",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.modification",
+                            "weight": 0.65
+                        },
+                        {
+                            "concept_id": "sql.select",
+                            "weight": 0.35
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 5,
+                    "title": "Basic Queries",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.select",
+                            "weight": 0.4
+                        },
+                        {
+                            "concept_id": "sql.filtering",
+                            "weight": 0.35
+                        },
+                        {
+                            "concept_id": "sql.sorting",
+                            "weight": 0.25
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 6,
+                    "title": "Structuring",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.sorting",
+                            "weight": 0.6
+                        },
+                        {
+                            "concept_id": "sql.filtering",
+                            "weight": 0.4
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 7,
+                    "title": "Aggregations",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.aggregation",
+                            "weight": 0.6
+                        },
+                        {
+                            "concept_id": "sql.grouping",
+                            "weight": 0.4
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 8,
+                    "title": "Subqueries",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.subqueries",
+                            "weight": 0.7
+                        },
+                        {
+                            "concept_id": "sql.filtering",
+                            "weight": 0.3
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 9,
+                    "title": "Normalization",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.normalization",
+                            "weight": 0.7
+                        },
+                        {
+                            "concept_id": "sql.constraints",
+                            "weight": 0.3
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 10,
+                    "title": "Joins",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.joins",
+                            "weight": 0.75
+                        },
+                        {
+                            "concept_id": "sql.tables",
+                            "weight": 0.25
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                },
+                {
+                    "number": 11,
+                    "title": "Performance",
+                    "total_units": null,
+                    "completed_units": 0,
+                    "concept_awards": [
+                        {
+                            "concept_id": "sql.indexes",
+                            "weight": 0.5
+                        },
+                        {
+                            "concept_id": "sql.query_planning",
+                            "weight": 0.5
+                        }
+                    ],
+                    "mapping_confidence": "medium"
+                }
+            ]
+        }
+    }
+}

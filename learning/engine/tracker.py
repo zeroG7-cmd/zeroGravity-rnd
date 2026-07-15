@@ -1,242 +1,123 @@
+"""Operator Zero Learning Engine — Universal Tracker v6.0.
+
+Adds progressive levels and weighted multi-competency XP while preserving
+legacy single-competency tracks.
 """
-Operator Zero Learning Engine
-Universal Tracker v5.1
 
-All tracks use one data model:
-
-Metadata:
-- units
-- unit_count
-- evidence_requirements
-
-Progress:
-- current_unit_index
-- completed_units
-- total_xp
-- status
-
-This version also connects:
-- track-aware XP
-- leaf-skill progression
-- operator stats
-- completion history
-"""
+from __future__ import annotations
 
 import json
 from pathlib import Path
 from typing import Any
 
 from history import record_completion
-from stats import get_skill_stats, update_operator_stats
-from xp import calculate_unit_xp
-
+from concepts import distribute_concept_xp, resolve_concept_awards, update_concept_progress
+from stats import get_competency_stats, update_operator_competencies
+from xp import (
+    calculate_unit_xp,
+    distribute_xp,
+    resolve_competency_awards,
+)
 
 TRACKS_ROOT = Path("learning/tracks")
 
 
-# ============================================================
-# JSON STORAGE
-# ============================================================
-
-def load_json(file_path: Path) -> dict[str, Any]:
-    """Load JSON as a Python dictionary."""
-
+def load_json(path: Path) -> dict[str, Any]:
     try:
-        with file_path.open("r", encoding="utf-8") as file:
-            return json.load(file)
-
+        with path.open("r", encoding="utf-8") as file:
+            data = json.load(file)
     except FileNotFoundError as error:
-        raise FileNotFoundError(
-            f"Required file not found:\n{file_path}"
-        ) from error
-
+        raise FileNotFoundError(f"Required file not found:\n{path}") from error
     except json.JSONDecodeError as error:
-        raise ValueError(
-            f"Invalid JSON inside:\n{file_path}\n\n{error}"
-        ) from error
+        raise ValueError(f"Invalid JSON inside:\n{path}\n\n{error}") from error
+    if not isinstance(data, dict):
+        raise ValueError(f"Expected a JSON object in: {path}")
+    return data
 
 
-def save_json(
-    file_path: Path,
-    data: dict[str, Any],
-) -> None:
-    """Save a dictionary as formatted JSON."""
+def save_json(path: Path, data: dict[str, Any]) -> None:
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(
+        json.dumps(data, indent=4, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    temporary.replace(path)
 
-    with file_path.open("w", encoding="utf-8") as file:
-        json.dump(data, file, indent=4)
-
-
-# ============================================================
-# TRACK DISCOVERY
-# ============================================================
 
 def discover_tracks() -> list[Path]:
-    """Find every valid learning track."""
-
-    tracks = []
-
     if not TRACKS_ROOT.exists():
-        return tracks
-
-    for metadata_path in TRACKS_ROOT.rglob("metadata.json"):
-        track_path = metadata_path.parent
-
-        if (track_path / "progress.json").exists():
-            tracks.append(track_path)
-
-    return sorted(tracks)
-
-
-def build_knowledge_path(
-    metadata: dict[str, Any],
-) -> str:
-    """Build the display path for a track."""
-
-    hierarchy = metadata.get("hierarchy", [])
-
-    if hierarchy:
-        parts = [
-            metadata.get("stat", "Unknown"),
-            *hierarchy,
-        ]
-    else:
-        # Compatibility for tracks not yet using hierarchy.
-        parts = [
-            metadata.get("stat", "Unknown"),
-            metadata.get("branch"),
-            metadata.get("category"),
-            metadata.get("skill"),
-        ]
-
-    return " > ".join(
-        str(part)
-        for part in parts
-        if part
+        return []
+    return sorted(
+        metadata.parent
+        for metadata in TRACKS_ROOT.rglob("metadata.json")
+        if (metadata.parent / "progress.json").exists()
     )
 
 
-def select_track(
-    track_paths: list[Path],
-) -> Path | None:
-    """Display tracks and ask the operator to select one."""
+def build_knowledge_path(metadata: dict[str, Any]) -> str:
+    hierarchy = metadata.get("hierarchy", [])
+    return " > ".join(
+        str(value)
+        for value in [metadata.get("stat", "Unknown"), *hierarchy]
+        if value
+    )
 
+
+def select_track(track_paths: list[Path]) -> Path | None:
     if not track_paths:
         print("No learning tracks found.")
         return None
 
-    print()
-    print("Available learning tracks")
+    print("\nAvailable learning tracks")
     print("-" * 68)
-
-    for index, track_path in enumerate(
-        track_paths,
-        start=1,
-    ):
-        metadata = load_json(
-            track_path / "metadata.json"
-        )
-
-        title = metadata.get(
-            "title",
-            track_path.name,
-        )
-
-        knowledge_path = build_knowledge_path(
-            metadata
-        )
-
-        print(f"{index}. {title}")
-        print(f"   {knowledge_path}")
-
-    print()
+    for index, track_path in enumerate(track_paths, start=1):
+        metadata = load_json(track_path / "metadata.json")
+        print(f"{index}. {metadata.get('title', track_path.name)}")
+        print(f"   {build_knowledge_path(metadata)}")
 
     while True:
-        selection = input(
-            "Select a track number, or enter Q to quit: "
-        ).strip()
-
-        if selection.lower() == "q":
+        value = input("\nSelect a track number, or enter Q to quit: ").strip()
+        if value.lower() == "q":
             return None
-
         try:
-            selected_number = int(selection)
-
-            if 1 <= selected_number <= len(track_paths):
-                return track_paths[selected_number - 1]
-
-            print(
-                f"Choose a number from 1 to "
-                f"{len(track_paths)}."
-            )
-
+            index = int(value) - 1
         except ValueError:
             print("Enter a valid number or Q.")
+            continue
+        if 0 <= index < len(track_paths):
+            return track_paths[index]
+        print(f"Choose a number from 1 to {len(track_paths)}.")
 
 
-# ============================================================
-# VALIDATION
-# ============================================================
-
-def validate_metadata(
-    metadata: dict[str, Any],
-) -> None:
-    """Ensure metadata uses the unified format."""
-
-    units = metadata.get("units")
-    requirements = metadata.get(
-        "evidence_requirements"
-    )
-    hierarchy = metadata.get("hierarchy")
-
-    if not isinstance(units, list) or not units:
-        raise ValueError(
-            "metadata.json has no valid 'units' list.\n"
-            "Run migrate_tracks.py first."
-        )
-
-    if not isinstance(requirements, list) or not requirements:
-        raise ValueError(
-            "metadata.json has no evidence requirements."
-        )
-
-    if not isinstance(hierarchy, list) or not hierarchy:
-        raise ValueError(
-            "metadata.json has no valid 'hierarchy' list."
-        )
-
-    if not metadata.get("stat"):
-        raise ValueError(
-            "metadata.json has no valid 'stat' value."
-        )
+def validate_metadata(metadata: dict[str, Any]) -> None:
+    if not isinstance(metadata.get("units"), list) or not metadata["units"]:
+        raise ValueError("metadata.json has no valid 'units' list.")
+    if not isinstance(metadata.get("evidence_requirements"), list):
+        raise ValueError("metadata.json has no evidence requirements list.")
 
 
-def ensure_progress_structure(
-    progress: dict[str, Any],
-) -> None:
-    """Ensure progress contains the unified fields."""
-
+def ensure_progress(progress: dict[str, Any]) -> None:
     progress.setdefault("current_unit_index", 0)
     progress.setdefault("completed_units", [])
     progress.setdefault("total_xp", 0)
     progress.setdefault("status", "In Progress")
 
 
-# ============================================================
-# EVIDENCE CHECKING
-# ============================================================
-
-def file_has_content(file_path: Path) -> bool:
-    if not file_path.exists() or not file_path.is_file() or file_path.stat().st_size == 0:
+def file_has_meaningful_content(path: Path) -> bool:
+    if not path.exists() or not path.is_file() or path.stat().st_size == 0:
         return False
     try:
-        text = file_path.read_text(encoding="utf-8")
+        text = path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
-        return file_path.stat().st_size > 0
+        return path.stat().st_size > 0
+
     for raw_line in text.splitlines():
         line = raw_line.strip()
         if not line or line.startswith("#"):
             continue
-        if line in {"...", "TODO", "TBD", "[ ]", "- [ ]"} or line.startswith("- [ ]"):
+        if line in {"...", "TODO", "TBD", "[ ]", "- [ ]"}:
+            continue
+        if line.startswith("- [ ]"):
             continue
         return True
     return False
@@ -246,299 +127,163 @@ def check_evidence(
     unit_path: Path,
     requirements: list[dict[str, str]],
 ) -> dict[str, bool]:
-    """Check every evidence requirement."""
-
-    status = {}
-
-    for requirement in requirements:
-        name = requirement["name"]
-        relative_path = Path(
-            requirement["path"]
+    return {
+        requirement["name"]: file_has_meaningful_content(
+            unit_path / Path(requirement["path"])
         )
-
-        status[name] = file_has_content(
-            unit_path / relative_path
-        )
-
-    return status
+        for requirement in requirements
+    }
 
 
-def unit_is_complete(
-    evidence_status: dict[str, bool],
-) -> bool:
-    """Return True only when every requirement passes."""
+def display_distribution(distribution: list[dict[str, Any]]) -> None:
+    print("\nXP distribution")
+    print("-" * 68)
+    for award in distribution:
+        competency = get_competency_stats(award["competency_id"])
+        name = competency.get("name", award["competency_id"])
+        percentage = round(float(award.get("weight", 0)) * 100)
+        print(f"{name:<32}+{award['xp']:>3} XP  ({percentage:>3}%)")
+    print("-" * 68)
 
-    if not evidence_status:
-        return False
 
-    return all(evidence_status.values())
-
-
-# ============================================================
-# PROGRESS
-# ============================================================
-
-def complete_current_unit(
+def complete_progress(
     progress: dict[str, Any],
     unit_id: str,
     current_index: int,
     total_units: int,
     xp_award: int,
 ) -> bool:
-    """
-    Mark the current unit complete and award track XP once.
-
-    Returns False if the unit was already completed.
-    """
-
-    completed_units = progress["completed_units"]
-
-    # Prevent duplicate XP if the tracker is run again.
-    if unit_id in completed_units:
+    if unit_id in progress["completed_units"]:
         return False
-
-    completed_units.append(unit_id)
-
-    # Track-specific XP total.
+    progress["completed_units"].append(unit_id)
     progress["total_xp"] += xp_award
-
     if current_index >= total_units - 1:
         progress["status"] = "Complete"
     else:
         progress["current_unit_index"] = current_index + 1
-
     return True
 
 
-# ============================================================
-# DISPLAY
-# ============================================================
-
-def display_header() -> None:
-    """Display the application heading."""
-
-    print("=" * 68)
-    print("              OPERATOR ZERO LEARNING ENGINE")
-    print("=" * 68)
-
-
-def display_track_information(
-    metadata: dict[str, Any],
-    progress: dict[str, Any],
-    current_unit: dict[str, Any],
-    track_path: Path,
-) -> None:
-    """Display the selected track state."""
+def track_selected_course(track_path: Path) -> None:
+    metadata_path = track_path / "metadata.json"
+    progress_path = track_path / "progress.json"
+    metadata = load_json(metadata_path)
+    progress = load_json(progress_path)
+    validate_metadata(metadata)
+    ensure_progress(progress)
 
     units = metadata["units"]
-    completed_count = len(
-        progress["completed_units"]
-    )
+    current_index = int(progress["current_unit_index"])
+    if not 0 <= current_index < len(units):
+        raise ValueError("Current unit index is out of range.")
 
-    print()
-    print(f"Track          : {metadata.get('title', 'Unknown')}")
+    unit = units[current_index]
+    unit_path = track_path / unit["path"]
+
+    print(f"\nTrack          : {metadata.get('title', 'Unknown')}")
     print(f"Provider       : {metadata.get('provider', 'Unknown')}")
     print(f"Knowledge path : {build_knowledge_path(metadata)}")
     print(f"Difficulty     : {metadata.get('difficulty', 'Unknown')}")
-    print(f"Track folder   : {track_path}")
-    print()
-    print(f"Current unit   : {current_unit['title']}")
-    print(f"Unit path      : {current_unit['path']}")
-    print(f"Unit type      : {current_unit.get('source_type', 'manual')}")
-    print(f"Progress       : {completed_count}/{len(units)}")
+    print(f"Current unit   : {unit['title']}")
+    print(f"Unit type      : {unit.get('source_type', 'manual')}")
+    print(f"Progress       : {len(progress['completed_units'])}/{len(units)}")
     print(f"Track XP       : {progress['total_xp']}")
     print(f"Track status   : {progress['status']}")
 
-
-def display_evidence(
-    evidence_status: dict[str, bool],
-) -> None:
-    """Display each evidence result."""
-
-    print()
-    print("Evidence check")
-    print("-" * 68)
-
-    for evidence_name, passed in evidence_status.items():
-        label = "[PASS]" if passed else "[MISSING]"
-        print(f"{evidence_name:<32}{label}")
-
-    print("-" * 68)
-    print(
-        f"Evidence complete : "
-        f"{sum(evidence_status.values())}/"
-        f"{len(evidence_status)}"
-    )
-
-
-# ============================================================
-# TRACKING CYCLE
-# ============================================================
-
-def track_selected_course(
-    track_path: Path,
-) -> None:
-    """Run one tracking cycle."""
-
-    metadata_path = track_path / "metadata.json"
-    progress_path = track_path / "progress.json"
-
-    metadata = load_json(metadata_path)
-    progress = load_json(progress_path)
-
-    validate_metadata(metadata)
-    ensure_progress_structure(progress)
-
-    units = metadata["units"]
-    requirements = metadata["evidence_requirements"]
-
-    current_index = int(
-        progress["current_unit_index"]
-    )
-
-    if current_index < 0 or current_index >= len(units):
-        print()
-        print("ERROR")
-        print("Current unit index is out of range.")
-        return
-
-    current_unit = units[current_index]
-    unit_path = track_path / current_unit["path"]
-
-    display_track_information(
-        metadata=metadata,
-        progress=progress,
-        current_unit=current_unit,
-        track_path=track_path,
-    )
-
     if progress["status"] == "Complete":
-        print()
-        print("This track is already complete.")
+        print("\nThis track is already complete.")
         return
-
     if not unit_path.exists():
-        print()
-        print("ERROR")
-        print(f"Unit folder does not exist:\n{unit_path}")
-        return
+        raise FileNotFoundError(f"Unit folder does not exist:\n{unit_path}")
 
     evidence_status = check_evidence(
-        unit_path=unit_path,
-        requirements=requirements,
+        unit_path,
+        metadata["evidence_requirements"],
     )
+    print("\nEvidence check")
+    print("-" * 68)
+    for name, passed in evidence_status.items():
+        print(f"{name:<32}{'[PASS]' if passed else '[MISSING]'}")
+    print("-" * 68)
 
-    display_evidence(evidence_status)
-
-    if not unit_is_complete(evidence_status):
-        print()
+    if not evidence_status or not all(evidence_status.values()):
         print("Unit is still in progress.")
-        print("Complete the missing evidence and run again.")
         return
 
-    xp_award = calculate_unit_xp(
-        metadata=metadata,
-        unit=current_unit,
-    )
+    total_xp = calculate_unit_xp(metadata, unit)
+    mappings = resolve_competency_awards(metadata, unit)
+    if not mappings:
+        raise ValueError(
+            "No competency mapping was found for this unit. Add "
+            "competency_awards, section_competency_awards, "
+            "default_competency_awards, or competency_id."
+        )
+    distribution = distribute_xp(total_xp, mappings)
+    display_distribution(distribution)
 
-    progress_changed = complete_current_unit(
-        progress=progress,
-        unit_id=current_unit["id"],
-        current_index=current_index,
-        total_units=len(units),
-        xp_award=xp_award,
-    )
-
-    if not progress_changed:
-        print()
-        print("This unit was already completed.")
-        print("No additional XP was awarded.")
+    if not complete_progress(
+        progress,
+        unit["id"],
+        current_index,
+        len(units),
+        total_xp,
+    ):
+        print("\nThis unit was already completed. No XP was awarded.")
         return
 
-    # Update the Operator progression model.
-    # Only the leaf skill receives XP.
-    operator_stats = update_operator_stats(
-        metadata=metadata,
-        xp_award=xp_award,
-    )
-
-    skill_stats = get_skill_stats(
-        stats=operator_stats,
-        stat_name=metadata["stat"],
-        hierarchy=metadata["hierarchy"],
-    )
-
-    # Record the permanent completion event.
+    operator_stats = update_operator_competencies(distribution)
+    concept_resolution = resolve_concept_awards(metadata, unit)
+    concept_distribution = distribute_concept_xp(total_xp, concept_resolution["concept_awards"])
+    if concept_distribution:
+        update_concept_progress(
+            concept_resolution["capability_id"],
+            concept_distribution,
+            confidence=concept_resolution["mapping_confidence"],
+            source=concept_resolution["mapping_source"],
+        )
     record_completion(
         metadata=metadata,
-        unit=current_unit,
-        xp_award=xp_award,
+        unit=unit,
+        xp_award=total_xp,
+        xp_distribution=distribution,
+        concept_distribution=concept_distribution,
+        mapping_confidence=concept_resolution["mapping_confidence"],
     )
-
-    # Save track progress only after progression and history succeed.
     save_json(progress_path, progress)
 
-    skill_name = metadata.get(
-        "skill",
-        metadata["hierarchy"][-1],
-    )
-
-    print()
-    print("UNIT COMPLETE")
+    print("\nUNIT COMPLETE")
     print("-" * 68)
-    print(f"+{xp_award} {skill_name} XP awarded.")
-    print(f"{skill_name} XP: {skill_stats['xp']}")
-    print(f"{skill_name} Level: {skill_stats['level']}")
+    print(f"+{total_xp} total XP awarded across {len(distribution)} competencies.")
     print(f"Operator Total XP: {operator_stats['total_xp']}")
     print(f"Operator Level: {operator_stats['level']}")
-    print()
-    print("progress.json updated.")
+    print(
+        f"Next Operator Level: {operator_stats['xp_to_next_level']} XP remaining "
+        f"({operator_stats['level_progress']}%)"
+    )
+    print("\nprogress.json updated.")
+    print("competencies.json updated.")
     print("stats.json updated.")
     print("history.json updated.")
 
     if progress["status"] == "Complete":
-        print()
-        print("TRACK COMPLETE")
-        return
+        print("\nTRACK COMPLETE")
+    else:
+        next_unit = units[int(progress["current_unit_index"])]
+        print(f"\nNext unit: {next_unit['title']}")
 
-    next_index = int(
-        progress["current_unit_index"]
-    )
-
-    next_unit = units[next_index]
-
-    print()
-    print(f"Next unit: {next_unit['title']}")
-
-
-# ============================================================
-# MAIN
-# ============================================================
 
 def main() -> None:
-    """Start the Learning Engine."""
-
-    display_header()
-
-    track_paths = discover_tracks()
-    selected_track = select_track(track_paths)
-
-    if selected_track is None:
-        print()
-        print("Learning Engine closed.")
+    print("=" * 68)
+    print("      OPERATOR ZERO LEARNING ENGINE — PROGRESSION v2")
+    print("=" * 68)
+    selected = select_track(discover_tracks())
+    if selected is None:
+        print("\nLearning Engine closed.")
         return
-
     try:
-        track_selected_course(selected_track)
-
-    except (
-        FileNotFoundError,
-        ValueError,
-        KeyError,
-        TypeError,
-    ) as error:
-        print()
-        print("LEARNING ENGINE ERROR")
+        track_selected_course(selected)
+    except (FileNotFoundError, ValueError, KeyError, TypeError) as error:
+        print("\nLEARNING ENGINE ERROR")
         print(error)
 
 

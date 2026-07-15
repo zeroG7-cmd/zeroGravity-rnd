@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "provider": "Boot.dev",
+  "resource_id": "bootdev_learn_python",
+  "track_id": "python_learn_python",
+  "captured_at": "2026-07-14T00:00:00Z",
+  "progress": {
+    "completed_units": 0,
+    "total_units": 0,
+    "external_xp": 0
+  },
+  "notes": "Use completed_unit_ids instead of completed_units when exact provider unit IDs are available."
+}

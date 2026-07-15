@@ -1,0 +1,14 @@
+{
+    "schema_version": 1,
+    "provider": "Boot.dev",
+    "resource_id": "bootdev_learn_python",
+    "captured_at": "2026-07-14T00:00:00Z",
+    "progress": {
+        "completed_units": 0,
+        "total_units": 0,
+        "external_xp": 0
+    },
+    "notes": "Replace the zero values with the totals visible on your Boot.dev account after importing the Boot.dev course manifest.",
+    "track_id": "cad_fusion_360_beginners_course",
+    "source_snapshot": "learning/resources/bootdev/python/learn_python/progress_snapshot.json"
+}

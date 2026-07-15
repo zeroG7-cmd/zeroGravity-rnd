@@ -2,20 +2,473 @@
     "events": [
         {
             "event_type": "unit_completed",
-            "track_id": "cad_fusion_360_beginners_course",
-            "track_title": "Fusion 360 Beginners Course",
+            "track_id": "bootdev_learn_python",
+            "track_title": "Learn to Code in Python",
+            "stat": "INT",
+            "hierarchy": [
+                "Software Engineering",
+                "Programming Languages",
+                "Python"
+            ],
+            "skill": "Python",
+            "unit_id": "historical_section_01",
+            "unit_title": "Introduction — 11 historical lessons",
+            "unit_type": "exercise",
+            "completion_source": "provider_history",
+            "provider": "Boot.dev",
+            "external_id": "bootdev_learn_python:section:1",
+            "xp_awarded": 220,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.software_engineering.programming_languages.python",
+                    "xp": 220,
+                    "weight": 1.0
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.45,
+                    "xp": 99
+                },
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.45,
+                    "xp": 99
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.1,
+                    "xp": 22
+                }
+            ],
+            "mapping_confidence": "high",
+            "completed_at": "2026-07-15T00:40:16.643190+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_python",
+            "track_title": "Learn to Code in Python",
+            "stat": "INT",
+            "hierarchy": [
+                "Software Engineering",
+                "Programming Languages",
+                "Python"
+            ],
+            "skill": "Python",
+            "unit_id": "historical_section_02",
+            "unit_title": "Variables — 16 historical lessons",
+            "unit_type": "exercise",
+            "completion_source": "provider_history",
+            "provider": "Boot.dev",
+            "external_id": "bootdev_learn_python:section:2",
+            "xp_awarded": 320,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.software_engineering.programming_languages.python",
+                    "xp": 320,
+                    "weight": 1.0
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.55,
+                    "xp": 176
+                },
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.45,
+                    "xp": 144
+                }
+            ],
+            "mapping_confidence": "high",
+            "completed_at": "2026-07-15T00:40:16.660113+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_python",
+            "track_title": "Learn to Code in Python",
+            "stat": "INT",
+            "hierarchy": [
+                "Software Engineering",
+                "Programming Languages",
+                "Python"
+            ],
+            "skill": "Python",
+            "unit_id": "historical_section_03",
+            "unit_title": "Functions — 15 historical lessons",
+            "unit_type": "exercise",
+            "completion_source": "provider_history",
+            "provider": "Boot.dev",
+            "external_id": "bootdev_learn_python:section:3",
+            "xp_awarded": 300,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.software_engineering.programming_languages.python",
+                    "xp": 300,
+                    "weight": 1.0
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "python.functions",
+                    "weight": 0.75,
+                    "xp": 225
+                },
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.15,
+                    "xp": 45
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.1,
+                    "xp": 30
+                }
+            ],
+            "mapping_confidence": "high",
+            "completed_at": "2026-07-15T00:40:16.676902+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
             "stat": "INT",
             "hierarchy": [
                 "Robotics",
-                "Mechanical Design",
-                "CAD"
+                "Robot Software",
+                "Robot Middleware",
+                "Linux"
             ],
-            "skill": "CAD",
-            "unit_id": "section_01_unit_001_course_introduction",
-            "unit_title": "Section 1: Introduction to Fusion 360 - Course Introduction",
-            "unit_type": "video",
+            "skill": "Linux",
+            "unit_id": "historical_section_01",
+            "unit_title": "The Command Line — 9 historical lessons",
+            "unit_type": "exercise",
+            "completion_source": "provider_history",
+            "provider": "Boot.dev",
+            "external_id": "bootdev_learn_linux:section:1",
+            "xp_awarded": 180,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.robotics.robot_software.robot_middleware.linux",
+                    "xp": 180,
+                    "weight": 1.0
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.shell",
+                    "weight": 0.55,
+                    "xp": 99
+                },
+                {
+                    "concept_id": "linux.environment",
+                    "weight": 0.2,
+                    "xp": 36
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.25,
+                    "xp": 45
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-07-15T00:40:16.735637+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_sql",
+            "track_title": "Learn SQL",
+            "stat": "INT",
+            "hierarchy": [
+                "Data & Databases",
+                "SQL"
+            ],
+            "skill": "SQL",
+            "unit_id": "historical_section_01",
+            "unit_title": "Introduction — 7 historical lessons",
+            "unit_type": "exercise",
+            "completion_source": "provider_history",
+            "provider": "Boot.dev",
+            "external_id": "bootdev_learn_sql:section:1",
+            "xp_awarded": 140,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.data_and_databases.sql.queries",
+                    "xp": 140,
+                    "weight": 1.0
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "sql.select",
+                    "weight": 0.45,
+                    "xp": 63
+                },
+                {
+                    "concept_id": "sql.tables",
+                    "weight": 0.35,
+                    "xp": 49
+                },
+                {
+                    "concept_id": "sql.filtering",
+                    "weight": 0.2,
+                    "xp": 28
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-07-15T00:40:16.794515+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_sql",
+            "track_title": "Learn SQL",
+            "stat": "INT",
+            "hierarchy": [
+                "Data & Databases",
+                "SQL"
+            ],
+            "skill": "SQL",
+            "unit_id": "historical_section_02",
+            "unit_title": "Tables — 2 historical lessons",
+            "unit_type": "exercise",
+            "completion_source": "provider_history",
+            "provider": "Boot.dev",
+            "external_id": "bootdev_learn_sql:section:2",
             "xp_awarded": 40,
-            "completed_at": "2026-07-13T03:15:46.596524+00:00"
+            "xp_distribution": [
+                {
+                    "competency_id": "int.data_and_databases.sql.queries",
+                    "xp": 40,
+                    "weight": 1.0
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "sql.tables",
+                    "weight": 0.55,
+                    "xp": 22
+                },
+                {
+                    "concept_id": "sql.constraints",
+                    "weight": 0.25,
+                    "xp": 10
+                },
+                {
+                    "concept_id": "sql.modification",
+                    "weight": 0.2,
+                    "xp": 8
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-07-15T00:40:16.810746+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_python",
+            "track_title": "Learn to Code in Python",
+            "stat": "INT",
+            "hierarchy": [
+                "Software Engineering",
+                "Programming Languages",
+                "Python"
+            ],
+            "skill": "Python",
+            "unit_id": "reconcile_section_03_to_017",
+            "unit_title": "Functions — 2 recovered lesson(s)",
+            "unit_type": "exercise",
+            "completion_source": "provider_reconciliation",
+            "provider": "Boot.dev",
+            "external_id": "bootdev_learn_python:reconcile:3:17",
+            "xp_awarded": 40,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.software_engineering.programming_languages.python",
+                    "xp": 40,
+                    "weight": 1.0
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "python.functions",
+                    "weight": 0.75,
+                    "xp": 30
+                },
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.15,
+                    "xp": 6
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.1,
+                    "xp": 4
+                }
+            ],
+            "mapping_confidence": "high",
+            "completed_at": "2026-07-15T02:24:31.283414+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "skill": "Linux",
+            "unit_id": "section_02_unit_001_what_is_a_filesystem_back_next",
+            "unit_title": "What Is a Filesystem? Back Next",
+            "unit_type": "exercise",
+            "completion_source": "provider_event",
+            "provider": "Boot.dev",
+            "external_id": "https://www.boot.dev/lessons/aa6b8b23-8be0-41a8-930f-5375f2026699",
+            "xp_awarded": 20,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.computer_science.operating_systems.linux",
+                    "weight": 1.0,
+                    "xp": 20
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.filesystem",
+                    "weight": 0.55,
+                    "xp": 11
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.45,
+                    "xp": 9
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-07-15T02:32:40.377497+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "skill": "Linux",
+            "unit_id": "section_02_unit_002_filepaths_back_next",
+            "unit_title": "Filepaths Back Next",
+            "unit_type": "exercise",
+            "completion_source": "provider_event",
+            "provider": "Boot.dev",
+            "external_id": "https://www.boot.dev/lessons/f5f6762e-9736-4d2f-aaff-423088dbbf47",
+            "xp_awarded": 20,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.computer_science.operating_systems.linux",
+                    "weight": 1.0,
+                    "xp": 20
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.filesystem",
+                    "weight": 0.55,
+                    "xp": 11
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.45,
+                    "xp": 9
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-07-15T02:47:09.443806+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "skill": "Linux",
+            "unit_id": "section_02_unit_003_parent_directories_back_next",
+            "unit_title": "Parent Directories Back Next",
+            "unit_type": "exercise",
+            "completion_source": "provider_event",
+            "provider": "Boot.dev",
+            "external_id": "https://www.boot.dev/lessons/78334093-2660-49b1-9a5b-7a61d79ef6b4",
+            "xp_awarded": 20,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.computer_science.operating_systems.linux",
+                    "weight": 1.0,
+                    "xp": 20
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.filesystem",
+                    "weight": 0.55,
+                    "xp": 11
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.45,
+                    "xp": 9
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-07-15T03:45:57.014092+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "skill": "Linux",
+            "unit_id": "section_02_unit_005_files_back_next",
+            "unit_title": "Files Back Next",
+            "unit_type": "exercise",
+            "completion_source": "provider_event",
+            "provider": "Boot.dev",
+            "external_id": "https://www.boot.dev/lessons/6ad3a904-7e19-4511-859e-cf78472db0aa",
+            "xp_awarded": 20,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.computer_science.operating_systems.linux",
+                    "weight": 1.0,
+                    "xp": 20
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.filesystem",
+                    "weight": 0.55,
+                    "xp": 11
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.45,
+                    "xp": 9
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-07-15T04:08:33.447480+00:00"
         }
-    ]
+    ],
+    "schema_version": 3
 }

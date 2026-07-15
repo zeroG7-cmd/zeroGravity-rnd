@@ -1725,5 +1725,178 @@
             "name": "Practical Evidence",
             "path": "evidence/practical_evidence.md"
         }
-    ]
+    ],
+    "capability_id": "int.robotics.mechanical_design.cad",
+    "manifest_schema_version": 3,
+    "mapping_confidence": "medium",
+    "section_concept_awards": {
+        "1": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.parametric_design",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "cad.design_intent",
+                    "weight": 0.3
+                },
+                {
+                    "concept_id": "cad.data_exchange",
+                    "weight": 0.2
+                }
+            ]
+        },
+        "2": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.sketching",
+                    "weight": 0.8
+                },
+                {
+                    "concept_id": "cad.design_intent",
+                    "weight": 0.2
+                }
+            ]
+        },
+        "3": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.part_modelling",
+                    "weight": 0.85
+                },
+                {
+                    "concept_id": "cad.design_intent",
+                    "weight": 0.15
+                }
+            ]
+        },
+        "4": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.sketching",
+                    "weight": 0.6
+                },
+                {
+                    "concept_id": "cad.design_intent",
+                    "weight": 0.4
+                }
+            ]
+        },
+        "5": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.sketching",
+                    "weight": 0.35
+                },
+                {
+                    "concept_id": "cad.tolerancing",
+                    "weight": 0.35
+                },
+                {
+                    "concept_id": "cad.design_intent",
+                    "weight": 0.3
+                }
+            ]
+        },
+        "6": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.part_modelling",
+                    "weight": 0.65
+                },
+                {
+                    "concept_id": "cad.parametric_design",
+                    "weight": 0.35
+                }
+            ]
+        },
+        "7": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.part_modelling",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "cad.surface_modelling",
+                    "weight": 0.3
+                },
+                {
+                    "concept_id": "cad.parametric_design",
+                    "weight": 0.2
+                }
+            ]
+        },
+        "8": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.assemblies",
+                    "weight": 0.75
+                },
+                {
+                    "concept_id": "cad.interference",
+                    "weight": 0.25
+                }
+            ]
+        },
+        "9": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.technical_drawings",
+                    "weight": 0.65
+                },
+                {
+                    "concept_id": "cad.tolerancing",
+                    "weight": 0.25
+                },
+                {
+                    "concept_id": "cad.animation",
+                    "weight": 0.1
+                }
+            ]
+        },
+        "10": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.rendering",
+                    "weight": 0.85
+                },
+                {
+                    "concept_id": "cad.data_exchange",
+                    "weight": 0.15
+                }
+            ]
+        },
+        "11": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.animation",
+                    "weight": 0.7
+                },
+                {
+                    "concept_id": "cad.interference",
+                    "weight": 0.3
+                }
+            ]
+        },
+        "12": {
+            "mapping_confidence": "low",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.design_intent",
+                    "weight": 1.0
+                }
+            ]
+        }
+    }
 }

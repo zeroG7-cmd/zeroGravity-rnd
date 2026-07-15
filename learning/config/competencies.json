@@ -298,9 +298,11 @@
         "int.data_and_databases.sql.queries": {
             "id": "int.data_and_databases.sql.queries",
             "name": "Queries",
-            "xp": 0,
-            "level": 0,
-            "shared": false
+            "xp": 180,
+            "level": 1,
+            "shared": false,
+            "level_progress": 28.3,
+            "xp_to_next_level": 203
         },
         "int.data_and_databases.sql.transactions": {
             "id": "int.data_and_databases.sql.transactions",
@@ -439,7 +441,7 @@
             "id": "int.robotics.mechanical_design.cad",
             "name": "CAD",
             "xp": 40,
-            "level": 1,
+            "level": 0,
             "shared": false
         },
         "int.robotics.mechanical_design.dynamics": {
@@ -554,13 +556,6 @@
             "level": 0,
             "shared": false
         },
-        "int.robotics.robot_software.robot_middleware.linux": {
-            "id": "int.robotics.robot_software.robot_middleware.linux",
-            "name": "Linux",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
         "int.robotics.robot_software.robot_middleware.ros2": {
             "id": "int.robotics.robot_software.robot_middleware.ros2",
             "name": "ROS2",
@@ -634,9 +629,11 @@
         "int.software_engineering.programming_languages.python": {
             "id": "int.software_engineering.programming_languages.python",
             "name": "Python",
-            "xp": 0,
-            "level": 0,
-            "shared": false
+            "xp": 880,
+            "level": 2,
+            "shared": false,
+            "level_progress": 95.6,
+            "xp_to_next_level": 23
         },
         "int.software_engineering.testing.ci_cd_testing": {
             "id": "int.software_engineering.testing.ci_cd_testing",
@@ -770,6 +767,15 @@
             "xp": 0,
             "level": 0,
             "shared": true
+        },
+        "int.computer_science.operating_systems.linux": {
+            "id": "int.robotics.robot_software.robot_middleware.linux",
+            "name": "Linux",
+            "xp": 260,
+            "level": 1,
+            "shared": false,
+            "level_progress": 56.5,
+            "xp_to_next_level": 123
         }
     }
 }

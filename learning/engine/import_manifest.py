@@ -1,6 +1,6 @@
 """
 Operator Zero Learning Engine
-Manifest Importer v1.0
+Manifest Importer v3.0 — Concept-Aware
 
 Imports provider-generated JSON manifests (Udemy, YouTube, books, etc.)
 and generates tracker-compatible learning tracks.
@@ -16,6 +16,8 @@ import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+from concepts import resolve_concept_awards
 
 
 LEARNING_ROOT = Path("learning")
@@ -190,10 +192,18 @@ def normalise(path: Path, manifest: dict[str, Any]) -> dict[str, Any]:
         "provider": str(resource.get("provider", "Unknown Provider")).strip(),
         "instructor": str(resource.get("instructor", "")).strip(),
         "source_url": str(resource.get("source_url", "")).strip(),
+        "resource_id": str(resource.get("id", "")).strip(),
         "stat": str(mapping["stat"]).strip(),
         "hierarchy": hierarchy,
         "competency_id": str(mapping.get("competency_id", "")).strip(),
+        "default_competency_awards": mapping.get("default_competency_awards", []),
+        "section_competency_awards": mapping.get("section_competency_awards", {}),
+        "capability_id": str(mapping.get("capability_id", mapping.get("competency_id", ""))).strip(),
+        "default_concept_awards": mapping.get("default_concept_awards", []),
+        "section_concept_awards": mapping.get("section_concept_awards", {}),
+        "mapping_confidence": str(mapping.get("mapping_confidence", "low")).strip().lower(),
         "difficulty": str(course.get("difficulty", "Unspecified")).strip(),
+        "xp_rules": course.get("xp_rules", manifest.get("xp_rules", {})),
         "sections": course["sections"],
     }
 
@@ -258,6 +268,12 @@ def build_units(data: dict[str, Any]) -> list[dict[str, Any]]:
                     "duration": lecture.get("duration"),
                     "duration_minutes": lecture.get("duration_minutes"),
                     "source_url": data["source_url"],
+                    "competency_awards": lecture.get("competency_awards", []),
+                    "concept_awards": lecture.get("concept_awards", []),
+                    "mapping_confidence": lecture.get("mapping_confidence", section.get("mapping_confidence", data.get("mapping_confidence", "low"))),
+                    "external_id": lecture.get("external_id", lecture.get("id")),
+                    "provider_unit_id": lecture.get("provider_unit_id"),
+                    "xp_value": lecture.get("xp_value"),
                 }
             )
 
@@ -308,7 +324,16 @@ def create_track(
         "resource": data["resource_root"].as_posix(),
         "manifest": data["manifest_path"].as_posix(),
         "source_url": data["source_url"],
+        "resource_id": data["resource_id"],
         "competency_id": data["competency_id"],
+        "capability_id": data["capability_id"],
+        "default_competency_awards": data["default_competency_awards"],
+        "section_competency_awards": data["section_competency_awards"],
+        "default_concept_awards": data["default_concept_awards"],
+        "section_concept_awards": data["section_concept_awards"],
+        "mapping_confidence": data["mapping_confidence"],
+        "manifest_schema_version": 3,
+        "xp_rules": data["xp_rules"],
         "import_method": "manifest",
         "structure_type": "imported",
         "section_count": len(data["sections"]),
@@ -443,6 +468,14 @@ def main() -> None:
         data = normalise(manifest_path, manifest)
         validate_skill_path(data["stat"], data["hierarchy"])
         units = build_units(data)
+        for unit in units:
+            resolve_concept_awards({
+                "capability_id": data["capability_id"],
+                "competency_id": data["competency_id"],
+                "default_concept_awards": data["default_concept_awards"],
+                "section_concept_awards": data["section_concept_awards"],
+                "mapping_confidence": data["mapping_confidence"],
+            }, unit)
     except (FileNotFoundError, ValueError, OSError) as error:
         print("\nIMPORT ERROR")
         print("-" * 68)

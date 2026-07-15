@@ -329,6 +329,12 @@
                                     "node_type": "competency_reference",
                                     "competency_id": "int.computer_science.operating_systems.file_systems",
                                     "shared": false
+                                },
+                                "Linux": {
+                                    "name": "Linux",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.computer_science.operating_systems.linux",
+                                    "shared": false
                                 }
                             }
                         },
@@ -470,12 +476,6 @@
                                             "name": "ROS2",
                                             "node_type": "competency_reference",
                                             "competency_id": "int.robotics.robot_software.robot_middleware.ros2",
-                                            "shared": false
-                                        },
-                                        "Linux": {
-                                            "name": "Linux",
-                                            "node_type": "competency_reference",
-                                            "competency_id": "int.robotics.robot_software.robot_middleware.linux",
                                             "shared": false
                                         }
                                     }

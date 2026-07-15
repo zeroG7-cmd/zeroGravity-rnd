@@ -1,0 +1,22 @@
+{
+    "current_unit_index": 13,
+    "completed_units": [
+        "history_section_01_unit_001",
+        "history_section_01_unit_002",
+        "history_section_01_unit_003",
+        "history_section_01_unit_004",
+        "history_section_01_unit_005",
+        "history_section_01_unit_006",
+        "history_section_01_unit_007",
+        "history_section_01_unit_008",
+        "history_section_01_unit_009",
+        "section_02_unit_001_what_is_a_filesystem_back_next",
+        "section_02_unit_002_filepaths_back_next",
+        "section_02_unit_003_parent_directories_back_next",
+        "section_02_unit_005_files_back_next"
+    ],
+    "total_xp": 260,
+    "status": "In Progress",
+    "external_total_units": 64,
+    "external_completed_units": 13
+}

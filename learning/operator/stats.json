@@ -1,5 +1,5 @@
 {
-    "schema_version": 3,
+    "schema_version": 4,
     "stats": {
         "CON": {
             "name": "CON",
@@ -10,25 +10,29 @@
         "INT": {
             "name": "INT",
             "node_type": "main_stat",
-            "average_level": 0.01,
+            "average_level": 0.04,
             "children": {
                 "Software Engineering": {
                     "name": "Software Engineering",
                     "node_type": "parent",
-                    "average_level": 0.0,
+                    "average_level": 0.13,
                     "children": {
                         "Programming Languages": {
                             "name": "Programming Languages",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.67,
                             "children": {
                                 "Python": {
                                     "name": "Python",
                                     "node_type": "skill",
                                     "competency_id": "int.software_engineering.programming_languages.python",
                                     "shared": false,
-                                    "xp": 0,
-                                    "level": 0
+                                    "xp": 880,
+                                    "level": 2,
+                                    "level_progress": 95.6,
+                                    "xp_into_level": 497,
+                                    "xp_to_next_level": 23,
+                                    "next_level_xp": 903
                                 },
                                 "C++": {
                                     "name": "C++",
@@ -36,7 +40,11 @@
                                     "competency_id": "int.software_engineering.programming_languages.cpp",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "JavaScript": {
                                     "name": "JavaScript",
@@ -44,7 +52,11 @@
                                     "competency_id": "int.software_engineering.programming_languages.javascript",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -59,7 +71,11 @@
                                     "competency_id": "int.software_engineering.web_development.html",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "CSS": {
                                     "name": "CSS",
@@ -67,7 +83,11 @@
                                     "competency_id": "int.software_engineering.web_development.css",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -82,7 +102,11 @@
                                     "competency_id": "int.software_engineering.version_control.git",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -97,7 +121,11 @@
                                     "competency_id": "int.software_engineering.testing.unit_testing",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Integration Testing": {
                                     "name": "Integration Testing",
@@ -105,7 +133,11 @@
                                     "competency_id": "int.software_engineering.testing.integration_testing",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "System Testing": {
                                     "name": "System Testing",
@@ -113,7 +145,11 @@
                                     "competency_id": "int.software_engineering.testing.system_testing",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Debugging": {
                                     "name": "Debugging",
@@ -121,7 +157,11 @@
                                     "competency_id": "int.software_engineering.testing.debugging",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Test Automation": {
                                     "name": "Test Automation",
@@ -129,7 +169,11 @@
                                     "competency_id": "int.software_engineering.testing.test_automation",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "CI/CD Testing": {
                                     "name": "CI/CD Testing",
@@ -137,7 +181,11 @@
                                     "competency_id": "int.software_engineering.testing.ci_cd_testing",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -152,7 +200,11 @@
                                     "competency_id": "int.software_engineering.apis_and_backend.rest_apis",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Flask": {
                                     "name": "Flask",
@@ -160,7 +212,11 @@
                                     "competency_id": "int.software_engineering.apis_and_backend.flask",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "FastAPI": {
                                     "name": "FastAPI",
@@ -168,7 +224,11 @@
                                     "competency_id": "int.software_engineering.apis_and_backend.fastapi",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Authentication": {
                                     "name": "Authentication",
@@ -176,7 +236,11 @@
                                     "competency_id": "authentication",
                                     "shared": true,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "JSON": {
                                     "name": "JSON",
@@ -184,7 +248,11 @@
                                     "competency_id": "int.software_engineering.apis_and_backend.json",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "HTTP": {
                                     "name": "HTTP",
@@ -192,7 +260,11 @@
                                     "competency_id": "http",
                                     "shared": true,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "WebSockets": {
                                     "name": "WebSockets",
@@ -200,7 +272,11 @@
                                     "competency_id": "websockets",
                                     "shared": true,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Database Integration": {
                                     "name": "Database Integration",
@@ -208,7 +284,11 @@
                                     "competency_id": "int.software_engineering.apis_and_backend.database_integration",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "API Design": {
                                     "name": "API Design",
@@ -216,7 +296,11 @@
                                     "competency_id": "int.software_engineering.apis_and_backend.api_design",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         }
@@ -225,7 +309,7 @@
                 "Computer Science": {
                     "name": "Computer Science",
                     "node_type": "parent",
-                    "average_level": 0.0,
+                    "average_level": 0.03,
                     "children": {
                         "Data Structures": {
                             "name": "Data Structures",
@@ -238,7 +322,11 @@
                                     "competency_id": "int.computer_science.data_structures.arrays",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Linked Lists": {
                                     "name": "Linked Lists",
@@ -246,7 +334,11 @@
                                     "competency_id": "int.computer_science.data_structures.linked_lists",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Stacks": {
                                     "name": "Stacks",
@@ -254,7 +346,11 @@
                                     "competency_id": "int.computer_science.data_structures.stacks",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Queues": {
                                     "name": "Queues",
@@ -262,7 +358,11 @@
                                     "competency_id": "int.computer_science.data_structures.queues",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Trees": {
                                     "name": "Trees",
@@ -270,7 +370,11 @@
                                     "competency_id": "int.computer_science.data_structures.trees",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Graphs": {
                                     "name": "Graphs",
@@ -278,7 +382,11 @@
                                     "competency_id": "int.computer_science.data_structures.graphs",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Hash Tables": {
                                     "name": "Hash Tables",
@@ -286,7 +394,11 @@
                                     "competency_id": "int.computer_science.data_structures.hash_tables",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Heaps": {
                                     "name": "Heaps",
@@ -294,7 +406,11 @@
                                     "competency_id": "int.computer_science.data_structures.heaps",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -309,7 +425,11 @@
                                     "competency_id": "int.computer_science.algorithms.searching",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Sorting": {
                                     "name": "Sorting",
@@ -317,7 +437,11 @@
                                     "competency_id": "int.computer_science.algorithms.sorting",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Recursion": {
                                     "name": "Recursion",
@@ -325,7 +449,11 @@
                                     "competency_id": "int.computer_science.algorithms.recursion",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Dynamic Programming": {
                                     "name": "Dynamic Programming",
@@ -333,7 +461,11 @@
                                     "competency_id": "int.computer_science.algorithms.dynamic_programming",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Greedy Algorithms": {
                                     "name": "Greedy Algorithms",
@@ -341,7 +473,11 @@
                                     "competency_id": "int.computer_science.algorithms.greedy_algorithms",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Graph Algorithms": {
                                     "name": "Graph Algorithms",
@@ -349,7 +485,11 @@
                                     "competency_id": "int.computer_science.algorithms.graph_algorithms",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Pathfinding": {
                                     "name": "Pathfinding",
@@ -357,7 +497,11 @@
                                     "competency_id": "int.computer_science.algorithms.pathfinding",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -367,12 +511,16 @@
                             "competency_id": "int.computer_science.complexity",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Operating Systems": {
                             "name": "Operating Systems",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.17,
                             "children": {
                                 "Processes": {
                                     "name": "Processes",
@@ -380,7 +528,11 @@
                                     "competency_id": "int.computer_science.operating_systems.processes",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Threads": {
                                     "name": "Threads",
@@ -388,7 +540,11 @@
                                     "competency_id": "int.computer_science.operating_systems.threads",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Memory Management": {
                                     "name": "Memory Management",
@@ -396,7 +552,11 @@
                                     "competency_id": "int.computer_science.operating_systems.memory_management",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Scheduling": {
                                     "name": "Scheduling",
@@ -404,7 +564,11 @@
                                     "competency_id": "int.computer_science.operating_systems.scheduling",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "File Systems": {
                                     "name": "File Systems",
@@ -412,7 +576,23 @@
                                     "competency_id": "int.computer_science.operating_systems.file_systems",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Linux": {
+                                    "name": "Linux",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.operating_systems.linux",
+                                    "shared": false,
+                                    "xp": 260,
+                                    "level": 1,
+                                    "level_progress": 56.5,
+                                    "xp_into_level": 160,
+                                    "xp_to_next_level": 123,
+                                    "next_level_xp": 383
                                 }
                             }
                         },
@@ -422,7 +602,11 @@
                             "competency_id": "int.computer_science.software_architecture",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Concurrent Programming": {
                             "name": "Concurrent Programming",
@@ -430,19 +614,23 @@
                             "competency_id": "int.computer_science.concurrent_programming",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         }
                     }
                 },
                 "Robotics": {
                     "name": "Robotics",
                     "node_type": "parent",
-                    "average_level": 0.05,
+                    "average_level": 0.0,
                     "children": {
                         "Mechanical Design": {
                             "name": "Mechanical Design",
                             "node_type": "parent",
-                            "average_level": 0.25,
+                            "average_level": 0.0,
                             "children": {
                                 "Statics": {
                                     "name": "Statics",
@@ -450,7 +638,11 @@
                                     "competency_id": "int.robotics.mechanical_design.statics",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Dynamics": {
                                     "name": "Dynamics",
@@ -458,7 +650,11 @@
                                     "competency_id": "int.robotics.mechanical_design.dynamics",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Mechanics of Materials": {
                                     "name": "Mechanics of Materials",
@@ -466,7 +662,11 @@
                                     "competency_id": "int.robotics.mechanical_design.mechanics_of_materials",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "CAD": {
                                     "name": "CAD",
@@ -474,7 +674,11 @@
                                     "competency_id": "int.robotics.mechanical_design.cad",
                                     "shared": false,
                                     "xp": 40,
-                                    "level": 1
+                                    "level": 0,
+                                    "level_progress": 40.0,
+                                    "xp_into_level": 40,
+                                    "xp_to_next_level": 60,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -484,7 +688,11 @@
                             "competency_id": "int.robotics.mechatronics",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Perception": {
                             "name": "Perception",
@@ -497,7 +705,11 @@
                                     "competency_id": "int.robotics.perception.computer_vision",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Sensor Fusion": {
                                     "name": "Sensor Fusion",
@@ -505,7 +717,11 @@
                                     "competency_id": "int.robotics.perception.sensor_fusion",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Camera Systems": {
                                     "name": "Camera Systems",
@@ -513,7 +729,11 @@
                                     "competency_id": "int.robotics.perception.camera_systems",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "LIDAR Systems": {
                                     "name": "LIDAR Systems",
@@ -521,7 +741,11 @@
                                     "competency_id": "int.robotics.perception.lidar_systems",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Object Detection": {
                                     "name": "Object Detection",
@@ -529,7 +753,11 @@
                                     "competency_id": "int.robotics.perception.object_detection",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Object Tracking": {
                                     "name": "Object Tracking",
@@ -537,7 +765,11 @@
                                     "competency_id": "int.robotics.perception.object_tracking",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Depth Estimation": {
                                     "name": "Depth Estimation",
@@ -545,7 +777,11 @@
                                     "competency_id": "int.robotics.perception.depth_estimation",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -560,7 +796,11 @@
                                     "competency_id": "int.robotics.navigation_and_mapping.navigation",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Path Planning": {
                                     "name": "Path Planning",
@@ -568,7 +808,11 @@
                                     "competency_id": "int.robotics.navigation_and_mapping.path_planning",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -588,15 +832,11 @@
                                             "competency_id": "int.robotics.robot_software.robot_middleware.ros2",
                                             "shared": false,
                                             "xp": 0,
-                                            "level": 0
-                                        },
-                                        "Linux": {
-                                            "name": "Linux",
-                                            "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.robot_middleware.linux",
-                                            "shared": false,
-                                            "xp": 0,
-                                            "level": 0
+                                            "level": 0,
+                                            "level_progress": 0.0,
+                                            "xp_into_level": 0,
+                                            "xp_to_next_level": 100,
+                                            "next_level_xp": 100
                                         }
                                     }
                                 },
@@ -611,7 +851,11 @@
                                             "competency_id": "int.robotics.robot_software.simulation.gazebo",
                                             "shared": false,
                                             "xp": 0,
-                                            "level": 0
+                                            "level": 0,
+                                            "level_progress": 0.0,
+                                            "xp_into_level": 0,
+                                            "xp_to_next_level": 100,
+                                            "next_level_xp": 100
                                         }
                                     }
                                 },
@@ -626,7 +870,11 @@
                                             "competency_id": "int.robotics.robot_software.localization.slam",
                                             "shared": false,
                                             "xp": 0,
-                                            "level": 0
+                                            "level": 0,
+                                            "level_progress": 0.0,
+                                            "xp_into_level": 0,
+                                            "xp_to_next_level": 100,
+                                            "next_level_xp": 100
                                         },
                                         "GPS": {
                                             "name": "GPS",
@@ -634,7 +882,11 @@
                                             "competency_id": "int.robotics.robot_software.localization.gps",
                                             "shared": false,
                                             "xp": 0,
-                                            "level": 0
+                                            "level": 0,
+                                            "level_progress": 0.0,
+                                            "xp_into_level": 0,
+                                            "xp_to_next_level": 100,
+                                            "next_level_xp": 100
                                         }
                                     }
                                 },
@@ -644,7 +896,11 @@
                                     "competency_id": "int.robotics.robot_software.deployment",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         }
@@ -666,7 +922,11 @@
                                     "competency_id": "int.networking.network_fundamentals.tcp_ip",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "UDP": {
                                     "name": "UDP",
@@ -674,7 +934,11 @@
                                     "competency_id": "int.networking.network_fundamentals.udp",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "DNS": {
                                     "name": "DNS",
@@ -682,7 +946,11 @@
                                     "competency_id": "int.networking.network_fundamentals.dns",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "DHCP": {
                                     "name": "DHCP",
@@ -690,7 +958,11 @@
                                     "competency_id": "int.networking.network_fundamentals.dhcp",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Routing": {
                                     "name": "Routing",
@@ -698,7 +970,11 @@
                                     "competency_id": "int.networking.network_fundamentals.routing",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -713,7 +989,11 @@
                                     "competency_id": "int.networking.wireless.wi_fi",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Bluetooth": {
                                     "name": "Bluetooth",
@@ -721,7 +1001,11 @@
                                     "competency_id": "int.networking.wireless.bluetooth",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "RF": {
                                     "name": "RF",
@@ -729,7 +1013,11 @@
                                     "competency_id": "int.networking.wireless.rf",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "ELRS": {
                                     "name": "ELRS",
@@ -737,7 +1025,11 @@
                                     "competency_id": "int.networking.wireless.elrs",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -752,7 +1044,11 @@
                                     "competency_id": "int.networking.client_server.sockets",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "HTTP": {
                                     "name": "HTTP",
@@ -760,7 +1056,11 @@
                                     "competency_id": "http",
                                     "shared": true,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "MQTT": {
                                     "name": "MQTT",
@@ -768,7 +1068,11 @@
                                     "competency_id": "int.networking.client_server.mqtt",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "WebSockets": {
                                     "name": "WebSockets",
@@ -776,7 +1080,11 @@
                                     "competency_id": "websockets",
                                     "shared": true,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -791,7 +1099,11 @@
                                     "competency_id": "int.networking.remote_access.ssh",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "VPN": {
                                     "name": "VPN",
@@ -799,7 +1111,11 @@
                                     "competency_id": "int.networking.remote_access.vpn",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "SCP": {
                                     "name": "SCP",
@@ -807,7 +1123,11 @@
                                     "competency_id": "int.networking.remote_access.scp",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -822,7 +1142,11 @@
                                     "competency_id": "int.networking.network_security.firewalls",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Encryption": {
                                     "name": "Encryption",
@@ -830,7 +1154,11 @@
                                     "competency_id": "int.networking.network_security.encryption",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Certificates": {
                                     "name": "Certificates",
@@ -838,7 +1166,11 @@
                                     "competency_id": "int.networking.network_security.certificates",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Authentication": {
                                     "name": "Authentication",
@@ -846,7 +1178,11 @@
                                     "competency_id": "authentication",
                                     "shared": true,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         }
@@ -855,7 +1191,7 @@
                 "Data & Databases": {
                     "name": "Data & Databases",
                     "node_type": "parent",
-                    "average_level": 0.0,
+                    "average_level": 0.05,
                     "children": {
                         "Database Systems": {
                             "name": "Database Systems",
@@ -868,7 +1204,11 @@
                                     "competency_id": "int.data_and_databases.database_systems.sqlite",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "PostgreSQL": {
                                     "name": "PostgreSQL",
@@ -876,7 +1216,11 @@
                                     "competency_id": "int.data_and_databases.database_systems.postgresql",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "MySQL": {
                                     "name": "MySQL",
@@ -884,7 +1228,11 @@
                                     "competency_id": "int.data_and_databases.database_systems.mysql",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -899,7 +1247,11 @@
                                     "competency_id": "int.data_and_databases.data_engineering.etl",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Data Pipelines": {
                                     "name": "Data Pipelines",
@@ -907,7 +1259,11 @@
                                     "competency_id": "int.data_and_databases.data_engineering.data_pipelines",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Parsing": {
                                     "name": "Parsing",
@@ -915,7 +1271,11 @@
                                     "competency_id": "int.data_and_databases.data_engineering.parsing",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Data Validation": {
                                     "name": "Data Validation",
@@ -923,7 +1283,11 @@
                                     "competency_id": "int.data_and_databases.data_engineering.data_validation",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Data Cleaning": {
                                     "name": "Data Cleaning",
@@ -931,7 +1295,11 @@
                                     "competency_id": "int.data_and_databases.data_engineering.data_cleaning",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -946,7 +1314,11 @@
                                     "competency_id": "int.data_and_databases.database_design.er_diagrams",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Normalization": {
                                     "name": "Normalization",
@@ -954,7 +1326,11 @@
                                     "competency_id": "int.data_and_databases.database_design.normalization",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Relationships": {
                                     "name": "Relationships",
@@ -962,7 +1338,11 @@
                                     "competency_id": "int.data_and_databases.database_design.relationships",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Schema Design": {
                                     "name": "Schema Design",
@@ -970,22 +1350,30 @@
                                     "competency_id": "int.data_and_databases.database_design.schema_design",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
                         "SQL": {
                             "name": "SQL",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.2,
                             "children": {
                                 "Queries": {
                                     "name": "Queries",
                                     "node_type": "skill",
                                     "competency_id": "int.data_and_databases.sql.queries",
                                     "shared": false,
-                                    "xp": 0,
-                                    "level": 0
+                                    "xp": 180,
+                                    "level": 1,
+                                    "level_progress": 28.3,
+                                    "xp_into_level": 80,
+                                    "xp_to_next_level": 203,
+                                    "next_level_xp": 383
                                 },
                                 "Joins": {
                                     "name": "Joins",
@@ -993,7 +1381,11 @@
                                     "competency_id": "int.data_and_databases.sql.joins",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Indexing": {
                                     "name": "Indexing",
@@ -1001,7 +1393,11 @@
                                     "competency_id": "int.data_and_databases.sql.indexing",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Views": {
                                     "name": "Views",
@@ -1009,7 +1405,11 @@
                                     "competency_id": "int.data_and_databases.sql.views",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
                                 "Transactions": {
                                     "name": "Transactions",
@@ -1017,7 +1417,11 @@
                                     "competency_id": "int.data_and_databases.sql.transactions",
                                     "shared": false,
                                     "xp": 0,
-                                    "level": 0
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         }
@@ -1034,7 +1438,11 @@
                             "competency_id": "int.systems_engineering.systems_thinking",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Requirements Engineering": {
                             "name": "Requirements Engineering",
@@ -1042,7 +1450,11 @@
                             "competency_id": "int.systems_engineering.requirements_engineering",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "System Architecture": {
                             "name": "System Architecture",
@@ -1050,7 +1462,11 @@
                             "competency_id": "int.systems_engineering.system_architecture",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Interface Design": {
                             "name": "Interface Design",
@@ -1058,7 +1474,11 @@
                             "competency_id": "int.systems_engineering.interface_design",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Trade-off Analysis": {
                             "name": "Trade-off Analysis",
@@ -1066,7 +1486,11 @@
                             "competency_id": "int.systems_engineering.trade_off_analysis",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Verification & Validation": {
                             "name": "Verification & Validation",
@@ -1074,7 +1498,11 @@
                             "competency_id": "int.systems_engineering.verification_and_validation",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Integration": {
                             "name": "Integration",
@@ -1082,7 +1510,11 @@
                             "competency_id": "int.systems_engineering.integration",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         },
                         "Lifecycle Management": {
                             "name": "Lifecycle Management",
@@ -1090,7 +1522,11 @@
                             "competency_id": "int.systems_engineering.lifecycle_management",
                             "shared": false,
                             "xp": 0,
-                            "level": 0
+                            "level": 0,
+                            "level_progress": 0.0,
+                            "xp_into_level": 0,
+                            "xp_to_next_level": 100,
+                            "next_level_xp": 100
                         }
                     }
                 }
@@ -1115,8 +1551,13 @@
             "children": {}
         }
     },
-    "total_xp": 40,
-    "level": 1,
+    "total_xp": 1360,
+    "level": 3,
+    "level_progress": 57.1,
+    "xp_into_level": 457,
+    "xp_to_next_level": 343,
+    "next_level_xp": 1703,
+    "level_xp_required": 800,
     "competency_count": 106,
     "migrated_competencies": []
 }

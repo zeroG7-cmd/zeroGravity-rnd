@@ -1,0 +1,330 @@
+{
+    "id": "bootdev_learn_python",
+    "resource_id": "bootdev_learn_python",
+    "external_resource_id": "bootdev_learn_python",
+    "title": "Learn to Code in Python",
+    "provider": "Boot.dev",
+    "instructor": "Boot.dev Team",
+    "stat": "INT",
+    "hierarchy": [
+        "Software Engineering",
+        "Programming Languages",
+        "Python"
+    ],
+    "domain": "Software Engineering",
+    "skill": "Python",
+    "difficulty": "Beginner",
+    "source_url": "https://www.boot.dev/courses/learn-code-python",
+    "competency_id": "int.software_engineering.programming_languages.python",
+    "capability_id": "int.software_engineering.programming_languages.python",
+    "default_competency_awards": [
+        {
+            "competency_id": "int.software_engineering.programming_languages.python",
+            "weight": 1.0
+        }
+    ],
+    "section_concept_awards": {
+        "1": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.45
+                },
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.45
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.1
+                }
+            ]
+        },
+        "2": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.55
+                },
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.45
+                }
+            ]
+        },
+        "3": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.functions",
+                    "weight": 0.75
+                },
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.15
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.1
+                }
+            ]
+        },
+        "4": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.functions",
+                    "weight": 0.55
+                },
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.45
+                }
+            ]
+        },
+        "5": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.testing",
+                    "weight": 0.6
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.4
+                }
+            ]
+        },
+        "6": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.25
+                },
+                {
+                    "concept_id": "python.functions",
+                    "weight": 0.25
+                }
+            ]
+        },
+        "7": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.conditionals",
+                    "weight": 0.7
+                },
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.3
+                }
+            ]
+        },
+        "8": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.loops",
+                    "weight": 0.75
+                },
+                {
+                    "concept_id": "python.conditionals",
+                    "weight": 0.25
+                }
+            ]
+        },
+        "9": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.collections",
+                    "weight": 0.7
+                },
+                {
+                    "concept_id": "python.loops",
+                    "weight": 0.2
+                },
+                {
+                    "concept_id": "python.comprehensions",
+                    "weight": 0.1
+                }
+            ]
+        },
+        "10": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.collections",
+                    "weight": 0.8
+                },
+                {
+                    "concept_id": "python.loops",
+                    "weight": 0.2
+                }
+            ]
+        },
+        "11": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.collections",
+                    "weight": 1.0
+                }
+            ]
+        },
+        "12": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.exceptions",
+                    "weight": 0.7
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.3
+                }
+            ]
+        },
+        "13": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.65
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.35
+                }
+            ]
+        },
+        "14": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.functions",
+                    "weight": 0.25
+                },
+                {
+                    "concept_id": "python.loops",
+                    "weight": 0.25
+                },
+                {
+                    "concept_id": "python.collections",
+                    "weight": 0.25
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.25
+                }
+            ]
+        },
+        "15": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.testing",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.5
+                }
+            ]
+        }
+    },
+    "mapping_confidence": "medium",
+    "manifest_schema_version": 3,
+    "dynamic_provider_units": true,
+    "external_total_units": 168,
+    "xp_rules": {
+        "exercise": 20
+    },
+    "units": [],
+    "unit_count": 168,
+    "section_count": 15,
+    "sections": [
+        {
+            "number": 1,
+            "title": "Introduction",
+            "total_units": 11
+        },
+        {
+            "number": 2,
+            "title": "Variables",
+            "total_units": 16
+        },
+        {
+            "number": 3,
+            "title": "Functions",
+            "total_units": 17
+        },
+        {
+            "number": 4,
+            "title": "Scope",
+            "total_units": 3
+        },
+        {
+            "number": 5,
+            "title": "Testing and Debugging",
+            "total_units": 6
+        },
+        {
+            "number": 6,
+            "title": "Computing",
+            "total_units": 14
+        },
+        {
+            "number": 7,
+            "title": "Comparisons",
+            "total_units": 13
+        },
+        {
+            "number": 8,
+            "title": "Loops",
+            "total_units": 15
+        },
+        {
+            "number": 9,
+            "title": "Lists",
+            "total_units": 24
+        },
+        {
+            "number": 10,
+            "title": "Dictionaries",
+            "total_units": 11
+        },
+        {
+            "number": 11,
+            "title": "Sets",
+            "total_units": 4
+        },
+        {
+            "number": 12,
+            "title": "Errors",
+            "total_units": 9
+        },
+        {
+            "number": 13,
+            "title": "Type Hints",
+            "total_units": 12
+        },
+        {
+            "number": 14,
+            "title": "Practice",
+            "total_units": 9
+        },
+        {
+            "number": 15,
+            "title": "Quiz",
+            "total_units": 4
+        }
+    ]
+}

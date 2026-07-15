@@ -60,6 +60,7 @@
       - Memory Management
       - Scheduling
       - File Systems
+      - Linux
 
     - Software Architecture
     - Concurrent Programming
@@ -91,7 +92,6 @@
     - Robot Software
       - Robot Middleware
         - ROS2
-        - Linux
 
       - Simulation
         - Gazebo

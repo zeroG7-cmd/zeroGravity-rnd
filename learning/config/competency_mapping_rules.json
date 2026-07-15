@@ -1,0 +1,71 @@
+{
+    "schema_version": 1,
+    "rules": [
+        {
+            "name": "Flask",
+            "keywords": ["flask", "blueprint", "jinja", "route", "endpoint"],
+            "competency_id": "int.software_engineering.apis_and_backend.flask",
+            "score": 5
+        },
+        {
+            "name": "REST APIs",
+            "keywords": ["rest", "restful", "api", "endpoint", "resource", "request method"],
+            "competency_id": "int.software_engineering.apis_and_backend.rest_apis",
+            "score": 4
+        },
+        {
+            "name": "JSON",
+            "keywords": ["json", "serialization", "deserialize", "payload", "response body"],
+            "competency_id": "int.software_engineering.apis_and_backend.json",
+            "score": 6
+        },
+        {
+            "name": "HTTP",
+            "keywords": ["http", "status code", "headers", "get request", "post request", "put request", "delete request"],
+            "competency_id": "http",
+            "score": 5
+        },
+        {
+            "name": "Authentication",
+            "keywords": ["authentication", "authorization", "jwt", "token", "login", "password", "oauth"],
+            "competency_id": "authentication",
+            "score": 6
+        },
+        {
+            "name": "Database Integration",
+            "keywords": ["database", "sqlalchemy", "orm", "model", "migration", "database integration"],
+            "competency_id": "int.software_engineering.apis_and_backend.database_integration",
+            "score": 5
+        },
+        {
+            "name": "API Design",
+            "keywords": ["api design", "versioning", "pagination", "error handling", "validation", "documentation"],
+            "competency_id": "int.software_engineering.apis_and_backend.api_design",
+            "score": 5
+        },
+        {
+            "name": "Python",
+            "keywords": ["python", "decorator", "function", "class", "exception", "virtual environment"],
+            "competency_id": "int.software_engineering.programming_languages.python",
+            "score": 3
+        },
+        {
+            "name": "SQLite",
+            "keywords": ["sqlite"],
+            "competency_id": "int.data_and_databases.database_systems.sqlite",
+            "score": 6
+        },
+        {
+            "name": "PostgreSQL",
+            "keywords": ["postgres", "postgresql"],
+            "competency_id": "int.data_and_databases.database_systems.postgresql",
+            "score": 6
+        },
+        {
+            "name": "Testing",
+            "keywords": ["unit test", "pytest", "test client", "testing"],
+            "competency_id": "int.software_engineering.testing.unit_testing",
+            "score": 5
+        }
+    ]
+}

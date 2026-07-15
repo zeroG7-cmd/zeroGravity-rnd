@@ -1,0 +1,24 @@
+{
+    "schema_version": 1,
+    "imports": {
+        "bootdev_learn_python": {
+            "completed_units": 44,
+            "xp_awarded": 880,
+            "imported_at": "2026-07-15T00:40:16.679267+00:00",
+            "source": "bootdev_progress.json",
+            "last_reconciled_at": "2026-07-15T02:24:31.284810+00:00"
+        },
+        "bootdev_learn_linux": {
+            "completed_units": 9,
+            "xp_awarded": 180,
+            "imported_at": "2026-07-15T00:40:16.738431+00:00",
+            "source": "bootdev_progress.json"
+        },
+        "bootdev_learn_sql": {
+            "completed_units": 9,
+            "xp_awarded": 180,
+            "imported_at": "2026-07-15T00:40:16.813182+00:00",
+            "source": "bootdev_progress.json"
+        }
+    }
+}

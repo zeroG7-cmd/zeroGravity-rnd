@@ -1,0 +1,9 @@
+{
+  "event_id": "demo-course-unit-001",
+  "event_type": "learning.unit.completed",
+  "provider": "Demo Provider",
+  "resource_id": "demo_course",
+  "unit_id": "unit_001",
+  "title": "Example lesson",
+  "completed_at": "2026-07-15T20:00:00Z"
+}

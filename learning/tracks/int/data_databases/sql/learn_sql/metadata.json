@@ -1,0 +1,249 @@
+{
+    "id": "bootdev_learn_sql",
+    "resource_id": "bootdev_learn_sql",
+    "external_resource_id": "bootdev_learn_sql",
+    "title": "Learn SQL",
+    "provider": "Boot.dev",
+    "instructor": "Boot.dev Team",
+    "stat": "INT",
+    "hierarchy": [
+        "Data & Databases",
+        "SQL"
+    ],
+    "domain": "Data & Databases",
+    "skill": "SQL",
+    "difficulty": "Beginner",
+    "source_url": "https://www.boot.dev/courses/learn-sql",
+    "competency_id": "int.data_and_databases.sql.queries",
+    "capability_id": "int.data_and_databases.sql.queries",
+    "default_competency_awards": [
+        {
+            "competency_id": "int.data_and_databases.sql.queries",
+            "weight": 1.0
+        }
+    ],
+    "section_concept_awards": {
+        "1": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.select",
+                    "weight": 0.45
+                },
+                {
+                    "concept_id": "sql.tables",
+                    "weight": 0.35
+                },
+                {
+                    "concept_id": "sql.filtering",
+                    "weight": 0.2
+                }
+            ]
+        },
+        "2": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.tables",
+                    "weight": 0.55
+                },
+                {
+                    "concept_id": "sql.constraints",
+                    "weight": 0.25
+                },
+                {
+                    "concept_id": "sql.modification",
+                    "weight": 0.2
+                }
+            ]
+        },
+        "3": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.constraints",
+                    "weight": 0.75
+                },
+                {
+                    "concept_id": "sql.tables",
+                    "weight": 0.25
+                }
+            ]
+        },
+        "4": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.modification",
+                    "weight": 0.65
+                },
+                {
+                    "concept_id": "sql.select",
+                    "weight": 0.35
+                }
+            ]
+        },
+        "5": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.select",
+                    "weight": 0.4
+                },
+                {
+                    "concept_id": "sql.filtering",
+                    "weight": 0.35
+                },
+                {
+                    "concept_id": "sql.sorting",
+                    "weight": 0.25
+                }
+            ]
+        },
+        "6": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.sorting",
+                    "weight": 0.6
+                },
+                {
+                    "concept_id": "sql.filtering",
+                    "weight": 0.4
+                }
+            ]
+        },
+        "7": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.aggregation",
+                    "weight": 0.6
+                },
+                {
+                    "concept_id": "sql.grouping",
+                    "weight": 0.4
+                }
+            ]
+        },
+        "8": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.subqueries",
+                    "weight": 0.7
+                },
+                {
+                    "concept_id": "sql.filtering",
+                    "weight": 0.3
+                }
+            ]
+        },
+        "9": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.normalization",
+                    "weight": 0.7
+                },
+                {
+                    "concept_id": "sql.constraints",
+                    "weight": 0.3
+                }
+            ]
+        },
+        "10": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.joins",
+                    "weight": 0.75
+                },
+                {
+                    "concept_id": "sql.tables",
+                    "weight": 0.25
+                }
+            ]
+        },
+        "11": {
+            "mapping_confidence": "medium",
+            "concept_awards": [
+                {
+                    "concept_id": "sql.indexes",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "sql.query_planning",
+                    "weight": 0.5
+                }
+            ]
+        }
+    },
+    "mapping_confidence": "medium",
+    "manifest_schema_version": 3,
+    "dynamic_provider_units": true,
+    "external_total_units": 97,
+    "xp_rules": {
+        "exercise": 20
+    },
+    "units": [],
+    "unit_count": 97,
+    "section_count": 11,
+    "sections": [
+        {
+            "number": 1,
+            "title": "Introduction",
+            "total_units": null
+        },
+        {
+            "number": 2,
+            "title": "Tables",
+            "total_units": null
+        },
+        {
+            "number": 3,
+            "title": "Constraints",
+            "total_units": null
+        },
+        {
+            "number": 4,
+            "title": "CRUD",
+            "total_units": null
+        },
+        {
+            "number": 5,
+            "title": "Basic Queries",
+            "total_units": null
+        },
+        {
+            "number": 6,
+            "title": "Structuring",
+            "total_units": null
+        },
+        {
+            "number": 7,
+            "title": "Aggregations",
+            "total_units": null
+        },
+        {
+            "number": 8,
+            "title": "Subqueries",
+            "total_units": null
+        },
+        {
+            "number": 9,
+            "title": "Normalization",
+            "total_units": null
+        },
+        {
+            "number": 10,
+            "title": "Joins",
+            "total_units": null
+        },
+        {
+            "number": 11,
+            "title": "Performance",
+            "total_units": null
+        }
+    ]
+}

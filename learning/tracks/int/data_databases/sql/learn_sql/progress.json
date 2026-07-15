@@ -1,0 +1,18 @@
+{
+    "current_unit_index": 9,
+    "completed_units": [
+        "history_section_01_unit_001",
+        "history_section_01_unit_002",
+        "history_section_01_unit_003",
+        "history_section_01_unit_004",
+        "history_section_01_unit_005",
+        "history_section_01_unit_006",
+        "history_section_01_unit_007",
+        "history_section_02_unit_001",
+        "history_section_02_unit_002"
+    ],
+    "total_xp": 180,
+    "status": "In Progress",
+    "external_total_units": 97,
+    "external_completed_units": 9
+}

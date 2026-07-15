@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "provider": "Udemy",
+  "resource_id": "udemy_api_course",
+  "captured_at": "2026-07-14T00:00:00Z",
+  "progress": {
+    "completed_units": 0,
+    "total_units": 0
+  },
+  "notes": "Enter your exact completed lecture count after the Udemy API course manifest has been imported."
+}
