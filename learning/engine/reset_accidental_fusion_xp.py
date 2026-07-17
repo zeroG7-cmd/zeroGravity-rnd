@@ -1,4 +1,4 @@
-"""One-time optional cleanup for the accidental Fusion 360 template completion."""
+﻿"""One-time optional cleanup for the accidental Fusion 360 template completion."""
 
 from __future__ import annotations
 
@@ -7,8 +7,8 @@ from pathlib import Path
 
 from stats import build_operator_stats, calculate_skill_level
 
-COMPETENCIES_PATH = Path("learning/config/competencies.json")
-HISTORY_PATH = Path("learning/operator/history.json")
+COMPETENCIES_PATH = Path("operator/capabilities/competencies.json")
+HISTORY_PATH = Path("operator/hubs/learning/history/learning_history.json")
 TRACK_PROGRESS = Path(
     "learning/tracks/int/robotics/mechanical_design/cad/"
     "fusion_360_beginners_course/progress.json"
@@ -67,3 +67,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

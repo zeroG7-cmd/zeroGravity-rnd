@@ -1,4 +1,4 @@
-"""Backfill concept XP for units completed before Manifest v3.
+﻿"""Backfill concept XP for units completed before Manifest v3.
 
 This never awards operator/capability XP. It only mirrors already-earned track
 XP into the concept graph and keeps a ledger so each unit is processed once.
@@ -11,7 +11,7 @@ from concepts import distribute_concept_xp, resolve_concept_awards, update_conce
 from xp import calculate_unit_xp
 
 TRACKS_ROOT=Path('learning/tracks')
-LEDGER_PATH=Path('learning/operator/concept_backfill.json')
+LEDGER_PATH=Path('operator/hubs/learning/progress/concept_backfill.json')
 
 def load(path:Path, default:Any):
     if not path.exists(): return default
@@ -49,3 +49,4 @@ def main():
     print(f'Ledger                 : {LEDGER_PATH}')
 
 if __name__=='__main__': main()
+

@@ -1,4 +1,4 @@
-# Phase 2: Separate Operator state and capabilities from the Learning System
+﻿# Phase 2: Separate Operator state and capabilities from the Learning System
 # Run from the root of zeroGravity-rnd after Phase 1 has been committed.
 # This script moves only the Learning/Operator boundary and updates R&D Python paths.
 # It does not touch Shadow, Lab databases, Zero Command, CAD, CV, sensors, or URDF.
@@ -279,6 +279,7 @@ $staleMatches = @()
 
 foreach ($sourceFile in $sourceFiles) {
     $text = Get-Content -Raw -Path $sourceFile.FullName
+    if ($null -eq $text) { $text = "" }
 
     foreach ($pattern in $stalePatterns) {
         if ($text.Contains($pattern)) {
@@ -348,3 +349,4 @@ Write-Host ""
 Write-Host "Review the changes, then commit with:"
 Write-Host 'git add .'
 Write-Host 'git commit -m "separate operator state from learning system"'
+

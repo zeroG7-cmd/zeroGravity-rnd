@@ -1,11 +1,11 @@
-"""Operator Zero completion history v3.0."""
+﻿"""Operator Zero completion history v3.0."""
 from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-HISTORY_PATH = Path("learning/operator/history.json")
+HISTORY_PATH = Path("operator/hubs/learning/history/learning_history.json")
 
 def load_history() -> dict[str, Any]:
     if not HISTORY_PATH.exists():
@@ -44,3 +44,4 @@ def record_completion(metadata: dict[str, Any], unit: dict[str, Any], xp_award: 
         "completed_at": datetime.now(timezone.utc).isoformat(),
     }
     history["schema_version"] = 3; history.setdefault("events", []).append(event); save_history(history); return True
+

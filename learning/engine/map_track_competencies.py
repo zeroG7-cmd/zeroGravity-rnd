@@ -1,4 +1,4 @@
-"""Operator Zero automatic competency mapper v1.0.
+﻿"""Operator Zero automatic competency mapper v1.0.
 
 Uses transparent keyword rules to suggest weighted competency mappings for each
 unit. The generated mappings are deterministic and reviewable in metadata.json.
@@ -13,7 +13,7 @@ from typing import Any
 
 TRACKS_ROOT = Path("learning/tracks")
 RULES_PATH = Path("learning/config/competency_mapping_rules.json")
-COMPETENCIES_PATH = Path("learning/config/competencies.json")
+COMPETENCIES_PATH = Path("operator/capabilities/competencies.json")
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -155,3 +155,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

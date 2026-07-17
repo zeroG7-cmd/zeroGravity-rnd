@@ -1,16 +1,16 @@
-"""
-Operator Zero Skill Tree Synchronizer — Knowledge Graph Edition
+﻿"""
+Operator Zero Skill Tree Synchronizer â€” Knowledge Graph Edition
 ===============================================================
 
 The Markdown file is the human-editable source of truth.
 
 This tool generates:
 
-1. learning/config/skill_tree.json
+1. operator/capabilities/skill_tree.json
    - Stores the hierarchy.
    - Leaf nodes contain competency references, not XP.
 
-2. learning/config/competencies.json
+2. operator/capabilities/competencies.json
    - Stores each competency's XP and level exactly once.
 
 Markdown syntax
@@ -734,7 +734,7 @@ def print_section(
 
 def print_report(report: ChangeReport) -> None:
     print("=" * 76)
-    print("OPERATOR ZERO SKILL TREE — KNOWLEDGE GRAPH SYNCHRONIZATION")
+    print("OPERATOR ZERO SKILL TREE â€” KNOWLEDGE GRAPH SYNCHRONIZATION")
     print("=" * 76)
 
     print_section("Tree paths added", report.added_tree_paths, "+")
