@@ -65,7 +65,23 @@ $SummaryReport = Join-Path $ReportRoot "phase_03_shadow_audit_summary.md"
 function Get-RelativePath {
     param([string]$FullPath)
 
-    return [System.IO.Path]::GetRelativePath($RepoRoot, $FullPath).Replace("\", "/")
+    $repoFull = [System.IO.Path]::GetFullPath($RepoRoot)
+    $fileFull = [System.IO.Path]::GetFullPath($FullPath)
+
+    while ($repoFull.EndsWith("\") -or $repoFull.EndsWith("/")) {
+        $repoFull = $repoFull.Substring(0, $repoFull.Length - 1)
+    }
+
+    $prefix = $repoFull + [System.IO.Path]::DirectorySeparatorChar
+
+    if (-not $fileFull.StartsWith(
+        $prefix,
+        [System.StringComparison]::OrdinalIgnoreCase
+    )) {
+        Stop-WithMessage "Path is outside the repository: $FullPath"
+    }
+
+    return $fileFull.Substring($prefix.Length).Replace("\", "/")
 }
 
 function Get-Classification {
