@@ -149,6 +149,7 @@ function Get-Classification {
                 Confidence = "medium"
                 Reason = "AI appears directly associated with Shadow autonomy."
             }
+        }
 
         if ($path -match "model|dataset|training|notebook|research|prototype|experiment") {
             return @{
@@ -156,6 +157,7 @@ function Get-Classification {
                 Confidence = "medium"
                 Reason = "Reusable AI research and training assets belong in Lab."
             }
+        }
 
         return @{
             Destination = "REVIEW:ai"
@@ -172,6 +174,7 @@ function Get-Classification {
                 Confidence = "medium"
                 Reason = "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
             }
+        }
 
         if ($path -match "dataset|training|research|experiment") {
             return @{
@@ -179,6 +182,7 @@ function Get-Classification {
                 Confidence = "medium"
                 Reason = "Reusable research datasets belong to Lab."
             }
+        }
 
         return @{
             Destination = "REVIEW:data"
@@ -220,6 +224,7 @@ function Get-Classification {
                 Confidence = "medium"
                 Reason = "Documentation appears Shadow-specific."
             }
+        }
 
         if ($path -match "experiment|research|pipeline|workflow|lab") {
             return @{
@@ -227,6 +232,7 @@ function Get-Classification {
                 Confidence = "medium"
                 Reason = "Documentation appears to describe R&D methods or experiment workflows."
             }
+        }
 
         return @{
             Destination = "REVIEW:docs"
