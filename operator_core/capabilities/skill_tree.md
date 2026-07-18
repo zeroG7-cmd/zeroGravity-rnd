@@ -1,0 +1,420 @@
+# Operator Capability Tree
+
+- CON
+  - Health Management
+    - Recovery
+      - Sleep
+      - Hydration
+      - Fatigue Management
+    - Nutrition
+      - Energy Balance
+      - Macronutrients
+      - Meal Planning
+    - Mobility
+      - Flexibility
+      - Joint Health
+      - Stretching
+  - Endurance
+    - Aerobic Capacity
+      - Running
+      - Skipping
+      - Zone Training
+    - Work Capacity
+      - Conditioning
+      - Recovery Between Efforts
+  - Physical Resilience
+    - Injury Prevention
+      - Warm-up
+      - Load Management
+      - Rehabilitation
+
+- INT
+  - Software Engineering
+    - Programming Languages
+      - Python
+      - C++
+      - JavaScript
+    - Web Development
+      - HTML
+      - CSS
+      - Three.js
+    - Version Control
+      - Git
+      - GitHub
+    - Testing
+      - Unit Testing
+      - Integration Testing
+      - System Testing
+      - Debugging
+      - Test Automation
+      - CI/CD Testing
+    - APIs & Backend
+      - REST APIs
+      - Flask
+      - FastAPI
+      - @Authentication
+      - JSON
+      - @HTTP
+      - @WebSockets
+      - Database Integration
+      - API Design
+  - Computer Science
+    - Data Structures
+      - Arrays
+      - Linked Lists
+      - Stacks
+      - Queues
+      - Trees
+      - Graphs
+      - Hash Tables
+      - Heaps
+    - Algorithms
+      - Searching
+      - Sorting
+      - Recursion
+      - Dynamic Programming
+      - Greedy Algorithms
+      - Graph Algorithms
+      - Pathfinding
+    - Complexity
+      - Time Complexity
+      - Space Complexity
+    - Operating Systems
+      - Processes
+      - Threads
+      - Memory Management
+      - Scheduling
+      - File Systems
+      - Linux
+    - Software Architecture
+      - Modular Design
+      - Event-driven Architecture
+      - Service Boundaries
+    - Concurrent Programming
+      - Synchronisation
+      - Async Programming
+  - Robotics
+    - Mechanical Design
+      - Statics
+      - Dynamics
+      - Mechanics of Materials
+      - CAD
+    - Mechatronics
+      - Actuators
+      - Sensors
+      - Embedded Integration
+    - Perception
+      - Computer Vision
+      - Sensor Fusion
+      - Camera Systems
+      - LIDAR Systems
+      - Object Detection
+      - Object Tracking
+      - Depth Estimation
+    - Navigation & Mapping
+      - Navigation
+      - Path Planning
+      - Localisation
+    - Robot Software
+      - Robot Middleware
+        - ROS2
+      - Simulation
+        - Gazebo
+      - Localisation
+        - SLAM
+        - GPS
+      - Deployment
+        - Runtime Services
+        - Telemetry
+  - Networking
+    - Network Fundamentals
+      - TCP/IP
+      - UDP
+      - DNS
+      - DHCP
+      - Routing
+    - Wireless
+      - Wi-Fi
+      - Bluetooth
+      - RF
+      - ELRS
+    - Client/Server
+      - Sockets
+      - @HTTP
+      - MQTT
+      - @WebSockets
+    - Remote Access
+      - SSH
+      - VPN
+      - SCP
+    - Network Security
+      - Firewalls
+      - Encryption
+      - Certificates
+      - @Authentication
+  - Data & Databases
+    - Database Systems
+      - SQLite
+      - PostgreSQL
+      - MySQL
+    - Data Engineering
+      - ETL
+      - Data Pipelines
+      - Parsing
+      - Data Validation
+      - Data Cleaning
+    - Database Design
+      - ER Diagrams
+      - Normalisation
+      - Relationships
+      - Schema Design
+    - SQL
+      - Queries
+      - Joins
+      - Indexing
+      - Views
+      - Transactions
+  - Systems Engineering
+    - Systems Thinking
+      - Feedback Loops
+      - Emergence
+      - Boundaries
+    - Requirements Engineering
+      - Requirements Elicitation
+      - Traceability
+    - System Architecture
+      - Interface Design
+      - Trade-off Analysis
+    - Verification & Validation
+      - Integration
+      - Lifecycle Management
+  - Business
+    - Entrepreneurship
+      - Business Models
+      - Value Propositions
+      - Customer Discovery
+      - Market Validation
+    - Finance
+      - Revenue
+      - Profit
+      - Cash Flow
+      - Pricing
+      - Budgeting
+    - Marketing
+      - Branding
+      - Positioning
+      - Content Strategy
+      - Customer Acquisition
+    - Sales
+      - Lead Generation
+      - Qualification
+      - Negotiation
+      - Closing
+    - Operations
+      - Process Design
+      - Service Delivery
+      - Quality Control
+      - Resource Planning
+    - Strategy
+      - Competitive Analysis
+      - Risk Management
+      - Growth Planning
+      - Decision Making
+  - Creative Production
+    - Video Production
+      - Cinematography
+      - Editing
+      - Colour Grading
+      - Sound Design
+    - Photography
+      - Composition
+      - Exposure
+      - Post-production
+    - Storytelling
+      - Narrative Design
+      - Worldbuilding
+      - Visual Language
+  - Learning Practice
+    - Learning Systems
+      - Prompt Engineering
+      - Note Taking
+      - Reflection
+      - Knowledge Mapping
+
+- STR
+  - Muscular Strength
+    - Upper Body
+      - Push-ups
+      - Pulling Strength
+      - Pressing Strength
+    - Lower Body
+      - Squats
+      - Lunges
+      - Hip Strength
+    - Core
+      - Bracing
+      - Anti-rotation
+  - Power
+    - Explosive Movement
+      - Jumping
+      - Kicking Power
+      - Acceleration
+  - Functional Strength
+    - Load Handling
+      - Carrying
+      - Equipment Setup
+      - Grip Strength
+
+- DEX
+  - Coordination
+    - Whole-body Coordination
+      - Rhythm
+      - Movement Sequencing
+    - Hand-eye Coordination
+      - Tool Control
+      - Camera Control
+  - Balance
+    - Static Balance
+      - Stance Control
+    - Dynamic Balance
+      - Weight Transfer
+      - Landing Control
+  - Agility
+    - Footwork
+      - Direction Changes
+      - Distance Management
+    - Reaction
+      - Reaction Time
+      - Visual Response
+  - Martial Arts
+    - Taekwondo
+      - Front Kick
+      - Roundhouse Kick
+      - Side Kick
+      - Forms
+      - Sparring
+    - Capoeira
+      - Ginga
+      - Esquiva
+      - Meia Lua
+      - Flow
+  - Fine Motor Control
+    - Workshop Skills
+      - Soldering
+      - Assembly
+      - Precision Measurement
+
+- DISC
+  - Consistency
+    - Routine Adherence
+      - Daily Practice
+      - Weekly Review
+      - Streak Recovery
+    - Task Completion
+      - Starting
+      - Finishing
+      - Follow-through
+  - Focus
+    - Attention Management
+      - Deep Work
+      - Distraction Control
+    - Session Quality
+      - Preparation
+      - Deliberate Practice
+  - Time Management
+    - Planning
+      - Prioritisation
+      - Scheduling
+      - Estimation
+    - Review
+      - Retrospective
+      - Course Correction
+  - Habit Formation
+    - Behaviour Design
+      - Cues
+      - Friction Reduction
+      - Reinforcement
+  - Accountability
+    - Evidence
+      - Logging
+      - Reporting
+      - Verification
+
+- WILL
+  - Persistence
+    - Sustained Effort
+      - Continuing Under Difficulty
+      - Returning After Interruption
+    - Goal Commitment
+      - Long-term Projects
+      - Delayed Gratification
+  - Courage
+    - Social Courage
+      - Outreach
+      - Asking for Feedback
+      - Negotiation
+    - Performance Courage
+      - Testing Publicly
+      - Shipping Work
+  - Discomfort Tolerance
+    - Physical Discomfort
+      - Training Fatigue
+      - Cold Start
+    - Cognitive Discomfort
+      - Ambiguity
+      - Complex Problems
+  - Emotional Regulation
+    - Setback Response
+      - Frustration Management
+      - Recovery From Failure
+    - Self-command
+      - Impulse Control
+      - Composure
+  - Decisiveness
+    - Decision Execution
+      - Commitment
+      - Risk Acceptance
+
+- SPIRIT
+  - Identity
+    - Self-Knowledge
+      - Personal Narrative
+      - Strengths and Limitations
+      - Authenticity
+    - Founder Identity
+      - Responsibility
+      - Leadership
+      - Craft
+  - Purpose
+    - Direction
+      - Values
+      - Calling
+      - Legacy
+    - Service
+      - Contribution
+      - Stewardship
+  - Culture
+    - Cultural Understanding
+      - Heritage
+      - Tradition
+      - Belonging
+    - Creative Heritage
+      - Afrofuturism
+      - Symbolism
+      - Cultural Storytelling
+  - Reflection
+    - Reflective Practice
+      - Journaling
+      - Self-Assessment
+      - Meaning Making
+      - Epiphanies
+  - Ethics
+    - Moral Reasoning
+      - Principles
+      - Responsibility
+      - Integrity
+  - Creativity
+    - Expression
+      - Storytelling
+      - Worldbuilding
+      - Artistic Direction

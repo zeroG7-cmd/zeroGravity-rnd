@@ -1,114 +1,48 @@
-import os
-import sqlite3
+"""Ingest Shadow hardware and simulation result files into the Lab database."""
+from __future__ import annotations
+from pathlib import Path
+import sys
 
-# ----------------------------
-# Paths
-# ----------------------------
-BASE_DIR = os.path.join(os.path.dirname(__file__), "../data")
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from lab.engine.service import log_test
+from shared.config.paths import SHADOW_HARDWARE_DATA, SHADOW_SIMULATION_DATA
 
 FOLDERS = {
-    "hardware": os.path.join(BASE_DIR, "hardware/results"),
-    "simulation": os.path.join(BASE_DIR, "simulation/results")
+    "hardware": SHADOW_HARDWARE_DATA / "results",
+    "simulation": SHADOW_SIMULATION_DATA / "results",
 }
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "../database/shadow.db")
-
-
-# ----------------------------
-# Parse log file
-# ----------------------------
-def parse_file(filepath, source):
-    data = {
-        "Source": source
-    }
-
-    with open(filepath, "r") as f:
-        lines = f.readlines()
-
-    for line in lines:
+def parse_file(path: Path, source: str) -> dict[str, str]:
+    data = {"Source": source}
+    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
         if ":" in line:
             key, value = line.split(":", 1)
             data[key.strip()] = value.strip()
-
     return data
 
-
-# ----------------------------
-# Insert into SQLite
-# ----------------------------
-def insert_into_db(data):
-    conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
-
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS test_logs (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            test_name TEXT,
-            component TEXT,
-            result TEXT,
-            notes TEXT,
-            time TEXT,
-            source TEXT
-        )
-    """)
-
-    cursor.execute("""
-        INSERT INTO test_logs (
-            test_name,
-            component,
-            result,
-            notes,
-            time,
-            source
-        )
-        VALUES (?, ?, ?, ?, ?, ?)
-    """, (
-        data.get("Test"),
-        data.get("Component"),
-        data.get("Result"),
-        data.get("Notes"),
-        data.get("Time"),
-        data.get("Source")
-    ))
-
-    conn.commit()
-    conn.close()
-
-
-# ----------------------------
-# Ingest one folder
-# ----------------------------
-def ingest_folder(folder_path, source_label):
-    if not os.path.exists(folder_path):
-        print(f"Folder missing: {folder_path}")
-        return
-
-    files = os.listdir(folder_path)
-
-    for file in files:
-        if file.endswith(".txt") or file.endswith(".md"):
-            path = os.path.join(folder_path, file)
-
-            print(f"Ingesting ({source_label}): {file}")
-
-            data = parse_file(path, source_label)
-            insert_into_db(data)
-
-
-# ----------------------------
-# Main pipeline
-# ----------------------------
-def run_ingestion():
-    print("\n=== Shadow Robotics Log Ingestion ===\n")
-
+def run_ingestion() -> int:
+    count = 0
     for source, folder in FOLDERS.items():
-        ingest_folder(folder, source)
+        folder.mkdir(parents=True, exist_ok=True)
+        for path in sorted(folder.iterdir()):
+            if path.suffix.lower() not in {".txt", ".md"}:
+                continue
+            data = parse_file(path, source)
+            log_test(
+                data.get("Test", path.stem),
+                data.get("Component", ""),
+                data.get("Result", ""),
+                data.get("Notes", ""),
+                source,
+                data.get("Time") or None,
+            )
+            print(f"Ingested ({source}): {path.name}")
+            count += 1
+    print(f"Ingestion complete: {count} file(s).")
+    return count
 
-    print("\nIngestion complete\n")
-
-
-# ----------------------------
-# Run script
-# ----------------------------
 if __name__ == "__main__":
     run_ingestion()

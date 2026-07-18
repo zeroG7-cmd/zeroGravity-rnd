@@ -1,6 +1,6 @@
-"""
+﻿"""
 Operator Zero Learning Engine
-Operator Stats Engine v3.0 — Knowledge Graph Edition
+Operator Stats Engine v3.0 â€” Knowledge Graph Edition
 
 skill_tree.json defines where competencies appear.
 competencies.json owns competency XP and level.
@@ -8,18 +8,22 @@ stats.json is generated display/cache data.
 """
 
 from __future__ import annotations
+import sys
+from pathlib import Path
+REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 import json
-from pathlib import Path
+from shared.config.paths import LEARNING_ROOT, OPERATOR_CAPABILITIES, OPERATOR_HUBS
 from typing import Any, Iterable
 
 from level import calculate_level, get_level_progress
 
-LEARNING_ROOT = Path("learning")
-SKILL_TREE_PATH = LEARNING_ROOT / "config" / "skill_tree.json"
-COMPETENCIES_PATH = LEARNING_ROOT / "config" / "competencies.json"
-OPERATOR_ROOT = LEARNING_ROOT / "operator"
-STATS_PATH = OPERATOR_ROOT / "stats.json"
+SKILL_TREE_PATH = OPERATOR_CAPABILITIES / "skill_tree.json"
+COMPETENCIES_PATH = OPERATOR_CAPABILITIES / "competencies.json"
+OPERATOR_ROOT = OPERATOR_HUBS / "learning"
+STATS_PATH = OPERATOR_ROOT / "stats" / "learning_stats.json"
 
 
 def load_json(file_path: Path, default: Any) -> Any:

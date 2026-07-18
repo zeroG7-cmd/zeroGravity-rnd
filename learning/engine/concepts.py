@@ -10,7 +10,7 @@ import math
 from pathlib import Path
 from typing import Any
 
-GRAPH_PATH = Path("learning/config/capability_graph.json")
+GRAPH_PATH = Path("operator_core/capabilities/capability_graph.json")
 CONFIDENCE = {"high", "medium", "low"}
 
 
@@ -157,3 +157,5 @@ def update_concept_progress(
         record["last_source"] = source
     save_json(GRAPH_PATH, graph)
     return {"updated": len(distribution), "capability_only": False}
+
+

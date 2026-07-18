@@ -1,3 +1,8 @@
+import sys
+from pathlib import Path
+REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 """
 Operator Zero Learning Engine
 Legacy Track Migration Tool
@@ -23,11 +28,11 @@ New progress:
 """
 
 import json
-from pathlib import Path
+from shared.config.paths import LEARNING_TRACKS
 from typing import Any
 
 
-TRACKS_ROOT = Path("learning/tracks")
+TRACKS_ROOT = LEARNING_TRACKS
 
 
 def load_json(file_path: Path) -> dict[str, Any]:

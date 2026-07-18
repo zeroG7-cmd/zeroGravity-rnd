@@ -1,3 +1,6 @@
 [submodule "learning/resources/github/computer_vision/opencv_courses"]
 	path = learning/resources/github/computer_vision/opencv_courses
 	url = https://github.com/5starkarma/opencv_courses.git
+[submodule "learning/resources/github/python/30-Days-Of-Python"]
+	path = learning/resources/github/python/30-Days-Of-Python
+	url = https://github.com/Asabeneh/30-Days-Of-Python.git

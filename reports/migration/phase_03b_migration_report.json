@@ -1,0 +1,728 @@
+{
+  "generated_at": "2026-07-17T02:56:03.309334+01:00",
+  "mode": "applied",
+  "moves": [
+    {
+      "source": "ai/models/5.py",
+      "destination": "lab/research/ai/models/5.py",
+      "confidence": "medium",
+      "reason": "Reusable AI research and training assets belong in Lab."
+    },
+    {
+      "source": "cad/assemblies/shadow_mk1/.gitkeep",
+      "destination": "projects/shadow/cad/assemblies/shadow_mk1/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/assemblies/shadow_mk2",
+      "destination": "projects/shadow/cad/assemblies/shadow_mk2",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/camera/.gitkeep",
+      "destination": "projects/shadow/cad/components/camera/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/camera/pi_camera_v1/cad/.gitkeep",
+      "destination": "projects/shadow/cad/components/camera/pi_camera_v1/cad/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/camera/pi_camera_v1/cad/PiCam_WideAngle v2.f3d",
+      "destination": "projects/shadow/cad/components/camera/pi_camera_v1/cad/PiCam_WideAngle v2.f3d",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/camera/pi_camera_v1/cad/PiCam_WideAngle v2.step",
+      "destination": "projects/shadow/cad/components/camera/pi_camera_v1/cad/PiCam_WideAngle v2.step",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/camera/pi_camera_v1/image/.gitkeep",
+      "destination": "projects/shadow/cad/components/camera/pi_camera_v1/image/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/camera/pi_camera_v1/image/PiCam_WideAngle v2.png",
+      "destination": "projects/shadow/cad/components/camera/pi_camera_v1/image/PiCam_WideAngle v2.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/compute/raspberry_pi_3b/cad/Raspberry Pi 3 Light Version.STEP",
+      "destination": "projects/shadow/cad/components/compute/raspberry_pi_3b/cad/Raspberry Pi 3 Light Version.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/compute/raspberry_pi_3b/cad/Raspberry Pi 3.STEP",
+      "destination": "projects/shadow/cad/components/compute/raspberry_pi_3b/cad/Raspberry Pi 3.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/compute/raspberry_pi_3b/image/Rendering-Rpi3-2.18-2.jpg",
+      "destination": "projects/shadow/cad/components/compute/raspberry_pi_3b/image/Rendering-Rpi3-2.18-2.jpg",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/compute/raspberry_pi_3b/image/Rendering-Rpi3-2.372.jpg",
+      "destination": "projects/shadow/cad/components/compute/raspberry_pi_3b/image/Rendering-Rpi3-2.372.jpg",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/flight_controller/.gitkeep",
+      "destination": "projects/shadow/cad/components/flight_controller/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/flight_controller/navio_2/cad/Navio2.STEP",
+      "destination": "projects/shadow/cad/components/flight_controller/navio_2/cad/Navio2.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/.gitkeep",
+      "destination": "projects/shadow/cad/components/frame/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/.gitkeep",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/Arm.STEP",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/Arm.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/BottomPlate.STEP",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/BottomPlate.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/CameraPlate.STEP",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/CameraPlate.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/Damper.STEP",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/Damper.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/FPVPlate.STEP",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/FPVPlate.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/Rahmen.STEP",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/Rahmen.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/Spacer.STEP",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/Spacer.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/cad/TopPlate.STEP",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/cad/TopPlate.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/dxf/.gitkeep",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/dxf/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/dxf/Arm.dxf",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/dxf/Arm.dxf",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/dxf/BottomPlate.dxf",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/dxf/BottomPlate.dxf",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/dxf/CameraPlate.dxf",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/dxf/CameraPlate.dxf",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/dxf/TopPlate.dxf",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/dxf/TopPlate.dxf",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/renders/.gitkeep",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/renders/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/renders/5.JPG",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/renders/5.JPG",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/renders/6.JPG",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/renders/6.JPG",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/frame/zmr250_carbon_fiber_frame/renders/Unbenannt.jpg",
+      "destination": "projects/shadow/cad/components/frame/zmr250_carbon_fiber_frame/renders/Unbenannt.jpg",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/lidar/.gitkeep",
+      "destination": "projects/shadow/cad/components/lidar/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/lidar/rplidar_a2m12/cad/.gitkeep",
+      "destination": "projects/shadow/cad/components/lidar/rplidar_a2m12/cad/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/lidar/rplidar_a2m12/cad/LIDAR.STEP",
+      "destination": "projects/shadow/cad/components/lidar/rplidar_a2m12/cad/LIDAR.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/lidar/rplidar_a2m12/image/.gitkeep",
+      "destination": "projects/shadow/cad/components/lidar/rplidar_a2m12/image/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/lidar/rplidar_a2m12/image/LIDAR.png",
+      "destination": "projects/shadow/cad/components/lidar/rplidar_a2m12/image/LIDAR.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/motors/.gitkeep",
+      "destination": "projects/shadow/cad/components/motors/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/motors/racerstar_br2205_2300kv/cad/.gitkeep",
+      "destination": "projects/shadow/cad/components/motors/racerstar_br2205_2300kv/cad/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/motors/racerstar_br2205_2300kv/cad/Racerstar-BR2205-2300KV.SLDPRT",
+      "destination": "projects/shadow/cad/components/motors/racerstar_br2205_2300kv/cad/Racerstar-BR2205-2300KV.SLDPRT",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/motors/racerstar_br2205_2300kv/cad/Racerstar-BR2205-2300KV.STEP",
+      "destination": "projects/shadow/cad/components/motors/racerstar_br2205_2300kv/cad/Racerstar-BR2205-2300KV.STEP",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/motors/racerstar_br2205_2300kv/image/.gitkeep",
+      "destination": "projects/shadow/cad/components/motors/racerstar_br2205_2300kv/image/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/motors/racerstar_br2205_2300kv/image/RacerStar-BR2205-2300KV.JPG",
+      "destination": "projects/shadow/cad/components/motors/racerstar_br2205_2300kv/image/RacerStar-BR2205-2300KV.JPG",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/battery/lithium_polymer_3S/cad/LiPo 3S v1.f3z",
+      "destination": "projects/shadow/cad/components/power/battery/lithium_polymer_3S/cad/LiPo 3S v1.f3z",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/battery/lithium_polymer_3S/cad/LiPo 3S v1.iges",
+      "destination": "projects/shadow/cad/components/power/battery/lithium_polymer_3S/cad/LiPo 3S v1.iges",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/battery/lithium_polymer_3S/image/1178px-Check_mark_23x20_04.svg.png",
+      "destination": "projects/shadow/cad/components/power/battery/lithium_polymer_3S/image/1178px-Check_mark_23x20_04.svg.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/esc/exceed_rc_proton_30a_esc/cad/.gitkeep",
+      "destination": "projects/shadow/cad/components/power/esc/exceed_rc_proton_30a_esc/cad/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/esc/exceed_rc_proton_30a_esc/cad/30A ESC.SLDPRT",
+      "destination": "projects/shadow/cad/components/power/esc/exceed_rc_proton_30a_esc/cad/30A ESC.SLDPRT",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/esc/exceed_rc_proton_30a_esc/image/.gitkeep",
+      "destination": "projects/shadow/cad/components/power/esc/exceed_rc_proton_30a_esc/image/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/esc/exceed_rc_proton_30a_esc/image/ESC View 1.jpg",
+      "destination": "projects/shadow/cad/components/power/esc/exceed_rc_proton_30a_esc/image/ESC View 1.jpg",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/esc/exceed_rc_proton_30a_esc/image/ESC View 2.jpg",
+      "destination": "projects/shadow/cad/components/power/esc/exceed_rc_proton_30a_esc/image/ESC View 2.jpg",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/power/esc/exceed_rc_proton_30a_esc/image/ESC View 3.jpg",
+      "destination": "projects/shadow/cad/components/power/esc/exceed_rc_proton_30a_esc/image/ESC View 3.jpg",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/receiver/flysky_fs_ia6/cad/Flysky FS-iA6 Receiver.stp",
+      "destination": "projects/shadow/cad/components/receiver/flysky_fs_ia6/cad/Flysky FS-iA6 Receiver.stp",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/components/receiver/flysky_fs_ia6/image/Flysky FS-iA6 Receiver.png",
+      "destination": "projects/shadow/cad/components/receiver/flysky_fs_ia6/image/Flysky FS-iA6 Receiver.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/drone_landing_legs/mesh/files/25MM-LANDING-SKID.SLDPRT",
+      "destination": "projects/shadow/cad/custom/drone_landing_legs/mesh/files/25MM-LANDING-SKID.SLDPRT",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/drone_landing_legs/mesh/files/25MM-LANDING-SKID.STL",
+      "destination": "projects/shadow/cad/custom/drone_landing_legs/mesh/files/25MM-LANDING-SKID.STL",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/drone_landing_legs/mesh/images/e516cfce-1fbc-45e2-8a7d-ae5b79c4aabb.png",
+      "destination": "projects/shadow/cad/custom/drone_landing_legs/mesh/images/e516cfce-1fbc-45e2-8a7d-ae5b79c4aabb.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/drone_landing_legs/mesh/images/fdbe9a9d-ef25-421b-b67c-56cc46743473.jpeg",
+      "destination": "projects/shadow/cad/custom/drone_landing_legs/mesh/images/fdbe9a9d-ef25-421b-b67c-56cc46743473.jpeg",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/drone_landing_legs/mesh/LICENSE.txt",
+      "destination": "projects/shadow/cad/custom/drone_landing_legs/mesh/LICENSE.txt",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/drone_landing_legs/mesh/README.txt",
+      "destination": "projects/shadow/cad/custom/drone_landing_legs/mesh/README.txt",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/drone_landing_legs/reference/Drone Landing skid - 5559311.zip",
+      "destination": "projects/shadow/cad/custom/drone_landing_legs/reference/Drone Landing skid - 5559311.zip",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/files/Autopilot_Navio2_case_bottom.stl",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/files/Autopilot_Navio2_case_bottom.stl",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/files/Autopilot_Navio2_case_top.stl",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/files/Autopilot_Navio2_case_top.stl",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/files/Pins_cap.stl",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/files/Pins_cap.stl",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/files/Vibro_Navio2_adapter_for_case.stl",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/files/Vibro_Navio2_adapter_for_case.stl",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/images/3825b6d7cc6a70b39a079ab9b32245da.png",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/images/3825b6d7cc6a70b39a079ab9b32245da.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/images/56825e95700ae4ce8fa5057630bdfd91.png",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/images/56825e95700ae4ce8fa5057630bdfd91.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/images/63a2b9e0dc9b49da37ed0ce00ec6b149.png",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/images/63a2b9e0dc9b49da37ed0ce00ec6b149.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/images/71c41de922b2912b67725ea1b68c600b.png",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/images/71c41de922b2912b67725ea1b68c600b.png",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/images/IMG_20160705_194547.jpg",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/images/IMG_20160705_194547.jpg",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/LICENSE.txt",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/LICENSE.txt",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/mesh/README.txt",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/mesh/README.txt",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/custom/navio_autopilot_case/reference/original_navio2_case_download.zip",
+      "destination": "projects/shadow/cad/custom/navio_autopilot_case/reference/original_navio2_case_download.zip",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/exports/gazebo/.gitkeep",
+      "destination": "projects/shadow/cad/exports/gazebo/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cad/exports/meshes/.gitkeep",
+      "destination": "projects/shadow/cad/exports/meshes/.gitkeep",
+      "confidence": "high",
+      "reason": "Existing CAD content appears to describe Shadow hardware and assemblies."
+    },
+    {
+      "source": "cv/face_detection/3.py",
+      "destination": "projects/shadow/perception/computer_vision/face_detection/3.py",
+      "confidence": "medium",
+      "reason": "Likely implementation or prototype for Shadow perception."
+    },
+    {
+      "source": "cv/object_tracking/2.py",
+      "destination": "projects/shadow/perception/computer_vision/object_tracking/2.py",
+      "confidence": "medium",
+      "reason": "Likely implementation or prototype for Shadow perception."
+    },
+    {
+      "source": "cv/opencv_basics/code/webcam_test.py",
+      "destination": "projects/shadow/perception/computer_vision/opencv_basics/code/webcam_test.py",
+      "confidence": "medium",
+      "reason": "Likely implementation or prototype for Shadow perception."
+    },
+    {
+      "source": "cv/opencv_basics/lessons/lesson_01_read_images.py",
+      "destination": "projects/shadow/perception/computer_vision/opencv_basics/lessons/lesson_01_read_images.py",
+      "confidence": "medium",
+      "reason": "Likely implementation or prototype for Shadow perception."
+    },
+    {
+      "source": "cv/opencv_basics/notes/image_processing_notes.md",
+      "destination": "projects/shadow/perception/computer_vision/opencv_basics/notes/image_processing_notes.md",
+      "confidence": "medium",
+      "reason": "Likely implementation or prototype for Shadow perception."
+    },
+    {
+      "source": "cv/pipeline/pipeline_01_video_test.py",
+      "destination": "projects/shadow/perception/computer_vision/pipeline/pipeline_01_video_test.py",
+      "confidence": "medium",
+      "reason": "Likely implementation or prototype for Shadow perception."
+    },
+    {
+      "source": "cv/pipeline/pipeline_02_processing.py",
+      "destination": "projects/shadow/perception/computer_vision/pipeline/pipeline_02_processing.py",
+      "confidence": "medium",
+      "reason": "Likely implementation or prototype for Shadow perception."
+    },
+    {
+      "source": "cv/pipeline/pipeline_live_stream.py",
+      "destination": "projects/shadow/perception/computer_vision/pipeline/pipeline_live_stream.py",
+      "confidence": "medium",
+      "reason": "Likely implementation or prototype for Shadow perception."
+    },
+    {
+      "source": "data/hardware/bags/.gitkeep",
+      "destination": "projects/shadow/data/hardware/bags/.gitkeep",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/hardware/camera/.mp4",
+      "destination": "projects/shadow/data/hardware/camera/.mp4",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/hardware/logs/.gitkeep",
+      "destination": "projects/shadow/data/hardware/logs/.gitkeep",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/hardware/results/.gitkeep",
+      "destination": "projects/shadow/data/hardware/results/.gitkeep",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/hardware/results/CAMERA_TEST_001_SETUP_2026-04-11_04-05-55.txt",
+      "destination": "projects/shadow/data/hardware/results/CAMERA_TEST_001_SETUP_2026-04-11_04-05-55.txt",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/hardware/results/LIDAR_TEST_001_setup_2026-04-11_04-01-13.txt",
+      "destination": "projects/shadow/data/hardware/results/LIDAR_TEST_001_setup_2026-04-11_04-01-13.txt",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/simulation/bags/.gitkeep",
+      "destination": "projects/shadow/data/simulation/bags/.gitkeep",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/simulation/camera/Video.mov",
+      "destination": "projects/shadow/data/simulation/camera/Video.mov",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/simulation/logs/.gitkeep",
+      "destination": "projects/shadow/data/simulation/logs/.gitkeep",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/simulation/results/.gitkeep",
+      "destination": "projects/shadow/data/simulation/results/.gitkeep",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "data/simulation/stream/drone_stream_server.py",
+      "destination": "projects/shadow/data/simulation/stream/drone_stream_server.py",
+      "confidence": "medium",
+      "reason": "Likely Shadow simulation, hardware, telemetry, camera, or mission data."
+    },
+    {
+      "source": "database/zerogravity_rnd.db",
+      "destination": "lab/database/zerogravity_rnd.db",
+      "confidence": "high",
+      "reason": "Long-term R&D and experiment database."
+    },
+    {
+      "source": "docs/component_library/Sensor_RPi_Camera_OV5647_5MP/info.md",
+      "destination": "projects/shadow/docs/component_library/Sensor_RPi_Camera_OV5647_5MP/info.md",
+      "confidence": "medium",
+      "reason": "Documentation appears Shadow-specific."
+    },
+    {
+      "source": "docs/component_library/Sensor_RPLIDAR_A2M12/info.md",
+      "destination": "projects/shadow/docs/component_library/Sensor_RPLIDAR_A2M12/info.md",
+      "confidence": "medium",
+      "reason": "Documentation appears Shadow-specific."
+    },
+    {
+      "source": "docs/measurements/shadow_measurements.md",
+      "destination": "projects/shadow/docs/measurements/shadow_measurements.md",
+      "confidence": "medium",
+      "reason": "Documentation appears Shadow-specific."
+    },
+    {
+      "source": "docs/shadow_system_architecture.md",
+      "destination": "projects/shadow/docs/shadow_system_architecture.md",
+      "confidence": "medium",
+      "reason": "Documentation appears Shadow-specific."
+    },
+    {
+      "source": "experiments_archive/13.md",
+      "destination": "lab/archive/experiments/13.md",
+      "confidence": "high",
+      "reason": "Archived experiments are Lab records rather than project runtime assets."
+    },
+    {
+      "source": "sensors/imu_tests/12.md",
+      "destination": "projects/shadow/hardware/sensors/imu_tests/12.md",
+      "confidence": "medium",
+      "reason": "Sensor material is likely tied to Shadow hardware testing."
+    },
+    {
+      "source": "sensors/lidar_tests/10.md",
+      "destination": "projects/shadow/hardware/sensors/lidar_tests/10.md",
+      "confidence": "medium",
+      "reason": "Sensor material is likely tied to Shadow hardware testing."
+    },
+    {
+      "source": "urdf/shadow_drone.urdf",
+      "destination": "projects/shadow/simulation/urdf/shadow_drone.urdf",
+      "confidence": "high",
+      "reason": "URDF is the Shadow robot simulation model."
+    }
+  ],
+  "review_entries_skipped": [
+    {
+      "source_path": "ai/yolo_tests/4.py",
+      "source_root": "ai",
+      "extension": ".py",
+      "size_bytes": 2,
+      "proposed_destination": "REVIEW:ai",
+      "confidence": "low",
+      "reason": "AI content needs semantic classification before moving."
+    },
+    {
+      "source_path": "data/README.md",
+      "source_root": "data",
+      "extension": ".md",
+      "size_bytes": 57,
+      "proposed_destination": "REVIEW:data",
+      "confidence": "low",
+      "reason": "Data must be separated by ownership and lifecycle."
+    },
+    {
+      "source_path": "docs/component_library/Battary_FCONEGY_1500mAh_3S/info.md",
+      "source_root": "docs",
+      "extension": ".md",
+      "size_bytes": 528,
+      "proposed_destination": "REVIEW:docs",
+      "confidence": "low",
+      "reason": "Could be project, Lab, or repository-level documentation."
+    },
+    {
+      "source_path": "docs/component_library/Compute_Navio2/info.md",
+      "source_root": "docs",
+      "extension": ".md",
+      "size_bytes": 1168,
+      "proposed_destination": "REVIEW:docs",
+      "confidence": "low",
+      "reason": "Could be project, Lab, or repository-level documentation."
+    },
+    {
+      "source_path": "docs/component_library/Compute_Pi_Navio2_Stack/info.md",
+      "source_root": "docs",
+      "extension": ".md",
+      "size_bytes": 481,
+      "proposed_destination": "REVIEW:docs",
+      "confidence": "low",
+      "reason": "Could be project, Lab, or repository-level documentation."
+    },
+    {
+      "source_path": "docs/component_library/Compute_Raspberry_Pi_3B/info.md",
+      "source_root": "docs",
+      "extension": ".md",
+      "size_bytes": 1195,
+      "proposed_destination": "REVIEW:docs",
+      "confidence": "low",
+      "reason": "Could be project, Lab, or repository-level documentation."
+    },
+    {
+      "source_path": "docs/component_library/ESC_XXD_30A/info.md",
+      "source_root": "docs",
+      "extension": ".md",
+      "size_bytes": 468,
+      "proposed_destination": "REVIEW:docs",
+      "confidence": "low",
+      "reason": "Could be project, Lab, or repository-level documentation."
+    },
+    {
+      "source_path": "docs/component_library/Frame_ZMR250_QAV250_Carbon Fiber/info.md",
+      "source_root": "docs",
+      "extension": ".md",
+      "size_bytes": 781,
+      "proposed_destination": "REVIEW:docs",
+      "confidence": "low",
+      "reason": "Could be project, Lab, or repository-level documentation."
+    },
+    {
+      "source_path": "docs/component_library/Motor_Racerstar_BR2205_2300KV/info.md",
+      "source_root": "docs",
+      "extension": ".md",
+      "size_bytes": 350,
+      "proposed_destination": "REVIEW:docs",
+      "confidence": "low",
+      "reason": "Could be project, Lab, or repository-level documentation."
+    },
+    {
+      "source_path": "docs/system_overview.md",
+      "source_root": "docs",
+      "extension": ".md",
+      "size_bytes": 517,
+      "proposed_destination": "REVIEW:docs",
+      "confidence": "low",
+      "reason": "Could be project, Lab, or repository-level documentation."
+    }
+  ]
+}

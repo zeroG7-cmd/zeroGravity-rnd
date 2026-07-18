@@ -10,7 +10,7 @@ from concepts import distribute_concept_xp, resolve_concept_awards, update_conce
 from history import record_completion
 from stats import update_operator_competencies
 from xp import calculate_unit_xp, distribute_xp, resolve_competency_awards
-ROOT=Path('learning'); TRACKS=ROOT/'tracks'; LEDGER=ROOT/'operator'/'provider_events.json'; RECEIPTS=ROOT/'operator'/'receipts'
+ROOT=Path('learning'); TRACKS=ROOT/'tracks'; LEDGER=Path('operator_core/events/provider_events.json'); RECEIPTS=Path('operator_core/events/receipts')
 def load(p,d=None): return json.loads(p.read_text(encoding='utf-8')) if p.exists() else d
 def save(p,d): p.parent.mkdir(parents=True,exist_ok=True); t=p.with_suffix(p.suffix+'.tmp'); t.write_text(json.dumps(d,indent=4,ensure_ascii=False)+'\n',encoding='utf-8'); t.replace(p)
 def norm(v): return str(v or '').strip().lower()
@@ -68,3 +68,5 @@ def process(e,dry=False):
 def main():
  ap=argparse.ArgumentParser(); ap.add_argument('event'); ap.add_argument('--dry-run',action='store_true'); a=ap.parse_args(); print(json.dumps(process(load(Path(a.event)),a.dry_run),indent=2))
 if __name__=='__main__':main()
+
+
