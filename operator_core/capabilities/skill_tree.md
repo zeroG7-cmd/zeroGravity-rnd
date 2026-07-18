@@ -240,7 +240,15 @@
       - Note Taking
       - Reflection
       - Knowledge Mapping
-
+  - Aviation
+    - Flight Theory 
+    - Navigation 
+    - Meteorology
+    - Mission Planning 
+    - Piloting
+    - FPV Operations 
+    - BVLOS
+    - Autonomy
 - STR
   - Muscular Strength
     - Upper Body
