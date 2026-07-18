@@ -1,16 +1,16 @@
-﻿"""
-Operator Zero Skill Tree Synchronizer â€” Knowledge Graph Edition
+"""
+Operator Zero Skill Tree Synchronizer — Knowledge Graph Edition
 ===============================================================
 
 The Markdown file is the human-editable source of truth.
 
 This tool generates:
 
-1. operator/capabilities/skill_tree.json
+1. operator_core/capabilities/skill_tree.json
    - Stores the hierarchy.
    - Leaf nodes contain competency references, not XP.
 
-2. operator/capabilities/competencies.json
+2. operator_core/capabilities/competencies.json
    - Stores each competency's XP and level exactly once.
 
 Markdown syntax
@@ -67,12 +67,12 @@ from typing import Any, Iterable
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_MARKDOWN_PATH = PROJECT_ROOT / "learning" / "skill_tree.md"
-DEFAULT_TREE_PATH = PROJECT_ROOT / "learning" / "config" / "skill_tree.json"
+DEFAULT_MARKDOWN_PATH = PROJECT_ROOT / "operator_core" / "capabilities" / "skill_tree.md"
+DEFAULT_TREE_PATH = PROJECT_ROOT / "operator_core" / "capabilities" / "skill_tree.json"
 DEFAULT_COMPETENCIES_PATH = (
-    PROJECT_ROOT / "learning" / "config" / "competencies.json"
+    PROJECT_ROOT / "operator_core" / "capabilities" / "competencies.json"
 )
-DEFAULT_BACKUP_DIR = PROJECT_ROOT / "learning" / "config" / "backups"
+DEFAULT_BACKUP_DIR = PROJECT_ROOT / "operator_core" / "capabilities" / "backups"
 
 BULLET_PATTERN = re.compile(r"^(?P<indent>[ \t]*)[-*+]\s+(?P<name>.+?)\s*$")
 SUSPICIOUS_ENDING_PATTERN = re.compile(r"[#:]$")
@@ -734,7 +734,7 @@ def print_section(
 
 def print_report(report: ChangeReport) -> None:
     print("=" * 76)
-    print("OPERATOR ZERO SKILL TREE â€” KNOWLEDGE GRAPH SYNCHRONIZATION")
+    print("OPERATOR ZERO SKILL TREE — KNOWLEDGE GRAPH SYNCHRONIZATION")
     print("=" * 76)
 
     print_section("Tree paths added", report.added_tree_paths, "+")
@@ -896,3 +896,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+

@@ -8,17 +8,21 @@ stats.json is generated display/cache data.
 """
 
 from __future__ import annotations
+import sys
+from pathlib import Path
+REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 import json
-from pathlib import Path
+from shared.config.paths import LEARNING_ROOT, OPERATOR_CAPABILITIES, OPERATOR_HUBS
 from typing import Any, Iterable
 
 from level import calculate_level, get_level_progress
 
-LEARNING_ROOT = Path("learning")
-SKILL_TREE_PATH = Path("operator/capabilities/skill_tree.json")
-COMPETENCIES_PATH = Path("operator/capabilities/competencies.json")
-OPERATOR_ROOT = Path("operator/hubs/learning")
+SKILL_TREE_PATH = OPERATOR_CAPABILITIES / "skill_tree.json"
+COMPETENCIES_PATH = OPERATOR_CAPABILITIES / "competencies.json"
+OPERATOR_ROOT = OPERATOR_HUBS / "learning"
 STATS_PATH = OPERATOR_ROOT / "stats" / "learning_stats.json"
 
 

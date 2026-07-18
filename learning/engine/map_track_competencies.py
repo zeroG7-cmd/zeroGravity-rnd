@@ -6,14 +6,19 @@ They can be edited manually after generation.
 """
 
 from __future__ import annotations
+import sys
+from pathlib import Path
+REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 import json
-from pathlib import Path
+from shared.config.paths import LEARNING_TRACKS, LEARNING_CONFIG, OPERATOR_CAPABILITIES
 from typing import Any
 
-TRACKS_ROOT = Path("learning/tracks")
-RULES_PATH = Path("learning/config/competency_mapping_rules.json")
-COMPETENCIES_PATH = Path("operator/capabilities/competencies.json")
+TRACKS_ROOT = LEARNING_TRACKS
+RULES_PATH = LEARNING_CONFIG / "competency_mapping_rules.json"
+COMPETENCIES_PATH = OPERATOR_CAPABILITIES / "competencies.json"
 
 
 def load_json(path: Path) -> dict[str, Any]:

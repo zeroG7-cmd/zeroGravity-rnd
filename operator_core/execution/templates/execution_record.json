@@ -1,0 +1,13 @@
+{
+  "activity_type": "practice",
+  "title": "Taekwondo kicking session",
+  "main_stats": ["DEX", "CON"],
+  "capabilities": ["Taekwondo"],
+  "concepts": ["Roundhouse Kick", "Balance", "Hip Rotation"],
+  "duration_minutes": 35,
+  "evidence": ["journal entry"],
+  "result": "Completed technical practice",
+  "reflection": "Supporting foot needs to rotate earlier.",
+  "status": "completed",
+  "source": "manual"
+}

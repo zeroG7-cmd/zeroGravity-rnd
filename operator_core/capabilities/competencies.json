@@ -1,0 +1,1944 @@
+{
+    "schema_version": 1,
+    "competencies": {
+        "authentication": {
+            "id": "authentication",
+            "name": "Authentication",
+            "xp": 0,
+            "level": 0,
+            "shared": true
+        },
+        "con.endurance.aerobic_capacity.running": {
+            "id": "con.endurance.aerobic_capacity.running",
+            "name": "Running",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.endurance.aerobic_capacity.skipping": {
+            "id": "con.endurance.aerobic_capacity.skipping",
+            "name": "Skipping",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.endurance.aerobic_capacity.zone_training": {
+            "id": "con.endurance.aerobic_capacity.zone_training",
+            "name": "Zone Training",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.endurance.work_capacity.conditioning": {
+            "id": "con.endurance.work_capacity.conditioning",
+            "name": "Conditioning",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.endurance.work_capacity.recovery_between_efforts": {
+            "id": "con.endurance.work_capacity.recovery_between_efforts",
+            "name": "Recovery Between Efforts",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.mobility.flexibility": {
+            "id": "con.health_management.mobility.flexibility",
+            "name": "Flexibility",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.mobility.joint_health": {
+            "id": "con.health_management.mobility.joint_health",
+            "name": "Joint Health",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.mobility.stretching": {
+            "id": "con.health_management.mobility.stretching",
+            "name": "Stretching",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.nutrition.energy_balance": {
+            "id": "con.health_management.nutrition.energy_balance",
+            "name": "Energy Balance",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.nutrition.macronutrients": {
+            "id": "con.health_management.nutrition.macronutrients",
+            "name": "Macronutrients",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.nutrition.meal_planning": {
+            "id": "con.health_management.nutrition.meal_planning",
+            "name": "Meal Planning",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.recovery.fatigue_management": {
+            "id": "con.health_management.recovery.fatigue_management",
+            "name": "Fatigue Management",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.recovery.hydration": {
+            "id": "con.health_management.recovery.hydration",
+            "name": "Hydration",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.health_management.recovery.sleep": {
+            "id": "con.health_management.recovery.sleep",
+            "name": "Sleep",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.physical_resilience.injury_prevention.load_management": {
+            "id": "con.physical_resilience.injury_prevention.load_management",
+            "name": "Load Management",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.physical_resilience.injury_prevention.rehabilitation": {
+            "id": "con.physical_resilience.injury_prevention.rehabilitation",
+            "name": "Rehabilitation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "con.physical_resilience.injury_prevention.warm_up": {
+            "id": "con.physical_resilience.injury_prevention.warm_up",
+            "name": "Warm-up",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.agility.footwork.direction_changes": {
+            "id": "dex.agility.footwork.direction_changes",
+            "name": "Direction Changes",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.agility.footwork.distance_management": {
+            "id": "dex.agility.footwork.distance_management",
+            "name": "Distance Management",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.agility.reaction.reaction_time": {
+            "id": "dex.agility.reaction.reaction_time",
+            "name": "Reaction Time",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.agility.reaction.visual_response": {
+            "id": "dex.agility.reaction.visual_response",
+            "name": "Visual Response",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.balance.dynamic_balance.landing_control": {
+            "id": "dex.balance.dynamic_balance.landing_control",
+            "name": "Landing Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.balance.dynamic_balance.weight_transfer": {
+            "id": "dex.balance.dynamic_balance.weight_transfer",
+            "name": "Weight Transfer",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.balance.static_balance.stance_control": {
+            "id": "dex.balance.static_balance.stance_control",
+            "name": "Stance Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.coordination.hand_eye_coordination.camera_control": {
+            "id": "dex.coordination.hand_eye_coordination.camera_control",
+            "name": "Camera Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.coordination.hand_eye_coordination.tool_control": {
+            "id": "dex.coordination.hand_eye_coordination.tool_control",
+            "name": "Tool Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.coordination.whole_body_coordination.movement_sequencing": {
+            "id": "dex.coordination.whole_body_coordination.movement_sequencing",
+            "name": "Movement Sequencing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.coordination.whole_body_coordination.rhythm": {
+            "id": "dex.coordination.whole_body_coordination.rhythm",
+            "name": "Rhythm",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.fine_motor_control.workshop_skills.assembly": {
+            "id": "dex.fine_motor_control.workshop_skills.assembly",
+            "name": "Assembly",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.fine_motor_control.workshop_skills.precision_measurement": {
+            "id": "dex.fine_motor_control.workshop_skills.precision_measurement",
+            "name": "Precision Measurement",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.fine_motor_control.workshop_skills.soldering": {
+            "id": "dex.fine_motor_control.workshop_skills.soldering",
+            "name": "Soldering",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.capoeira.esquiva": {
+            "id": "dex.martial_arts.capoeira.esquiva",
+            "name": "Esquiva",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.capoeira.flow": {
+            "id": "dex.martial_arts.capoeira.flow",
+            "name": "Flow",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.capoeira.ginga": {
+            "id": "dex.martial_arts.capoeira.ginga",
+            "name": "Ginga",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.capoeira.meia_lua": {
+            "id": "dex.martial_arts.capoeira.meia_lua",
+            "name": "Meia Lua",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.taekwondo.forms": {
+            "id": "dex.martial_arts.taekwondo.forms",
+            "name": "Forms",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.taekwondo.front_kick": {
+            "id": "dex.martial_arts.taekwondo.front_kick",
+            "name": "Front Kick",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.taekwondo.roundhouse_kick": {
+            "id": "dex.martial_arts.taekwondo.roundhouse_kick",
+            "name": "Roundhouse Kick",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.taekwondo.side_kick": {
+            "id": "dex.martial_arts.taekwondo.side_kick",
+            "name": "Side Kick",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.martial_arts.taekwondo.sparring": {
+            "id": "dex.martial_arts.taekwondo.sparring",
+            "name": "Sparring",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.accountability.evidence.logging": {
+            "id": "disc.accountability.evidence.logging",
+            "name": "Logging",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.accountability.evidence.reporting": {
+            "id": "disc.accountability.evidence.reporting",
+            "name": "Reporting",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.accountability.evidence.verification": {
+            "id": "disc.accountability.evidence.verification",
+            "name": "Verification",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.consistency.routine_adherence.daily_practice": {
+            "id": "disc.consistency.routine_adherence.daily_practice",
+            "name": "Daily Practice",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.consistency.routine_adherence.streak_recovery": {
+            "id": "disc.consistency.routine_adherence.streak_recovery",
+            "name": "Streak Recovery",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.consistency.routine_adherence.weekly_review": {
+            "id": "disc.consistency.routine_adherence.weekly_review",
+            "name": "Weekly Review",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.consistency.task_completion.finishing": {
+            "id": "disc.consistency.task_completion.finishing",
+            "name": "Finishing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.consistency.task_completion.follow_through": {
+            "id": "disc.consistency.task_completion.follow_through",
+            "name": "Follow-through",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.consistency.task_completion.starting": {
+            "id": "disc.consistency.task_completion.starting",
+            "name": "Starting",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.focus.attention_management.deep_work": {
+            "id": "disc.focus.attention_management.deep_work",
+            "name": "Deep Work",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.focus.attention_management.distraction_control": {
+            "id": "disc.focus.attention_management.distraction_control",
+            "name": "Distraction Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.focus.session_quality.deliberate_practice": {
+            "id": "disc.focus.session_quality.deliberate_practice",
+            "name": "Deliberate Practice",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.focus.session_quality.preparation": {
+            "id": "disc.focus.session_quality.preparation",
+            "name": "Preparation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.habit_formation.behaviour_design.cues": {
+            "id": "disc.habit_formation.behaviour_design.cues",
+            "name": "Cues",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.habit_formation.behaviour_design.friction_reduction": {
+            "id": "disc.habit_formation.behaviour_design.friction_reduction",
+            "name": "Friction Reduction",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.habit_formation.behaviour_design.reinforcement": {
+            "id": "disc.habit_formation.behaviour_design.reinforcement",
+            "name": "Reinforcement",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.time_management.planning.estimation": {
+            "id": "disc.time_management.planning.estimation",
+            "name": "Estimation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.time_management.planning.prioritisation": {
+            "id": "disc.time_management.planning.prioritisation",
+            "name": "Prioritisation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.time_management.planning.scheduling": {
+            "id": "disc.time_management.planning.scheduling",
+            "name": "Scheduling",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.time_management.review.course_correction": {
+            "id": "disc.time_management.review.course_correction",
+            "name": "Course Correction",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "disc.time_management.review.retrospective": {
+            "id": "disc.time_management.review.retrospective",
+            "name": "Retrospective",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "http": {
+            "id": "http",
+            "name": "HTTP",
+            "xp": 0,
+            "level": 0,
+            "shared": true
+        },
+        "int.business.entrepreneurship.business_models": {
+            "id": "int.business.entrepreneurship.business_models",
+            "name": "Business Models",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.entrepreneurship.customer_discovery": {
+            "id": "int.business.entrepreneurship.customer_discovery",
+            "name": "Customer Discovery",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.entrepreneurship.market_validation": {
+            "id": "int.business.entrepreneurship.market_validation",
+            "name": "Market Validation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.entrepreneurship.value_propositions": {
+            "id": "int.business.entrepreneurship.value_propositions",
+            "name": "Value Propositions",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.finance.budgeting": {
+            "id": "int.business.finance.budgeting",
+            "name": "Budgeting",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.finance.cash_flow": {
+            "id": "int.business.finance.cash_flow",
+            "name": "Cash Flow",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.finance.pricing": {
+            "id": "int.business.finance.pricing",
+            "name": "Pricing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.finance.profit": {
+            "id": "int.business.finance.profit",
+            "name": "Profit",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.finance.revenue": {
+            "id": "int.business.finance.revenue",
+            "name": "Revenue",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.marketing.branding": {
+            "id": "int.business.marketing.branding",
+            "name": "Branding",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.marketing.content_strategy": {
+            "id": "int.business.marketing.content_strategy",
+            "name": "Content Strategy",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.marketing.customer_acquisition": {
+            "id": "int.business.marketing.customer_acquisition",
+            "name": "Customer Acquisition",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.marketing.positioning": {
+            "id": "int.business.marketing.positioning",
+            "name": "Positioning",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.operations.process_design": {
+            "id": "int.business.operations.process_design",
+            "name": "Process Design",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.operations.quality_control": {
+            "id": "int.business.operations.quality_control",
+            "name": "Quality Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.operations.resource_planning": {
+            "id": "int.business.operations.resource_planning",
+            "name": "Resource Planning",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.operations.service_delivery": {
+            "id": "int.business.operations.service_delivery",
+            "name": "Service Delivery",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.sales.closing": {
+            "id": "int.business.sales.closing",
+            "name": "Closing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.sales.lead_generation": {
+            "id": "int.business.sales.lead_generation",
+            "name": "Lead Generation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.sales.negotiation": {
+            "id": "int.business.sales.negotiation",
+            "name": "Negotiation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.sales.qualification": {
+            "id": "int.business.sales.qualification",
+            "name": "Qualification",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.strategy.competitive_analysis": {
+            "id": "int.business.strategy.competitive_analysis",
+            "name": "Competitive Analysis",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.strategy.decision_making": {
+            "id": "int.business.strategy.decision_making",
+            "name": "Decision Making",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.strategy.growth_planning": {
+            "id": "int.business.strategy.growth_planning",
+            "name": "Growth Planning",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.business.strategy.risk_management": {
+            "id": "int.business.strategy.risk_management",
+            "name": "Risk Management",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.algorithms.dynamic_programming": {
+            "id": "int.computer_science.algorithms.dynamic_programming",
+            "name": "Dynamic Programming",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.algorithms.graph_algorithms": {
+            "id": "int.computer_science.algorithms.graph_algorithms",
+            "name": "Graph Algorithms",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.algorithms.greedy_algorithms": {
+            "id": "int.computer_science.algorithms.greedy_algorithms",
+            "name": "Greedy Algorithms",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.algorithms.pathfinding": {
+            "id": "int.computer_science.algorithms.pathfinding",
+            "name": "Pathfinding",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.algorithms.recursion": {
+            "id": "int.computer_science.algorithms.recursion",
+            "name": "Recursion",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.algorithms.searching": {
+            "id": "int.computer_science.algorithms.searching",
+            "name": "Searching",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.algorithms.sorting": {
+            "id": "int.computer_science.algorithms.sorting",
+            "name": "Sorting",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.complexity.space_complexity": {
+            "id": "int.computer_science.complexity.space_complexity",
+            "name": "Space Complexity",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.complexity.time_complexity": {
+            "id": "int.computer_science.complexity.time_complexity",
+            "name": "Time Complexity",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.concurrent_programming.async_programming": {
+            "id": "int.computer_science.concurrent_programming.async_programming",
+            "name": "Async Programming",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.concurrent_programming.synchronisation": {
+            "id": "int.computer_science.concurrent_programming.synchronisation",
+            "name": "Synchronisation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.data_structures.arrays": {
+            "id": "int.computer_science.data_structures.arrays",
+            "name": "Arrays",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.data_structures.graphs": {
+            "id": "int.computer_science.data_structures.graphs",
+            "name": "Graphs",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.data_structures.hash_tables": {
+            "id": "int.computer_science.data_structures.hash_tables",
+            "name": "Hash Tables",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.data_structures.heaps": {
+            "id": "int.computer_science.data_structures.heaps",
+            "name": "Heaps",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.data_structures.linked_lists": {
+            "id": "int.computer_science.data_structures.linked_lists",
+            "name": "Linked Lists",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.data_structures.queues": {
+            "id": "int.computer_science.data_structures.queues",
+            "name": "Queues",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.data_structures.stacks": {
+            "id": "int.computer_science.data_structures.stacks",
+            "name": "Stacks",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.data_structures.trees": {
+            "id": "int.computer_science.data_structures.trees",
+            "name": "Trees",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.operating_systems.file_systems": {
+            "id": "int.computer_science.operating_systems.file_systems",
+            "name": "File Systems",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.operating_systems.linux": {
+            "id": "int.computer_science.operating_systems.linux",
+            "name": "Linux",
+            "xp": 260,
+            "level": 1,
+            "shared": false
+        },
+        "int.computer_science.operating_systems.memory_management": {
+            "id": "int.computer_science.operating_systems.memory_management",
+            "name": "Memory Management",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.operating_systems.processes": {
+            "id": "int.computer_science.operating_systems.processes",
+            "name": "Processes",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.operating_systems.scheduling": {
+            "id": "int.computer_science.operating_systems.scheduling",
+            "name": "Scheduling",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.operating_systems.threads": {
+            "id": "int.computer_science.operating_systems.threads",
+            "name": "Threads",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.software_architecture.event_driven_architecture": {
+            "id": "int.computer_science.software_architecture.event_driven_architecture",
+            "name": "Event-driven Architecture",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.software_architecture.modular_design": {
+            "id": "int.computer_science.software_architecture.modular_design",
+            "name": "Modular Design",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.computer_science.software_architecture.service_boundaries": {
+            "id": "int.computer_science.software_architecture.service_boundaries",
+            "name": "Service Boundaries",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.photography.composition": {
+            "id": "int.creative_production.photography.composition",
+            "name": "Composition",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.photography.exposure": {
+            "id": "int.creative_production.photography.exposure",
+            "name": "Exposure",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.photography.post_production": {
+            "id": "int.creative_production.photography.post_production",
+            "name": "Post-production",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.storytelling.narrative_design": {
+            "id": "int.creative_production.storytelling.narrative_design",
+            "name": "Narrative Design",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.storytelling.visual_language": {
+            "id": "int.creative_production.storytelling.visual_language",
+            "name": "Visual Language",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.storytelling.worldbuilding": {
+            "id": "int.creative_production.storytelling.worldbuilding",
+            "name": "Worldbuilding",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.video_production.cinematography": {
+            "id": "int.creative_production.video_production.cinematography",
+            "name": "Cinematography",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.video_production.colour_grading": {
+            "id": "int.creative_production.video_production.colour_grading",
+            "name": "Colour Grading",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.video_production.editing": {
+            "id": "int.creative_production.video_production.editing",
+            "name": "Editing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.video_production.sound_design": {
+            "id": "int.creative_production.video_production.sound_design",
+            "name": "Sound Design",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.data_engineering.data_cleaning": {
+            "id": "int.data_and_databases.data_engineering.data_cleaning",
+            "name": "Data Cleaning",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.data_engineering.data_pipelines": {
+            "id": "int.data_and_databases.data_engineering.data_pipelines",
+            "name": "Data Pipelines",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.data_engineering.data_validation": {
+            "id": "int.data_and_databases.data_engineering.data_validation",
+            "name": "Data Validation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.data_engineering.etl": {
+            "id": "int.data_and_databases.data_engineering.etl",
+            "name": "ETL",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.data_engineering.parsing": {
+            "id": "int.data_and_databases.data_engineering.parsing",
+            "name": "Parsing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.database_design.er_diagrams": {
+            "id": "int.data_and_databases.database_design.er_diagrams",
+            "name": "ER Diagrams",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.database_design.normalisation": {
+            "id": "int.data_and_databases.database_design.normalisation",
+            "name": "Normalisation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.database_design.relationships": {
+            "id": "int.data_and_databases.database_design.relationships",
+            "name": "Relationships",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.database_design.schema_design": {
+            "id": "int.data_and_databases.database_design.schema_design",
+            "name": "Schema Design",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.database_systems.mysql": {
+            "id": "int.data_and_databases.database_systems.mysql",
+            "name": "MySQL",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.database_systems.postgresql": {
+            "id": "int.data_and_databases.database_systems.postgresql",
+            "name": "PostgreSQL",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.database_systems.sqlite": {
+            "id": "int.data_and_databases.database_systems.sqlite",
+            "name": "SQLite",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.sql.indexing": {
+            "id": "int.data_and_databases.sql.indexing",
+            "name": "Indexing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.sql.joins": {
+            "id": "int.data_and_databases.sql.joins",
+            "name": "Joins",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.sql.queries": {
+            "id": "int.data_and_databases.sql.queries",
+            "name": "Queries",
+            "xp": 180,
+            "level": 1,
+            "shared": false
+        },
+        "int.data_and_databases.sql.transactions": {
+            "id": "int.data_and_databases.sql.transactions",
+            "name": "Transactions",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.data_and_databases.sql.views": {
+            "id": "int.data_and_databases.sql.views",
+            "name": "Views",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.learning_practice.learning_systems.knowledge_mapping": {
+            "id": "int.learning_practice.learning_systems.knowledge_mapping",
+            "name": "Knowledge Mapping",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.learning_practice.learning_systems.note_taking": {
+            "id": "int.learning_practice.learning_systems.note_taking",
+            "name": "Note Taking",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.learning_practice.learning_systems.prompt_engineering": {
+            "id": "int.learning_practice.learning_systems.prompt_engineering",
+            "name": "Prompt Engineering",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.learning_practice.learning_systems.reflection": {
+            "id": "int.learning_practice.learning_systems.reflection",
+            "name": "Reflection",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.client_server.mqtt": {
+            "id": "int.networking.client_server.mqtt",
+            "name": "MQTT",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.client_server.sockets": {
+            "id": "int.networking.client_server.sockets",
+            "name": "Sockets",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.network_fundamentals.dhcp": {
+            "id": "int.networking.network_fundamentals.dhcp",
+            "name": "DHCP",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.network_fundamentals.dns": {
+            "id": "int.networking.network_fundamentals.dns",
+            "name": "DNS",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.network_fundamentals.routing": {
+            "id": "int.networking.network_fundamentals.routing",
+            "name": "Routing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.network_fundamentals.tcp_ip": {
+            "id": "int.networking.network_fundamentals.tcp_ip",
+            "name": "TCP/IP",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.network_fundamentals.udp": {
+            "id": "int.networking.network_fundamentals.udp",
+            "name": "UDP",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.network_security.certificates": {
+            "id": "int.networking.network_security.certificates",
+            "name": "Certificates",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.network_security.encryption": {
+            "id": "int.networking.network_security.encryption",
+            "name": "Encryption",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.network_security.firewalls": {
+            "id": "int.networking.network_security.firewalls",
+            "name": "Firewalls",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.remote_access.scp": {
+            "id": "int.networking.remote_access.scp",
+            "name": "SCP",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.remote_access.ssh": {
+            "id": "int.networking.remote_access.ssh",
+            "name": "SSH",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.remote_access.vpn": {
+            "id": "int.networking.remote_access.vpn",
+            "name": "VPN",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.wireless.bluetooth": {
+            "id": "int.networking.wireless.bluetooth",
+            "name": "Bluetooth",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.wireless.elrs": {
+            "id": "int.networking.wireless.elrs",
+            "name": "ELRS",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.wireless.rf": {
+            "id": "int.networking.wireless.rf",
+            "name": "RF",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.networking.wireless.wi_fi": {
+            "id": "int.networking.wireless.wi_fi",
+            "name": "Wi-Fi",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.mechanical_design.cad": {
+            "id": "int.robotics.mechanical_design.cad",
+            "name": "CAD",
+            "xp": 40,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.mechanical_design.dynamics": {
+            "id": "int.robotics.mechanical_design.dynamics",
+            "name": "Dynamics",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.mechanical_design.mechanics_of_materials": {
+            "id": "int.robotics.mechanical_design.mechanics_of_materials",
+            "name": "Mechanics of Materials",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.mechanical_design.statics": {
+            "id": "int.robotics.mechanical_design.statics",
+            "name": "Statics",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.mechatronics.actuators": {
+            "id": "int.robotics.mechatronics.actuators",
+            "name": "Actuators",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.mechatronics.embedded_integration": {
+            "id": "int.robotics.mechatronics.embedded_integration",
+            "name": "Embedded Integration",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.mechatronics.sensors": {
+            "id": "int.robotics.mechatronics.sensors",
+            "name": "Sensors",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.navigation_and_mapping.localisation": {
+            "id": "int.robotics.navigation_and_mapping.localisation",
+            "name": "Localisation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.navigation_and_mapping.navigation": {
+            "id": "int.robotics.navigation_and_mapping.navigation",
+            "name": "Navigation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.navigation_and_mapping.path_planning": {
+            "id": "int.robotics.navigation_and_mapping.path_planning",
+            "name": "Path Planning",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.perception.camera_systems": {
+            "id": "int.robotics.perception.camera_systems",
+            "name": "Camera Systems",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.perception.computer_vision": {
+            "id": "int.robotics.perception.computer_vision",
+            "name": "Computer Vision",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.perception.depth_estimation": {
+            "id": "int.robotics.perception.depth_estimation",
+            "name": "Depth Estimation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.perception.lidar_systems": {
+            "id": "int.robotics.perception.lidar_systems",
+            "name": "LIDAR Systems",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.perception.object_detection": {
+            "id": "int.robotics.perception.object_detection",
+            "name": "Object Detection",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.perception.object_tracking": {
+            "id": "int.robotics.perception.object_tracking",
+            "name": "Object Tracking",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.perception.sensor_fusion": {
+            "id": "int.robotics.perception.sensor_fusion",
+            "name": "Sensor Fusion",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.deployment.runtime_services": {
+            "id": "int.robotics.robot_software.deployment.runtime_services",
+            "name": "Runtime Services",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.deployment.telemetry": {
+            "id": "int.robotics.robot_software.deployment.telemetry",
+            "name": "Telemetry",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.localisation.gps": {
+            "id": "int.robotics.robot_software.localisation.gps",
+            "name": "GPS",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.localisation.slam": {
+            "id": "int.robotics.robot_software.localisation.slam",
+            "name": "SLAM",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.robot_middleware.ros2": {
+            "id": "int.robotics.robot_software.robot_middleware.ros2",
+            "name": "ROS2",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.simulation.gazebo": {
+            "id": "int.robotics.robot_software.simulation.gazebo",
+            "name": "Gazebo",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.apis_and_backend.api_design": {
+            "id": "int.software_engineering.apis_and_backend.api_design",
+            "name": "API Design",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.apis_and_backend.database_integration": {
+            "id": "int.software_engineering.apis_and_backend.database_integration",
+            "name": "Database Integration",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.apis_and_backend.fastapi": {
+            "id": "int.software_engineering.apis_and_backend.fastapi",
+            "name": "FastAPI",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.apis_and_backend.flask": {
+            "id": "int.software_engineering.apis_and_backend.flask",
+            "name": "Flask",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.apis_and_backend.json": {
+            "id": "int.software_engineering.apis_and_backend.json",
+            "name": "JSON",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.apis_and_backend.rest_apis": {
+            "id": "int.software_engineering.apis_and_backend.rest_apis",
+            "name": "REST APIs",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.programming_languages.cpp": {
+            "id": "int.software_engineering.programming_languages.cpp",
+            "name": "C++",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.programming_languages.javascript": {
+            "id": "int.software_engineering.programming_languages.javascript",
+            "name": "JavaScript",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.programming_languages.python": {
+            "id": "int.software_engineering.programming_languages.python",
+            "name": "Python",
+            "xp": 880,
+            "level": 2,
+            "shared": false
+        },
+        "int.software_engineering.testing.ci_cd_testing": {
+            "id": "int.software_engineering.testing.ci_cd_testing",
+            "name": "CI/CD Testing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.testing.debugging": {
+            "id": "int.software_engineering.testing.debugging",
+            "name": "Debugging",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.testing.integration_testing": {
+            "id": "int.software_engineering.testing.integration_testing",
+            "name": "Integration Testing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.testing.system_testing": {
+            "id": "int.software_engineering.testing.system_testing",
+            "name": "System Testing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.testing.test_automation": {
+            "id": "int.software_engineering.testing.test_automation",
+            "name": "Test Automation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.testing.unit_testing": {
+            "id": "int.software_engineering.testing.unit_testing",
+            "name": "Unit Testing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.version_control.git": {
+            "id": "int.software_engineering.version_control.git",
+            "name": "Git",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.version_control.github": {
+            "id": "int.software_engineering.version_control.github",
+            "name": "GitHub",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.web_development.css": {
+            "id": "int.software_engineering.web_development.css",
+            "name": "CSS",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.web_development.html": {
+            "id": "int.software_engineering.web_development.html",
+            "name": "HTML",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.software_engineering.web_development.three_js": {
+            "id": "int.software_engineering.web_development.three_js",
+            "name": "Three.js",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.requirements_engineering.requirements_elicitation": {
+            "id": "int.systems_engineering.requirements_engineering.requirements_elicitation",
+            "name": "Requirements Elicitation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.requirements_engineering.traceability": {
+            "id": "int.systems_engineering.requirements_engineering.traceability",
+            "name": "Traceability",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.system_architecture.interface_design": {
+            "id": "int.systems_engineering.system_architecture.interface_design",
+            "name": "Interface Design",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.system_architecture.trade_off_analysis": {
+            "id": "int.systems_engineering.system_architecture.trade_off_analysis",
+            "name": "Trade-off Analysis",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.systems_thinking.boundaries": {
+            "id": "int.systems_engineering.systems_thinking.boundaries",
+            "name": "Boundaries",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.systems_thinking.emergence": {
+            "id": "int.systems_engineering.systems_thinking.emergence",
+            "name": "Emergence",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.systems_thinking.feedback_loops": {
+            "id": "int.systems_engineering.systems_thinking.feedback_loops",
+            "name": "Feedback Loops",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.verification_and_validation.integration": {
+            "id": "int.systems_engineering.verification_and_validation.integration",
+            "name": "Integration",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.systems_engineering.verification_and_validation.lifecycle_management": {
+            "id": "int.systems_engineering.verification_and_validation.lifecycle_management",
+            "name": "Lifecycle Management",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.creativity.expression.artistic_direction": {
+            "id": "spirit.creativity.expression.artistic_direction",
+            "name": "Artistic Direction",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.creativity.expression.storytelling": {
+            "id": "spirit.creativity.expression.storytelling",
+            "name": "Storytelling",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.creativity.expression.worldbuilding": {
+            "id": "spirit.creativity.expression.worldbuilding",
+            "name": "Worldbuilding",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.culture.creative_heritage.afrofuturism": {
+            "id": "spirit.culture.creative_heritage.afrofuturism",
+            "name": "Afrofuturism",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.culture.creative_heritage.cultural_storytelling": {
+            "id": "spirit.culture.creative_heritage.cultural_storytelling",
+            "name": "Cultural Storytelling",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.culture.creative_heritage.symbolism": {
+            "id": "spirit.culture.creative_heritage.symbolism",
+            "name": "Symbolism",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.culture.cultural_understanding.belonging": {
+            "id": "spirit.culture.cultural_understanding.belonging",
+            "name": "Belonging",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.culture.cultural_understanding.heritage": {
+            "id": "spirit.culture.cultural_understanding.heritage",
+            "name": "Heritage",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.culture.cultural_understanding.tradition": {
+            "id": "spirit.culture.cultural_understanding.tradition",
+            "name": "Tradition",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.ethics.moral_reasoning.integrity": {
+            "id": "spirit.ethics.moral_reasoning.integrity",
+            "name": "Integrity",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.ethics.moral_reasoning.principles": {
+            "id": "spirit.ethics.moral_reasoning.principles",
+            "name": "Principles",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.ethics.moral_reasoning.responsibility": {
+            "id": "spirit.ethics.moral_reasoning.responsibility",
+            "name": "Responsibility",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.identity.founder_identity.craft": {
+            "id": "spirit.identity.founder_identity.craft",
+            "name": "Craft",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.identity.founder_identity.leadership": {
+            "id": "spirit.identity.founder_identity.leadership",
+            "name": "Leadership",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.identity.founder_identity.responsibility": {
+            "id": "spirit.identity.founder_identity.responsibility",
+            "name": "Responsibility",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.identity.self_knowledge.authenticity": {
+            "id": "spirit.identity.self_knowledge.authenticity",
+            "name": "Authenticity",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.identity.self_knowledge.personal_narrative": {
+            "id": "spirit.identity.self_knowledge.personal_narrative",
+            "name": "Personal Narrative",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.identity.self_knowledge.strengths_and_limitations": {
+            "id": "spirit.identity.self_knowledge.strengths_and_limitations",
+            "name": "Strengths and Limitations",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.purpose.direction.calling": {
+            "id": "spirit.purpose.direction.calling",
+            "name": "Calling",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.purpose.direction.legacy": {
+            "id": "spirit.purpose.direction.legacy",
+            "name": "Legacy",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.purpose.direction.values": {
+            "id": "spirit.purpose.direction.values",
+            "name": "Values",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.purpose.service.contribution": {
+            "id": "spirit.purpose.service.contribution",
+            "name": "Contribution",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.purpose.service.stewardship": {
+            "id": "spirit.purpose.service.stewardship",
+            "name": "Stewardship",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.reflection.reflective_practice.epiphanies": {
+            "id": "spirit.reflection.reflective_practice.epiphanies",
+            "name": "Epiphanies",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.reflection.reflective_practice.journaling": {
+            "id": "spirit.reflection.reflective_practice.journaling",
+            "name": "Journaling",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.reflection.reflective_practice.meaning_making": {
+            "id": "spirit.reflection.reflective_practice.meaning_making",
+            "name": "Meaning Making",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "spirit.reflection.reflective_practice.self_assessment": {
+            "id": "spirit.reflection.reflective_practice.self_assessment",
+            "name": "Self-Assessment",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.functional_strength.load_handling.carrying": {
+            "id": "str.functional_strength.load_handling.carrying",
+            "name": "Carrying",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.functional_strength.load_handling.equipment_setup": {
+            "id": "str.functional_strength.load_handling.equipment_setup",
+            "name": "Equipment Setup",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.functional_strength.load_handling.grip_strength": {
+            "id": "str.functional_strength.load_handling.grip_strength",
+            "name": "Grip Strength",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.core.anti_rotation": {
+            "id": "str.muscular_strength.core.anti_rotation",
+            "name": "Anti-rotation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.core.bracing": {
+            "id": "str.muscular_strength.core.bracing",
+            "name": "Bracing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.lower_body.hip_strength": {
+            "id": "str.muscular_strength.lower_body.hip_strength",
+            "name": "Hip Strength",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.lower_body.lunges": {
+            "id": "str.muscular_strength.lower_body.lunges",
+            "name": "Lunges",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.lower_body.squats": {
+            "id": "str.muscular_strength.lower_body.squats",
+            "name": "Squats",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.upper_body.pressing_strength": {
+            "id": "str.muscular_strength.upper_body.pressing_strength",
+            "name": "Pressing Strength",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.upper_body.pulling_strength": {
+            "id": "str.muscular_strength.upper_body.pulling_strength",
+            "name": "Pulling Strength",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.upper_body.push_ups": {
+            "id": "str.muscular_strength.upper_body.push_ups",
+            "name": "Push-ups",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.power.explosive_movement.acceleration": {
+            "id": "str.power.explosive_movement.acceleration",
+            "name": "Acceleration",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.power.explosive_movement.jumping": {
+            "id": "str.power.explosive_movement.jumping",
+            "name": "Jumping",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.power.explosive_movement.kicking_power": {
+            "id": "str.power.explosive_movement.kicking_power",
+            "name": "Kicking Power",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "websockets": {
+            "id": "websockets",
+            "name": "WebSockets",
+            "xp": 0,
+            "level": 0,
+            "shared": true
+        },
+        "will.courage.performance_courage.shipping_work": {
+            "id": "will.courage.performance_courage.shipping_work",
+            "name": "Shipping Work",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.courage.performance_courage.testing_publicly": {
+            "id": "will.courage.performance_courage.testing_publicly",
+            "name": "Testing Publicly",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.courage.social_courage.asking_for_feedback": {
+            "id": "will.courage.social_courage.asking_for_feedback",
+            "name": "Asking for Feedback",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.courage.social_courage.negotiation": {
+            "id": "will.courage.social_courage.negotiation",
+            "name": "Negotiation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.courage.social_courage.outreach": {
+            "id": "will.courage.social_courage.outreach",
+            "name": "Outreach",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.decisiveness.decision_execution.commitment": {
+            "id": "will.decisiveness.decision_execution.commitment",
+            "name": "Commitment",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.decisiveness.decision_execution.risk_acceptance": {
+            "id": "will.decisiveness.decision_execution.risk_acceptance",
+            "name": "Risk Acceptance",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.discomfort_tolerance.cognitive_discomfort.ambiguity": {
+            "id": "will.discomfort_tolerance.cognitive_discomfort.ambiguity",
+            "name": "Ambiguity",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.discomfort_tolerance.cognitive_discomfort.complex_problems": {
+            "id": "will.discomfort_tolerance.cognitive_discomfort.complex_problems",
+            "name": "Complex Problems",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.discomfort_tolerance.physical_discomfort.cold_start": {
+            "id": "will.discomfort_tolerance.physical_discomfort.cold_start",
+            "name": "Cold Start",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.discomfort_tolerance.physical_discomfort.training_fatigue": {
+            "id": "will.discomfort_tolerance.physical_discomfort.training_fatigue",
+            "name": "Training Fatigue",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.emotional_regulation.self_command.composure": {
+            "id": "will.emotional_regulation.self_command.composure",
+            "name": "Composure",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.emotional_regulation.self_command.impulse_control": {
+            "id": "will.emotional_regulation.self_command.impulse_control",
+            "name": "Impulse Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.emotional_regulation.setback_response.frustration_management": {
+            "id": "will.emotional_regulation.setback_response.frustration_management",
+            "name": "Frustration Management",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.emotional_regulation.setback_response.recovery_from_failure": {
+            "id": "will.emotional_regulation.setback_response.recovery_from_failure",
+            "name": "Recovery From Failure",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.persistence.goal_commitment.delayed_gratification": {
+            "id": "will.persistence.goal_commitment.delayed_gratification",
+            "name": "Delayed Gratification",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.persistence.goal_commitment.long_term_projects": {
+            "id": "will.persistence.goal_commitment.long_term_projects",
+            "name": "Long-term Projects",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.persistence.sustained_effort.continuing_under_difficulty": {
+            "id": "will.persistence.sustained_effort.continuing_under_difficulty",
+            "name": "Continuing Under Difficulty",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "will.persistence.sustained_effort.returning_after_interruption": {
+            "id": "will.persistence.sustained_effort.returning_after_interruption",
+            "name": "Returning After Interruption",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        }
+    }
+}
