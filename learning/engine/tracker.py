@@ -18,11 +18,8 @@ from typing import Any
 from history import record_completion
 from concepts import distribute_concept_xp, resolve_concept_awards, update_concept_progress
 from stats import get_competency_stats, update_operator_competencies
-from xp import (
-    calculate_unit_xp,
-    distribute_xp,
-    resolve_competency_awards,
-)
+from xp import calculate_unit_xp, resolve_competency_awards
+from completion_service import LearningCompletionService
 
 TRACKS_ROOT = LEARNING_TRACKS
 
@@ -223,8 +220,9 @@ def track_selected_course(track_path: Path) -> None:
             "competency_awards, section_competency_awards, "
             "default_competency_awards, or competency_id."
         )
-    distribution = distribute_xp(total_xp, mappings)
-    display_distribution(distribution)
+    completion_service = LearningCompletionService(
+        progression_updater=update_operator_competencies
+    )
 
     if not complete_progress(
         progress,
@@ -236,7 +234,31 @@ def track_selected_course(track_path: Path) -> None:
         print("\nThis unit was already completed. No XP was awarded.")
         return
 
-    operator_stats = update_operator_competencies(distribution)
+    completion_result = completion_service.complete(
+        source="learning.engine.tracker",
+        provider=str(metadata.get("provider", "manual")),
+        resource_id=str(metadata.get("resource_id") or metadata.get("id") or track_path.name),
+        unit_id=str(unit["id"]),
+        unit_title=str(unit.get("title", unit["id"])),
+        total_xp=total_xp,
+        competency_targets=mappings,
+        payload={
+            "track_title": metadata.get("title"),
+            "source_type": unit.get("source_type", "manual"),
+            "track_path": str(track_path),
+        },
+    )
+    distribution = [
+        {
+            "competency_id": item.target_id,
+            "weight": item.weight,
+            "xp": item.xp,
+        }
+        for item in completion_result.receipt.allocations
+        if item.target_type == "competency"
+    ]
+    display_distribution(distribution)
+    operator_stats = dict(completion_result.progression or {})
     concept_resolution = resolve_concept_awards(metadata, unit)
     concept_distribution = distribute_concept_xp(total_xp, concept_resolution["concept_awards"])
     if concept_distribution:
