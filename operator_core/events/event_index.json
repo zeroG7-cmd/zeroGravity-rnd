@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "event_count": 4,
+  "event_ids": {
+    "evt_0896a2c598db4984aec036c464fbc57e": {
+      "event_type": "learning_completed",
+      "recorded_at": "2026-07-19T00:14:05.853753+00:00"
+    },
+    "evt_907b3050dfd0456b820596faf6a79ea7": {
+      "event_type": "learning_completed",
+      "recorded_at": "2026-07-19T00:14:05.868406+00:00"
+    },
+    "evt_9615a69661564b8d970e8d29d31df5b0": {
+      "event_type": "learning_completed",
+      "recorded_at": "2026-07-19T00:14:05.876486+00:00"
+    },
+    "evt_ea0d7b75ac644031a9e888e7145d9ca2": {
+      "event_type": "learning_completed",
+      "recorded_at": "2026-07-19T00:14:05.884652+00:00"
+    }
+  },
+  "idempotency_keys": {
+    "legacy-provider:bootdev:bootdev_learn_linux:2:1:2105457370": "evt_0896a2c598db4984aec036c464fbc57e",
+    "legacy-provider:bootdev:bootdev_learn_linux:2:2:1605105931": "evt_907b3050dfd0456b820596faf6a79ea7",
+    "legacy-provider:bootdev:bootdev_learn_linux:2:3": "evt_9615a69661564b8d970e8d29d31df5b0",
+    "legacy-provider:bootdev:bootdev_learn_linux:2:5": "evt_ea0d7b75ac644031a9e888e7145d9ca2"
+  }
+}
