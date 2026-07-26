@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "target_totals": {
+    "stat": {
+      "CON": 0,
+      "INT": 1360,
+      "STR": 0,
+      "DEX": 0,
+      "DISC": 0,
+      "WILL": 0,
+      "SPIRIT": 0
+    }
+  },
+  "updated_at": "2026-07-19T00:59:07.851101+00:00",
+  "migration": {
+    "source": "operator_core\\capabilities\\competencies.json",
+    "migrated_at": "2026-07-19T00:59:07.851101+00:00"
+  }
+}

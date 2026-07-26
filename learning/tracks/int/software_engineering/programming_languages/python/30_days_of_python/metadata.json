@@ -8,10 +8,8 @@
         "Programming Languages",
         "Python"
     ],
-
     "domain": "Software Engineering",
     "skill": "Python",
-
     "difficulty": "Beginner",
     "resource": "learning/resources/github/python/30-Days-Of-Python",
     "evidence_requirements": [
@@ -37,133 +35,295 @@
             "id": "day_01",
             "title": "Day 1",
             "path": "day_01",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_02",
             "title": "Day 2",
             "path": "day_02",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.7
+                },
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.3
+                }
+            ],
+            "mapping_confidence": "medium"
         },
         {
             "id": "day_03",
             "title": "Day 3",
             "path": "day_03",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.5
+                }
+            ],
+            "mapping_confidence": "low"
         },
         {
             "id": "day_04",
             "title": "Day 4",
             "path": "day_04",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_05",
             "title": "Day 5",
             "path": "day_05",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.collections",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_06",
             "title": "Day 6",
             "path": "day_06",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.collections",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_07",
             "title": "Day 7",
             "path": "day_07",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.collections",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_08",
             "title": "Day 8",
             "path": "day_08",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.collections",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_09",
             "title": "Day 9",
             "path": "day_09",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.conditionals",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_10",
             "title": "Day 10",
             "path": "day_10",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.loops",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_11",
             "title": "Day 11",
             "path": "day_11",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.functions",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_12",
             "title": "Day 12",
             "path": "day_12",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.modules",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_13",
             "title": "Day 13",
             "path": "day_13",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.comprehensions",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_14",
             "title": "Day 14",
             "path": "day_14",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.functions",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_15",
             "title": "Day 15",
             "path": "day_15",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "medium"
         },
         {
             "id": "day_16",
             "title": "Day 16",
             "path": "day_16",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.modules",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "medium"
         },
         {
             "id": "day_17",
             "title": "Day 17",
             "path": "day_17",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.exceptions",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_18",
             "title": "Day 18",
             "path": "day_18",
-            "source_type": "manual"
+            "source_type": "manual",
+            "mapping_confidence": "high",
+            "competency_awards": [
+                {
+                    "competency_id": "int.data_and_databases.data_engineering.parsing",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "day_19",
             "title": "Day 19",
             "path": "day_19",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.file_io",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_20",
             "title": "Day 20",
             "path": "day_20",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.modules",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "medium"
         },
         {
             "id": "day_21",
             "title": "Day 21",
             "path": "day_21",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.oop",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_22",
             "title": "Day 22",
             "path": "day_22",
-            "source_type": "manual"
+            "source_type": "manual",
+            "mapping_confidence": "high",
+            "competency_awards": [
+                {
+                    "competency_id": "int.data_and_databases.data_engineering.parsing",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "day_23",
@@ -175,37 +335,94 @@
             "id": "day_24",
             "title": "Day 24",
             "path": "day_24",
-            "source_type": "manual"
+            "source_type": "manual",
+            "mapping_confidence": "high",
+            "competency_awards": [
+                {
+                    "competency_id": "int.computer_science.data_structures.arrays",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "day_25",
             "title": "Day 25",
             "path": "day_25",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "python.dataframes",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "day_26",
             "title": "Day 26",
             "path": "day_26",
-            "source_type": "manual"
+            "source_type": "manual",
+            "mapping_confidence": "high",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.apis_and_backend.flask",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "day_27",
             "title": "Day 27",
             "path": "day_27",
-            "source_type": "manual"
+            "source_type": "manual",
+            "mapping_confidence": "medium",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.apis_and_backend.database_integration",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "day_28",
             "title": "Day 28",
             "path": "day_28",
-            "source_type": "manual"
+            "source_type": "manual",
+            "concept_awards": [
+                {
+                    "concept_id": "rest.methods",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "rest.status_codes",
+                    "weight": 0.3
+                },
+                {
+                    "concept_id": "rest.requests",
+                    "weight": 0.2
+                }
+            ],
+            "mapping_confidence": "high",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.apis_and_backend.rest_apis",
+                    "weight": 1.0
+                }
+            ],
+            "capability_id": "int.software_engineering.apis_and_backend.rest_apis"
         },
         {
             "id": "day_29",
             "title": "Day 29",
             "path": "day_29",
-            "source_type": "manual"
+            "source_type": "manual",
+            "mapping_confidence": "high",
+            "competency_awards": [
+                {
+                    "competency_id": "int.software_engineering.apis_and_backend.flask",
+                    "weight": 1.0
+                }
+            ]
         },
         {
             "id": "day_30",
@@ -226,5 +443,13 @@
         "lab": 55,
         "assignment": 60,
         "project": 100
-    }
+    },
+    "capability_id": "int.software_engineering.programming_languages.python",
+    "competency_id": "int.software_engineering.programming_languages.python",
+    "default_competency_awards": [
+        {
+            "competency_id": "int.software_engineering.programming_languages.python",
+            "weight": 1.0
+        }
+    ]
 }

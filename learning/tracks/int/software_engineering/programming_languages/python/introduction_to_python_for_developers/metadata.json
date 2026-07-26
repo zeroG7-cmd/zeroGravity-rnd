@@ -1,0 +1,103 @@
+{
+    "id": "datacamp_introduction_python_developers",
+    "resource_id": "datacamp_introduction_python_developers",
+    "external_resource_id": "datacamp_introduction_python_developers",
+    "title": "Introduction to Python for Developers",
+    "provider": "DataCamp",
+    "instructor": "Jasmin Ludolf",
+    "stat": "INT",
+    "hierarchy": [
+        "Software Engineering",
+        "Programming Languages",
+        "Python"
+    ],
+    "domain": "Software Engineering",
+    "skill": "Python",
+    "difficulty": "Beginner",
+    "source_url": "https://app.datacamp.com/learn/courses/introduction-to-python-for-developers",
+    "competency_id": "int.software_engineering.programming_languages.python",
+    "capability_id": "int.software_engineering.programming_languages.python",
+    "external_total_units": 39,
+    "provider_xp_total": 3200,
+    "estimated_hours": 3,
+    "default_competency_awards": [
+        {
+            "competency_id": "int.software_engineering.programming_languages.python",
+            "weight": 1.0
+        }
+    ],
+    "section_concept_awards": {
+        "1": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.variables",
+                    "weight": 0.45
+                },
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.35
+                },
+                {
+                    "concept_id": "python.debugging",
+                    "weight": 0.2
+                }
+            ]
+        },
+        "2": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.data_types",
+                    "weight": 0.7
+                },
+                {
+                    "concept_id": "python.collections",
+                    "weight": 0.3
+                }
+            ]
+        },
+        "3": {
+            "mapping_confidence": "high",
+            "concept_awards": [
+                {
+                    "concept_id": "python.conditionals",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "python.loops",
+                    "weight": 0.5
+                }
+            ]
+        }
+    },
+    "units": [
+        {
+            "id": "chapter_01",
+            "title": "Introduction to Python",
+            "path": "chapter_01",
+            "source_type": "exercise",
+            "section_number": 1
+        },
+        {
+            "id": "chapter_02",
+            "title": "Working with Data Types",
+            "path": "chapter_02",
+            "source_type": "exercise",
+            "section_number": 2
+        },
+        {
+            "id": "chapter_03",
+            "title": "Control Flow and Loops",
+            "path": "chapter_03",
+            "source_type": "exercise",
+            "section_number": 3
+        }
+    ],
+    "unit_count": 39,
+    "structure_type": "provider_progress",
+    "xp_rules": {
+        "exercise": 45,
+        "project": 100
+    }
+}

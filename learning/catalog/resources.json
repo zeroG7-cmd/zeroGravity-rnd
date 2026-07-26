@@ -52,6 +52,24 @@
             "track_path": "learning/tracks/int/robotics/mechanical_design/cad/fusion_360_beginners_course",
             "import_method": "manifest",
             "date_added": "2026-07-13T03:13:51.061077+00:00"
+        },
+        {
+            "id": "datacamp_introduction_python_developers",
+            "title": "Introduction to Python for Developers",
+            "provider": "DataCamp",
+            "instructor": "Jasmin Ludolf",
+            "stat": "INT",
+            "hierarchy": [
+                "Software Engineering",
+                "Programming Languages",
+                "Python"
+            ],
+            "skill": "Python",
+            "difficulty": "Beginner",
+            "source_url": "https://app.datacamp.com/learn/courses/introduction-to-python-for-developers",
+            "track_path": "learning/tracks/int/software_engineering/programming_languages/python/introduction_to_python_for_developers",
+            "import_method": "provider_progress",
+            "date_added": "2026-07-18T00:00:00+01:00"
         }
     ]
 }

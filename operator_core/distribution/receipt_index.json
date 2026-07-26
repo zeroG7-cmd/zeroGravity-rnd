@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "receipt_count": 4,
+  "by_source_event": {
+    "evt_e24847fb08394e13b80ee874dd2712b9::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp9kwdbxu3\\receipts\\evt_e24847fb08394e13b80ee874dd2712b9__v1.json",
+    "evt_2d6c33d24fa84bdd914cb01d7716a7e5::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmpxzj93emu\\receipts\\evt_2d6c33d24fa84bdd914cb01d7716a7e5__v1.json",
+    "evt_056e9e2184874b2cbfd32f55fc489d5d::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmpm12k4jn3\\receipts\\evt_056e9e2184874b2cbfd32f55fc489d5d__v1.json",
+    "evt_eb0884e0bbe34c0f9ed6987684a4e56e::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp1r1gzbth\\receipts\\evt_eb0884e0bbe34c0f9ed6987684a4e56e__v1.json"
+  },
+  "by_receipt_id": {
+    "xpr_9f8a1a8c037e4e26a339576e54edb188": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp9kwdbxu3\\receipts\\evt_e24847fb08394e13b80ee874dd2712b9__v1.json",
+    "xpr_3bba9f22fbf443e9b19410ddf42ad84e": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmpxzj93emu\\receipts\\evt_2d6c33d24fa84bdd914cb01d7716a7e5__v1.json",
+    "xpr_f0eb8f9f77ad4dc6b47660f2dae42d3a": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmpm12k4jn3\\receipts\\evt_056e9e2184874b2cbfd32f55fc489d5d__v1.json",
+    "xpr_eff4e41768604025878ab0de3697ca3b": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp1r1gzbth\\receipts\\evt_eb0884e0bbe34c0f9ed6987684a4e56e__v1.json"
+  }
+}

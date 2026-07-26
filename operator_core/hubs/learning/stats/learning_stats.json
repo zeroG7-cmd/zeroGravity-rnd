@@ -5,12 +5,280 @@
             "name": "CON",
             "node_type": "main_stat",
             "average_level": 0.0,
-            "children": {}
+            "children": {
+                "Health Management": {
+                    "name": "Health Management",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Recovery": {
+                            "name": "Recovery",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Sleep": {
+                                    "name": "Sleep",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.recovery.sleep",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Hydration": {
+                                    "name": "Hydration",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.recovery.hydration",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Fatigue Management": {
+                                    "name": "Fatigue Management",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.recovery.fatigue_management",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Nutrition": {
+                            "name": "Nutrition",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Energy Balance": {
+                                    "name": "Energy Balance",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.nutrition.energy_balance",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Macronutrients": {
+                                    "name": "Macronutrients",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.nutrition.macronutrients",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Meal Planning": {
+                                    "name": "Meal Planning",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.nutrition.meal_planning",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Mobility": {
+                            "name": "Mobility",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Flexibility": {
+                                    "name": "Flexibility",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.mobility.flexibility",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Joint Health": {
+                                    "name": "Joint Health",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.mobility.joint_health",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Stretching": {
+                                    "name": "Stretching",
+                                    "node_type": "skill",
+                                    "competency_id": "con.health_management.mobility.stretching",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Endurance": {
+                    "name": "Endurance",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Aerobic Capacity": {
+                            "name": "Aerobic Capacity",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Running": {
+                                    "name": "Running",
+                                    "node_type": "skill",
+                                    "competency_id": "con.endurance.aerobic_capacity.running",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Skipping": {
+                                    "name": "Skipping",
+                                    "node_type": "skill",
+                                    "competency_id": "con.endurance.aerobic_capacity.skipping",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Zone Training": {
+                                    "name": "Zone Training",
+                                    "node_type": "skill",
+                                    "competency_id": "con.endurance.aerobic_capacity.zone_training",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Work Capacity": {
+                            "name": "Work Capacity",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Conditioning": {
+                                    "name": "Conditioning",
+                                    "node_type": "skill",
+                                    "competency_id": "con.endurance.work_capacity.conditioning",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Recovery Between Efforts": {
+                                    "name": "Recovery Between Efforts",
+                                    "node_type": "skill",
+                                    "competency_id": "con.endurance.work_capacity.recovery_between_efforts",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Physical Resilience": {
+                    "name": "Physical Resilience",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Injury Prevention": {
+                            "name": "Injury Prevention",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Warm-up": {
+                                    "name": "Warm-up",
+                                    "node_type": "skill",
+                                    "competency_id": "con.physical_resilience.injury_prevention.warm_up",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Load Management": {
+                                    "name": "Load Management",
+                                    "node_type": "skill",
+                                    "competency_id": "con.physical_resilience.injury_prevention.load_management",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Rehabilitation": {
+                                    "name": "Rehabilitation",
+                                    "node_type": "skill",
+                                    "competency_id": "con.physical_resilience.injury_prevention.rehabilitation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         },
         "INT": {
             "name": "INT",
             "node_type": "main_stat",
-            "average_level": 0.04,
+            "average_level": 0.02,
             "children": {
                 "Software Engineering": {
                     "name": "Software Engineering",
@@ -88,6 +356,18 @@
                                     "xp_into_level": 0,
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
+                                },
+                                "Three.js": {
+                                    "name": "Three.js",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.web_development.three_js",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -100,6 +380,18 @@
                                     "name": "Git",
                                     "node_type": "skill",
                                     "competency_id": "int.software_engineering.version_control.git",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "GitHub": {
+                                    "name": "GitHub",
+                                    "node_type": "skill",
+                                    "competency_id": "int.software_engineering.version_control.github",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -507,15 +799,34 @@
                         },
                         "Complexity": {
                             "name": "Complexity",
-                            "node_type": "skill",
-                            "competency_id": "int.computer_science.complexity",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Time Complexity": {
+                                    "name": "Time Complexity",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.complexity.time_complexity",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Space Complexity": {
+                                    "name": "Space Complexity",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.complexity.space_complexity",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         },
                         "Operating Systems": {
                             "name": "Operating Systems",
@@ -598,27 +909,77 @@
                         },
                         "Software Architecture": {
                             "name": "Software Architecture",
-                            "node_type": "skill",
-                            "competency_id": "int.computer_science.software_architecture",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Modular Design": {
+                                    "name": "Modular Design",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.software_architecture.modular_design",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Event-driven Architecture": {
+                                    "name": "Event-driven Architecture",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.software_architecture.event_driven_architecture",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Service Boundaries": {
+                                    "name": "Service Boundaries",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.software_architecture.service_boundaries",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         },
                         "Concurrent Programming": {
                             "name": "Concurrent Programming",
-                            "node_type": "skill",
-                            "competency_id": "int.computer_science.concurrent_programming",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Synchronisation": {
+                                    "name": "Synchronisation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.concurrent_programming.synchronisation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Async Programming": {
+                                    "name": "Async Programming",
+                                    "node_type": "skill",
+                                    "competency_id": "int.computer_science.concurrent_programming.async_programming",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         }
                     }
                 },
@@ -684,15 +1045,46 @@
                         },
                         "Mechatronics": {
                             "name": "Mechatronics",
-                            "node_type": "skill",
-                            "competency_id": "int.robotics.mechatronics",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Actuators": {
+                                    "name": "Actuators",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.mechatronics.actuators",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Sensors": {
+                                    "name": "Sensors",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.mechatronics.sensors",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Embedded Integration": {
+                                    "name": "Embedded Integration",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.mechatronics.embedded_integration",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         },
                         "Perception": {
                             "name": "Perception",
@@ -813,6 +1205,18 @@
                                     "xp_into_level": 0,
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
+                                },
+                                "Localisation": {
+                                    "name": "Localisation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.navigation_and_mapping.localisation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -859,15 +1263,15 @@
                                         }
                                     }
                                 },
-                                "Localization": {
-                                    "name": "Localization",
+                                "Localisation": {
+                                    "name": "Localisation",
                                     "node_type": "parent",
                                     "average_level": 0.0,
                                     "children": {
                                         "SLAM": {
                                             "name": "SLAM",
                                             "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.localization.slam",
+                                            "competency_id": "int.robotics.robot_software.localisation.slam",
                                             "shared": false,
                                             "xp": 0,
                                             "level": 0,
@@ -879,7 +1283,7 @@
                                         "GPS": {
                                             "name": "GPS",
                                             "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.localization.gps",
+                                            "competency_id": "int.robotics.robot_software.localisation.gps",
                                             "shared": false,
                                             "xp": 0,
                                             "level": 0,
@@ -892,15 +1296,34 @@
                                 },
                                 "Deployment": {
                                     "name": "Deployment",
-                                    "node_type": "skill",
-                                    "competency_id": "int.robotics.robot_software.deployment",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
+                                    "node_type": "parent",
+                                    "average_level": 0.0,
+                                    "children": {
+                                        "Runtime Services": {
+                                            "name": "Runtime Services",
+                                            "node_type": "skill",
+                                            "competency_id": "int.robotics.robot_software.deployment.runtime_services",
+                                            "shared": false,
+                                            "xp": 0,
+                                            "level": 0,
+                                            "level_progress": 0.0,
+                                            "xp_into_level": 0,
+                                            "xp_to_next_level": 100,
+                                            "next_level_xp": 100
+                                        },
+                                        "Telemetry": {
+                                            "name": "Telemetry",
+                                            "node_type": "skill",
+                                            "competency_id": "int.robotics.robot_software.deployment.telemetry",
+                                            "shared": false,
+                                            "xp": 0,
+                                            "level": 0,
+                                            "level_progress": 0.0,
+                                            "xp_into_level": 0,
+                                            "xp_to_next_level": 100,
+                                            "next_level_xp": 100
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -1320,10 +1743,10 @@
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
                                 },
-                                "Normalization": {
-                                    "name": "Normalization",
+                                "Normalisation": {
+                                    "name": "Normalisation",
                                     "node_type": "skill",
-                                    "competency_id": "int.data_and_databases.database_design.normalization",
+                                    "competency_id": "int.data_and_databases.database_design.normalisation",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -1434,99 +1857,698 @@
                     "children": {
                         "Systems Thinking": {
                             "name": "Systems Thinking",
-                            "node_type": "skill",
-                            "competency_id": "int.systems_engineering.systems_thinking",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Feedback Loops": {
+                                    "name": "Feedback Loops",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.systems_thinking.feedback_loops",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Emergence": {
+                                    "name": "Emergence",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.systems_thinking.emergence",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Boundaries": {
+                                    "name": "Boundaries",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.systems_thinking.boundaries",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         },
                         "Requirements Engineering": {
                             "name": "Requirements Engineering",
-                            "node_type": "skill",
-                            "competency_id": "int.systems_engineering.requirements_engineering",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Requirements Elicitation": {
+                                    "name": "Requirements Elicitation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.requirements_engineering.requirements_elicitation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Traceability": {
+                                    "name": "Traceability",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.requirements_engineering.traceability",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         },
                         "System Architecture": {
                             "name": "System Architecture",
-                            "node_type": "skill",
-                            "competency_id": "int.systems_engineering.system_architecture",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
-                        },
-                        "Interface Design": {
-                            "name": "Interface Design",
-                            "node_type": "skill",
-                            "competency_id": "int.systems_engineering.interface_design",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
-                        },
-                        "Trade-off Analysis": {
-                            "name": "Trade-off Analysis",
-                            "node_type": "skill",
-                            "competency_id": "int.systems_engineering.trade_off_analysis",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Interface Design": {
+                                    "name": "Interface Design",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.system_architecture.interface_design",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Trade-off Analysis": {
+                                    "name": "Trade-off Analysis",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.system_architecture.trade_off_analysis",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         },
                         "Verification & Validation": {
                             "name": "Verification & Validation",
-                            "node_type": "skill",
-                            "competency_id": "int.systems_engineering.verification_and_validation",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Integration": {
+                                    "name": "Integration",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.verification_and_validation.integration",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Lifecycle Management": {
+                                    "name": "Lifecycle Management",
+                                    "node_type": "skill",
+                                    "competency_id": "int.systems_engineering.verification_and_validation.lifecycle_management",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Business": {
+                    "name": "Business",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Entrepreneurship": {
+                            "name": "Entrepreneurship",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Business Models": {
+                                    "name": "Business Models",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.entrepreneurship.business_models",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Value Propositions": {
+                                    "name": "Value Propositions",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.entrepreneurship.value_propositions",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Customer Discovery": {
+                                    "name": "Customer Discovery",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.entrepreneurship.customer_discovery",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Market Validation": {
+                                    "name": "Market Validation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.entrepreneurship.market_validation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         },
-                        "Integration": {
-                            "name": "Integration",
-                            "node_type": "skill",
-                            "competency_id": "int.systems_engineering.integration",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                        "Finance": {
+                            "name": "Finance",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Revenue": {
+                                    "name": "Revenue",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.finance.revenue",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Profit": {
+                                    "name": "Profit",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.finance.profit",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Cash Flow": {
+                                    "name": "Cash Flow",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.finance.cash_flow",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Pricing": {
+                                    "name": "Pricing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.finance.pricing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Budgeting": {
+                                    "name": "Budgeting",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.finance.budgeting",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         },
-                        "Lifecycle Management": {
-                            "name": "Lifecycle Management",
-                            "node_type": "skill",
-                            "competency_id": "int.systems_engineering.lifecycle_management",
-                            "shared": false,
-                            "xp": 0,
-                            "level": 0,
-                            "level_progress": 0.0,
-                            "xp_into_level": 0,
-                            "xp_to_next_level": 100,
-                            "next_level_xp": 100
+                        "Marketing": {
+                            "name": "Marketing",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Branding": {
+                                    "name": "Branding",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.marketing.branding",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Positioning": {
+                                    "name": "Positioning",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.marketing.positioning",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Content Strategy": {
+                                    "name": "Content Strategy",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.marketing.content_strategy",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Customer Acquisition": {
+                                    "name": "Customer Acquisition",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.marketing.customer_acquisition",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Sales": {
+                            "name": "Sales",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Lead Generation": {
+                                    "name": "Lead Generation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.sales.lead_generation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Qualification": {
+                                    "name": "Qualification",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.sales.qualification",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Negotiation": {
+                                    "name": "Negotiation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.sales.negotiation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Closing": {
+                                    "name": "Closing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.sales.closing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Operations": {
+                            "name": "Operations",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Process Design": {
+                                    "name": "Process Design",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.operations.process_design",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Service Delivery": {
+                                    "name": "Service Delivery",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.operations.service_delivery",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Quality Control": {
+                                    "name": "Quality Control",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.operations.quality_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Resource Planning": {
+                                    "name": "Resource Planning",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.operations.resource_planning",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Strategy": {
+                            "name": "Strategy",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Competitive Analysis": {
+                                    "name": "Competitive Analysis",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.strategy.competitive_analysis",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Risk Management": {
+                                    "name": "Risk Management",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.strategy.risk_management",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Growth Planning": {
+                                    "name": "Growth Planning",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.strategy.growth_planning",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Decision Making": {
+                                    "name": "Decision Making",
+                                    "node_type": "skill",
+                                    "competency_id": "int.business.strategy.decision_making",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Creative Production": {
+                    "name": "Creative Production",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Video Production": {
+                            "name": "Video Production",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Cinematography": {
+                                    "name": "Cinematography",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.video_production.cinematography",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Editing": {
+                                    "name": "Editing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.video_production.editing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Colour Grading": {
+                                    "name": "Colour Grading",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.video_production.colour_grading",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Sound Design": {
+                                    "name": "Sound Design",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.video_production.sound_design",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Photography": {
+                            "name": "Photography",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Composition": {
+                                    "name": "Composition",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.photography.composition",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Exposure": {
+                                    "name": "Exposure",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.photography.exposure",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Post-production": {
+                                    "name": "Post-production",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.photography.post_production",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Storytelling": {
+                            "name": "Storytelling",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Narrative Design": {
+                                    "name": "Narrative Design",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.storytelling.narrative_design",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Worldbuilding": {
+                                    "name": "Worldbuilding",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.storytelling.worldbuilding",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Visual Language": {
+                                    "name": "Visual Language",
+                                    "node_type": "skill",
+                                    "competency_id": "int.creative_production.storytelling.visual_language",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Learning Practice": {
+                    "name": "Learning Practice",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Learning Systems": {
+                            "name": "Learning Systems",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Prompt Engineering": {
+                                    "name": "Prompt Engineering",
+                                    "node_type": "skill",
+                                    "competency_id": "int.learning_practice.learning_systems.prompt_engineering",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Note Taking": {
+                                    "name": "Note Taking",
+                                    "node_type": "skill",
+                                    "competency_id": "int.learning_practice.learning_systems.note_taking",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Reflection": {
+                                    "name": "Reflection",
+                                    "node_type": "skill",
+                                    "competency_id": "int.learning_practice.learning_systems.reflection",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Knowledge Mapping": {
+                                    "name": "Knowledge Mapping",
+                                    "node_type": "skill",
+                                    "competency_id": "int.learning_practice.learning_systems.knowledge_mapping",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
                         }
                     }
                 }
@@ -1536,19 +2558,1732 @@
             "name": "STR",
             "node_type": "main_stat",
             "average_level": 0.0,
-            "children": {}
+            "children": {
+                "Muscular Strength": {
+                    "name": "Muscular Strength",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Upper Body": {
+                            "name": "Upper Body",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Push-ups": {
+                                    "name": "Push-ups",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.upper_body.push_ups",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Pulling Strength": {
+                                    "name": "Pulling Strength",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.upper_body.pulling_strength",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Pressing Strength": {
+                                    "name": "Pressing Strength",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.upper_body.pressing_strength",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Lower Body": {
+                            "name": "Lower Body",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Squats": {
+                                    "name": "Squats",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.lower_body.squats",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Lunges": {
+                                    "name": "Lunges",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.lower_body.lunges",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Hip Strength": {
+                                    "name": "Hip Strength",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.lower_body.hip_strength",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Core": {
+                            "name": "Core",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Bracing": {
+                                    "name": "Bracing",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.core.bracing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Anti-rotation": {
+                                    "name": "Anti-rotation",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.core.anti_rotation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Power": {
+                    "name": "Power",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Explosive Movement": {
+                            "name": "Explosive Movement",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Jumping": {
+                                    "name": "Jumping",
+                                    "node_type": "skill",
+                                    "competency_id": "str.power.explosive_movement.jumping",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Kicking Power": {
+                                    "name": "Kicking Power",
+                                    "node_type": "skill",
+                                    "competency_id": "str.power.explosive_movement.kicking_power",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Acceleration": {
+                                    "name": "Acceleration",
+                                    "node_type": "skill",
+                                    "competency_id": "str.power.explosive_movement.acceleration",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Functional Strength": {
+                    "name": "Functional Strength",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Load Handling": {
+                            "name": "Load Handling",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Carrying": {
+                                    "name": "Carrying",
+                                    "node_type": "skill",
+                                    "competency_id": "str.functional_strength.load_handling.carrying",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Equipment Setup": {
+                                    "name": "Equipment Setup",
+                                    "node_type": "skill",
+                                    "competency_id": "str.functional_strength.load_handling.equipment_setup",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Grip Strength": {
+                                    "name": "Grip Strength",
+                                    "node_type": "skill",
+                                    "competency_id": "str.functional_strength.load_handling.grip_strength",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         },
         "DEX": {
             "name": "DEX",
             "node_type": "main_stat",
             "average_level": 0.0,
-            "children": {}
+            "children": {
+                "Coordination": {
+                    "name": "Coordination",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Whole-body Coordination": {
+                            "name": "Whole-body Coordination",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Rhythm": {
+                                    "name": "Rhythm",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.coordination.whole_body_coordination.rhythm",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Movement Sequencing": {
+                                    "name": "Movement Sequencing",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.coordination.whole_body_coordination.movement_sequencing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Hand-eye Coordination": {
+                            "name": "Hand-eye Coordination",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Tool Control": {
+                                    "name": "Tool Control",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.coordination.hand_eye_coordination.tool_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Camera Control": {
+                                    "name": "Camera Control",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.coordination.hand_eye_coordination.camera_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Balance": {
+                    "name": "Balance",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Static Balance": {
+                            "name": "Static Balance",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Stance Control": {
+                                    "name": "Stance Control",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.balance.static_balance.stance_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Dynamic Balance": {
+                            "name": "Dynamic Balance",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Weight Transfer": {
+                                    "name": "Weight Transfer",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.balance.dynamic_balance.weight_transfer",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Landing Control": {
+                                    "name": "Landing Control",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.balance.dynamic_balance.landing_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Agility": {
+                    "name": "Agility",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Footwork": {
+                            "name": "Footwork",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Direction Changes": {
+                                    "name": "Direction Changes",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.agility.footwork.direction_changes",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Distance Management": {
+                                    "name": "Distance Management",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.agility.footwork.distance_management",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Reaction": {
+                            "name": "Reaction",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Reaction Time": {
+                                    "name": "Reaction Time",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.agility.reaction.reaction_time",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Visual Response": {
+                                    "name": "Visual Response",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.agility.reaction.visual_response",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Martial Arts": {
+                    "name": "Martial Arts",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Taekwondo": {
+                            "name": "Taekwondo",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Front Kick": {
+                                    "name": "Front Kick",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.taekwondo.front_kick",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Roundhouse Kick": {
+                                    "name": "Roundhouse Kick",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.taekwondo.roundhouse_kick",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Side Kick": {
+                                    "name": "Side Kick",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.taekwondo.side_kick",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Forms": {
+                                    "name": "Forms",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.taekwondo.forms",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Sparring": {
+                                    "name": "Sparring",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.taekwondo.sparring",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Capoeira": {
+                            "name": "Capoeira",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Ginga": {
+                                    "name": "Ginga",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.capoeira.ginga",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Esquiva": {
+                                    "name": "Esquiva",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.capoeira.esquiva",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Meia Lua": {
+                                    "name": "Meia Lua",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.capoeira.meia_lua",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Flow": {
+                                    "name": "Flow",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.martial_arts.capoeira.flow",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Fine Motor Control": {
+                    "name": "Fine Motor Control",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Workshop Skills": {
+                            "name": "Workshop Skills",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Soldering": {
+                                    "name": "Soldering",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.fine_motor_control.workshop_skills.soldering",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Assembly": {
+                                    "name": "Assembly",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.fine_motor_control.workshop_skills.assembly",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Precision Measurement": {
+                                    "name": "Precision Measurement",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.fine_motor_control.workshop_skills.precision_measurement",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         },
-        "DIS": {
-            "name": "DIS",
+        "DISC": {
+            "name": "DISC",
             "node_type": "main_stat",
             "average_level": 0.0,
-            "children": {}
+            "children": {
+                "Consistency": {
+                    "name": "Consistency",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Routine Adherence": {
+                            "name": "Routine Adherence",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Daily Practice": {
+                                    "name": "Daily Practice",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.consistency.routine_adherence.daily_practice",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Weekly Review": {
+                                    "name": "Weekly Review",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.consistency.routine_adherence.weekly_review",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Streak Recovery": {
+                                    "name": "Streak Recovery",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.consistency.routine_adherence.streak_recovery",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Task Completion": {
+                            "name": "Task Completion",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Starting": {
+                                    "name": "Starting",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.consistency.task_completion.starting",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Finishing": {
+                                    "name": "Finishing",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.consistency.task_completion.finishing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Follow-through": {
+                                    "name": "Follow-through",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.consistency.task_completion.follow_through",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Focus": {
+                    "name": "Focus",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Attention Management": {
+                            "name": "Attention Management",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Deep Work": {
+                                    "name": "Deep Work",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.focus.attention_management.deep_work",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Distraction Control": {
+                                    "name": "Distraction Control",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.focus.attention_management.distraction_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Session Quality": {
+                            "name": "Session Quality",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Preparation": {
+                                    "name": "Preparation",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.focus.session_quality.preparation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Deliberate Practice": {
+                                    "name": "Deliberate Practice",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.focus.session_quality.deliberate_practice",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Time Management": {
+                    "name": "Time Management",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Planning": {
+                            "name": "Planning",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Prioritisation": {
+                                    "name": "Prioritisation",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.time_management.planning.prioritisation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Scheduling": {
+                                    "name": "Scheduling",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.time_management.planning.scheduling",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Estimation": {
+                                    "name": "Estimation",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.time_management.planning.estimation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Review": {
+                            "name": "Review",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Retrospective": {
+                                    "name": "Retrospective",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.time_management.review.retrospective",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Course Correction": {
+                                    "name": "Course Correction",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.time_management.review.course_correction",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Habit Formation": {
+                    "name": "Habit Formation",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Behaviour Design": {
+                            "name": "Behaviour Design",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Cues": {
+                                    "name": "Cues",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.habit_formation.behaviour_design.cues",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Friction Reduction": {
+                                    "name": "Friction Reduction",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.habit_formation.behaviour_design.friction_reduction",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Reinforcement": {
+                                    "name": "Reinforcement",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.habit_formation.behaviour_design.reinforcement",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Accountability": {
+                    "name": "Accountability",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Evidence": {
+                            "name": "Evidence",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Logging": {
+                                    "name": "Logging",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.accountability.evidence.logging",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Reporting": {
+                                    "name": "Reporting",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.accountability.evidence.reporting",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Verification": {
+                                    "name": "Verification",
+                                    "node_type": "skill",
+                                    "competency_id": "disc.accountability.evidence.verification",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "WILL": {
+            "name": "WILL",
+            "node_type": "main_stat",
+            "average_level": 0.0,
+            "children": {
+                "Persistence": {
+                    "name": "Persistence",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Sustained Effort": {
+                            "name": "Sustained Effort",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Continuing Under Difficulty": {
+                                    "name": "Continuing Under Difficulty",
+                                    "node_type": "skill",
+                                    "competency_id": "will.persistence.sustained_effort.continuing_under_difficulty",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Returning After Interruption": {
+                                    "name": "Returning After Interruption",
+                                    "node_type": "skill",
+                                    "competency_id": "will.persistence.sustained_effort.returning_after_interruption",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Goal Commitment": {
+                            "name": "Goal Commitment",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Long-term Projects": {
+                                    "name": "Long-term Projects",
+                                    "node_type": "skill",
+                                    "competency_id": "will.persistence.goal_commitment.long_term_projects",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Delayed Gratification": {
+                                    "name": "Delayed Gratification",
+                                    "node_type": "skill",
+                                    "competency_id": "will.persistence.goal_commitment.delayed_gratification",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Courage": {
+                    "name": "Courage",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Social Courage": {
+                            "name": "Social Courage",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Outreach": {
+                                    "name": "Outreach",
+                                    "node_type": "skill",
+                                    "competency_id": "will.courage.social_courage.outreach",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Asking for Feedback": {
+                                    "name": "Asking for Feedback",
+                                    "node_type": "skill",
+                                    "competency_id": "will.courage.social_courage.asking_for_feedback",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Negotiation": {
+                                    "name": "Negotiation",
+                                    "node_type": "skill",
+                                    "competency_id": "will.courage.social_courage.negotiation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Performance Courage": {
+                            "name": "Performance Courage",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Testing Publicly": {
+                                    "name": "Testing Publicly",
+                                    "node_type": "skill",
+                                    "competency_id": "will.courage.performance_courage.testing_publicly",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Shipping Work": {
+                                    "name": "Shipping Work",
+                                    "node_type": "skill",
+                                    "competency_id": "will.courage.performance_courage.shipping_work",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Discomfort Tolerance": {
+                    "name": "Discomfort Tolerance",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Physical Discomfort": {
+                            "name": "Physical Discomfort",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Training Fatigue": {
+                                    "name": "Training Fatigue",
+                                    "node_type": "skill",
+                                    "competency_id": "will.discomfort_tolerance.physical_discomfort.training_fatigue",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Cold Start": {
+                                    "name": "Cold Start",
+                                    "node_type": "skill",
+                                    "competency_id": "will.discomfort_tolerance.physical_discomfort.cold_start",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Cognitive Discomfort": {
+                            "name": "Cognitive Discomfort",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Ambiguity": {
+                                    "name": "Ambiguity",
+                                    "node_type": "skill",
+                                    "competency_id": "will.discomfort_tolerance.cognitive_discomfort.ambiguity",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Complex Problems": {
+                                    "name": "Complex Problems",
+                                    "node_type": "skill",
+                                    "competency_id": "will.discomfort_tolerance.cognitive_discomfort.complex_problems",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Emotional Regulation": {
+                    "name": "Emotional Regulation",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Setback Response": {
+                            "name": "Setback Response",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Frustration Management": {
+                                    "name": "Frustration Management",
+                                    "node_type": "skill",
+                                    "competency_id": "will.emotional_regulation.setback_response.frustration_management",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Recovery From Failure": {
+                                    "name": "Recovery From Failure",
+                                    "node_type": "skill",
+                                    "competency_id": "will.emotional_regulation.setback_response.recovery_from_failure",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Self-command": {
+                            "name": "Self-command",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Impulse Control": {
+                                    "name": "Impulse Control",
+                                    "node_type": "skill",
+                                    "competency_id": "will.emotional_regulation.self_command.impulse_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Composure": {
+                                    "name": "Composure",
+                                    "node_type": "skill",
+                                    "competency_id": "will.emotional_regulation.self_command.composure",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Decisiveness": {
+                    "name": "Decisiveness",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Decision Execution": {
+                            "name": "Decision Execution",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Commitment": {
+                                    "name": "Commitment",
+                                    "node_type": "skill",
+                                    "competency_id": "will.decisiveness.decision_execution.commitment",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Risk Acceptance": {
+                                    "name": "Risk Acceptance",
+                                    "node_type": "skill",
+                                    "competency_id": "will.decisiveness.decision_execution.risk_acceptance",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "SPIRIT": {
+            "name": "SPIRIT",
+            "node_type": "main_stat",
+            "average_level": 0.0,
+            "children": {
+                "Identity": {
+                    "name": "Identity",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Self-Knowledge": {
+                            "name": "Self-Knowledge",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Personal Narrative": {
+                                    "name": "Personal Narrative",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.identity.self_knowledge.personal_narrative",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Strengths and Limitations": {
+                                    "name": "Strengths and Limitations",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.identity.self_knowledge.strengths_and_limitations",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Authenticity": {
+                                    "name": "Authenticity",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.identity.self_knowledge.authenticity",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Founder Identity": {
+                            "name": "Founder Identity",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Responsibility": {
+                                    "name": "Responsibility",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.identity.founder_identity.responsibility",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Leadership": {
+                                    "name": "Leadership",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.identity.founder_identity.leadership",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Craft": {
+                                    "name": "Craft",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.identity.founder_identity.craft",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Purpose": {
+                    "name": "Purpose",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Direction": {
+                            "name": "Direction",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Values": {
+                                    "name": "Values",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.purpose.direction.values",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Calling": {
+                                    "name": "Calling",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.purpose.direction.calling",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Legacy": {
+                                    "name": "Legacy",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.purpose.direction.legacy",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Service": {
+                            "name": "Service",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Contribution": {
+                                    "name": "Contribution",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.purpose.service.contribution",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Stewardship": {
+                                    "name": "Stewardship",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.purpose.service.stewardship",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Culture": {
+                    "name": "Culture",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Cultural Understanding": {
+                            "name": "Cultural Understanding",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Heritage": {
+                                    "name": "Heritage",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.culture.cultural_understanding.heritage",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Tradition": {
+                                    "name": "Tradition",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.culture.cultural_understanding.tradition",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Belonging": {
+                                    "name": "Belonging",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.culture.cultural_understanding.belonging",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Creative Heritage": {
+                            "name": "Creative Heritage",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Afrofuturism": {
+                                    "name": "Afrofuturism",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.culture.creative_heritage.afrofuturism",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Symbolism": {
+                                    "name": "Symbolism",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.culture.creative_heritage.symbolism",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Cultural Storytelling": {
+                                    "name": "Cultural Storytelling",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.culture.creative_heritage.cultural_storytelling",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Reflection": {
+                    "name": "Reflection",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Reflective Practice": {
+                            "name": "Reflective Practice",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Journaling": {
+                                    "name": "Journaling",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.reflection.reflective_practice.journaling",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Self-Assessment": {
+                                    "name": "Self-Assessment",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.reflection.reflective_practice.self_assessment",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Meaning Making": {
+                                    "name": "Meaning Making",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.reflection.reflective_practice.meaning_making",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Epiphanies": {
+                                    "name": "Epiphanies",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.reflection.reflective_practice.epiphanies",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Ethics": {
+                    "name": "Ethics",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Moral Reasoning": {
+                            "name": "Moral Reasoning",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Principles": {
+                                    "name": "Principles",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.ethics.moral_reasoning.principles",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Responsibility": {
+                                    "name": "Responsibility",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.ethics.moral_reasoning.responsibility",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Integrity": {
+                                    "name": "Integrity",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.ethics.moral_reasoning.integrity",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Creativity": {
+                    "name": "Creativity",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Expression": {
+                            "name": "Expression",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Storytelling": {
+                                    "name": "Storytelling",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.creativity.expression.storytelling",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Worldbuilding": {
+                                    "name": "Worldbuilding",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.creativity.expression.worldbuilding",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Artistic Direction": {
+                                    "name": "Artistic Direction",
+                                    "node_type": "skill",
+                                    "competency_id": "spirit.creativity.expression.artistic_direction",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "total_xp": 1360,
@@ -1558,6 +4293,6 @@
     "xp_to_next_level": 343,
     "next_level_xp": 1703,
     "level_xp_required": 800,
-    "competency_count": 106,
+    "competency_count": 277,
     "migrated_competencies": []
 }

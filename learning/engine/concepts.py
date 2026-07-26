@@ -7,10 +7,38 @@ from __future__ import annotations
 
 import json
 import math
+import sys
 from pathlib import Path
 from typing import Any
 
-GRAPH_PATH = Path("operator_core/capabilities/capability_graph.json")
+
+def _find_repo_root(start: Path) -> Path:
+    current = start
+    for _ in range(8):
+        if (current / "shared" / "config" / "paths.py").exists():
+            return current
+        if current.parent == current:
+            break
+        current = current.parent
+    raise RuntimeError(
+        f"Could not find the zeroGravity-rnd repo root above {start}."
+    )
+
+
+_REPO_ROOT = _find_repo_root(Path(__file__).resolve().parent)
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
+from shared.config.paths import OPERATOR_CAPABILITIES  # noqa: E402
+
+# Absolute, cwd-independent -- this used to be a bare relative path, which
+# meant it silently resolved to nothing (falling back to "no concepts
+# known") whenever a script was run from anywhere other than the exact
+# repo root, e.g. from learning/engine/. Finding the repo root here,
+# rather than relying on whichever script imports this module to have
+# already set up sys.path correctly, means this fix can't be silently
+# undone by a caller that doesn't happen to add the repo root itself.
+GRAPH_PATH = OPERATOR_CAPABILITIES / "capability_graph.json"
 CONFIDENCE = {"high", "medium", "low"}
 
 

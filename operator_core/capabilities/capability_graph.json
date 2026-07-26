@@ -132,6 +132,13 @@
                         "python.exceptions",
                         "python.modules"
                     ]
+                },
+                "python.dataframes": {
+                    "name": "Tabular Data Analysis (DataFrames)",
+                    "description": "Working with tabular data using Series and DataFrames - filtering, aggregation, reshaping.",
+                    "prerequisites": [
+                        
+                    ]
                 }
             },
             "relationships": [
