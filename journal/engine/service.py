@@ -18,6 +18,8 @@ from journal.engine.models import (
     JournalManifest,
     normalise_string_list,
 )
+from journal.engine.xp_defaults import resolve_default_xp
+from learning.engine.stats import update_operator_competencies
 from operator_core.distribution.service import DistributionService
 from operator_core.events.models import OperatorEvent
 from operator_core.events.service import EventLedger
@@ -51,6 +53,17 @@ class JournalService:
         self.distributor = distributor or DistributionService(ledger=self.ledger)
 
     def create(self, request: JournalEntryRequest) -> JournalManifest:
+        # No friction by default: if the request didn't explicitly set XP,
+        # derive it from the entry type(s). This lives here rather than in
+        # the create_entry() helper because the CLI builds its own
+        # JournalEntryRequest directly and calls this method - putting the
+        # auto-fill only in create_entry() would silently miss the actual
+        # command line path.
+        if not request.xp_targets and not request.base_xp:
+            base_xp, xp_targets = resolve_default_xp(request.entry_types)
+            if base_xp:
+                request = replace(request, base_xp=base_xp, xp_targets=tuple(xp_targets))
+
         day = request.entry_date or date.today()
         folder = self.entries_root / f"{day:%Y}" / f"{day:%m}"
         folder.mkdir(parents=True, exist_ok=True)
@@ -75,6 +88,24 @@ class JournalService:
             receipt = self.distributor.distribute_event(event)
             manifest = replace(manifest, receipt_id=receipt.receipt_id, status="processed")
             save_json(manifest_path, manifest.to_dict())
+
+            # This was the missing step: distribute_event only records a
+            # receipt, it never mutates any stat/competency state on its
+            # own. Learning-track completions apply their receipt via a
+            # progression_updater callback (see completion_service.py);
+            # journal entries need the same explicit step, or the XP
+            # exists on paper but never actually reaches anything.
+            allocations = [
+                {
+                    "competency_id": allocation.target_id,
+                    "weight": allocation.weight,
+                    "xp": allocation.xp,
+                }
+                for allocation in receipt.allocations
+                if allocation.target_type == "competency"
+            ]
+            if allocations:
+                update_operator_competencies(allocations)
 
         self.rebuild_index()
         return manifest
@@ -224,10 +255,12 @@ def create_entry(
                     metadata=dict(item.get("metadata", {})),
                 )
             )
+
+    resolved_types = normalise_string_list(entry_types)
     request = JournalEntryRequest(
         title=title,
         body=body,
-        entry_types=normalise_string_list(entry_types),
+        entry_types=resolved_types,
         tags=normalise_string_list(tags),
         projects=normalise_string_list(projects),
         domains=normalise_string_list(domains),

@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any, Mapping
 
 from operator_core.profile.models import OperatorIdentity, utc_now_iso
+from operator_core.profile.overall import calculate_overall
 from operator_core.profile.progression import get_level_progress
 from shared.config.paths import OPERATOR_PROFILE_DATA
 
@@ -73,9 +74,11 @@ class ProfileRepository:
 
     def load_profile(self) -> dict[str, Any]:
         self.initialise()
+        stats = self._read(self.stats_path)
         return {
             "identity": self._read(self.identity_path),
-            "stats": self._read(self.stats_path),
+            "stats": stats,
+            "overall": calculate_overall(),
             "progression": self._read(self.progression_path),
             "preferences": self._read(self.preferences_path),
             "active_goals": self._read(self.goals_path),
