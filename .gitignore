@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 lab/database/*.db
 *.zip
+*.db
