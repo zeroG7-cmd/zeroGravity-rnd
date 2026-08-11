@@ -11,4 +11,3 @@ brackets, gimbal housings, that kind of thing. to be honest i wont be skipping l
 
 Next step: get the educational license activated, then start Section 2 
 (basic sketches).
-

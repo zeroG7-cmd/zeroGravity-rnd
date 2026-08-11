@@ -7,4 +7,3 @@
 
 - i will be getting a certificate of completion once i finish the course
 
-
