@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "event_count": 6,
+  "event_count": 8,
   "event_ids": {
     "evt_0896a2c598db4984aec036c464fbc57e": {
       "event_type": "learning_completed",
@@ -25,6 +25,14 @@
     "evt_86a1cba7d9ba4161a3bc5d647b0b2eab": {
       "event_type": "xp_distributed",
       "recorded_at": "2026-08-11T02:01:12.314148+00:00"
+    },
+    "evt_5aa2cf69ca1848658655630592963ee2": {
+      "event_type": "learning_completed",
+      "recorded_at": "2026-08-11T17:05:15.737735+00:00"
+    },
+    "evt_d936a2bb101c432f852c62b76d6daac0": {
+      "event_type": "xp_distributed",
+      "recorded_at": "2026-08-11T17:05:15.762993+00:00"
     }
   },
   "idempotency_keys": {
@@ -33,6 +41,8 @@
     "legacy-provider:bootdev:bootdev_learn_linux:2:3": "evt_9615a69661564b8d970e8d29d31df5b0",
     "legacy-provider:bootdev:bootdev_learn_linux:2:5": "evt_ea0d7b75ac644031a9e888e7145d9ca2",
     "learning:udemy:cad_fusion_360_beginners_course:section_01_unit_001_introduction_to_fusion_360:completed": "evt_7f6692da99594738bc0e897ef3b230de",
-    "xp_distribution:evt_7f6692da99594738bc0e897ef3b230de:1": "evt_86a1cba7d9ba4161a3bc5d647b0b2eab"
+    "xp_distribution:evt_7f6692da99594738bc0e897ef3b230de:1": "evt_86a1cba7d9ba4161a3bc5d647b0b2eab",
+    "learning:udemy:cad_fusion_360_beginners_course:section_01_unit_002_introduction_to_fusion_360:completed": "evt_5aa2cf69ca1848658655630592963ee2",
+    "xp_distribution:evt_5aa2cf69ca1848658655630592963ee2:1": "evt_d936a2bb101c432f852c62b76d6daac0"
   }
 }

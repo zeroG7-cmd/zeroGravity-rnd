@@ -1,5 +1,4 @@
 # Practical Evidence
-# Practical Evidence
 
 Confirmed Fusion 360 Personal Use license is active and installed.
 
