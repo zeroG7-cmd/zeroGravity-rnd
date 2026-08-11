@@ -1152,11 +1152,11 @@
         "int.robotics.mechanical_design.cad": {
             "id": "int.robotics.mechanical_design.cad",
             "name": "CAD",
-            "xp": 70,
+            "xp": 30,
             "level": 0,
             "shared": false,
-            "level_progress": 70.0,
-            "xp_to_next_level": 30
+            "level_progress": 30.0,
+            "xp_to_next_level": 70
         },
         "int.robotics.mechanical_design.dynamics": {
             "id": "int.robotics.mechanical_design.dynamics",

@@ -27,7 +27,7 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 6,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_001_introduction_to_fusion_360",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_006_introduction_to_fusion_360",
             "source": "fusion_360_beginners_course.json",
             "source_type": "video",
             "duration": null,
@@ -40,7 +40,7 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 7,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_002_getting_familiar_with_user_interface",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_007_getting_familiar_with_user_interface",
             "source": "fusion_360_beginners_course.json",
             "source_type": "video",
             "duration": null,
@@ -53,7 +53,7 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 8,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_003_navigation_tools",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_008_navigation_tools",
             "source": "fusion_360_beginners_course.json",
             "source_type": "video",
             "duration": null,
@@ -66,7 +66,7 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 9,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_004_display_and_visual_settings",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_009_display_and_visual_settings",
             "source": "fusion_360_beginners_course.json",
             "source_type": "video",
             "duration": null,
@@ -79,7 +79,7 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 10,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_005_drawing_units_and_preferences",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_010_drawing_units_and_preferences",
             "source": "fusion_360_beginners_course.json",
             "source_type": "video",
             "duration": null,
@@ -92,7 +92,7 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 11,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_006_selection_tools",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_011_selection_tools",
             "source": "fusion_360_beginners_course.json",
             "source_type": "video",
             "duration": null,
@@ -105,12 +105,23 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 12,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_007_understanding_parametric_nature",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_012_understanding_parametric_nature",
             "source": "fusion_360_beginners_course.json",
             "source_type": "video",
             "duration": null,
             "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
+            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.design_intent",
+                    "weight": 0.5
+                },
+                {
+                    "concept_id": "cad.parametric_design",
+                    "weight": 0.5
+                }
+            ],
+            "mapping_confidence": "medium"
         },
         {
             "id": "section_01_unit_008_practice_exercise",
@@ -118,7 +129,7 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 13,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_008_practice_exercise",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_013_practice_exercise",
             "source": "fusion_360_beginners_course.json",
             "source_type": "video",
             "duration": null,
@@ -131,7 +142,7 @@
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
             "unit_number": 14,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_009_quiz_1_introduction_to_fusion_360_quiz",
+            "path": "sections/section_01_introduction_to_fusion_360/unit_014_quiz_1_introduction_to_fusion_360_quiz",
             "source": "fusion_360_beginners_course.json",
             "source_type": "quiz",
             "duration": null,
@@ -565,7 +576,14 @@
             "source_type": "video",
             "duration": null,
             "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
+            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.interference",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "section_05_unit_005_understanding_g0_g1_g2_and_g3_continuity",
@@ -578,7 +596,14 @@
             "source_type": "video",
             "duration": null,
             "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
+            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.surface_modelling",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "section_05_unit_006_zebra_and_draft_analysis",
@@ -591,7 +616,14 @@
             "source_type": "video",
             "duration": null,
             "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
+            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.surface_modelling",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "section_05_unit_007_practice_exercise",
@@ -838,7 +870,14 @@
             "source_type": "video",
             "duration": null,
             "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
+            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.data_exchange",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "section_07_unit_009_inserting_components",
@@ -851,7 +890,14 @@
             "source_type": "video",
             "duration": null,
             "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
+            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true",
+            "concept_awards": [
+                {
+                    "concept_id": "cad.data_exchange",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high"
         },
         {
             "id": "section_07_unit_010_practice_exercise",
@@ -1665,23 +1711,6 @@
     "manifest_schema_version": 3,
     "mapping_confidence": "medium",
     "section_concept_awards": {
-        "1": {
-            "mapping_confidence": "medium",
-            "concept_awards": [
-                {
-                    "concept_id": "cad.parametric_design",
-                    "weight": 0.5
-                },
-                {
-                    "concept_id": "cad.design_intent",
-                    "weight": 0.3
-                },
-                {
-                    "concept_id": "cad.data_exchange",
-                    "weight": 0.2
-                }
-            ]
-        },
         "2": {
             "mapping_confidence": "high",
             "concept_awards": [
@@ -1725,16 +1754,12 @@
             "mapping_confidence": "high",
             "concept_awards": [
                 {
-                    "concept_id": "cad.sketching",
-                    "weight": 0.35
-                },
-                {
                     "concept_id": "cad.tolerancing",
-                    "weight": 0.35
+                    "weight": 0.5
                 },
                 {
                     "concept_id": "cad.design_intent",
-                    "weight": 0.3
+                    "weight": 0.5
                 }
             ]
         },
@@ -1786,15 +1811,11 @@
             "concept_awards": [
                 {
                     "concept_id": "cad.technical_drawings",
-                    "weight": 0.65
+                    "weight": 0.7
                 },
                 {
                     "concept_id": "cad.tolerancing",
-                    "weight": 0.25
-                },
-                {
-                    "concept_id": "cad.animation",
-                    "weight": 0.1
+                    "weight": 0.3
                 }
             ]
         },
@@ -1803,11 +1824,7 @@
             "concept_awards": [
                 {
                     "concept_id": "cad.rendering",
-                    "weight": 0.85
-                },
-                {
-                    "concept_id": "cad.data_exchange",
-                    "weight": 0.15
+                    "weight": 1.0
                 }
             ]
         },
@@ -1821,15 +1838,6 @@
                 {
                     "concept_id": "cad.interference",
                     "weight": 0.3
-                }
-            ]
-        },
-        "12": {
-            "mapping_confidence": "low",
-            "concept_awards": [
-                {
-                    "concept_id": "cad.design_intent",
-                    "weight": 1.0
                 }
             ]
         }
