@@ -19,75 +19,10 @@
     "import_method": "manifest",
     "structure_type": "imported",
     "section_count": 12,
-    "unit_count": 130,
+    "unit_count": 125,
     "units": [
         {
-            "id": "section_01_unit_001_course_introduction",
-            "title": "Section 1: Introduction to Fusion 360 - Course Introduction",
-            "section_number": 1,
-            "section_title": "Introduction to Fusion 360",
-            "unit_number": 1,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_001_course_introduction",
-            "source": "fusion_360_beginners_course.json",
-            "source_type": "video",
-            "duration": null,
-            "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
-        },
-        {
-            "id": "section_01_unit_002_resources",
-            "title": "Section 1: Introduction to Fusion 360 - Resources",
-            "section_number": 1,
-            "section_title": "Introduction to Fusion 360",
-            "unit_number": 2,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_002_resources",
-            "source": "fusion_360_beginners_course.json",
-            "source_type": "video",
-            "duration": null,
-            "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
-        },
-        {
-            "id": "section_01_unit_003_fusion_360_student_version",
-            "title": "Section 1: Introduction to Fusion 360 - Fusion 360 student version",
-            "section_number": 1,
-            "section_title": "Introduction to Fusion 360",
-            "unit_number": 3,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_003_fusion_360_student_version",
-            "source": "fusion_360_beginners_course.json",
-            "source_type": "video",
-            "duration": null,
-            "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
-        },
-        {
-            "id": "section_01_unit_004_fusion_360_tips",
-            "title": "Section 1: Introduction to Fusion 360 - Fusion 360 Tips",
-            "section_number": 1,
-            "section_title": "Introduction to Fusion 360",
-            "unit_number": 4,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_004_fusion_360_tips",
-            "source": "fusion_360_beginners_course.json",
-            "source_type": "video",
-            "duration": null,
-            "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
-        },
-        {
-            "id": "section_01_unit_005_fusion_files_zip",
-            "title": "Section 1: Introduction to Fusion 360 - Fusion files.zip",
-            "section_number": 1,
-            "section_title": "Introduction to Fusion 360",
-            "unit_number": 5,
-            "path": "sections/section_01_introduction_to_fusion_360/unit_005_fusion_files_zip",
-            "source": "fusion_360_beginners_course.json",
-            "source_type": "video",
-            "duration": null,
-            "duration_minutes": null,
-            "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
-        },
-        {
-            "id": "section_01_unit_006_introduction_to_fusion_360",
+            "id": "section_01_unit_001_introduction_to_fusion_360",
             "title": "Section 1: Introduction to Fusion 360 - Introduction to Fusion 360",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
@@ -100,7 +35,7 @@
             "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
         },
         {
-            "id": "section_01_unit_007_getting_familiar_with_user_interface",
+            "id": "section_01_unit_002_getting_familiar_with_user_interface",
             "title": "Section 1: Introduction to Fusion 360 - Getting familiar with User Interface",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
@@ -113,7 +48,7 @@
             "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
         },
         {
-            "id": "section_01_unit_008_navigation_tools",
+            "id": "section_01_unit_003_navigation_tools",
             "title": "Section 1: Introduction to Fusion 360 - Navigation tools",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
@@ -126,7 +61,7 @@
             "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
         },
         {
-            "id": "section_01_unit_009_display_and_visual_settings",
+            "id": "section_01_unit_004_display_and_visual_settings",
             "title": "Section 1: Introduction to Fusion 360 - Display and visual settings",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
@@ -139,7 +74,7 @@
             "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
         },
         {
-            "id": "section_01_unit_010_drawing_units_and_preferences",
+            "id": "section_01_unit_005_drawing_units_and_preferences",
             "title": "Section 1: Introduction to Fusion 360 - Drawing units and preferences",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
@@ -152,7 +87,7 @@
             "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
         },
         {
-            "id": "section_01_unit_011_selection_tools",
+            "id": "section_01_unit_006_selection_tools",
             "title": "Section 1: Introduction to Fusion 360 - Selection tools",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
@@ -165,7 +100,7 @@
             "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
         },
         {
-            "id": "section_01_unit_012_understanding_parametric_nature",
+            "id": "section_01_unit_007_understanding_parametric_nature",
             "title": "Section 1: Introduction to Fusion 360 - Understanding parametric nature",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
@@ -178,7 +113,7 @@
             "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
         },
         {
-            "id": "section_01_unit_013_practice_exercise",
+            "id": "section_01_unit_008_practice_exercise",
             "title": "Section 1: Introduction to Fusion 360 - Practice Exercise",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
@@ -191,7 +126,7 @@
             "source_url": "https://www.udemy.com/course/fusion-360-beginners-course/learn/lecture/17453254/?udfrontends=true"
         },
         {
-            "id": "section_01_unit_014_quiz_1_introduction_to_fusion_360_quiz",
+            "id": "section_01_unit_009_quiz_1_introduction_to_fusion_360_quiz",
             "title": "Section 1: Introduction to Fusion 360 - Quiz 1: Introduction to fusion 360 Quiz",
             "section_number": 1,
             "section_title": "Introduction to Fusion 360",
