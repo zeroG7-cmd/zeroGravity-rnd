@@ -1,0 +1,20 @@
+{
+  "source_event_id": "evt_7f6692da99594738bc0e897ef3b230de",
+  "total_xp": 30,
+  "allocations": [
+    {
+      "target_id": "int.robotics.mechanical_design.cad",
+      "target_type": "competency",
+      "weight": 1.0,
+      "xp": 30,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_2e7da15d4af64a40ac198da08a2f36e7",
+  "ruleset_version": "1",
+  "created_at": "2026-08-11T02:01:12.310509+00:00",
+  "source_event_type": "learning_completed",
+  "source": "learning.engine.tracker",
+  "metadata": {}
+}

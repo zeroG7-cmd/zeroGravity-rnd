@@ -136,9 +136,7 @@
                 "python.dataframes": {
                     "name": "Tabular Data Analysis (DataFrames)",
                     "description": "Working with tabular data using Series and DataFrames - filtering, aggregation, reshaping.",
-                    "prerequisites": [
-                        
-                    ]
+                    "prerequisites": []
                 }
             },
             "relationships": [
@@ -715,6 +713,27 @@
             "status": "Developing",
             "last_mapping_confidence": "medium",
             "last_source": "provider_event"
+        },
+        "cad.parametric_design": {
+            "xp": 15,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "section"
+        },
+        "cad.design_intent": {
+            "xp": 9,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "section"
+        },
+        "cad.data_exchange": {
+            "xp": 6,
+            "level": 1,
+            "status": "Developing",
+            "last_mapping_confidence": "medium",
+            "last_source": "section"
         }
     }
 }

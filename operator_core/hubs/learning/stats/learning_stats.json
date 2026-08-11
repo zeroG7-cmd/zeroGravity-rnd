@@ -1034,11 +1034,11 @@
                                     "node_type": "skill",
                                     "competency_id": "int.robotics.mechanical_design.cad",
                                     "shared": false,
-                                    "xp": 40,
+                                    "xp": 70,
                                     "level": 0,
-                                    "level_progress": 40.0,
-                                    "xp_into_level": 40,
-                                    "xp_to_next_level": 60,
+                                    "level_progress": 70.0,
+                                    "xp_into_level": 70,
+                                    "xp_to_next_level": 30,
                                     "next_level_xp": 100
                                 }
                             }
@@ -4286,11 +4286,11 @@
             }
         }
     },
-    "total_xp": 1360,
+    "total_xp": 1390,
     "level": 3,
-    "level_progress": 57.1,
-    "xp_into_level": 457,
-    "xp_to_next_level": 343,
+    "level_progress": 60.9,
+    "xp_into_level": 487,
+    "xp_to_next_level": 313,
     "next_level_xp": 1703,
     "level_xp_required": 800,
     "competency_count": 277,

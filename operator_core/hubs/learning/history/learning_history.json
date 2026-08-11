@@ -468,6 +468,51 @@
             ],
             "mapping_confidence": "medium",
             "completed_at": "2026-07-15T04:08:33.447480+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "cad_fusion_360_beginners_course",
+            "track_title": "Fusion 360 Beginners Course",
+            "stat": "INT",
+            "hierarchy": [
+                "Robotics",
+                "Mechanical Design",
+                "CAD"
+            ],
+            "skill": "CAD",
+            "unit_id": "section_01_unit_001_introduction_to_fusion_360",
+            "unit_title": "Section 1: Introduction to Fusion 360 - Introduction to Fusion 360",
+            "unit_type": "video",
+            "completion_source": "tracker",
+            "provider": "Udemy",
+            "external_id": null,
+            "xp_awarded": 30,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.robotics.mechanical_design.cad",
+                    "weight": 1.0,
+                    "xp": 30
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "cad.parametric_design",
+                    "weight": 0.5,
+                    "xp": 15
+                },
+                {
+                    "concept_id": "cad.design_intent",
+                    "weight": 0.3,
+                    "xp": 9
+                },
+                {
+                    "concept_id": "cad.data_exchange",
+                    "weight": 0.2,
+                    "xp": 6
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-08-11T02:01:12.382290+00:00"
         }
     ],
     "schema_version": 3
