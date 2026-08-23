@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "name": "Zero — Starting Split",
+  "description": "A beginner-friendly 5-day gym split targeting different muscle groups across the week, layered on top of the daily bodyweight habits (push-ups/pull-ups/sit-ups/squats/jog/stretch) which run every day regardless of gym day.",
+  "notes": [
+    "Daily habits (push-ups, pull-ups, sit-ups, squats, jog, stretch) happen every day, gym day or not.",
+    "Warm up 5-10 minutes before lifting (see con.physical_resilience.injury_prevention.warm_up).",
+    "Progress by adding small amounts of weight or reps once every set feels solid with good form, not before.",
+    "If a day is missed, do not double up the next day - just resume the split where it left off."
+  ],
+  "days": [
+    {
+      "day": "Monday",
+      "focus": "Push (Chest, Shoulders, Triceps)",
+      "exercises": [
+        {"name": "Flat or incline bench press (or push-up progression if no bench)", "sets": 3, "reps": "8-10"},
+        {"name": "Overhead shoulder press", "sets": 3, "reps": "8-10"},
+        {"name": "Incline dumbbell press or dips", "sets": 3, "reps": "10-12"},
+        {"name": "Lateral raises", "sets": 3, "reps": "12-15"},
+        {"name": "Triceps pushdown or overhead extension", "sets": 3, "reps": "10-12"}
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "focus": "Legs (Quads, Hamstrings, Glutes, Calves)",
+      "exercises": [
+        {"name": "Barbell or goblet squat", "sets": 4, "reps": "6-10"},
+        {"name": "Romanian deadlift", "sets": 3, "reps": "8-10"},
+        {"name": "Leg press or walking lunges", "sets": 3, "reps": "10-12"},
+        {"name": "Leg curl", "sets": 3, "reps": "10-12"},
+        {"name": "Standing calf raise", "sets": 3, "reps": "12-15"}
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "focus": "Active Recovery / Mobility",
+      "exercises": [
+        {"name": "Full-body stretch routine", "sets": 1, "reps": "10-15 min"},
+        {"name": "Light 20-30 min walk or easy jog", "sets": 1, "reps": "20-30 min"},
+        {"name": "Foam rolling / joint mobility work", "sets": 1, "reps": "10 min"}
+      ]
+    },
+    {
+      "day": "Thursday",
+      "focus": "Pull (Back, Biceps)",
+      "exercises": [
+        {"name": "Pull-ups or lat pulldown", "sets": 4, "reps": "6-10"},
+        {"name": "Barbell or dumbbell row", "sets": 3, "reps": "8-10"},
+        {"name": "Seated cable row", "sets": 3, "reps": "10-12"},
+        {"name": "Face pulls", "sets": 3, "reps": "12-15"},
+        {"name": "Bicep curls", "sets": 3, "reps": "10-12"}
+      ]
+    },
+    {
+      "day": "Friday",
+      "focus": "Full Body + Core + Conditioning",
+      "exercises": [
+        {"name": "Deadlift (moderate weight, focus on form)", "sets": 3, "reps": "5-8"},
+        {"name": "Farmer's carry", "sets": 3, "reps": "30-40m"},
+        {"name": "Hanging leg raise or sit-up variation", "sets": 3, "reps": "12-15"},
+        {"name": "Plank", "sets": 3, "reps": "45-60s"},
+        {"name": "Interval jog or bike (conditioning finisher)", "sets": 1, "reps": "10-15 min"}
+      ]
+    },
+    {
+      "day": "Saturday",
+      "focus": "Optional light session or rest",
+      "exercises": [
+        {"name": "Easy jog, swim, or sport of choice", "sets": 1, "reps": "20-40 min"},
+        {"name": "Stretch routine", "sets": 1, "reps": "10-15 min"}
+      ]
+    },
+    {
+      "day": "Sunday",
+      "focus": "Rest",
+      "exercises": []
+    }
+  ]
+}

@@ -7,6 +7,7 @@ The technical research environment for zeroGravity. The repository separates reu
 - `projects/shadow/` — Shadow robot assets, software, simulation, data and documentation.
 - `lab/` — reusable experiment, test, telemetry and research records.
 - `learning/` — learning resources, tracks and Learning Engine.
+- `fitness/` — daily strength/conditioning habit tracking and the weekly gym routine.
 - `operator_core/` — capability graph, XP, evidence and progression records.
 - `journal/` — dated engineering journal entries and indexes.
 - `zero_world/` — creative worldbuilding and design language.
@@ -27,6 +28,7 @@ python -m lab.engine.cli status
 python -m journal.engine.cli list
 python .\\operator_core\\engine\\cli.py
 python .\learning\engine\tracker.py
+python -m fitness.engine.tracker --status
 ```
 
 All platform-owned paths are defined in `shared/config/paths.py`. New scripts should import paths from there instead of hard-coding repository names or machine-specific absolute paths.

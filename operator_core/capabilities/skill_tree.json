@@ -1530,6 +1530,12 @@
                                     "node_type": "competency_reference",
                                     "competency_id": "str.muscular_strength.upper_body.pressing_strength",
                                     "shared": false
+                                },
+                                "Pull-ups": {
+                                    "name": "Pull-ups",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.upper_body.pull_ups",
+                                    "shared": false
                                 }
                             }
                         },
@@ -1573,6 +1579,12 @@
                                     "name": "Anti-rotation",
                                     "node_type": "competency_reference",
                                     "competency_id": "str.muscular_strength.core.anti_rotation",
+                                    "shared": false
+                                },
+                                "Sit-ups": {
+                                    "name": "Sit-ups",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.core.sit_ups",
                                     "shared": false
                                 }
                             }
@@ -1773,6 +1785,19 @@
                                     "name": "Visual Response",
                                     "node_type": "competency_reference",
                                     "competency_id": "dex.agility.reaction.visual_response",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "Mobility": {
+                            "name": "Mobility",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Dynamic Flexibility": {
+                                    "name": "Dynamic Flexibility",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "dex.agility.mobility.dynamic_flexibility",
                                     "shared": false
                                 }
                             }

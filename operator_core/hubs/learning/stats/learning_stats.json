@@ -2604,6 +2604,18 @@
                                     "xp_into_level": 0,
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
+                                },
+                                "Pull-ups": {
+                                    "name": "Pull-ups",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.upper_body.pull_ups",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         },
@@ -2671,6 +2683,18 @@
                                     "name": "Anti-rotation",
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.core.anti_rotation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Sit-ups": {
+                                    "name": "Sit-ups",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.core.sit_ups",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2973,6 +2997,25 @@
                                     "name": "Visual Response",
                                     "node_type": "skill",
                                     "competency_id": "dex.agility.reaction.visual_response",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Mobility": {
+                            "name": "Mobility",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Dynamic Flexibility": {
+                                    "name": "Dynamic Flexibility",
+                                    "node_type": "skill",
+                                    "competency_id": "dex.agility.mobility.dynamic_flexibility",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -4293,6 +4336,6 @@
     "xp_to_next_level": 323,
     "next_level_xp": 1703,
     "level_xp_required": 800,
-    "competency_count": 277,
+    "competency_count": 280,
     "migrated_competencies": []
 }

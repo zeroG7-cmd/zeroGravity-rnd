@@ -620,6 +620,327 @@
                 "int.networking.remote_access.ssh",
                 "int.software_engineering.programming_languages.python"
             ]
+        },
+        "str.muscular_strength.upper_body.push_ups": {
+            "id": "str.muscular_strength.upper_body.push_ups",
+            "name": "Push-ups",
+            "slug": "push-ups",
+            "description": "Build pressing strength and upper-body muscular endurance with bodyweight push-up training.",
+            "concepts": {
+                "push_ups.form": {
+                    "name": "Form & Base Volume",
+                    "description": "Clean push-up form (straight body line, full range of motion) and building toward a consistent daily set.",
+                    "prerequisites": []
+                },
+                "push_ups.daily_60": {
+                    "name": "Daily 60",
+                    "description": "Complete 60 push-ups in a day, the current daily target.",
+                    "prerequisites": [
+                        "push_ups.form"
+                    ]
+                },
+                "push_ups.century": {
+                    "name": "Century",
+                    "description": "Reach 100 push-ups in a day, the stretch goal once 60/day is consistent.",
+                    "prerequisites": [
+                        "push_ups.daily_60"
+                    ]
+                },
+                "push_ups.variations": {
+                    "name": "Advanced Variations",
+                    "description": "Diamond, decline and archer push-ups for continued overload once volume plateaus.",
+                    "prerequisites": [
+                        "push_ups.century"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "str.muscular_strength.upper_body.pull_ups",
+                    "label": "Upper Body Pull"
+                },
+                {
+                    "capability_id": "str.muscular_strength.upper_body.pressing_strength",
+                    "label": "Pressing Strength"
+                },
+                {
+                    "capability_id": "str.muscular_strength.core.sit_ups",
+                    "label": "Core Stability"
+                }
+            ]
+        },
+        "str.muscular_strength.upper_body.pull_ups": {
+            "id": "str.muscular_strength.upper_body.pull_ups",
+            "name": "Pull-ups",
+            "slug": "pull-ups",
+            "description": "Build pulling strength, back width and grip endurance with bodyweight pull-up training.",
+            "concepts": {
+                "pull_ups.form": {
+                    "name": "Form & Base Volume",
+                    "description": "Full dead-hang to chin-over-bar form, and building toward a consistent daily set across multiple sets.",
+                    "prerequisites": []
+                },
+                "pull_ups.daily_60": {
+                    "name": "Daily 60",
+                    "description": "Complete 60 pull-ups in a day (across sets), the current daily target.",
+                    "prerequisites": [
+                        "pull_ups.form"
+                    ]
+                },
+                "pull_ups.century": {
+                    "name": "Century",
+                    "description": "Reach 100 pull-ups in a day, the stretch goal once 60/day is consistent.",
+                    "prerequisites": [
+                        "pull_ups.daily_60"
+                    ]
+                },
+                "pull_ups.variations": {
+                    "name": "Advanced Variations",
+                    "description": "Wide-grip, chin-ups and weighted pull-ups for continued overload once volume plateaus.",
+                    "prerequisites": [
+                        "pull_ups.century"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "str.muscular_strength.upper_body.push_ups",
+                    "label": "Upper Body Push"
+                },
+                {
+                    "capability_id": "str.muscular_strength.upper_body.pulling_strength",
+                    "label": "Pulling Strength"
+                }
+            ]
+        },
+        "str.muscular_strength.core.sit_ups": {
+            "id": "str.muscular_strength.core.sit_ups",
+            "name": "Sit-ups",
+            "slug": "sit-ups",
+            "description": "Build core strength and muscular endurance with bodyweight sit-up training.",
+            "concepts": {
+                "sit_ups.form": {
+                    "name": "Form & Base Volume",
+                    "description": "Controlled sit-up form (no neck strain, full range of motion) and building toward a consistent daily set.",
+                    "prerequisites": []
+                },
+                "sit_ups.daily_60": {
+                    "name": "Daily 60",
+                    "description": "Complete 60 sit-ups in a day, the current daily target.",
+                    "prerequisites": [
+                        "sit_ups.form"
+                    ]
+                },
+                "sit_ups.century": {
+                    "name": "Century",
+                    "description": "Reach 100 sit-ups in a day, the stretch goal once 60/day is consistent.",
+                    "prerequisites": [
+                        "sit_ups.daily_60"
+                    ]
+                },
+                "sit_ups.variations": {
+                    "name": "Advanced Variations",
+                    "description": "Planks, leg raises and weighted core work for continued overload once volume plateaus.",
+                    "prerequisites": [
+                        "sit_ups.century"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "str.muscular_strength.upper_body.push_ups",
+                    "label": "Core Stability"
+                },
+                {
+                    "capability_id": "str.muscular_strength.core.bracing",
+                    "label": "Bracing"
+                },
+                {
+                    "capability_id": "str.muscular_strength.lower_body.squats",
+                    "label": "Trunk & Leg Integration"
+                }
+            ]
+        },
+        "str.muscular_strength.lower_body.squats": {
+            "id": "str.muscular_strength.lower_body.squats",
+            "name": "Squats",
+            "slug": "squats",
+            "description": "Build leg and glute strength and muscular endurance with bodyweight squat training.",
+            "concepts": {
+                "squats.form": {
+                    "name": "Form & Base Volume",
+                    "description": "Controlled squat depth and knee tracking, and building toward a consistent daily set.",
+                    "prerequisites": []
+                },
+                "squats.daily_60": {
+                    "name": "Daily 60",
+                    "description": "Complete 60 squats in a day, the current daily target.",
+                    "prerequisites": [
+                        "squats.form"
+                    ]
+                },
+                "squats.century": {
+                    "name": "Century",
+                    "description": "Reach 100 squats in a day, the stretch goal once 60/day is consistent.",
+                    "prerequisites": [
+                        "squats.daily_60"
+                    ]
+                },
+                "squats.variations": {
+                    "name": "Advanced Variations",
+                    "description": "Jump squats, split squats and pistol squat progressions for continued overload once volume plateaus.",
+                    "prerequisites": [
+                        "squats.century"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "con.endurance.aerobic_capacity.running",
+                    "label": "Leg Endurance"
+                },
+                {
+                    "capability_id": "con.health_management.mobility.stretching",
+                    "label": "Mobility Support"
+                }
+            ]
+        },
+        "con.health_management.mobility.stretching": {
+            "id": "con.health_management.mobility.stretching",
+            "name": "Stretching",
+            "slug": "stretching",
+            "description": "Daily flexibility and mobility work supporting range of motion, recovery and injury prevention.",
+            "concepts": {
+                "stretching.consistency": {
+                    "name": "Daily Consistency",
+                    "description": "Completing a stretch/mobility session most days of the week.",
+                    "prerequisites": []
+                },
+                "stretching.full_routine": {
+                    "name": "Full Routine",
+                    "description": "Completing the whole planned stretch sequence (all major muscle groups) in one sitting.",
+                    "prerequisites": [
+                        "stretching.consistency"
+                    ]
+                },
+                "stretching.range_of_motion": {
+                    "name": "Range of Motion Gains",
+                    "description": "Noticeable improvement in flexibility over time (e.g. toe touch, deep squat hold, shoulder mobility).",
+                    "prerequisites": [
+                        "stretching.full_routine"
+                    ]
+                },
+                "stretching.advanced_mobility": {
+                    "name": "Advanced Mobility",
+                    "description": "Deeper end-range holds, active flexibility and progress toward splits or advanced mobility goals.",
+                    "prerequisites": [
+                        "stretching.range_of_motion"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "con.health_management.mobility.flexibility",
+                    "label": "Flexibility"
+                },
+                {
+                    "capability_id": "con.health_management.mobility.joint_health",
+                    "label": "Joint Health"
+                },
+                {
+                    "capability_id": "con.physical_resilience.injury_prevention.warm_up",
+                    "label": "Injury Prevention"
+                }
+            ]
+        },
+        "con.endurance.aerobic_capacity.running": {
+            "id": "con.endurance.aerobic_capacity.running",
+            "name": "Running",
+            "slug": "running",
+            "description": "Build cardiovascular endurance and stamina through regular jogging.",
+            "concepts": {
+                "running.15min": {
+                    "name": "15-Minute Base",
+                    "description": "Comfortably completing 15 minutes of continuous jogging.",
+                    "prerequisites": []
+                },
+                "running.daily_30": {
+                    "name": "Daily 30",
+                    "description": "Complete a 30-minute jog, the current daily target.",
+                    "prerequisites": [
+                        "running.15min"
+                    ]
+                },
+                "running.5k_pace": {
+                    "name": "5K Pace",
+                    "description": "Hold a consistent pace over a 5K-equivalent distance within the 30-minute run.",
+                    "prerequisites": [
+                        "running.daily_30"
+                    ]
+                },
+                "running.endurance_beyond": {
+                    "name": "Endurance Beyond",
+                    "description": "Extend past 30 minutes or add longer-distance runs once the daily target is consistent.",
+                    "prerequisites": [
+                        "running.5k_pace"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "str.muscular_strength.lower_body.squats",
+                    "label": "Leg Endurance"
+                },
+                {
+                    "capability_id": "con.health_management.mobility.stretching",
+                    "label": "Recovery"
+                },
+                {
+                    "capability_id": "con.endurance.work_capacity.conditioning",
+                    "label": "Work Capacity"
+                }
+            ]
+        },
+        "dex.agility.mobility.dynamic_flexibility": {
+            "id": "dex.agility.mobility.dynamic_flexibility",
+            "name": "Dynamic Flexibility",
+            "slug": "dynamic-flexibility",
+            "description": "Active range-of-motion and movement quality that supports agility, footwork and controlled athletic movement - the skill-of-motion side of the same daily stretching habit that also builds CON's tissue health and joint resilience.",
+            "concepts": {
+                "dynamic_flexibility.consistency": {
+                    "name": "Daily Consistency",
+                    "description": "Completing a stretch/mobility session most days of the week.",
+                    "prerequisites": []
+                },
+                "dynamic_flexibility.active_control": {
+                    "name": "Active Control",
+                    "description": "Controlled, active range of motion (not just passive holds) that carries into movement.",
+                    "prerequisites": [
+                        "dynamic_flexibility.consistency"
+                    ]
+                },
+                "dynamic_flexibility.movement_carryover": {
+                    "name": "Movement Carryover",
+                    "description": "Improved mobility showing up in agility and footwork drills, not just on the mat.",
+                    "prerequisites": [
+                        "dynamic_flexibility.active_control"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "con.health_management.mobility.stretching",
+                    "label": "Shared Habit"
+                },
+                {
+                    "capability_id": "dex.agility.footwork.direction_changes",
+                    "label": "Footwork"
+                },
+                {
+                    "capability_id": "dex.balance.dynamic_balance.weight_transfer",
+                    "label": "Balance"
+                }
+            ]
         }
     },
     "concept_progress": {

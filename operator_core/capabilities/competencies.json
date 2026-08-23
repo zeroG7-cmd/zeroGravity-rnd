@@ -1941,6 +1941,27 @@
             "xp": 0,
             "level": 0,
             "shared": false
+        },
+        "str.muscular_strength.upper_body.pull_ups": {
+            "id": "str.muscular_strength.upper_body.pull_ups",
+            "name": "Pull-ups",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.core.sit_ups": {
+            "id": "str.muscular_strength.core.sit_ups",
+            "name": "Sit-ups",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "dex.agility.mobility.dynamic_flexibility": {
+            "id": "dex.agility.mobility.dynamic_flexibility",
+            "name": "Dynamic Flexibility",
+            "xp": 0,
+            "level": 0,
+            "shared": false
         }
     }
 }
