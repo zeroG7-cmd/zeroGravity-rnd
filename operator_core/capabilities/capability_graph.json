@@ -621,98 +621,6 @@
                 "int.software_engineering.programming_languages.python"
             ]
         },
-        "str.muscular_strength.core.sit_ups": {
-            "id": "str.muscular_strength.core.sit_ups",
-            "name": "Sit-ups",
-            "slug": "sit-ups",
-            "description": "Build core strength and muscular endurance with bodyweight sit-up training.",
-            "concepts": {
-                "sit_ups.form": {
-                    "name": "Form & Base Volume",
-                    "description": "Controlled sit-up form (no neck strain, full range of motion) and building toward a consistent daily set.",
-                    "prerequisites": []
-                },
-                "sit_ups.daily_60": {
-                    "name": "Daily 60",
-                    "description": "Complete 60 sit-ups in a day, the current daily target.",
-                    "prerequisites": [
-                        "sit_ups.form"
-                    ]
-                },
-                "sit_ups.century": {
-                    "name": "Century",
-                    "description": "Reach 100 sit-ups in a day, the stretch goal once 60/day is consistent.",
-                    "prerequisites": [
-                        "sit_ups.daily_60"
-                    ]
-                },
-                "sit_ups.variations": {
-                    "name": "Advanced Variations",
-                    "description": "Planks, leg raises and weighted core work for continued overload once volume plateaus.",
-                    "prerequisites": [
-                        "sit_ups.century"
-                    ]
-                }
-            },
-            "relationships": [
-                {
-                    "capability_id": "str.muscular_strength.pushing_strength.push_ups",
-                    "label": "Core Stability"
-                },
-                {
-                    "capability_id": "str.muscular_strength.core.bracing",
-                    "label": "Bracing"
-                },
-                {
-                    "capability_id": "str.muscular_strength.lower_body.squats",
-                    "label": "Trunk & Leg Integration"
-                }
-            ]
-        },
-        "str.muscular_strength.lower_body.squats": {
-            "id": "str.muscular_strength.lower_body.squats",
-            "name": "Squats",
-            "slug": "squats",
-            "description": "Build leg and glute strength and muscular endurance with bodyweight squat training.",
-            "concepts": {
-                "squats.form": {
-                    "name": "Form & Base Volume",
-                    "description": "Controlled squat depth and knee tracking, and building toward a consistent daily set.",
-                    "prerequisites": []
-                },
-                "squats.daily_60": {
-                    "name": "Daily 60",
-                    "description": "Complete 60 squats in a day, the current daily target.",
-                    "prerequisites": [
-                        "squats.form"
-                    ]
-                },
-                "squats.century": {
-                    "name": "Century",
-                    "description": "Reach 100 squats in a day, the stretch goal once 60/day is consistent.",
-                    "prerequisites": [
-                        "squats.daily_60"
-                    ]
-                },
-                "squats.variations": {
-                    "name": "Advanced Variations",
-                    "description": "Jump squats, split squats and pistol squat progressions for continued overload once volume plateaus.",
-                    "prerequisites": [
-                        "squats.century"
-                    ]
-                }
-            },
-            "relationships": [
-                {
-                    "capability_id": "con.endurance.aerobic_capacity.running",
-                    "label": "Leg Endurance"
-                },
-                {
-                    "capability_id": "con.health_management.mobility.stretching",
-                    "label": "Mobility Support"
-                }
-            ]
-        },
         "con.health_management.mobility.stretching": {
             "id": "con.health_management.mobility.stretching",
             "name": "Stretching",
@@ -796,7 +704,7 @@
             },
             "relationships": [
                 {
-                    "capability_id": "str.muscular_strength.lower_body.squats",
+                    "capability_id": "str.muscular_strength.leg_strength.squats",
                     "label": "Leg Endurance"
                 },
                 {
@@ -893,7 +801,7 @@
                     "label": "Loaded Pressing Counterpart"
                 },
                 {
-                    "capability_id": "str.muscular_strength.core.sit_ups",
+                    "capability_id": "str.muscular_strength.core_strength.sit_ups",
                     "label": "Core Stability"
                 }
             ]
@@ -941,8 +849,100 @@
                     "label": "Loaded Pulling Counterpart"
                 },
                 {
-                    "capability_id": "str.muscular_strength.grip_and_forearms.grip_strength",
+                    "capability_id": "str.muscular_strength.grip_strength.crush_grip",
                     "label": "Grip Demand"
+                }
+            ]
+        },
+        "str.muscular_strength.leg_strength.squats": {
+            "id": "str.muscular_strength.leg_strength.squats",
+            "name": "Squats",
+            "slug": "squats",
+            "description": "Build leg and glute strength and muscular endurance with bodyweight squat training.",
+            "concepts": {
+                "squats.form": {
+                    "name": "Form & Base Volume",
+                    "description": "Controlled squat depth and knee tracking, and building toward a consistent daily set.",
+                    "prerequisites": []
+                },
+                "squats.daily_60": {
+                    "name": "Daily 60",
+                    "description": "Complete 60 squats in a day, the current daily target.",
+                    "prerequisites": [
+                        "squats.form"
+                    ]
+                },
+                "squats.century": {
+                    "name": "Century",
+                    "description": "Reach 100 squats in a day, the stretch goal once 60/day is consistent.",
+                    "prerequisites": [
+                        "squats.daily_60"
+                    ]
+                },
+                "squats.variations": {
+                    "name": "Advanced Variations",
+                    "description": "Jump squats, split squats and pistol squat progressions for continued overload once volume plateaus.",
+                    "prerequisites": [
+                        "squats.century"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "con.endurance.aerobic_capacity.running",
+                    "label": "Leg Endurance"
+                },
+                {
+                    "capability_id": "con.health_management.mobility.stretching",
+                    "label": "Mobility Support"
+                }
+            ]
+        },
+        "str.muscular_strength.core_strength.sit_ups": {
+            "id": "str.muscular_strength.core_strength.sit_ups",
+            "name": "Sit-ups",
+            "slug": "sit-ups",
+            "description": "Build core strength and muscular endurance with bodyweight sit-up training.",
+            "concepts": {
+                "sit_ups.form": {
+                    "name": "Form & Base Volume",
+                    "description": "Controlled sit-up form (no neck strain, full range of motion) and building toward a consistent daily set.",
+                    "prerequisites": []
+                },
+                "sit_ups.daily_60": {
+                    "name": "Daily 60",
+                    "description": "Complete 60 sit-ups in a day, the current daily target.",
+                    "prerequisites": [
+                        "sit_ups.form"
+                    ]
+                },
+                "sit_ups.century": {
+                    "name": "Century",
+                    "description": "Reach 100 sit-ups in a day, the stretch goal once 60/day is consistent.",
+                    "prerequisites": [
+                        "sit_ups.daily_60"
+                    ]
+                },
+                "sit_ups.variations": {
+                    "name": "Advanced Variations",
+                    "description": "Planks, leg raises and weighted core work for continued overload once volume plateaus.",
+                    "prerequisites": [
+                        "sit_ups.century"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "str.muscular_strength.pushing_strength.push_ups",
+                    "label": "Core Stability"
+                },
+                {
+                    "capability_id": "str.muscular_strength.core_strength.bracing",
+                    "label": "Bracing"
+                },
+                {
+                    "capability_id": "str.muscular_strength.leg_strength.squats",
+                    "label": "Trunk & Leg Integration"
                 }
             ]
         }

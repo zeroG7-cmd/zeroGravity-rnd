@@ -1704,27 +1704,6 @@
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.core.anti_rotation": {
-            "id": "str.muscular_strength.core.anti_rotation",
-            "name": "Anti-rotation",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "str.muscular_strength.core.bracing": {
-            "id": "str.muscular_strength.core.bracing",
-            "name": "Bracing",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "str.muscular_strength.lower_body.squats": {
-            "id": "str.muscular_strength.lower_body.squats",
-            "name": "Squats",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
         "str.power.explosive_movement.acceleration": {
             "id": "str.power.explosive_movement.acceleration",
             "name": "Acceleration",
@@ -1886,23 +1865,9 @@
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.core.sit_ups": {
-            "id": "str.muscular_strength.core.sit_ups",
-            "name": "Sit-ups",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
         "dex.agility.mobility.dynamic_flexibility": {
             "id": "dex.agility.mobility.dynamic_flexibility",
             "name": "Dynamic Flexibility",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "str.muscular_strength.grip_and_forearms.grip_strength": {
-            "id": "str.muscular_strength.grip_and_forearms.grip_strength",
-            "name": "Grip Strength",
             "xp": 0,
             "level": 0,
             "shared": false
@@ -1984,51 +1949,86 @@
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.grip_and_forearms.farmers_carry": {
-            "id": "str.muscular_strength.grip_and_forearms.farmers_carry",
-            "name": "Farmer's Carry",
+        "str.muscular_strength.leg_strength.squats": {
+            "id": "str.muscular_strength.leg_strength.squats",
+            "name": "Squats",
             "xp": 0,
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.lower_body.barbell_squat": {
-            "id": "str.muscular_strength.lower_body.barbell_squat",
+        "str.muscular_strength.leg_strength.barbell_squat": {
+            "id": "str.muscular_strength.leg_strength.barbell_squat",
             "name": "Barbell Squat",
             "xp": 0,
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.lower_body.romanian_deadlift": {
-            "id": "str.muscular_strength.lower_body.romanian_deadlift",
+        "str.muscular_strength.leg_strength.romanian_deadlift": {
+            "id": "str.muscular_strength.leg_strength.romanian_deadlift",
             "name": "Romanian Deadlift",
             "xp": 0,
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.lower_body.deadlift": {
-            "id": "str.muscular_strength.lower_body.deadlift",
+        "str.muscular_strength.leg_strength.deadlift": {
+            "id": "str.muscular_strength.leg_strength.deadlift",
             "name": "Deadlift",
             "xp": 0,
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.lower_body.leg_press_lunges": {
-            "id": "str.muscular_strength.lower_body.leg_press_lunges",
+        "str.muscular_strength.leg_strength.leg_press_lunges": {
+            "id": "str.muscular_strength.leg_strength.leg_press_lunges",
             "name": "Leg Press / Lunges",
             "xp": 0,
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.lower_body.leg_curl": {
-            "id": "str.muscular_strength.lower_body.leg_curl",
+        "str.muscular_strength.leg_strength.leg_curl": {
+            "id": "str.muscular_strength.leg_strength.leg_curl",
             "name": "Leg Curl",
             "xp": 0,
             "level": 0,
             "shared": false
         },
-        "str.muscular_strength.lower_body.calf_raise": {
-            "id": "str.muscular_strength.lower_body.calf_raise",
+        "str.muscular_strength.leg_strength.calf_raise": {
+            "id": "str.muscular_strength.leg_strength.calf_raise",
             "name": "Calf Raise",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.core_strength.bracing": {
+            "id": "str.muscular_strength.core_strength.bracing",
+            "name": "Bracing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.core_strength.anti_rotation": {
+            "id": "str.muscular_strength.core_strength.anti_rotation",
+            "name": "Anti-rotation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.core_strength.sit_ups": {
+            "id": "str.muscular_strength.core_strength.sit_ups",
+            "name": "Sit-ups",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.grip_strength.crush_grip": {
+            "id": "str.muscular_strength.grip_strength.crush_grip",
+            "name": "Crush Grip",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "str.muscular_strength.grip_strength.farmers_carry": {
+            "id": "str.muscular_strength.grip_strength.farmers_carry",
+            "name": "Farmer's Carry",
             "xp": 0,
             "level": 0,
             "shared": false

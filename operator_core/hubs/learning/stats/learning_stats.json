@@ -2710,15 +2710,15 @@
                                 }
                             }
                         },
-                        "Grip & Forearms": {
+                        "Grip Strength": {
                             "node_type": "parent",
                             "average_level": 0.0,
-                            "name": "Grip & Forearms",
+                            "name": "Grip Strength",
                             "children": {
-                                "Grip Strength": {
-                                    "name": "Grip Strength",
+                                "Crush Grip": {
+                                    "name": "Crush Grip",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.grip_and_forearms.grip_strength",
+                                    "competency_id": "str.muscular_strength.grip_strength.crush_grip",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2730,7 +2730,7 @@
                                 "Farmer's Carry": {
                                     "name": "Farmer's Carry",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.grip_and_forearms.farmers_carry",
+                                    "competency_id": "str.muscular_strength.grip_strength.farmers_carry",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2741,15 +2741,15 @@
                                 }
                             }
                         },
-                        "Lower Body": {
+                        "Leg Strength": {
                             "node_type": "parent",
                             "average_level": 0.0,
-                            "name": "Lower Body",
+                            "name": "Leg Strength",
                             "children": {
                                 "Squats": {
                                     "name": "Squats",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.squats",
+                                    "competency_id": "str.muscular_strength.leg_strength.squats",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2761,7 +2761,7 @@
                                 "Barbell Squat": {
                                     "name": "Barbell Squat",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.barbell_squat",
+                                    "competency_id": "str.muscular_strength.leg_strength.barbell_squat",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2773,7 +2773,7 @@
                                 "Romanian Deadlift": {
                                     "name": "Romanian Deadlift",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.romanian_deadlift",
+                                    "competency_id": "str.muscular_strength.leg_strength.romanian_deadlift",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2785,7 +2785,7 @@
                                 "Deadlift": {
                                     "name": "Deadlift",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.deadlift",
+                                    "competency_id": "str.muscular_strength.leg_strength.deadlift",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2797,7 +2797,7 @@
                                 "Leg Press / Lunges": {
                                     "name": "Leg Press / Lunges",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.leg_press_lunges",
+                                    "competency_id": "str.muscular_strength.leg_strength.leg_press_lunges",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2809,7 +2809,7 @@
                                 "Leg Curl": {
                                     "name": "Leg Curl",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.leg_curl",
+                                    "competency_id": "str.muscular_strength.leg_strength.leg_curl",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2821,7 +2821,7 @@
                                 "Calf Raise": {
                                     "name": "Calf Raise",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.calf_raise",
+                                    "competency_id": "str.muscular_strength.leg_strength.calf_raise",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2832,15 +2832,15 @@
                                 }
                             }
                         },
-                        "Core": {
+                        "Core Strength": {
                             "node_type": "parent",
                             "average_level": 0.0,
-                            "name": "Core",
+                            "name": "Core Strength",
                             "children": {
                                 "Bracing": {
                                     "name": "Bracing",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.core.bracing",
+                                    "competency_id": "str.muscular_strength.core_strength.bracing",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2852,7 +2852,7 @@
                                 "Anti-rotation": {
                                     "name": "Anti-rotation",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.core.anti_rotation",
+                                    "competency_id": "str.muscular_strength.core_strength.anti_rotation",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2864,7 +2864,7 @@
                                 "Sit-ups": {
                                     "name": "Sit-ups",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.core.sit_ups",
+                                    "competency_id": "str.muscular_strength.core_strength.sit_ups",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,

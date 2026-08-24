@@ -14,8 +14,8 @@ Manual, quantity-based logging until an exercise-recognition device exists
 |-------------------|-------------:|-----------------------------------------------------|
 | Push-ups          | 60           | `str.muscular_strength.pushing_strength.push_ups`    |
 | Pull-ups          | 60           | `str.muscular_strength.pulling_strength.pull_ups`    |
-| Sit-ups           | 60           | `str.muscular_strength.core.sit_ups`                 |
-| Squats            | 60           | `str.muscular_strength.lower_body.squats`            |
+| Sit-ups           | 60           | `str.muscular_strength.core_strength.sit_ups`        |
+| Squats            | 60           | `str.muscular_strength.leg_strength.squats`          |
 | Jog               | 30 minutes   | `con.endurance.aerobic_capacity.running`             |
 | Stretch/mobility  | 10 minutes   | `con.health_management.mobility.stretching` **+** `dex.agility.mobility.dynamic_flexibility` |
 
@@ -52,12 +52,21 @@ leaves:
   Extension).
 - **Pulling Strength** — Pull-ups plus the Thursday pull-day lifts (Lat
   Pulldown, Rows, Face Pulls, Bicep Curls).
-- **Grip & Forearms** — Grip Strength (moved out of the now-deleted
-  Functional Strength domain) plus Farmer's Carry.
-- **Lower Body** — Squats plus the Tuesday leg-day and Friday deadlift work
+- **Grip Strength** — Crush Grip (renamed from the original "Grip Strength"
+  capability, to avoid sharing a name with its own category, moved out of
+  the now-deleted Functional Strength domain) plus Farmer's Carry.
+- **Leg Strength** — Squats plus the Tuesday leg-day and Friday deadlift work
   (Barbell Squat, Romanian Deadlift, Deadlift, Leg Press / Lunges, Leg Curl,
-  Calf Raise).
-- **Core** — unchanged: Sit-ups, Bracing, Anti-rotation.
+  Calf Raise). Named "Leg Strength" rather than "Lower Body" or "Lower
+  Strength" (the latter reads as *reduced* strength) to match the
+  Pushing/Pulling Strength naming pattern.
+- **Core Strength** — Sit-ups, Bracing, Anti-rotation (unchanged capabilities,
+  renamed category to match the pattern).
+
+All five Muscular Strength categories now follow the same `[X] Strength`
+naming shape (Pushing Strength, Pulling Strength, Grip Strength, Leg
+Strength, Core Strength) instead of mixing that with plain body-region
+labels.
 
 Bodyweight daily habits (Push-ups, Pull-ups, Squats, Sit-ups) stay separate
 capabilities from their loaded gym-lift counterparts (Bench Press, Barbell
