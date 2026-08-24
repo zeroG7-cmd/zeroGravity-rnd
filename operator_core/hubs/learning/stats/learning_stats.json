@@ -2564,15 +2564,15 @@
                     "node_type": "parent",
                     "average_level": 0.0,
                     "children": {
-                        "Upper Body": {
-                            "name": "Upper Body",
+                        "Pushing Strength": {
                             "node_type": "parent",
                             "average_level": 0.0,
+                            "name": "Pushing Strength",
                             "children": {
                                 "Push-ups": {
                                     "name": "Push-ups",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.upper_body.push_ups",
+                                    "competency_id": "str.muscular_strength.pushing_strength.push_ups",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2581,10 +2581,10 @@
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
                                 },
-                                "Pulling Strength": {
-                                    "name": "Pulling Strength",
+                                "Bench Press": {
+                                    "name": "Bench Press",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.upper_body.pulling_strength",
+                                    "competency_id": "str.muscular_strength.pushing_strength.bench_press",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2593,10 +2593,10 @@
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
                                 },
-                                "Pressing Strength": {
-                                    "name": "Pressing Strength",
+                                "Overhead Press": {
+                                    "name": "Overhead Press",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.upper_body.pressing_strength",
+                                    "competency_id": "str.muscular_strength.pushing_strength.overhead_press",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2605,10 +2605,132 @@
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
                                 },
+                                "Incline Press / Dips": {
+                                    "name": "Incline Press / Dips",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.pushing_strength.incline_press_dips",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Lateral Raises": {
+                                    "name": "Lateral Raises",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.pushing_strength.lateral_raises",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Triceps Extension": {
+                                    "name": "Triceps Extension",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.pushing_strength.triceps_extension",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Pulling Strength": {
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "name": "Pulling Strength",
+                            "children": {
                                 "Pull-ups": {
                                     "name": "Pull-ups",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.upper_body.pull_ups",
+                                    "competency_id": "str.muscular_strength.pulling_strength.pull_ups",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Lat Pulldown": {
+                                    "name": "Lat Pulldown",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.pulling_strength.lat_pulldown",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Rows": {
+                                    "name": "Rows",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.pulling_strength.rows",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Face Pulls": {
+                                    "name": "Face Pulls",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.pulling_strength.face_pulls",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Bicep Curls": {
+                                    "name": "Bicep Curls",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.pulling_strength.bicep_curls",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Grip & Forearms": {
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "name": "Grip & Forearms",
+                            "children": {
+                                "Grip Strength": {
+                                    "name": "Grip Strength",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.grip_and_forearms.grip_strength",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Farmer's Carry": {
+                                    "name": "Farmer's Carry",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.grip_and_forearms.farmers_carry",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2620,9 +2742,9 @@
                             }
                         },
                         "Lower Body": {
-                            "name": "Lower Body",
                             "node_type": "parent",
                             "average_level": 0.0,
+                            "name": "Lower Body",
                             "children": {
                                 "Squats": {
                                     "name": "Squats",
@@ -2636,10 +2758,10 @@
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
                                 },
-                                "Lunges": {
-                                    "name": "Lunges",
+                                "Barbell Squat": {
+                                    "name": "Barbell Squat",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.lunges",
+                                    "competency_id": "str.muscular_strength.lower_body.barbell_squat",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2648,10 +2770,58 @@
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
                                 },
-                                "Hip Strength": {
-                                    "name": "Hip Strength",
+                                "Romanian Deadlift": {
+                                    "name": "Romanian Deadlift",
                                     "node_type": "skill",
-                                    "competency_id": "str.muscular_strength.lower_body.hip_strength",
+                                    "competency_id": "str.muscular_strength.lower_body.romanian_deadlift",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Deadlift": {
+                                    "name": "Deadlift",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.lower_body.deadlift",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Leg Press / Lunges": {
+                                    "name": "Leg Press / Lunges",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.lower_body.leg_press_lunges",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Leg Curl": {
+                                    "name": "Leg Curl",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.lower_body.leg_curl",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Calf Raise": {
+                                    "name": "Calf Raise",
+                                    "node_type": "skill",
+                                    "competency_id": "str.muscular_strength.lower_body.calf_raise",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2663,9 +2833,9 @@
                             }
                         },
                         "Core": {
-                            "name": "Core",
                             "node_type": "parent",
                             "average_level": 0.0,
+                            "name": "Core",
                             "children": {
                                 "Bracing": {
                                     "name": "Bracing",
@@ -2745,56 +2915,6 @@
                                     "name": "Acceleration",
                                     "node_type": "skill",
                                     "competency_id": "str.power.explosive_movement.acceleration",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                }
-                            }
-                        }
-                    }
-                },
-                "Functional Strength": {
-                    "name": "Functional Strength",
-                    "node_type": "parent",
-                    "average_level": 0.0,
-                    "children": {
-                        "Load Handling": {
-                            "name": "Load Handling",
-                            "node_type": "parent",
-                            "average_level": 0.0,
-                            "children": {
-                                "Carrying": {
-                                    "name": "Carrying",
-                                    "node_type": "skill",
-                                    "competency_id": "str.functional_strength.load_handling.carrying",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                },
-                                "Equipment Setup": {
-                                    "name": "Equipment Setup",
-                                    "node_type": "skill",
-                                    "competency_id": "str.functional_strength.load_handling.equipment_setup",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                },
-                                "Grip Strength": {
-                                    "name": "Grip Strength",
-                                    "node_type": "skill",
-                                    "competency_id": "str.functional_strength.load_handling.grip_strength",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -4336,6 +4456,6 @@
     "xp_to_next_level": 323,
     "next_level_xp": 1703,
     "level_xp_required": 800,
-    "competency_count": 280,
+    "competency_count": 290,
     "migrated_competencies": []
 }

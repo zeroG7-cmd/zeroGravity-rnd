@@ -56,8 +56,8 @@ HABITS: dict[str, dict[str, Any]] = {
         "daily_target": 60,
         "century_target": 100,
         "base_xp": 60,
-        "competency_id": "str.muscular_strength.upper_body.push_ups",
-        "tree_path": ["STR", "Muscular Strength", "Upper Body", "Push-ups"],
+        "competency_id": "str.muscular_strength.pushing_strength.push_ups",
+        "tree_path": ["STR", "Muscular Strength", "Pushing Strength", "Push-ups"],
         "concept_prefix": "push_ups",
     },
     "pullups": {
@@ -66,8 +66,8 @@ HABITS: dict[str, dict[str, Any]] = {
         "daily_target": 60,
         "century_target": 100,
         "base_xp": 60,
-        "competency_id": "str.muscular_strength.upper_body.pull_ups",
-        "tree_path": ["STR", "Muscular Strength", "Upper Body", "Pull-ups"],
+        "competency_id": "str.muscular_strength.pulling_strength.pull_ups",
+        "tree_path": ["STR", "Muscular Strength", "Pulling Strength", "Pull-ups"],
         "concept_prefix": "pull_ups",
     },
     "situps": {

@@ -1508,41 +1508,109 @@
                     "node_type": "parent",
                     "average_level": 0.0,
                     "children": {
-                        "Upper Body": {
-                            "name": "Upper Body",
+                        "Pushing Strength": {
                             "node_type": "parent",
                             "average_level": 0.0,
+                            "name": "Pushing Strength",
                             "children": {
                                 "Push-ups": {
                                     "name": "Push-ups",
                                     "node_type": "competency_reference",
-                                    "competency_id": "str.muscular_strength.upper_body.push_ups",
+                                    "competency_id": "str.muscular_strength.pushing_strength.push_ups",
                                     "shared": false
                                 },
-                                "Pulling Strength": {
-                                    "name": "Pulling Strength",
+                                "Bench Press": {
+                                    "name": "Bench Press",
                                     "node_type": "competency_reference",
-                                    "competency_id": "str.muscular_strength.upper_body.pulling_strength",
+                                    "competency_id": "str.muscular_strength.pushing_strength.bench_press",
                                     "shared": false
                                 },
-                                "Pressing Strength": {
-                                    "name": "Pressing Strength",
+                                "Overhead Press": {
+                                    "name": "Overhead Press",
                                     "node_type": "competency_reference",
-                                    "competency_id": "str.muscular_strength.upper_body.pressing_strength",
+                                    "competency_id": "str.muscular_strength.pushing_strength.overhead_press",
                                     "shared": false
                                 },
+                                "Incline Press / Dips": {
+                                    "name": "Incline Press / Dips",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.pushing_strength.incline_press_dips",
+                                    "shared": false
+                                },
+                                "Lateral Raises": {
+                                    "name": "Lateral Raises",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.pushing_strength.lateral_raises",
+                                    "shared": false
+                                },
+                                "Triceps Extension": {
+                                    "name": "Triceps Extension",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.pushing_strength.triceps_extension",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "Pulling Strength": {
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "name": "Pulling Strength",
+                            "children": {
                                 "Pull-ups": {
                                     "name": "Pull-ups",
                                     "node_type": "competency_reference",
-                                    "competency_id": "str.muscular_strength.upper_body.pull_ups",
+                                    "competency_id": "str.muscular_strength.pulling_strength.pull_ups",
+                                    "shared": false
+                                },
+                                "Lat Pulldown": {
+                                    "name": "Lat Pulldown",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.pulling_strength.lat_pulldown",
+                                    "shared": false
+                                },
+                                "Rows": {
+                                    "name": "Rows",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.pulling_strength.rows",
+                                    "shared": false
+                                },
+                                "Face Pulls": {
+                                    "name": "Face Pulls",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.pulling_strength.face_pulls",
+                                    "shared": false
+                                },
+                                "Bicep Curls": {
+                                    "name": "Bicep Curls",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.pulling_strength.bicep_curls",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "Grip & Forearms": {
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "name": "Grip & Forearms",
+                            "children": {
+                                "Grip Strength": {
+                                    "name": "Grip Strength",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.grip_and_forearms.grip_strength",
+                                    "shared": false
+                                },
+                                "Farmer's Carry": {
+                                    "name": "Farmer's Carry",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.grip_and_forearms.farmers_carry",
                                     "shared": false
                                 }
                             }
                         },
                         "Lower Body": {
-                            "name": "Lower Body",
                             "node_type": "parent",
                             "average_level": 0.0,
+                            "name": "Lower Body",
                             "children": {
                                 "Squats": {
                                     "name": "Squats",
@@ -1550,24 +1618,48 @@
                                     "competency_id": "str.muscular_strength.lower_body.squats",
                                     "shared": false
                                 },
-                                "Lunges": {
-                                    "name": "Lunges",
+                                "Barbell Squat": {
+                                    "name": "Barbell Squat",
                                     "node_type": "competency_reference",
-                                    "competency_id": "str.muscular_strength.lower_body.lunges",
+                                    "competency_id": "str.muscular_strength.lower_body.barbell_squat",
                                     "shared": false
                                 },
-                                "Hip Strength": {
-                                    "name": "Hip Strength",
+                                "Romanian Deadlift": {
+                                    "name": "Romanian Deadlift",
                                     "node_type": "competency_reference",
-                                    "competency_id": "str.muscular_strength.lower_body.hip_strength",
+                                    "competency_id": "str.muscular_strength.lower_body.romanian_deadlift",
+                                    "shared": false
+                                },
+                                "Deadlift": {
+                                    "name": "Deadlift",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.lower_body.deadlift",
+                                    "shared": false
+                                },
+                                "Leg Press / Lunges": {
+                                    "name": "Leg Press / Lunges",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.lower_body.leg_press_lunges",
+                                    "shared": false
+                                },
+                                "Leg Curl": {
+                                    "name": "Leg Curl",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.lower_body.leg_curl",
+                                    "shared": false
+                                },
+                                "Calf Raise": {
+                                    "name": "Calf Raise",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "str.muscular_strength.lower_body.calf_raise",
                                     "shared": false
                                 }
                             }
                         },
                         "Core": {
-                            "name": "Core",
                             "node_type": "parent",
                             "average_level": 0.0,
+                            "name": "Core",
                             "children": {
                                 "Bracing": {
                                     "name": "Bracing",
@@ -1617,38 +1709,6 @@
                                     "name": "Acceleration",
                                     "node_type": "competency_reference",
                                     "competency_id": "str.power.explosive_movement.acceleration",
-                                    "shared": false
-                                }
-                            }
-                        }
-                    }
-                },
-                "Functional Strength": {
-                    "name": "Functional Strength",
-                    "node_type": "parent",
-                    "average_level": 0.0,
-                    "children": {
-                        "Load Handling": {
-                            "name": "Load Handling",
-                            "node_type": "parent",
-                            "average_level": 0.0,
-                            "children": {
-                                "Carrying": {
-                                    "name": "Carrying",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "str.functional_strength.load_handling.carrying",
-                                    "shared": false
-                                },
-                                "Equipment Setup": {
-                                    "name": "Equipment Setup",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "str.functional_strength.load_handling.equipment_setup",
-                                    "shared": false
-                                },
-                                "Grip Strength": {
-                                    "name": "Grip Strength",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "str.functional_strength.load_handling.grip_strength",
                                     "shared": false
                                 }
                             }

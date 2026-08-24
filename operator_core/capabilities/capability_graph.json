@@ -621,98 +621,6 @@
                 "int.software_engineering.programming_languages.python"
             ]
         },
-        "str.muscular_strength.upper_body.push_ups": {
-            "id": "str.muscular_strength.upper_body.push_ups",
-            "name": "Push-ups",
-            "slug": "push-ups",
-            "description": "Build pressing strength and upper-body muscular endurance with bodyweight push-up training.",
-            "concepts": {
-                "push_ups.form": {
-                    "name": "Form & Base Volume",
-                    "description": "Clean push-up form (straight body line, full range of motion) and building toward a consistent daily set.",
-                    "prerequisites": []
-                },
-                "push_ups.daily_60": {
-                    "name": "Daily 60",
-                    "description": "Complete 60 push-ups in a day, the current daily target.",
-                    "prerequisites": [
-                        "push_ups.form"
-                    ]
-                },
-                "push_ups.century": {
-                    "name": "Century",
-                    "description": "Reach 100 push-ups in a day, the stretch goal once 60/day is consistent.",
-                    "prerequisites": [
-                        "push_ups.daily_60"
-                    ]
-                },
-                "push_ups.variations": {
-                    "name": "Advanced Variations",
-                    "description": "Diamond, decline and archer push-ups for continued overload once volume plateaus.",
-                    "prerequisites": [
-                        "push_ups.century"
-                    ]
-                }
-            },
-            "relationships": [
-                {
-                    "capability_id": "str.muscular_strength.upper_body.pull_ups",
-                    "label": "Upper Body Pull"
-                },
-                {
-                    "capability_id": "str.muscular_strength.upper_body.pressing_strength",
-                    "label": "Pressing Strength"
-                },
-                {
-                    "capability_id": "str.muscular_strength.core.sit_ups",
-                    "label": "Core Stability"
-                }
-            ]
-        },
-        "str.muscular_strength.upper_body.pull_ups": {
-            "id": "str.muscular_strength.upper_body.pull_ups",
-            "name": "Pull-ups",
-            "slug": "pull-ups",
-            "description": "Build pulling strength, back width and grip endurance with bodyweight pull-up training.",
-            "concepts": {
-                "pull_ups.form": {
-                    "name": "Form & Base Volume",
-                    "description": "Full dead-hang to chin-over-bar form, and building toward a consistent daily set across multiple sets.",
-                    "prerequisites": []
-                },
-                "pull_ups.daily_60": {
-                    "name": "Daily 60",
-                    "description": "Complete 60 pull-ups in a day (across sets), the current daily target.",
-                    "prerequisites": [
-                        "pull_ups.form"
-                    ]
-                },
-                "pull_ups.century": {
-                    "name": "Century",
-                    "description": "Reach 100 pull-ups in a day, the stretch goal once 60/day is consistent.",
-                    "prerequisites": [
-                        "pull_ups.daily_60"
-                    ]
-                },
-                "pull_ups.variations": {
-                    "name": "Advanced Variations",
-                    "description": "Wide-grip, chin-ups and weighted pull-ups for continued overload once volume plateaus.",
-                    "prerequisites": [
-                        "pull_ups.century"
-                    ]
-                }
-            },
-            "relationships": [
-                {
-                    "capability_id": "str.muscular_strength.upper_body.push_ups",
-                    "label": "Upper Body Push"
-                },
-                {
-                    "capability_id": "str.muscular_strength.upper_body.pulling_strength",
-                    "label": "Pulling Strength"
-                }
-            ]
-        },
         "str.muscular_strength.core.sit_ups": {
             "id": "str.muscular_strength.core.sit_ups",
             "name": "Sit-ups",
@@ -748,7 +656,7 @@
             },
             "relationships": [
                 {
-                    "capability_id": "str.muscular_strength.upper_body.push_ups",
+                    "capability_id": "str.muscular_strength.pushing_strength.push_ups",
                     "label": "Core Stability"
                 },
                 {
@@ -939,6 +847,102 @@
                 {
                     "capability_id": "dex.balance.dynamic_balance.weight_transfer",
                     "label": "Balance"
+                }
+            ]
+        },
+        "str.muscular_strength.pushing_strength.push_ups": {
+            "id": "str.muscular_strength.pushing_strength.push_ups",
+            "name": "Push-ups",
+            "slug": "push-ups",
+            "description": "Build pressing strength and upper-body muscular endurance with bodyweight push-up training.",
+            "concepts": {
+                "push_ups.form": {
+                    "name": "Form & Base Volume",
+                    "description": "Clean push-up form (straight body line, full range of motion) and building toward a consistent daily set.",
+                    "prerequisites": []
+                },
+                "push_ups.daily_60": {
+                    "name": "Daily 60",
+                    "description": "Complete 60 push-ups in a day, the current daily target.",
+                    "prerequisites": [
+                        "push_ups.form"
+                    ]
+                },
+                "push_ups.century": {
+                    "name": "Century",
+                    "description": "Reach 100 push-ups in a day, the stretch goal once 60/day is consistent.",
+                    "prerequisites": [
+                        "push_ups.daily_60"
+                    ]
+                },
+                "push_ups.variations": {
+                    "name": "Advanced Variations",
+                    "description": "Diamond, decline and archer push-ups for continued overload once volume plateaus.",
+                    "prerequisites": [
+                        "push_ups.century"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "str.muscular_strength.pulling_strength.pull_ups",
+                    "label": "Upper Body Pull"
+                },
+                {
+                    "capability_id": "str.muscular_strength.pushing_strength.bench_press",
+                    "label": "Loaded Pressing Counterpart"
+                },
+                {
+                    "capability_id": "str.muscular_strength.core.sit_ups",
+                    "label": "Core Stability"
+                }
+            ]
+        },
+        "str.muscular_strength.pulling_strength.pull_ups": {
+            "id": "str.muscular_strength.pulling_strength.pull_ups",
+            "name": "Pull-ups",
+            "slug": "pull-ups",
+            "description": "Build pulling strength, back width and grip endurance with bodyweight pull-up training.",
+            "concepts": {
+                "pull_ups.form": {
+                    "name": "Form & Base Volume",
+                    "description": "Full dead-hang to chin-over-bar form, and building toward a consistent daily set across multiple sets.",
+                    "prerequisites": []
+                },
+                "pull_ups.daily_60": {
+                    "name": "Daily 60",
+                    "description": "Complete 60 pull-ups in a day (across sets), the current daily target.",
+                    "prerequisites": [
+                        "pull_ups.form"
+                    ]
+                },
+                "pull_ups.century": {
+                    "name": "Century",
+                    "description": "Reach 100 pull-ups in a day, the stretch goal once 60/day is consistent.",
+                    "prerequisites": [
+                        "pull_ups.daily_60"
+                    ]
+                },
+                "pull_ups.variations": {
+                    "name": "Advanced Variations",
+                    "description": "Wide-grip, chin-ups and weighted pull-ups for continued overload once volume plateaus.",
+                    "prerequisites": [
+                        "pull_ups.century"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "str.muscular_strength.pushing_strength.push_ups",
+                    "label": "Upper Body Push"
+                },
+                {
+                    "capability_id": "str.muscular_strength.pulling_strength.lat_pulldown",
+                    "label": "Loaded Pulling Counterpart"
+                },
+                {
+                    "capability_id": "str.muscular_strength.grip_and_forearms.grip_strength",
+                    "label": "Grip Demand"
                 }
             ]
         }

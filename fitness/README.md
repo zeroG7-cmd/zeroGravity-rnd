@@ -12,8 +12,8 @@ Manual, quantity-based logging until an exercise-recognition device exists
 
 | Habit             | Daily target | Feeds                                              |
 |-------------------|-------------:|-----------------------------------------------------|
-| Push-ups          | 60           | `str.muscular_strength.upper_body.push_ups`          |
-| Pull-ups          | 60           | `str.muscular_strength.upper_body.pull_ups`          |
+| Push-ups          | 60           | `str.muscular_strength.pushing_strength.push_ups`    |
+| Pull-ups          | 60           | `str.muscular_strength.pulling_strength.pull_ups`    |
 | Sit-ups           | 60           | `str.muscular_strength.core.sit_ups`                 |
 | Squats            | 60           | `str.muscular_strength.lower_body.squats`            |
 | Jog               | 30 minutes   | `con.endurance.aerobic_capacity.running`             |
@@ -40,6 +40,51 @@ feeds a single stat; this split is specific to stretching.
 `push_ups.century` / `pull_ups.century` / etc. concepts in the capability
 graph.
 
+## Muscular Strength tree
+
+`Upper Body` and `Functional Strength` don't exist anymore under STR. The
+tree was restructured to actually reflect the weekly gym routine below
+instead of a generic muscle-group split with mostly-empty placeholder
+leaves:
+
+- **Pushing Strength** — Push-ups plus the Monday push-day lifts (Bench
+  Press, Overhead Press, Incline Press / Dips, Lateral Raises, Triceps
+  Extension).
+- **Pulling Strength** — Pull-ups plus the Thursday pull-day lifts (Lat
+  Pulldown, Rows, Face Pulls, Bicep Curls).
+- **Grip & Forearms** — Grip Strength (moved out of the now-deleted
+  Functional Strength domain) plus Farmer's Carry.
+- **Lower Body** — Squats plus the Tuesday leg-day and Friday deadlift work
+  (Barbell Squat, Romanian Deadlift, Deadlift, Leg Press / Lunges, Leg Curl,
+  Calf Raise).
+- **Core** — unchanged: Sit-ups, Bracing, Anti-rotation.
+
+Bodyweight daily habits (Push-ups, Pull-ups, Squats, Sit-ups) stay separate
+capabilities from their loaded gym-lift counterparts (Bench Press, Barbell
+Squat, etc.) on purpose — high-rep bodyweight work and heavy low-rep lifting
+train genuinely different qualities (muscular endurance vs. maximal
+strength), the same way `stretch_minutes` earns two different stats instead
+of being forced into one.
+
+Functional Strength was cut entirely rather than kept as an empty
+placeholder — it was designed around occupational load-bearing (warehouse
+work, awkward equipment carrying) that doesn't apply right now. It can come
+back if that ever changes. Anti-rotation stays as a placeholder under Core
+even though nothing in the current routine trains it yet, pending adding a
+rotational exercise (Pallof press, wood chop, etc.) later.
+
+Exercises that were listed as alternatives for the same slot in the routine
+(e.g. "barbell row or dumbbell row or seated cable row", "leg press or
+walking lunges") share one capability rather than getting a separate leaf
+each — same pattern Push-ups already uses via its `variations` concept.
+
+Only Push-ups, Pull-ups, Sit-ups and Squats have full `capability_graph.json`
+entries (concepts, relationships) today, matching the existing pattern where
+a capability gets fleshed out once it's actually being tracked. The new gym
+lifts are registered in `competencies.json` and the skill tree now, ready to
+receive XP, but don't have concepts yet — logging them is a separate piece
+of work (see the note in "Weekly gym routine" below).
+
 ## Targets & scoring
 
 Targets and per-exercise XP pools live in `fitness/engine/config.py`. XP for
@@ -51,6 +96,11 @@ capped at 2x target, so overshooting is rewarded without being unbounded.
 `fitness/routines/weekly_routine.json` holds the weekly split (push / pull /
 legs / core & cardio / mobility / rest) referenced by the Zero Command System
 fitness dashboard. Edit it directly to change the plan.
+
+Logging a gym day's completion (and awarding XP into the capabilities listed
+above) isn't built yet — right now the routine is display-only. A simple
+day-completion log (mark today's session done, award a flat XP amount into
+that day's target capabilities) is the planned next step.
 
 ## Engine
 
