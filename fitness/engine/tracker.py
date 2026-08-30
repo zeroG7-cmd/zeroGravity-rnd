@@ -110,11 +110,15 @@ def _existing_full_day_bonus_xp(ledger: EventLedger, log_date: str) -> int:
     return FULL_DAY_CONSISTENCY_BONUS_XP if _already_logged(ledger, bonus_key) else 0
 
 
-def _apply_receipt_to_competencies(
+def apply_receipt_to_competencies(
     competencies_doc: dict[str, Any], receipt
 ) -> dict[str, int]:
     """Add each allocation's XP onto competencies.json and recompute its level.
     Returns {competency_id: new_xp} for everything this receipt touched.
+
+    Public (not `_`-prefixed) because `fitness.engine.gym_log` reuses it
+    verbatim for gym-day-completion logging - same competencies.json update
+    mechanics, just fed from a different kind of event.
     """
     competencies = competencies_doc.setdefault("competencies", {})
     updated: dict[str, int] = {}
@@ -207,7 +211,7 @@ def log_day(
         )
         recorded = ledger.append(event)
         receipt = distribution.distribute_event(recorded, total_xp=base_xp)
-        new_totals = _apply_receipt_to_competencies(competencies_doc, receipt)
+        new_totals = apply_receipt_to_competencies(competencies_doc, receipt)
         touched_competency_ids.update(new_totals.keys())
 
         entries.append(
@@ -245,7 +249,7 @@ def log_day(
             )
             recorded = ledger.append(bonus_event)
             receipt = distribution.distribute_event(recorded, total_xp=FULL_DAY_CONSISTENCY_BONUS_XP)
-            new_totals = _apply_receipt_to_competencies(competencies_doc, receipt)
+            new_totals = apply_receipt_to_competencies(competencies_doc, receipt)
             touched_competency_ids.update(new_totals.keys())
             bonus_awarded = FULL_DAY_CONSISTENCY_BONUS_XP
 

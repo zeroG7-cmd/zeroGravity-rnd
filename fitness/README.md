@@ -106,10 +106,45 @@ capped at 2x target, so overshooting is rewarded without being unbounded.
 legs / core & cardio / mobility / rest) referenced by the Zero Command System
 fitness dashboard. Edit it directly to change the plan.
 
-Logging a gym day's completion (and awarding XP into the capabilities listed
-above) isn't built yet — right now the routine is display-only. A simple
-day-completion log (mark today's session done, award a flat XP amount into
-that day's target capabilities) is the planned next step.
+Each day also carries a `"trains"` list — the specific gym-lift competency
+IDs that day's session feeds (e.g. Monday's push day trains Bench Press,
+Overhead Press, Incline Press / Dips, Lateral Raises and Triceps Extension).
+Wednesday's mobility day trains Joint Health; Friday's finisher trains
+Deadlift, Farmer's Carry, Bracing and Conditioning. Saturday's optional
+session and Sunday's rest day have an empty `"trains"` list on purpose —
+Saturday still logs a smaller "showed up" credit to Discipline, Sunday
+doesn't log at all. Bodyweight daily habits (Push-ups, Pull-ups, Squats,
+Sit-ups) are deliberately left out of every `"trains"` list even where the
+routine also mentions them as an alternative (e.g. Thursday's "Pull-ups or
+lat pulldown") — they're already logged separately via `tracker.py`, so
+including them here would double-count that XP.
+
+## Gym-day completion logging
+
+```
+python -m fitness.engine.gym_log                  # logs today's actual weekday
+python -m fitness.engine.gym_log --date 2026-08-31
+python -m fitness.engine.gym_log --day Monday      # log a specific split day, e.g. logging late
+python -m fitness.engine.gym_log --status
+```
+
+`gym_log.py` marks one weekly-routine day done as a single flat-XP event —
+it does not take set/rep/weight numbers, just "I did today's session" — and
+splits a flat XP pool (`GYM_SESSION_XP` in `fitness/engine/config.py`)
+evenly across that day's `"trains"` capabilities, plus the usual Discipline
+share. It reuses the same event-sourced mechanics as `tracker.py`
+(`OperatorEvent` → `EventLedger` → `DistributionService` →
+`competencies.json` → `fitness.engine.stats.sync_and_recompute`), keyed on
+`gym:{date}` so logging the same calendar date twice is a no-op the second
+time. The Zero Command System fitness dashboard exposes this as a "Log Gym
+Day Done" button under today's routine (and a per-day button in the
+full-week expand view, for logging a day late).
+
+This is a deliberately simple v1: it doesn't look at how much weight or how
+many reps were actually done, just that the session happened. A v2 that
+takes real per-lift numbers (the same way `tracker.py` scales XP with
+push-up count) is a natural next step once this has been live for a few
+weeks.
 
 ## Engine
 
@@ -126,7 +161,9 @@ and calls `fitness/engine/stats.py` to recompute average levels in
 `operator_core/hubs/learning/stats/learning_stats.json` for every branch this
 touches (STR's Muscular Strength tree, CON's Endurance/Health Management
 trees, DEX's Agility tree, and DISC's Consistency tree). It intentionally
-does not touch INT or anything learning-owns.
+does not touch INT or anything learning-owns. `gym_log.py` shares this same
+recompute pipeline (see above) — `fitness/engine/stats.py`'s tree-path
+registry now covers every gym-lift capability as well as the daily habits.
 
 This is a deliberately simple v1 (see `operator_core/hubs/tasks/README.md`'s
 philosophy: start simple, extend later). Streak-based bonuses beyond a flat

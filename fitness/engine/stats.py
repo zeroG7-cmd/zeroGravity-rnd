@@ -29,7 +29,12 @@ from operator_core.profile.progression import get_level_progress
 from shared.config.paths import OPERATOR_CAPABILITIES, OPERATOR_HUBS
 from shared.libraries.json_store import load_json, save_json
 
-from fitness.engine.config import DAILY_PRACTICE_COMPETENCY_ID, DAILY_PRACTICE_TREE_PATH, HABITS
+from fitness.engine.config import (
+    DAILY_PRACTICE_COMPETENCY_ID,
+    DAILY_PRACTICE_TREE_PATH,
+    GYM_CAPABILITY_TREE_PATHS,
+    HABITS,
+)
 
 LEARNING_STATS_PATH = OPERATOR_HUBS / "learning" / "stats" / "learning_stats.json"
 COMPETENCIES_PATH = OPERATOR_CAPABILITIES / "competencies.json"
@@ -37,13 +42,15 @@ COMPETENCIES_PATH = OPERATOR_CAPABILITIES / "competencies.json"
 # Every tree_path this module is allowed to touch, keyed by competency_id.
 # Includes each habit's optional secondary competency (e.g. stretch_minutes
 # also feeds a DEX leaf) so a split habit's second branch gets its
-# average_level recomputed too.
+# average_level recomputed too, plus every gym-lift capability
+# fitness.engine.gym_log is allowed to award into (see config.py).
 _TREE_PATHS: dict[str, list[str]] = {}
 for _habit in HABITS.values():
     _TREE_PATHS[_habit["competency_id"]] = _habit["tree_path"]
     if _habit.get("secondary_competency_id"):
         _TREE_PATHS[_habit["secondary_competency_id"]] = _habit["secondary_tree_path"]
 _TREE_PATHS[DAILY_PRACTICE_COMPETENCY_ID] = DAILY_PRACTICE_TREE_PATH
+_TREE_PATHS.update(GYM_CAPABILITY_TREE_PATHS)
 
 # The main stat roots this module ever recomputes averages for.
 _OWNED_STAT_ROOTS = {path[0] for path in _TREE_PATHS.values()}

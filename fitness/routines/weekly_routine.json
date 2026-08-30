@@ -18,6 +18,13 @@
         {"name": "Incline dumbbell press or dips", "sets": 3, "reps": "10-12"},
         {"name": "Lateral raises", "sets": 3, "reps": "12-15"},
         {"name": "Triceps pushdown or overhead extension", "sets": 3, "reps": "10-12"}
+      ],
+      "trains": [
+        "str.muscular_strength.pushing_strength.bench_press",
+        "str.muscular_strength.pushing_strength.overhead_press",
+        "str.muscular_strength.pushing_strength.incline_press_dips",
+        "str.muscular_strength.pushing_strength.lateral_raises",
+        "str.muscular_strength.pushing_strength.triceps_extension"
       ]
     },
     {
@@ -29,6 +36,13 @@
         {"name": "Leg press or walking lunges", "sets": 3, "reps": "10-12"},
         {"name": "Leg curl", "sets": 3, "reps": "10-12"},
         {"name": "Standing calf raise", "sets": 3, "reps": "12-15"}
+      ],
+      "trains": [
+        "str.muscular_strength.leg_strength.barbell_squat",
+        "str.muscular_strength.leg_strength.romanian_deadlift",
+        "str.muscular_strength.leg_strength.leg_press_lunges",
+        "str.muscular_strength.leg_strength.leg_curl",
+        "str.muscular_strength.leg_strength.calf_raise"
       ]
     },
     {
@@ -38,6 +52,9 @@
         {"name": "Full-body stretch routine", "sets": 1, "reps": "10-15 min"},
         {"name": "Light 20-30 min walk or easy jog", "sets": 1, "reps": "20-30 min"},
         {"name": "Foam rolling / joint mobility work", "sets": 1, "reps": "10 min"}
+      ],
+      "trains": [
+        "con.health_management.mobility.joint_health"
       ]
     },
     {
@@ -49,6 +66,12 @@
         {"name": "Seated cable row", "sets": 3, "reps": "10-12"},
         {"name": "Face pulls", "sets": 3, "reps": "12-15"},
         {"name": "Bicep curls", "sets": 3, "reps": "10-12"}
+      ],
+      "trains": [
+        "str.muscular_strength.pulling_strength.lat_pulldown",
+        "str.muscular_strength.pulling_strength.rows",
+        "str.muscular_strength.pulling_strength.face_pulls",
+        "str.muscular_strength.pulling_strength.bicep_curls"
       ]
     },
     {
@@ -60,6 +83,12 @@
         {"name": "Hanging leg raise or sit-up variation", "sets": 3, "reps": "12-15"},
         {"name": "Plank", "sets": 3, "reps": "45-60s"},
         {"name": "Interval jog or bike (conditioning finisher)", "sets": 1, "reps": "10-15 min"}
+      ],
+      "trains": [
+        "str.muscular_strength.leg_strength.deadlift",
+        "str.muscular_strength.grip_strength.farmers_carry",
+        "str.muscular_strength.core_strength.bracing",
+        "con.endurance.work_capacity.conditioning"
       ]
     },
     {
@@ -68,12 +97,14 @@
       "exercises": [
         {"name": "Easy jog, swim, or sport of choice", "sets": 1, "reps": "20-40 min"},
         {"name": "Stretch routine", "sets": 1, "reps": "10-15 min"}
-      ]
+      ],
+      "trains": []
     },
     {
       "day": "Sunday",
       "focus": "Rest",
-      "exercises": []
+      "exercises": [],
+      "trains": []
     }
   ]
 }

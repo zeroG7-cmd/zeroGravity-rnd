@@ -115,6 +115,57 @@ HABITS: dict[str, dict[str, Any]] = {
 }
 
 
+# --- Gym-day completion logging (fitness.engine.gym_log) -------------------
+#
+# Each `fitness/routines/weekly_routine.json` day carries a "trains" list of
+# competency_ids - the specific gym-lift capabilities that day's session
+# feeds. Logging a gym day's completion (see fitness/engine/gym_log.py)
+# splits a flat XP pool evenly across that day's "trains" list, the same way
+# each daily habit's pool splits between its own stat and Discipline
+# (DISC_SHARE above still applies on top of this pool).
+#
+# Bodyweight daily habits (Push-ups, Pull-ups, Squats, Sit-ups) are logged
+# separately via `fitness.engine.tracker` and are deliberately left out of
+# every day's "trains" list even when the routine also lists them as a slot
+# (e.g. Thursday's "Pull-ups or lat pulldown") - awarding into pull_ups here
+# too would double-count XP that habit logging already covers.
+#
+# GYM_CAPABILITY_TREE_PATHS mirrors HABITS' tree_path field for every
+# competency_id gym_log.py is allowed to award into - fitness.engine.stats
+# needs this to know which learning_stats.json branch to recompute.
+
+# XP pool for a day whose "trains" list is non-empty (Mon/Tue/Wed/Thu/Fri).
+GYM_SESSION_XP = 90
+
+# Smaller "showed up" pool for a day with exercises but an empty "trains"
+# list (Saturday's optional light session) - credits Discipline only, since
+# there's no specific lift to award into that isn't already a daily habit.
+GYM_OPTIONAL_DAY_XP = 20
+
+GYM_CAPABILITY_TREE_PATHS: dict[str, list[str]] = {
+    "str.muscular_strength.pushing_strength.bench_press": ["STR", "Muscular Strength", "Pushing Strength", "Bench Press"],
+    "str.muscular_strength.pushing_strength.overhead_press": ["STR", "Muscular Strength", "Pushing Strength", "Overhead Press"],
+    "str.muscular_strength.pushing_strength.incline_press_dips": ["STR", "Muscular Strength", "Pushing Strength", "Incline Press / Dips"],
+    "str.muscular_strength.pushing_strength.lateral_raises": ["STR", "Muscular Strength", "Pushing Strength", "Lateral Raises"],
+    "str.muscular_strength.pushing_strength.triceps_extension": ["STR", "Muscular Strength", "Pushing Strength", "Triceps Extension"],
+    "str.muscular_strength.pulling_strength.lat_pulldown": ["STR", "Muscular Strength", "Pulling Strength", "Lat Pulldown"],
+    "str.muscular_strength.pulling_strength.rows": ["STR", "Muscular Strength", "Pulling Strength", "Rows"],
+    "str.muscular_strength.pulling_strength.face_pulls": ["STR", "Muscular Strength", "Pulling Strength", "Face Pulls"],
+    "str.muscular_strength.pulling_strength.bicep_curls": ["STR", "Muscular Strength", "Pulling Strength", "Bicep Curls"],
+    "str.muscular_strength.leg_strength.barbell_squat": ["STR", "Muscular Strength", "Leg Strength", "Barbell Squat"],
+    "str.muscular_strength.leg_strength.romanian_deadlift": ["STR", "Muscular Strength", "Leg Strength", "Romanian Deadlift"],
+    "str.muscular_strength.leg_strength.leg_press_lunges": ["STR", "Muscular Strength", "Leg Strength", "Leg Press / Lunges"],
+    "str.muscular_strength.leg_strength.leg_curl": ["STR", "Muscular Strength", "Leg Strength", "Leg Curl"],
+    "str.muscular_strength.leg_strength.calf_raise": ["STR", "Muscular Strength", "Leg Strength", "Calf Raise"],
+    "str.muscular_strength.leg_strength.deadlift": ["STR", "Muscular Strength", "Leg Strength", "Deadlift"],
+    "str.muscular_strength.grip_strength.farmers_carry": ["STR", "Muscular Strength", "Grip Strength", "Farmer's Carry"],
+    "str.muscular_strength.core_strength.bracing": ["STR", "Muscular Strength", "Core Strength", "Bracing"],
+    "str.muscular_strength.core_strength.anti_rotation": ["STR", "Muscular Strength", "Core Strength", "Anti-rotation"],
+    "con.endurance.work_capacity.conditioning": ["CON", "Endurance", "Work Capacity", "Conditioning"],
+    "con.health_management.mobility.joint_health": ["CON", "Health Management", "Mobility", "Joint Health"],
+}
+
+
 def concept_id_for_quantity(habit_key: str, quantity: float) -> str | None:
     """Pick which capability_graph.json concept today's quantity evidences.
 
