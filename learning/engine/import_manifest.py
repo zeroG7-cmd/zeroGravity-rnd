@@ -17,13 +17,20 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from concepts import resolve_concept_awards
+from concepts import OPERATOR_CAPABILITIES, resolve_concept_awards
 
 
 LEARNING_ROOT = Path("learning")
 TRACKS_ROOT = LEARNING_ROOT / "tracks"
 CATALOG_PATH = LEARNING_ROOT / "catalog" / "resources.json"
-SKILL_TREE_PATH = LEARNING_ROOT / "config" / "skill_tree.json"
+# Was "learning/config/skill_tree.json" - a leftover path from the old
+# markdown-synced skill tree (see learning/scripts/SKILL_TREE_SYNC_README.md).
+# That file was never generated in this repo, so validate_skill_path() always
+# fell back to an empty {"stats": {}} default and every import failed with
+# "Main stat not found". operator_core/capabilities/skill_tree.json has been
+# the live, actually-maintained skill tree for a while now (it's what
+# concepts.py's GRAPH_PATH sibling already points at) - point here too.
+SKILL_TREE_PATH = OPERATOR_CAPABILITIES / "skill_tree.json"
 
 DEFAULT_EVIDENCE = [
     {"name": "Notes", "path": "notes.md"},
@@ -76,6 +83,7 @@ def save_json(path: Path, data: Any) -> None:
     temporary.write_text(
         json.dumps(data, indent=4, ensure_ascii=False) + "\n",
         encoding="utf-8",
+        newline="",
     )
     temporary.replace(path)
 

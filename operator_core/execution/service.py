@@ -17,7 +17,7 @@ def _load() -> dict[str, Any]:
 def _save(data: dict[str, Any]) -> None:
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     tmp = LOG_PATH.with_suffix(".tmp")
-    tmp.write_text(json.dumps(data, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
+    tmp.write_text(json.dumps(data, indent=2, ensure_ascii=False)+"\n", encoding="utf-8", newline="\n")
     tmp.replace(LOG_PATH)
 
 def _clean_list(value: Any) -> list[str]:

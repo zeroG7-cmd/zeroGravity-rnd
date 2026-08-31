@@ -1,0 +1,319 @@
+{
+    "id": "blender_character_animation_in_blender_for_beginners",
+    "title": "Character Animation in Blender for Beginners",
+    "provider": "YouTube",
+    "instructor": "Crashsune Academy",
+    "stat": "INT",
+    "hierarchy": [
+        "Creative Production",
+        "3D Modelling",
+        "Blender"
+    ],
+    "domain": "Creative Production",
+    "skill": "Blender",
+    "difficulty": "Beginner",
+    "resource": "learning/resources/youtube/three_d_modelling/blender_character_animation_beginners",
+    "manifest": "learning/resources/youtube/three_d_modelling/blender_character_animation_beginners/blender_character_animation_beginners.json",
+    "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+    "resource_id": "youtube_crashsune_character_animation_blender",
+    "competency_id": "int.creative_production.three_d_modelling.blender",
+    "capability_id": "int.creative_production.three_d_modelling.blender",
+    "default_competency_awards": [
+        {
+            "competency_id": "int.creative_production.three_d_modelling.blender",
+            "weight": 1.0
+        }
+    ],
+    "section_competency_awards": {},
+    "default_concept_awards": [],
+    "section_concept_awards": {},
+    "mapping_confidence": "high",
+    "manifest_schema_version": 3,
+    "xp_rules": {
+        "video": 50
+    },
+    "import_method": "manifest",
+    "structure_type": "imported",
+    "section_count": 1,
+    "unit_count": 11,
+    "units": [
+        {
+            "id": "section_01_unit_001_blender_basics_incl_intro",
+            "title": "Section 1: Character Animation in Blender for Beginners - Blender Basics (incl. Intro)",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 1,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_001_blender_basics_incl_intro",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.interface_basics",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_01",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_002_introduction_to_animation_transforms",
+            "title": "Section 1: Character Animation in Blender for Beginners - Introduction to Animation (Transforms)",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 2,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_002_introduction_to_animation_transforms",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.transforms",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_02",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_003_the_timeline",
+            "title": "Section 1: Character Animation in Blender for Beginners - The Timeline",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 3,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_003_the_timeline",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.timeline",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_03",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_004_the_dopesheet",
+            "title": "Section 1: Character Animation in Blender for Beginners - The Dopesheet",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 4,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_004_the_dopesheet",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.dopesheet",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_04",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_005_the_graph_editor",
+            "title": "Section 1: Character Animation in Blender for Beginners - The Graph Editor",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 5,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_005_the_graph_editor",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.graph_editor",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_05",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_006_animation_modifiers",
+            "title": "Section 1: Character Animation in Blender for Beginners - Animation Modifiers",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 6,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_006_animation_modifiers",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.animation_modifiers",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_06",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_007_importing_and_posing_characters",
+            "title": "Section 1: Character Animation in Blender for Beginners - Importing and Posing Characters",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 7,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_007_importing_and_posing_characters",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.character_posing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_07",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_008_ik_vs_fk",
+            "title": "Section 1: Character Animation in Blender for Beginners - IK vs FK",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 8,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_008_ik_vs_fk",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.ik_fk",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_08",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_009_cameras",
+            "title": "Section 1: Character Animation in Blender for Beginners - Cameras",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 9,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_009_cameras",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.cameras",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_09",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_010_lighting",
+            "title": "Section 1: Character Animation in Blender for Beginners - Lighting",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 10,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_010_lighting",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.lighting",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_10",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_011_rendering_and_exporting_animations_incl_series_wrap_up",
+            "title": "Section 1: Character Animation in Blender for Beginners - Rendering and Exporting Animations (incl. Series Wrap Up)",
+            "section_number": 1,
+            "section_title": "Character Animation in Blender for Beginners",
+            "unit_number": 11,
+            "path": "sections/section_01_character_animation_in_blender_for_beginners/unit_011_rendering_and_exporting_animations_incl_series_wrap_up",
+            "source": "blender_character_animation_beginners.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "blender.rendering_export",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "chapter_11",
+            "provider_unit_id": null,
+            "xp_value": null
+        }
+    ],
+    "evidence_requirements": [
+        {
+            "name": "Notes",
+            "path": "notes.md"
+        },
+        {
+            "name": "Reflection",
+            "path": "reflection.md"
+        },
+        {
+            "name": "Practical Evidence",
+            "path": "evidence/practical_evidence.md"
+        }
+    ]
+}

@@ -47,6 +47,7 @@ class ReceiptStore:
             temporary.write_text(
                 json.dumps(receipt.to_dict(), indent=2, ensure_ascii=False) + "\n",
                 encoding="utf-8",
+                newline="\n",
             )
             temporary.replace(path)
             index.setdefault("by_source_event", {})[key] = str(path)

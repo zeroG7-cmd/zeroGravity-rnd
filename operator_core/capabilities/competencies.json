@@ -813,76 +813,6 @@
             "level": 0,
             "shared": false
         },
-        "int.creative_production.photography.composition": {
-            "id": "int.creative_production.photography.composition",
-            "name": "Composition",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.photography.exposure": {
-            "id": "int.creative_production.photography.exposure",
-            "name": "Exposure",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.photography.post_production": {
-            "id": "int.creative_production.photography.post_production",
-            "name": "Post-production",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.storytelling.narrative_design": {
-            "id": "int.creative_production.storytelling.narrative_design",
-            "name": "Narrative Design",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.storytelling.visual_language": {
-            "id": "int.creative_production.storytelling.visual_language",
-            "name": "Visual Language",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.storytelling.worldbuilding": {
-            "id": "int.creative_production.storytelling.worldbuilding",
-            "name": "Worldbuilding",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.video_production.cinematography": {
-            "id": "int.creative_production.video_production.cinematography",
-            "name": "Cinematography",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.video_production.colour_grading": {
-            "id": "int.creative_production.video_production.colour_grading",
-            "name": "Colour Grading",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.video_production.editing": {
-            "id": "int.creative_production.video_production.editing",
-            "name": "Editing",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.creative_production.video_production.sound_design": {
-            "id": "int.creative_production.video_production.sound_design",
-            "name": "Sound Design",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
         "int.data_and_databases.data_engineering.data_cleaning": {
             "id": "int.data_and_databases.data_engineering.data_cleaning",
             "name": "Data Cleaning",
@@ -2027,6 +1957,34 @@
         "str.muscular_strength.grip_strength.farmers_carry": {
             "id": "str.muscular_strength.grip_strength.farmers_carry",
             "name": "Farmer's Carry",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.video_production.premiere_pro": {
+            "id": "int.creative_production.video_production.premiere_pro",
+            "name": "Premiere Pro",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.camera_drone.drone": {
+            "id": "int.creative_production.camera_drone.drone",
+            "name": "Drone",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.photography.photoshop": {
+            "id": "int.creative_production.photography.photoshop",
+            "name": "Photoshop",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.creative_production.three_d_modelling.blender": {
+            "id": "int.creative_production.three_d_modelling.blender",
+            "name": "Blender",
             "xp": 0,
             "level": 0,
             "shared": false

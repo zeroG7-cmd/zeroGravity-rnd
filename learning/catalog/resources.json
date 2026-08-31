@@ -70,6 +70,25 @@
             "track_path": "learning/tracks/int/software_engineering/programming_languages/python/introduction_to_python_for_developers",
             "import_method": "provider_progress",
             "date_added": "2026-07-18T00:00:00+01:00"
+        },
+        {
+            "id": "blender_character_animation_in_blender_for_beginners",
+            "title": "Character Animation in Blender for Beginners",
+            "provider": "YouTube",
+            "instructor": "Crashsune Academy",
+            "stat": "INT",
+            "hierarchy": [
+                "Creative Production",
+                "3D Modelling",
+                "Blender"
+            ],
+            "skill": "Blender",
+            "difficulty": "Beginner",
+            "resource": "learning/resources/youtube/three_d_modelling/blender_character_animation_beginners",
+            "manifest": "learning/resources/youtube/three_d_modelling/blender_character_animation_beginners/blender_character_animation_beginners.json",
+            "track_path": "learning/tracks/int/creative_production/3d_modelling/blender/character_animation_in_blender_for_beginners",
+            "import_method": "manifest",
+            "date_added": "2026-08-30T22:56:30.515871+00:00"
         }
     ]
 }

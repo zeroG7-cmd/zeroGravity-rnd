@@ -39,7 +39,14 @@ def load_json(file_path: Path, default: Any) -> Any:
 def save_json(file_path: Path, data: Any) -> None:
     file_path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path = file_path.with_suffix(file_path.suffix + ".tmp")
-    with temporary_path.open("w", encoding="utf-8") as file:
+    # indent=4 - this module's own long-established convention, and the
+    # convention every already-committed competencies.json/learning_stats.json
+    # actually uses. (An earlier pass here briefly flipped this to indent=2
+    # to match shared/libraries/json_store.py - backwards: that module was
+    # the actual outlier and has been fixed to indent=4 instead, since it's
+    # the newer of the two writers and everything else in the repo already
+    # agreed on 4.)
+    with temporary_path.open("w", encoding="utf-8", newline="") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
         file.write("\n")
     temporary_path.replace(file_path)

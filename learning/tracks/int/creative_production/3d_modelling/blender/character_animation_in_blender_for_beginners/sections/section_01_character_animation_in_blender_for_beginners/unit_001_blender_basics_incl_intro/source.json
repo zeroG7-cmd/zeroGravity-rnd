@@ -1,0 +1,12 @@
+{
+    "source_type": "video",
+    "provider": "YouTube",
+    "instructor": "Crashsune Academy",
+    "manifest": "learning/resources/youtube/three_d_modelling/blender_character_animation_beginners/blender_character_animation_beginners.json",
+    "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8",
+    "section_number": 1,
+    "section_title": "Character Animation in Blender for Beginners",
+    "unit_number": 1,
+    "duration": null,
+    "duration_minutes": null
+}

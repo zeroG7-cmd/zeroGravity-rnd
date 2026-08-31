@@ -2352,46 +2352,10 @@
                             "node_type": "parent",
                             "average_level": 0.0,
                             "children": {
-                                "Cinematography": {
-                                    "name": "Cinematography",
+                                "Premiere Pro": {
+                                    "name": "Premiere Pro",
                                     "node_type": "skill",
-                                    "competency_id": "int.creative_production.video_production.cinematography",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                },
-                                "Editing": {
-                                    "name": "Editing",
-                                    "node_type": "skill",
-                                    "competency_id": "int.creative_production.video_production.editing",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                },
-                                "Colour Grading": {
-                                    "name": "Colour Grading",
-                                    "node_type": "skill",
-                                    "competency_id": "int.creative_production.video_production.colour_grading",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                },
-                                "Sound Design": {
-                                    "name": "Sound Design",
-                                    "node_type": "skill",
-                                    "competency_id": "int.creative_production.video_production.sound_design",
+                                    "competency_id": "int.creative_production.video_production.premiere_pro",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2407,34 +2371,10 @@
                             "node_type": "parent",
                             "average_level": 0.0,
                             "children": {
-                                "Composition": {
-                                    "name": "Composition",
+                                "Photoshop": {
+                                    "name": "Photoshop",
                                     "node_type": "skill",
-                                    "competency_id": "int.creative_production.photography.composition",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                },
-                                "Exposure": {
-                                    "name": "Exposure",
-                                    "node_type": "skill",
-                                    "competency_id": "int.creative_production.photography.exposure",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                },
-                                "Post-production": {
-                                    "name": "Post-production",
-                                    "node_type": "skill",
-                                    "competency_id": "int.creative_production.photography.post_production",
+                                    "competency_id": "int.creative_production.photography.photoshop",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2445,15 +2385,15 @@
                                 }
                             }
                         },
-                        "Storytelling": {
-                            "name": "Storytelling",
+                        "Camera & Drone": {
+                            "name": "Camera & Drone",
                             "node_type": "parent",
                             "average_level": 0.0,
                             "children": {
-                                "Narrative Design": {
-                                    "name": "Narrative Design",
+                                "Drone": {
+                                    "name": "Drone",
                                     "node_type": "skill",
-                                    "competency_id": "int.creative_production.storytelling.narrative_design",
+                                    "competency_id": "int.creative_production.camera_drone.drone",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2461,23 +2401,18 @@
                                     "xp_into_level": 0,
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
-                                },
-                                "Worldbuilding": {
-                                    "name": "Worldbuilding",
+                                }
+                            }
+                        },
+                        "3D Modelling": {
+                            "name": "3D Modelling",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Blender": {
+                                    "name": "Blender",
                                     "node_type": "skill",
-                                    "competency_id": "int.creative_production.storytelling.worldbuilding",
-                                    "shared": false,
-                                    "xp": 0,
-                                    "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
-                                    "next_level_xp": 100
-                                },
-                                "Visual Language": {
-                                    "name": "Visual Language",
-                                    "node_type": "skill",
-                                    "competency_id": "int.creative_production.storytelling.visual_language",
+                                    "competency_id": "int.creative_production.three_d_modelling.blender",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -4456,6 +4391,6 @@
     "xp_to_next_level": 143,
     "next_level_xp": 1703,
     "level_xp_required": 800,
-    "competency_count": 290,
+    "competency_count": 284,
     "migrated_competencies": []
 }

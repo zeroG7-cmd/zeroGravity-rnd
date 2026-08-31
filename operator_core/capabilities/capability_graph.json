@@ -945,6 +945,209 @@
                     "label": "Trunk & Leg Integration"
                 }
             ]
+        },
+        "int.creative_production.video_production.premiere_pro": {
+            "id": "int.creative_production.video_production.premiere_pro",
+            "name": "Premiere Pro",
+            "slug": "premiere-pro",
+            "description": "Edit and finish video projects end-to-end in Adobe Premiere Pro.",
+            "concepts": {
+                "premiere_pro.editing": {
+                    "name": "Editing",
+                    "description": "Assembling and trimming footage into a finished sequence.",
+                    "prerequisites": []
+                },
+                "premiere_pro.colour_grading": {
+                    "name": "Colour Grading",
+                    "description": "Adjusting colour and tone for mood and consistency across a cut.",
+                    "prerequisites": [
+                        "premiere_pro.editing"
+                    ]
+                },
+                "premiere_pro.sound_design": {
+                    "name": "Sound Design",
+                    "description": "Mixing dialogue, music and sound effects into a finished track.",
+                    "prerequisites": [
+                        "premiere_pro.editing"
+                    ]
+                }
+            },
+            "relationships": []
+        },
+        "int.creative_production.camera_drone.drone": {
+            "id": "int.creative_production.camera_drone.drone",
+            "name": "Drone",
+            "slug": "drone",
+            "description": "Shooting-time camera and drone-handling skill for both video and photo work - framing, movement, and exposure decisions made before footage or photos ever reach editing software.",
+            "concepts": {
+                "drone.composition": {
+                    "name": "Composition",
+                    "description": "Framing and composing a shot for visual impact.",
+                    "prerequisites": []
+                },
+                "drone.exposure": {
+                    "name": "Exposure",
+                    "description": "Controlling light, aperture and ISO for a correctly exposed shot.",
+                    "prerequisites": [
+                        "drone.composition"
+                    ]
+                },
+                "drone.cinematography": {
+                    "name": "Cinematography",
+                    "description": "Framing, movement and lighting decisions while shooting aerial video.",
+                    "prerequisites": [
+                        "drone.composition",
+                        "drone.exposure"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "int.creative_production.video_production.premiere_pro",
+                    "label": "Footage feeds into"
+                },
+                {
+                    "capability_id": "int.creative_production.photography.photoshop",
+                    "label": "Photos feed into"
+                }
+            ]
+        },
+        "int.creative_production.photography.photoshop": {
+            "id": "int.creative_production.photography.photoshop",
+            "name": "Photoshop",
+            "slug": "photoshop",
+            "description": "Edit, retouch and colour-correct delivered photos in Adobe Photoshop.",
+            "concepts": {
+                "photoshop.post_production": {
+                    "name": "Post-production",
+                    "description": "Editing, retouching and colour-correcting delivered photos.",
+                    "prerequisites": []
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "int.creative_production.camera_drone.drone",
+                    "label": "Receives shots from"
+                }
+            ]
+        },
+        "spirit.creativity.expression.storytelling": {
+            "id": "spirit.creativity.expression.storytelling",
+            "name": "Storytelling",
+            "slug": "storytelling",
+            "description": "Structuring a story or client message so it lands with an audience - personal Zero World lore and client-facing video narratives draw on the same underlying craft.",
+            "concepts": {
+                "storytelling.narrative_design": {
+                    "name": "Narrative Design",
+                    "description": "Structuring a story or client message so it lands with an audience.",
+                    "prerequisites": []
+                }
+            },
+            "relationships": []
+        },
+        "spirit.creativity.expression.artistic_direction": {
+            "id": "spirit.creativity.expression.artistic_direction",
+            "name": "Artistic Direction",
+            "slug": "artistic-direction",
+            "description": "The consistent visual choices that carry a project's tone and identity.",
+            "concepts": {
+                "artistic_direction.visual_language": {
+                    "name": "Visual Language",
+                    "description": "The consistent visual choices (colour, framing, style) that carry a story's tone.",
+                    "prerequisites": []
+                }
+            },
+            "relationships": []
+        },
+        "int.creative_production.three_d_modelling.blender": {
+            "id": "int.creative_production.three_d_modelling.blender",
+            "name": "Blender",
+            "slug": "blender",
+            "description": "Modelling, rigging and animating 3D characters and scenes in Blender.",
+            "concepts": {
+                "blender.interface_basics": {
+                    "name": "Blender Basics",
+                    "description": "Navigating Blender's interface, viewport and core workflow.",
+                    "prerequisites": []
+                },
+                "blender.transforms": {
+                    "name": "Transforms",
+                    "description": "Moving, rotating and scaling objects and keyframing those changes over time.",
+                    "prerequisites": [
+                        "blender.interface_basics"
+                    ]
+                },
+                "blender.timeline": {
+                    "name": "The Timeline",
+                    "description": "Scrubbing, setting keyframes and controlling playback along the timeline.",
+                    "prerequisites": [
+                        "blender.transforms"
+                    ]
+                },
+                "blender.dopesheet": {
+                    "name": "The Dope Sheet",
+                    "description": "Viewing and editing keyframes across all channels at once.",
+                    "prerequisites": [
+                        "blender.timeline"
+                    ]
+                },
+                "blender.graph_editor": {
+                    "name": "The Graph Editor",
+                    "description": "Shaping motion curves and easing between keyframes.",
+                    "prerequisites": [
+                        "blender.dopesheet"
+                    ]
+                },
+                "blender.animation_modifiers": {
+                    "name": "Animation Modifiers",
+                    "description": "Applying modifiers that affect animated motion non-destructively.",
+                    "prerequisites": [
+                        "blender.graph_editor"
+                    ]
+                },
+                "blender.character_posing": {
+                    "name": "Importing and Posing Characters",
+                    "description": "Bringing in rigged characters and posing them for a shot.",
+                    "prerequisites": [
+                        "blender.transforms"
+                    ]
+                },
+                "blender.ik_fk": {
+                    "name": "IK vs FK",
+                    "description": "Choosing inverse vs forward kinematics for rigging and posing a character's limbs.",
+                    "prerequisites": [
+                        "blender.character_posing"
+                    ]
+                },
+                "blender.cameras": {
+                    "name": "Cameras",
+                    "description": "Framing a shot and animating camera movement.",
+                    "prerequisites": [
+                        "blender.interface_basics"
+                    ]
+                },
+                "blender.lighting": {
+                    "name": "Lighting",
+                    "description": "Lighting a scene for mood and clarity.",
+                    "prerequisites": [
+                        "blender.interface_basics"
+                    ]
+                },
+                "blender.rendering_export": {
+                    "name": "Rendering and Exporting",
+                    "description": "Rendering a scene and exporting the final animation.",
+                    "prerequisites": [
+                        "blender.cameras",
+                        "blender.lighting"
+                    ]
+                }
+            },
+            "relationships": [
+                {
+                    "capability_id": "int.creative_production.video_production.premiere_pro",
+                    "label": "Renders and exports feed into"
+                }
+            ]
         }
     },
     "concept_progress": {

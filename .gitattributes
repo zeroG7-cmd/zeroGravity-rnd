@@ -1,0 +1,29 @@
+# Force LF line endings for everything git treats as text, regardless of
+# which OS checks it out or commits it. This repo is developed from both a
+# Linux environment and a Windows machine (zero's actual desktop, where the
+# live apps - fitness/engine, learning/engine - run and write JSON state
+# back into this repo). Without this, every JSON file those scripts save on
+# Windows could get silently rewritten with CRLF line endings, making git
+# see every single line as changed on the next diff/merge even when no
+# value actually changed - see shared/libraries/json_store.py's save_json
+# for the source-level half of this fix (newline="" on every JSON writer).
+* text=auto eol=lf
+
+# Binaries - never touch these no matter what.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.jfif binary
+*.gif binary
+*.glb binary
+*.blend binary
+*.stl binary
+*.zip binary
+*.7z binary
+*.exe binary
+*.msi binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.pptx binary

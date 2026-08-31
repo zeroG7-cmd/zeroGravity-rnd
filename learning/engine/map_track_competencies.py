@@ -34,6 +34,7 @@ def save_json(path: Path, data: dict[str, Any]) -> None:
     temporary.write_text(
         json.dumps(data, indent=4, ensure_ascii=False) + "\n",
         encoding="utf-8",
+        newline="",
     )
     temporary.replace(path)
 

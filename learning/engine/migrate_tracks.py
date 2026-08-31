@@ -45,7 +45,7 @@ def load_json(file_path: Path) -> dict[str, Any]:
 def save_json(file_path: Path, data: dict[str, Any]) -> None:
     """Save a dictionary as readable JSON."""
 
-    with file_path.open("w", encoding="utf-8") as file:
+    with file_path.open("w", encoding="utf-8", newline="") as file:
         json.dump(data, file, indent=4)
 
 

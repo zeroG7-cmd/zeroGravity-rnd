@@ -257,7 +257,7 @@ def save_json(
         exist_ok=True,
     )
 
-    with file_path.open("w", encoding="utf-8") as file:
+    with file_path.open("w", encoding="utf-8", newline="") as file:
         json.dump(data, file, indent=4)
 
 

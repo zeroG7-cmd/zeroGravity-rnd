@@ -1,0 +1,121 @@
+{
+    "schema_version": 3,
+    "resource": {
+        "id": "youtube_crashsune_character_animation_blender",
+        "title": "Character Animation in Blender for Beginners",
+        "provider": "YouTube",
+        "instructor": "Crashsune Academy",
+        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8"
+    },
+    "operator_mapping": {
+        "stat": "INT",
+        "hierarchy": ["Creative Production", "3D Modelling", "Blender"],
+        "competency_id": "int.creative_production.three_d_modelling.blender",
+        "capability_id": "int.creative_production.three_d_modelling.blender",
+        "mapping_confidence": "high",
+        "default_competency_awards": [
+            {"competency_id": "int.creative_production.three_d_modelling.blender", "weight": 1.0}
+        ],
+        "default_concept_awards": [],
+        "section_concept_awards": {}
+    },
+    "course": {
+        "difficulty": "Beginner",
+        "xp_rules": {"video": 50},
+        "sections": [
+            {
+                "title": "Character Animation in Blender for Beginners",
+                "lectures": [
+                    {
+                        "id": "chapter_01",
+                        "title": "Blender Basics (incl. Intro)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=0s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.interface_basics", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_02",
+                        "title": "Introduction to Animation (Transforms)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=1222s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.transforms", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_03",
+                        "title": "The Timeline",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=1718s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.timeline", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_04",
+                        "title": "The Dopesheet",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=2676s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.dopesheet", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_05",
+                        "title": "The Graph Editor",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=3318s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.graph_editor", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_06",
+                        "title": "Animation Modifiers",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=4406s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.animation_modifiers", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_07",
+                        "title": "Importing and Posing Characters",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=5472s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.character_posing", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_08",
+                        "title": "IK vs FK",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=6600s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.ik_fk", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_09",
+                        "title": "Cameras",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=7308s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.cameras", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_10",
+                        "title": "Lighting",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=8269s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.lighting", "weight": 1.0}]
+                    },
+                    {
+                        "id": "chapter_11",
+                        "title": "Rendering and Exporting Animations (incl. Series Wrap Up)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=h-PcfaZVlI8&t=9335s",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "blender.rendering_export", "weight": 1.0}]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1380,28 +1380,10 @@
                             "node_type": "parent",
                             "average_level": 0.0,
                             "children": {
-                                "Cinematography": {
-                                    "name": "Cinematography",
+                                "Premiere Pro": {
+                                    "name": "Premiere Pro",
                                     "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.video_production.cinematography",
-                                    "shared": false
-                                },
-                                "Editing": {
-                                    "name": "Editing",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.video_production.editing",
-                                    "shared": false
-                                },
-                                "Colour Grading": {
-                                    "name": "Colour Grading",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.video_production.colour_grading",
-                                    "shared": false
-                                },
-                                "Sound Design": {
-                                    "name": "Sound Design",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.video_production.sound_design",
+                                    "competency_id": "int.creative_production.video_production.premiere_pro",
                                     "shared": false
                                 }
                             }
@@ -1411,47 +1393,36 @@
                             "node_type": "parent",
                             "average_level": 0.0,
                             "children": {
-                                "Composition": {
-                                    "name": "Composition",
+                                "Photoshop": {
+                                    "name": "Photoshop",
                                     "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.photography.composition",
-                                    "shared": false
-                                },
-                                "Exposure": {
-                                    "name": "Exposure",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.photography.exposure",
-                                    "shared": false
-                                },
-                                "Post-production": {
-                                    "name": "Post-production",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.photography.post_production",
+                                    "competency_id": "int.creative_production.photography.photoshop",
                                     "shared": false
                                 }
                             }
                         },
-                        "Storytelling": {
-                            "name": "Storytelling",
+                        "Camera & Drone": {
+                            "name": "Camera & Drone",
                             "node_type": "parent",
                             "average_level": 0.0,
                             "children": {
-                                "Narrative Design": {
-                                    "name": "Narrative Design",
+                                "Drone": {
+                                    "name": "Drone",
                                     "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.storytelling.narrative_design",
+                                    "competency_id": "int.creative_production.camera_drone.drone",
                                     "shared": false
-                                },
-                                "Worldbuilding": {
-                                    "name": "Worldbuilding",
+                                }
+                            }
+                        },
+                        "3D Modelling": {
+                            "name": "3D Modelling",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Blender": {
+                                    "name": "Blender",
                                     "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.storytelling.worldbuilding",
-                                    "shared": false
-                                },
-                                "Visual Language": {
-                                    "name": "Visual Language",
-                                    "node_type": "competency_reference",
-                                    "competency_id": "int.creative_production.storytelling.visual_language",
+                                    "competency_id": "int.creative_production.three_d_modelling.blender",
                                     "shared": false
                                 }
                             }
