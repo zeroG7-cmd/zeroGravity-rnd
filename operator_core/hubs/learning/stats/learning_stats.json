@@ -2500,9 +2500,9 @@
                     "average_level": 0.0,
                     "children": {
                         "Pushing Strength": {
+                            "name": "Pushing Strength",
                             "node_type": "parent",
                             "average_level": 0.0,
-                            "name": "Pushing Strength",
                             "children": {
                                 "Push-ups": {
                                     "name": "Push-ups",
@@ -2579,9 +2579,9 @@
                             }
                         },
                         "Pulling Strength": {
+                            "name": "Pulling Strength",
                             "node_type": "parent",
                             "average_level": 0.0,
-                            "name": "Pulling Strength",
                             "children": {
                                 "Pull-ups": {
                                     "name": "Pull-ups",
@@ -2646,9 +2646,9 @@
                             }
                         },
                         "Grip Strength": {
+                            "name": "Grip Strength",
                             "node_type": "parent",
                             "average_level": 0.0,
-                            "name": "Grip Strength",
                             "children": {
                                 "Crush Grip": {
                                     "name": "Crush Grip",
@@ -2677,9 +2677,9 @@
                             }
                         },
                         "Leg Strength": {
+                            "name": "Leg Strength",
                             "node_type": "parent",
                             "average_level": 0.0,
-                            "name": "Leg Strength",
                             "children": {
                                 "Squats": {
                                     "name": "Squats",
@@ -2768,9 +2768,9 @@
                             }
                         },
                         "Core Strength": {
+                            "name": "Core Strength",
                             "node_type": "parent",
                             "average_level": 0.0,
-                            "name": "Core Strength",
                             "children": {
                                 "Bracing": {
                                     "name": "Bracing",

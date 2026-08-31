@@ -26,7 +26,13 @@ if str(ENGINE_DIR) not in sys.path:
     sys.path.insert(0, str(ENGINE_DIR))
 
 import json
-from shared.config.paths import LEARNING_ROOT, OPERATOR_CAPABILITIES, OPERATOR_HUBS
+from datetime import datetime, timezone
+from shared.config.paths import (
+    LEARNING_ROOT,
+    OPERATOR_CAPABILITIES,
+    OPERATOR_HUBS,
+    OPERATOR_PROFILE_DATA,
+)
 from typing import Any, Iterable
 
 from level import calculate_level, get_level_progress
@@ -35,6 +41,18 @@ SKILL_TREE_PATH = OPERATOR_CAPABILITIES / "skill_tree.json"
 COMPETENCIES_PATH = OPERATOR_CAPABILITIES / "competencies.json"
 OPERATOR_ROOT = OPERATOR_HUBS / "learning"
 STATS_PATH = OPERATOR_ROOT / "stats" / "learning_stats.json"
+
+# operator_core/profile/data/stats.json predates the competency/skill-tree
+# system - a one-off migration (2026-07-19) wrote it once from the old flat
+# format and nothing has updated it since. It used to be kept live by
+# OperatorProfileService.apply_xp_receipt(), but every real XP event
+# (fitness, learning, journal) goes through update_operator_competencies()
+# below instead, which never calls that path - so this file froze on
+# whatever it held the day of the migration. Rather than resurrect the old
+# receipt-based writer, build_operator_stats() now also re-derives this flat
+# per-stat file from the same tree it just built, every time it runs, so the
+# two files can never drift apart again.
+PROFILE_STATS_PATH = OPERATOR_PROFILE_DATA / "stats.json"
 
 
 def load_json(file_path: Path, default: Any) -> Any:
@@ -278,6 +296,42 @@ def calculate_total_xp(
     return total
 
 
+def _sum_leaf_xp(node: dict[str, Any]) -> int:
+    """Add up every skill leaf's xp underneath one built tree node."""
+    if node.get("node_type") == "skill":
+        return int(node.get("xp", 0))
+
+    total = 0
+    children = node.get("children", {})
+    if isinstance(children, dict):
+        for child in children.values():
+            if isinstance(child, dict):
+                total += _sum_leaf_xp(child)
+    return total
+
+
+def sync_profile_stats_snapshot(generated_stats: dict[str, Any]) -> dict[str, Any]:
+    """Refresh operator_core/profile/data/stats.json from the live tree.
+
+    See the PROFILE_STATS_PATH comment above - this file has its own
+    history as a once-migrated, since-orphaned flat format. This just
+    re-derives its per-stat XP totals from the tree build_operator_stats()
+    already produced, so it always reflects whatever the tree says right
+    now instead of a stale one-time snapshot.
+    """
+    snapshot = {
+        "schema_version": 1,
+        "stats": {
+            stat_name: {"xp": _sum_leaf_xp(stat_node)}
+            for stat_name, stat_node in generated_stats.items()
+        },
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "source": "learning_stats.json (auto-synced on every XP update)",
+    }
+    save_json(PROFILE_STATS_PATH, snapshot)
+    return snapshot
+
+
 def migrate_existing_stats_progress(
     skill_tree: dict[str, Any],
     competencies_data: dict[str, Any],
@@ -418,6 +472,7 @@ def build_operator_stats() -> dict[str, Any]:
     if registry_changed:
         save_json(COMPETENCIES_PATH, competencies_data)
     save_json(STATS_PATH, result)
+    sync_profile_stats_snapshot(generated_stats)
     return result
 
 

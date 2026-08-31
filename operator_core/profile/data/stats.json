@@ -1,31 +1,28 @@
 {
-  "schema_version": 1,
-  "stats": {
-    "CON": {
-      "xp": 0
+    "schema_version": 1,
+    "stats": {
+        "CON": {
+            "xp": 0
+        },
+        "INT": {
+            "xp": 1380
+        },
+        "STR": {
+            "xp": 153
+        },
+        "DEX": {
+            "xp": 0
+        },
+        "DISC": {
+            "xp": 27
+        },
+        "WILL": {
+            "xp": 0
+        },
+        "SPIRIT": {
+            "xp": 0
+        }
     },
-    "INT": {
-      "xp": 1360
-    },
-    "STR": {
-      "xp": 0
-    },
-    "DEX": {
-      "xp": 0
-    },
-    "DISC": {
-      "xp": 0
-    },
-    "WILL": {
-      "xp": 0
-    },
-    "SPIRIT": {
-      "xp": 0
-    }
-  },
-  "updated_at": "2026-07-19T00:59:07.851101+00:00",
-  "migration": {
-    "source": "operator_core\\capabilities\\competencies.json",
-    "migrated_at": "2026-07-19T00:59:07.851101+00:00"
-  }
+    "updated_at": "2026-08-31T06:22:29.783468+00:00",
+    "source": "learning_stats.json (auto-synced on every XP update)"
 }

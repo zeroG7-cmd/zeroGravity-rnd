@@ -5,4 +5,14 @@ __pycache__/
 lab/database/*.db
 *.zip
 *.db
-"*.bundle" 
+*.bundle
+
+# Journal is personal writing, not code - keep the folders (so a fresh
+# clone still has them) but never commit what actually gets written into
+# them. The engine code and README above journal/ stay tracked as normal;
+# only the generated/written content is kept off GitHub.
+journal/entries/**
+journal/indexes/entries.json
+journal/archive/**
+journal/summaries/**
+journal/logs/**
