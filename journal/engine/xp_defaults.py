@@ -47,8 +47,15 @@ DEFAULT_XP_TARGETS: dict[str, list[dict[str, object]]] = {
     "personal": [
         {"competency_id": "spirit.identity.self_knowledge.authenticity", "weight": 1.0},
     ],
+    # "creative" is a catch-all for any creative idea, not one specific
+    # kind - split evenly across all three Expression skills under SPIRIT
+    # (moved there in the Creative Production restructure; this used to
+    # point at int.creative_production.storytelling.worldbuilding, which
+    # no longer exists after that move).
     "creative": [
-        {"competency_id": "int.creative_production.storytelling.worldbuilding", "weight": 1.0},
+        {"competency_id": "spirit.creativity.expression.storytelling", "weight": 1 / 3},
+        {"competency_id": "spirit.creativity.expression.worldbuilding", "weight": 1 / 3},
+        {"competency_id": "spirit.creativity.expression.artistic_direction", "weight": 1 / 3},
     ],
     # Business now correctly targets the real Business domain under INT,
     # not a SPIRIT placeholder - this was wrong in the first version.
