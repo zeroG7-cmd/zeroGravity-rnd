@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2026-07-30",
+    "entries": [
+      {
+        "habit": "situps",
+        "label": "Sit-ups",
+        "quantity": 60.0,
+        "unit": "reps",
+        "target": 60,
+        "met_target": true,
+        "xp_awarded": 60,
+        "concept_id": "sit_ups.daily_60"
+      }
+    ],
+    "full_day_bonus_xp": 0,
+    "all_habits_met_target": false,
+    "total_xp_today": 60
+  },
+  {
+    "date": "2026-08-30",
+    "entries": [
+      {
+        "habit": "pushups",
+        "label": "Push-ups",
+        "quantity": 60.0,
+        "unit": "reps",
+        "target": 60,
+        "met_target": true,
+        "xp_awarded": 60,
+        "concept_id": "push_ups.daily_60"
+      },
+      {
+        "habit": "squats",
+        "label": "Squats",
+        "quantity": 60.0,
+        "unit": "reps",
+        "target": 60,
+        "met_target": true,
+        "xp_awarded": 60,
+        "concept_id": "squats.daily_60"
+      }
+    ],
+    "full_day_bonus_xp": 0,
+    "all_habits_met_target": false,
+    "total_xp_today": 120
+  }
+]

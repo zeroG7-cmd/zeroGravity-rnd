@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "event_count": 8,
+  "event_count": 14,
   "event_ids": {
     "evt_0896a2c598db4984aec036c464fbc57e": {
       "event_type": "learning_completed",
@@ -33,6 +33,30 @@
     "evt_d936a2bb101c432f852c62b76d6daac0": {
       "event_type": "xp_distributed",
       "recorded_at": "2026-08-11T17:05:15.762993+00:00"
+    },
+    "evt_c80e6f1fbac8448b979ee149be079b7d": {
+      "event_type": "fitness_habit_logged",
+      "recorded_at": "2026-08-30T00:48:56.861726+00:00"
+    },
+    "evt_3942c0efc0b04f1888cc7c3d85f65bc3": {
+      "event_type": "xp_distributed",
+      "recorded_at": "2026-08-30T00:48:56.876090+00:00"
+    },
+    "evt_c0638f9e64c84aa4b44481525104d95e": {
+      "event_type": "fitness_habit_logged",
+      "recorded_at": "2026-08-30T00:48:56.891399+00:00"
+    },
+    "evt_ea2bc567066847d489eabd4c75ccf4a5": {
+      "event_type": "xp_distributed",
+      "recorded_at": "2026-08-30T00:48:56.903355+00:00"
+    },
+    "evt_eb66e37468cb421eaa68844b7b0ead55": {
+      "event_type": "fitness_habit_logged",
+      "recorded_at": "2026-08-30T19:45:42.233086+00:00"
+    },
+    "evt_1ae9b9cd403f4cac9b38d1c4c2193d16": {
+      "event_type": "xp_distributed",
+      "recorded_at": "2026-08-30T19:45:42.248673+00:00"
     }
   },
   "idempotency_keys": {
@@ -43,6 +67,12 @@
     "learning:udemy:cad_fusion_360_beginners_course:section_01_unit_001_introduction_to_fusion_360:completed": "evt_7f6692da99594738bc0e897ef3b230de",
     "xp_distribution:evt_7f6692da99594738bc0e897ef3b230de:1": "evt_86a1cba7d9ba4161a3bc5d647b0b2eab",
     "learning:udemy:cad_fusion_360_beginners_course:section_01_unit_002_introduction_to_fusion_360:completed": "evt_5aa2cf69ca1848658655630592963ee2",
-    "xp_distribution:evt_5aa2cf69ca1848658655630592963ee2:1": "evt_d936a2bb101c432f852c62b76d6daac0"
+    "xp_distribution:evt_5aa2cf69ca1848658655630592963ee2:1": "evt_d936a2bb101c432f852c62b76d6daac0",
+    "fitness:2026-08-30:pushups": "evt_c80e6f1fbac8448b979ee149be079b7d",
+    "xp_distribution:evt_c80e6f1fbac8448b979ee149be079b7d:1": "evt_3942c0efc0b04f1888cc7c3d85f65bc3",
+    "fitness:2026-08-30:squats": "evt_c0638f9e64c84aa4b44481525104d95e",
+    "xp_distribution:evt_c0638f9e64c84aa4b44481525104d95e:1": "evt_ea2bc567066847d489eabd4c75ccf4a5",
+    "fitness:2026-07-30:situps": "evt_eb66e37468cb421eaa68844b7b0ead55",
+    "xp_distribution:evt_eb66e37468cb421eaa68844b7b0ead55:1": "evt_1ae9b9cd403f4cac9b38d1c4c2193d16"
   }
 }

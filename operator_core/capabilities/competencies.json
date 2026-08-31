@@ -312,7 +312,7 @@
         "disc.consistency.routine_adherence.daily_practice": {
             "id": "disc.consistency.routine_adherence.daily_practice",
             "name": "Daily Practice",
-            "xp": 0,
+            "xp": 27,
             "level": 0,
             "shared": false
         },
@@ -1154,9 +1154,7 @@
             "name": "CAD",
             "xp": 60,
             "level": 0,
-            "shared": false,
-            "level_progress": 60.0,
-            "xp_to_next_level": 40
+            "shared": false
         },
         "int.robotics.mechanical_design.dynamics": {
             "id": "int.robotics.mechanical_design.dynamics",
@@ -1875,7 +1873,7 @@
         "str.muscular_strength.pushing_strength.push_ups": {
             "id": "str.muscular_strength.pushing_strength.push_ups",
             "name": "Push-ups",
-            "xp": 0,
+            "xp": 51,
             "level": 0,
             "shared": false
         },
@@ -1952,7 +1950,7 @@
         "str.muscular_strength.leg_strength.squats": {
             "id": "str.muscular_strength.leg_strength.squats",
             "name": "Squats",
-            "xp": 0,
+            "xp": 51,
             "level": 0,
             "shared": false
         },
@@ -2015,7 +2013,7 @@
         "str.muscular_strength.core_strength.sit_ups": {
             "id": "str.muscular_strength.core_strength.sit_ups",
             "name": "Sit-ups",
-            "xp": 0,
+            "xp": 51,
             "level": 0,
             "shared": false
         },
