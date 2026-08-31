@@ -42,17 +42,20 @@ COMPETENCIES_PATH = OPERATOR_CAPABILITIES / "competencies.json"
 OPERATOR_ROOT = OPERATOR_HUBS / "learning"
 STATS_PATH = OPERATOR_ROOT / "stats" / "learning_stats.json"
 
-# operator_core/profile/data/stats.json predates the competency/skill-tree
-# system - a one-off migration (2026-07-19) wrote it once from the old flat
-# format and nothing has updated it since. It used to be kept live by
+# operator_core/profile/data/{stats,progression,awards}.json all predate
+# the competency/skill-tree system - a one-off migration (2026-07-19) wrote
+# all three once from the old flat format and nothing has updated any of
+# them since. They used to be kept live by
 # OperatorProfileService.apply_xp_receipt(), but every real XP event
 # (fitness, learning, journal) goes through update_operator_competencies()
-# below instead, which never calls that path - so this file froze on
-# whatever it held the day of the migration. Rather than resurrect the old
-# receipt-based writer, build_operator_stats() now also re-derives this flat
-# per-stat file from the same tree it just built, every time it runs, so the
-# two files can never drift apart again.
+# below instead, which never calls that path - so all three froze on
+# whatever they held the day of the migration. Rather than resurrect the
+# old receipt-based writer, build_operator_stats() now also re-derives all
+# three from the same tree/total it just built, every time it runs, so none
+# of them can drift stale again.
 PROFILE_STATS_PATH = OPERATOR_PROFILE_DATA / "stats.json"
+PROFILE_PROGRESSION_PATH = OPERATOR_PROFILE_DATA / "progression.json"
+PROFILE_AWARDS_PATH = OPERATOR_PROFILE_DATA / "awards.json"
 
 
 def load_json(file_path: Path, default: Any) -> Any:
@@ -310,26 +313,53 @@ def _sum_leaf_xp(node: dict[str, Any]) -> int:
     return total
 
 
-def sync_profile_stats_snapshot(generated_stats: dict[str, Any]) -> dict[str, Any]:
-    """Refresh operator_core/profile/data/stats.json from the live tree.
+def sync_profile_snapshot(
+    generated_stats: dict[str, Any],
+    operator_progress: dict[str, Any],
+) -> None:
+    """Refresh every operator_core/profile/data/*.json file the old
+    receipt-based system used to own (stats.json, progression.json,
+    awards.json) from the live tree build_operator_stats() just produced.
 
-    See the PROFILE_STATS_PATH comment above - this file has its own
-    history as a once-migrated, since-orphaned flat format. This just
-    re-derives its per-stat XP totals from the tree build_operator_stats()
-    already produced, so it always reflects whatever the tree says right
-    now instead of a stale one-time snapshot.
+    See the PROFILE_STATS_PATH comment above for why these three go stale
+    on their own. This re-derives all three every time build_operator_stats()
+    runs, so none of them can ever drift back to a stale snapshot again.
     """
-    snapshot = {
-        "schema_version": 1,
-        "stats": {
-            stat_name: {"xp": _sum_leaf_xp(stat_node)}
-            for stat_name, stat_node in generated_stats.items()
-        },
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "learning_stats.json (auto-synced on every XP update)",
+    now = datetime.now(timezone.utc).isoformat()
+    source_note = "learning_stats.json (auto-synced on every XP update)"
+    stat_totals = {
+        stat_name: _sum_leaf_xp(stat_node)
+        for stat_name, stat_node in generated_stats.items()
     }
-    save_json(PROFILE_STATS_PATH, snapshot)
-    return snapshot
+
+    save_json(
+        PROFILE_STATS_PATH,
+        {
+            "schema_version": 1,
+            "stats": {stat_name: {"xp": xp} for stat_name, xp in stat_totals.items()},
+            "updated_at": now,
+            "source": source_note,
+        },
+    )
+    save_json(
+        PROFILE_PROGRESSION_PATH,
+        {
+            **operator_progress,
+            "schema_version": 1,
+            "applied_receipts": [],
+            "updated_at": now,
+            "source": source_note,
+        },
+    )
+    save_json(
+        PROFILE_AWARDS_PATH,
+        {
+            "schema_version": 1,
+            "target_totals": {"stat": stat_totals},
+            "updated_at": now,
+            "source": source_note,
+        },
+    )
 
 
 def migrate_existing_stats_progress(
@@ -472,7 +502,7 @@ def build_operator_stats() -> dict[str, Any]:
     if registry_changed:
         save_json(COMPETENCIES_PATH, competencies_data)
     save_json(STATS_PATH, result)
-    sync_profile_stats_snapshot(generated_stats)
+    sync_profile_snapshot(generated_stats, operator_progress)
     return result
 
 

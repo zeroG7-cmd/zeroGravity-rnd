@@ -1,19 +1,16 @@
 {
-  "schema_version": 1,
-  "target_totals": {
-    "stat": {
-      "CON": 0,
-      "INT": 1360,
-      "STR": 0,
-      "DEX": 0,
-      "DISC": 0,
-      "WILL": 0,
-      "SPIRIT": 0
-    }
-  },
-  "updated_at": "2026-07-19T00:59:07.851101+00:00",
-  "migration": {
-    "source": "operator_core\\capabilities\\competencies.json",
-    "migrated_at": "2026-07-19T00:59:07.851101+00:00"
-  }
+    "schema_version": 1,
+    "target_totals": {
+        "stat": {
+            "CON": 0,
+            "INT": 1380,
+            "STR": 153,
+            "DEX": 0,
+            "DISC": 27,
+            "WILL": 0,
+            "SPIRIT": 0
+        }
+    },
+    "updated_at": "2026-08-31T06:42:04.771279+00:00",
+    "source": "learning_stats.json (auto-synced on every XP update)"
 }
