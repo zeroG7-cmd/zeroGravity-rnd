@@ -8,21 +8,21 @@
             "xp": 1380
         },
         "STR": {
-            "xp": 153
+            "xp": 255
         },
         "DEX": {
             "xp": 0
         },
         "DISC": {
-            "xp": 27
+            "xp": 45
         },
         "WILL": {
             "xp": 0
         },
         "SPIRIT": {
-            "xp": 0
+            "xp": 30
         }
     },
-    "updated_at": "2026-08-31T06:42:04.771279+00:00",
+    "updated_at": "2026-08-31T06:44:23.144697+00:00",
     "source": "learning_stats.json (auto-synced on every XP update)"
 }

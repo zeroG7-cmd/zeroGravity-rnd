@@ -2492,29 +2492,29 @@
         "STR": {
             "name": "STR",
             "node_type": "main_stat",
-            "average_level": 0.0,
+            "average_level": 0.03,
             "children": {
                 "Muscular Strength": {
                     "name": "Muscular Strength",
                     "node_type": "parent",
-                    "average_level": 0.0,
+                    "average_level": 0.06,
                     "children": {
                         "Pushing Strength": {
                             "name": "Pushing Strength",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.17,
                             "children": {
                                 "Push-ups": {
                                     "name": "Push-ups",
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pushing_strength.push_ups",
                                     "shared": false,
-                                    "xp": 51,
-                                    "level": 0,
-                                    "level_progress": 51.0,
-                                    "xp_into_level": 51,
-                                    "xp_to_next_level": 49,
-                                    "next_level_xp": 100
+                                    "xp": 102,
+                                    "level": 1,
+                                    "level_progress": 0.7,
+                                    "xp_into_level": 2,
+                                    "xp_to_next_level": 281,
+                                    "next_level_xp": 383
                                 },
                                 "Bench Press": {
                                     "name": "Bench Press",
@@ -2679,19 +2679,19 @@
                         "Leg Strength": {
                             "name": "Leg Strength",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.14,
                             "children": {
                                 "Squats": {
                                     "name": "Squats",
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.leg_strength.squats",
                                     "shared": false,
-                                    "xp": 51,
-                                    "level": 0,
-                                    "level_progress": 51.0,
-                                    "xp_into_level": 51,
-                                    "xp_to_next_level": 49,
-                                    "next_level_xp": 100
+                                    "xp": 102,
+                                    "level": 1,
+                                    "level_progress": 0.7,
+                                    "xp_into_level": 2,
+                                    "xp_to_next_level": 281,
+                                    "next_level_xp": 383
                                 },
                                 "Barbell Squat": {
                                     "name": "Barbell Squat",
@@ -3284,11 +3284,11 @@
                                     "node_type": "skill",
                                     "competency_id": "disc.consistency.routine_adherence.daily_practice",
                                     "shared": false,
-                                    "xp": 27,
+                                    "xp": 45,
                                     "level": 0,
-                                    "level_progress": 27.0,
-                                    "xp_into_level": 27,
-                                    "xp_to_next_level": 73,
+                                    "level_progress": 45.0,
+                                    "xp_into_level": 45,
+                                    "xp_to_next_level": 55,
                                     "next_level_xp": 100
                                 },
                                 "Weekly Review": {
@@ -4234,11 +4234,11 @@
                                     "node_type": "skill",
                                     "competency_id": "spirit.reflection.reflective_practice.journaling",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 10,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 10.0,
+                                    "xp_into_level": 10,
+                                    "xp_to_next_level": 90,
                                     "next_level_xp": 100
                                 },
                                 "Self-Assessment": {
@@ -4246,11 +4246,11 @@
                                     "node_type": "skill",
                                     "competency_id": "spirit.reflection.reflective_practice.self_assessment",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 10,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 10.0,
+                                    "xp_into_level": 10,
+                                    "xp_to_next_level": 90,
                                     "next_level_xp": 100
                                 },
                                 "Meaning Making": {
@@ -4258,11 +4258,11 @@
                                     "node_type": "skill",
                                     "competency_id": "spirit.reflection.reflective_practice.meaning_making",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 10,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 10.0,
+                                    "xp_into_level": 10,
+                                    "xp_to_next_level": 90,
                                     "next_level_xp": 100
                                 },
                                 "Epiphanies": {
@@ -4384,13 +4384,13 @@
             }
         }
     },
-    "total_xp": 1560,
-    "level": 3,
-    "level_progress": 82.1,
-    "xp_into_level": 657,
-    "xp_to_next_level": 143,
-    "next_level_xp": 1703,
-    "level_xp_required": 800,
+    "total_xp": 1710,
+    "level": 4,
+    "level_progress": 0.6,
+    "xp_into_level": 7,
+    "xp_to_next_level": 1111,
+    "next_level_xp": 2821,
+    "level_xp_required": 1118,
     "competency_count": 284,
     "migrated_competencies": []
 }
