@@ -13,6 +13,17 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
+# level.py is a sibling script-style module (bare "from level import"), not
+# a package-relative import - it only resolves on its own when this file is
+# launched directly (python learning/engine/stats.py), because Python then
+# puts this file's own directory on sys.path automatically. Every existing
+# caller (fitness/learning web routes) launches it that way via subprocess,
+# so this never surfaced before. journal.engine.service imports this module
+# in-process instead (no subprocess), which needs this file's own directory
+# added explicitly.
+ENGINE_DIR = Path(__file__).resolve().parent
+if str(ENGINE_DIR) not in sys.path:
+    sys.path.insert(0, str(ENGINE_DIR))
 
 import json
 from shared.config.paths import LEARNING_ROOT, OPERATOR_CAPABILITIES, OPERATOR_HUBS
