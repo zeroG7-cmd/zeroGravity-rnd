@@ -5,3 +5,4 @@ __pycache__/
 lab/database/*.db
 *.zip
 *.db
+"*.bundle" 

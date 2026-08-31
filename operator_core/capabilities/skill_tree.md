@@ -222,56 +222,55 @@
       - Decision Making
   - Creative Production
     - Video Production
-      - Cinematography
-      - Editing
-      - Colour Grading
-      - Sound Design
+      - Premiere Pro
     - Photography
-      - Composition
-      - Exposure
-      - Post-production
-    - Storytelling
-      - Narrative Design
-      - Worldbuilding
-      - Visual Language
+      - Photoshop
+    - Camera & Drone
+      - Drone
+    - 3D Modelling
+      - Blender
   - Learning Practice
     - Learning Systems
       - Prompt Engineering
       - Note Taking
       - Reflection
       - Knowledge Mapping
-  - Aviation
-    - Flight Theory 
-    - Navigation 
-    - Meteorology
-    - Mission Planning 
-    - Piloting
-    - FPV Operations 
-    - BVLOS
-    - Autonomy
+
 - STR
   - Muscular Strength
-    - Upper Body
+    - Pushing Strength
       - Push-ups
-      - Pulling Strength
-      - Pressing Strength
-    - Lower Body
+      - Bench Press
+      - Overhead Press
+      - Incline Press / Dips
+      - Lateral Raises
+      - Triceps Extension
+    - Pulling Strength
+      - Pull-ups
+      - Lat Pulldown
+      - Rows
+      - Face Pulls
+      - Bicep Curls
+    - Grip Strength
+      - Crush Grip
+      - Farmer's Carry
+    - Leg Strength
       - Squats
-      - Lunges
-      - Hip Strength
-    - Core
+      - Barbell Squat
+      - Romanian Deadlift
+      - Deadlift
+      - Leg Press / Lunges
+      - Leg Curl
+      - Calf Raise
+    - Core Strength
       - Bracing
       - Anti-rotation
+      - Sit-ups
   - Power
     - Explosive Movement
       - Jumping
       - Kicking Power
       - Acceleration
-  - Functional Strength
-    - Load Handling
-      - Carrying
-      - Equipment Setup
-      - Grip Strength
 
 - DEX
   - Coordination
@@ -294,6 +293,8 @@
     - Reaction
       - Reaction Time
       - Visual Response
+    - Mobility
+      - Dynamic Flexibility
   - Martial Arts
     - Taekwondo
       - Front Kick
@@ -306,14 +307,6 @@
       - Esquiva
       - Meia Lua
       - Flow
-  - Movement
-    - Skating
-    - Snowboarding
-    - Parkour
-    - Climbing
-    - Hiking
-    - Calisthenics 
-    - Dance  
   - Fine Motor Control
     - Workshop Skills
       - Soldering
