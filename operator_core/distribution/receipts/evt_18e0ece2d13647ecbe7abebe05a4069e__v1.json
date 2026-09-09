@@ -1,0 +1,28 @@
+{
+  "source_event_id": "evt_18e0ece2d13647ecbe7abebe05a4069e",
+  "total_xp": 60,
+  "allocations": [
+    {
+      "target_id": "str.muscular_strength.leg_strength.squats",
+      "target_type": "competency",
+      "weight": 0.85,
+      "xp": 51,
+      "label": null,
+      "metadata": {}
+    },
+    {
+      "target_id": "disc.consistency.routine_adherence.daily_practice",
+      "target_type": "competency",
+      "weight": 0.15,
+      "xp": 9,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_38efa163b8fb4d5f95ac8b47feff4587",
+  "ruleset_version": "1",
+  "created_at": "2026-09-03T13:41:41.830963+00:00",
+  "source_event_type": "fitness_habit_logged",
+  "source": "fitness.engine.tracker",
+  "metadata": {}
+}

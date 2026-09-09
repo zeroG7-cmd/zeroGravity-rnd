@@ -1,0 +1,36 @@
+{
+  "source_event_id": "evt_dc931f57574d4f6d8743645d814582fe",
+  "total_xp": 30,
+  "allocations": [
+    {
+      "target_id": "con.health_management.mobility.stretching",
+      "target_type": "competency",
+      "weight": 0.425,
+      "xp": 13,
+      "label": null,
+      "metadata": {}
+    },
+    {
+      "target_id": "dex.agility.mobility.dynamic_flexibility",
+      "target_type": "competency",
+      "weight": 0.425,
+      "xp": 13,
+      "label": null,
+      "metadata": {}
+    },
+    {
+      "target_id": "disc.consistency.routine_adherence.daily_practice",
+      "target_type": "competency",
+      "weight": 0.15,
+      "xp": 4,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_07f2c3c602214f129529d1f4d6d422d8",
+  "ruleset_version": "1",
+  "created_at": "2026-08-31T13:24:14.011335+00:00",
+  "source_event_type": "fitness_habit_logged",
+  "source": "fitness.engine.tracker",
+  "metadata": {}
+}

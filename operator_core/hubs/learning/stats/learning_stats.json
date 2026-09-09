@@ -131,11 +131,11 @@
                                     "node_type": "skill",
                                     "competency_id": "con.health_management.mobility.stretching",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 13,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 13.0,
+                                    "xp_into_level": 13,
+                                    "xp_to_next_level": 87,
                                     "next_level_xp": 100
                                 }
                             }
@@ -157,11 +157,11 @@
                                     "node_type": "skill",
                                     "competency_id": "con.endurance.aerobic_capacity.running",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 51,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 51.0,
+                                    "xp_into_level": 51,
+                                    "xp_to_next_level": 49,
                                     "next_level_xp": 100
                                 },
                                 "Skipping": {
@@ -2492,12 +2492,12 @@
         "STR": {
             "name": "STR",
             "node_type": "main_stat",
-            "average_level": 0.03,
+            "average_level": 0.07,
             "children": {
                 "Muscular Strength": {
                     "name": "Muscular Strength",
                     "node_type": "parent",
-                    "average_level": 0.06,
+                    "average_level": 0.13,
                     "children": {
                         "Pushing Strength": {
                             "name": "Pushing Strength",
@@ -2509,11 +2509,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pushing_strength.push_ups",
                                     "shared": false,
-                                    "xp": 102,
+                                    "xp": 204,
                                     "level": 1,
-                                    "level_progress": 0.7,
-                                    "xp_into_level": 2,
-                                    "xp_to_next_level": 281,
+                                    "level_progress": 36.7,
+                                    "xp_into_level": 104,
+                                    "xp_to_next_level": 179,
                                     "next_level_xp": 383
                                 },
                                 "Bench Press": {
@@ -2588,11 +2588,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pulling_strength.pull_ups",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 14,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 14.0,
+                                    "xp_into_level": 14,
+                                    "xp_to_next_level": 86,
                                     "next_level_xp": 100
                                 },
                                 "Lat Pulldown": {
@@ -2600,11 +2600,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pulling_strength.lat_pulldown",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 19,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 19.0,
+                                    "xp_into_level": 19,
+                                    "xp_to_next_level": 81,
                                     "next_level_xp": 100
                                 },
                                 "Rows": {
@@ -2612,11 +2612,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pulling_strength.rows",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 19,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 19.0,
+                                    "xp_into_level": 19,
+                                    "xp_to_next_level": 81,
                                     "next_level_xp": 100
                                 },
                                 "Face Pulls": {
@@ -2624,11 +2624,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pulling_strength.face_pulls",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 19,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 19.0,
+                                    "xp_into_level": 19,
+                                    "xp_to_next_level": 81,
                                     "next_level_xp": 100
                                 },
                                 "Bicep Curls": {
@@ -2636,11 +2636,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pulling_strength.bicep_curls",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 19,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 19.0,
+                                    "xp_into_level": 19,
+                                    "xp_to_next_level": 81,
                                     "next_level_xp": 100
                                 }
                             }
@@ -2686,11 +2686,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.leg_strength.squats",
                                     "shared": false,
-                                    "xp": 102,
+                                    "xp": 153,
                                     "level": 1,
-                                    "level_progress": 0.7,
-                                    "xp_into_level": 2,
-                                    "xp_to_next_level": 281,
+                                    "level_progress": 18.7,
+                                    "xp_into_level": 53,
+                                    "xp_to_next_level": 230,
                                     "next_level_xp": 383
                                 },
                                 "Barbell Squat": {
@@ -2770,7 +2770,7 @@
                         "Core Strength": {
                             "name": "Core Strength",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.33,
                             "children": {
                                 "Bracing": {
                                     "name": "Bracing",
@@ -2801,12 +2801,12 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.core_strength.sit_ups",
                                     "shared": false,
-                                    "xp": 51,
-                                    "level": 0,
-                                    "level_progress": 51.0,
-                                    "xp_into_level": 51,
-                                    "xp_to_next_level": 49,
-                                    "next_level_xp": 100
+                                    "xp": 102,
+                                    "level": 1,
+                                    "level_progress": 0.7,
+                                    "xp_into_level": 2,
+                                    "xp_to_next_level": 281,
+                                    "next_level_xp": 383
                                 }
                             }
                         }
@@ -3072,11 +3072,11 @@
                                     "node_type": "skill",
                                     "competency_id": "dex.agility.mobility.dynamic_flexibility",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 13,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 13.0,
+                                    "xp_into_level": 13,
+                                    "xp_to_next_level": 87,
                                     "next_level_xp": 100
                                 }
                             }
@@ -3267,29 +3267,29 @@
         "DISC": {
             "name": "DISC",
             "node_type": "main_stat",
-            "average_level": 0.0,
+            "average_level": 0.03,
             "children": {
                 "Consistency": {
                     "name": "Consistency",
                     "node_type": "parent",
-                    "average_level": 0.0,
+                    "average_level": 0.17,
                     "children": {
                         "Routine Adherence": {
                             "name": "Routine Adherence",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.33,
                             "children": {
                                 "Daily Practice": {
                                     "name": "Daily Practice",
                                     "node_type": "skill",
                                     "competency_id": "disc.consistency.routine_adherence.daily_practice",
                                     "shared": false,
-                                    "xp": 45,
-                                    "level": 0,
-                                    "level_progress": 45.0,
-                                    "xp_into_level": 45,
-                                    "xp_to_next_level": 55,
-                                    "next_level_xp": 100
+                                    "xp": 110,
+                                    "level": 1,
+                                    "level_progress": 3.5,
+                                    "xp_into_level": 10,
+                                    "xp_to_next_level": 273,
+                                    "next_level_xp": 383
                                 },
                                 "Weekly Review": {
                                     "name": "Weekly Review",
@@ -4384,11 +4384,11 @@
             }
         }
     },
-    "total_xp": 1710,
+    "total_xp": 2146,
     "level": 4,
-    "level_progress": 0.6,
-    "xp_into_level": 7,
-    "xp_to_next_level": 1111,
+    "level_progress": 39.6,
+    "xp_into_level": 443,
+    "xp_to_next_level": 675,
     "next_level_xp": 2821,
     "level_xp_required": 1118,
     "competency_count": 284,

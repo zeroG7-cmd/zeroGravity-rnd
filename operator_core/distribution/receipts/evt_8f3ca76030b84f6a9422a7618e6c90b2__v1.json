@@ -1,0 +1,28 @@
+{
+  "source_event_id": "evt_8f3ca76030b84f6a9422a7618e6c90b2",
+  "total_xp": 60,
+  "allocations": [
+    {
+      "target_id": "con.endurance.aerobic_capacity.running",
+      "target_type": "competency",
+      "weight": 0.85,
+      "xp": 51,
+      "label": null,
+      "metadata": {}
+    },
+    {
+      "target_id": "disc.consistency.routine_adherence.daily_practice",
+      "target_type": "competency",
+      "weight": 0.15,
+      "xp": 9,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_1ac0784789e5424697f43c389702f471",
+  "ruleset_version": "1",
+  "created_at": "2026-09-03T18:46:49.758351+00:00",
+  "source_event_type": "fitness_habit_logged",
+  "source": "fitness.engine.tracker",
+  "metadata": {}
+}

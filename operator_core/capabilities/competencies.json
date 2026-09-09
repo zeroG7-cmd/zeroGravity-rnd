@@ -11,7 +11,7 @@
         "con.endurance.aerobic_capacity.running": {
             "id": "con.endurance.aerobic_capacity.running",
             "name": "Running",
-            "xp": 0,
+            "xp": 51,
             "level": 0,
             "shared": false
         },
@@ -60,7 +60,7 @@
         "con.health_management.mobility.stretching": {
             "id": "con.health_management.mobility.stretching",
             "name": "Stretching",
-            "xp": 0,
+            "xp": 13,
             "level": 0,
             "shared": false
         },
@@ -312,8 +312,8 @@
         "disc.consistency.routine_adherence.daily_practice": {
             "id": "disc.consistency.routine_adherence.daily_practice",
             "name": "Daily Practice",
-            "xp": 27,
-            "level": 0,
+            "xp": 110,
+            "level": 1,
             "shared": false
         },
         "disc.consistency.routine_adherence.streak_recovery": {
@@ -1614,23 +1614,29 @@
         "spirit.reflection.reflective_practice.journaling": {
             "id": "spirit.reflection.reflective_practice.journaling",
             "name": "Journaling",
-            "xp": 0,
+            "xp": 10,
             "level": 0,
-            "shared": false
+            "shared": false,
+            "level_progress": 10.0,
+            "xp_to_next_level": 90
         },
         "spirit.reflection.reflective_practice.meaning_making": {
             "id": "spirit.reflection.reflective_practice.meaning_making",
             "name": "Meaning Making",
-            "xp": 0,
+            "xp": 10,
             "level": 0,
-            "shared": false
+            "shared": false,
+            "level_progress": 10.0,
+            "xp_to_next_level": 90
         },
         "spirit.reflection.reflective_practice.self_assessment": {
             "id": "spirit.reflection.reflective_practice.self_assessment",
             "name": "Self-Assessment",
-            "xp": 0,
+            "xp": 10,
             "level": 0,
-            "shared": false
+            "shared": false,
+            "level_progress": 10.0,
+            "xp_to_next_level": 90
         },
         "str.power.explosive_movement.acceleration": {
             "id": "str.power.explosive_movement.acceleration",
@@ -1796,21 +1802,21 @@
         "dex.agility.mobility.dynamic_flexibility": {
             "id": "dex.agility.mobility.dynamic_flexibility",
             "name": "Dynamic Flexibility",
-            "xp": 0,
+            "xp": 13,
             "level": 0,
             "shared": false
         },
         "str.muscular_strength.pushing_strength.push_ups": {
             "id": "str.muscular_strength.pushing_strength.push_ups",
             "name": "Push-ups",
-            "xp": 51,
-            "level": 0,
+            "xp": 204,
+            "level": 1,
             "shared": false
         },
         "str.muscular_strength.pulling_strength.pull_ups": {
             "id": "str.muscular_strength.pulling_strength.pull_ups",
             "name": "Pull-ups",
-            "xp": 0,
+            "xp": 14,
             "level": 0,
             "shared": false
         },
@@ -1852,36 +1858,36 @@
         "str.muscular_strength.pulling_strength.lat_pulldown": {
             "id": "str.muscular_strength.pulling_strength.lat_pulldown",
             "name": "Lat Pulldown",
-            "xp": 0,
+            "xp": 19,
             "level": 0,
             "shared": false
         },
         "str.muscular_strength.pulling_strength.rows": {
             "id": "str.muscular_strength.pulling_strength.rows",
             "name": "Rows",
-            "xp": 0,
+            "xp": 19,
             "level": 0,
             "shared": false
         },
         "str.muscular_strength.pulling_strength.face_pulls": {
             "id": "str.muscular_strength.pulling_strength.face_pulls",
             "name": "Face Pulls",
-            "xp": 0,
+            "xp": 19,
             "level": 0,
             "shared": false
         },
         "str.muscular_strength.pulling_strength.bicep_curls": {
             "id": "str.muscular_strength.pulling_strength.bicep_curls",
             "name": "Bicep Curls",
-            "xp": 0,
+            "xp": 19,
             "level": 0,
             "shared": false
         },
         "str.muscular_strength.leg_strength.squats": {
             "id": "str.muscular_strength.leg_strength.squats",
             "name": "Squats",
-            "xp": 51,
-            "level": 0,
+            "xp": 153,
+            "level": 1,
             "shared": false
         },
         "str.muscular_strength.leg_strength.barbell_squat": {
@@ -1943,8 +1949,8 @@
         "str.muscular_strength.core_strength.sit_ups": {
             "id": "str.muscular_strength.core_strength.sit_ups",
             "name": "Sit-ups",
-            "xp": 51,
-            "level": 0,
+            "xp": 102,
+            "level": 1,
             "shared": false
         },
         "str.muscular_strength.grip_strength.crush_grip": {
