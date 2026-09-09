@@ -2,19 +2,19 @@
     "schema_version": 1,
     "stats": {
         "CON": {
-            "xp": 0
+            "xp": 64
         },
         "INT": {
             "xp": 1380
         },
         "STR": {
-            "xp": 255
+            "xp": 549
         },
         "DEX": {
-            "xp": 0
+            "xp": 13
         },
         "DISC": {
-            "xp": 45
+            "xp": 110
         },
         "WILL": {
             "xp": 0
@@ -23,6 +23,6 @@
             "xp": 30
         }
     },
-    "updated_at": "2026-08-31T06:44:23.144697+00:00",
+    "updated_at": "2026-09-09T20:03:22.834354+00:00",
     "source": "learning_stats.json (auto-synced on every XP update)"
 }

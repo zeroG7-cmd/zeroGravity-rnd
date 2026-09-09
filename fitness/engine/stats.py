@@ -36,6 +36,18 @@ from fitness.engine.config import (
     HABITS,
 )
 
+# learning/engine/stats.py's build_operator_stats() keeps
+# operator_core/profile/data/{stats,progression,awards}.json in sync with
+# learning_stats.json every time IT rebuilds the tree - but this module is a
+# second, independent writer of learning_stats.json (see the module
+# docstring above: it only touches the fitness-owned leaves rather than
+# calling build_operator_stats()), so a gym/habit log never went through
+# that sync path and those three files stayed frozen after any fitness
+# activity even once the other one was fixed. Reusing the same sync
+# function here, fed with this module's own already-updated stats_doc and
+# progress instead of recomputing anything, closes that second path too.
+from learning.engine.stats import sync_profile_snapshot
+
 LEARNING_STATS_PATH = OPERATOR_HUBS / "learning" / "stats" / "learning_stats.json"
 COMPETENCIES_PATH = OPERATOR_CAPABILITIES / "competencies.json"
 
@@ -145,6 +157,7 @@ def sync_and_recompute(competency_ids: Iterable[str]) -> dict[str, Any]:
     )
 
     save_json(LEARNING_STATS_PATH, stats_doc)
+    sync_profile_snapshot(stats_doc["stats"], progress)
     return stats_doc
 
 

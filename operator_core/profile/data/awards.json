@@ -2,15 +2,15 @@
     "schema_version": 1,
     "target_totals": {
         "stat": {
-            "CON": 0,
+            "CON": 64,
             "INT": 1380,
-            "STR": 255,
-            "DEX": 0,
-            "DISC": 45,
+            "STR": 549,
+            "DEX": 13,
+            "DISC": 110,
             "WILL": 0,
             "SPIRIT": 30
         }
     },
-    "updated_at": "2026-08-31T06:44:23.144697+00:00",
+    "updated_at": "2026-09-09T20:03:22.834354+00:00",
     "source": "learning_stats.json (auto-synced on every XP update)"
 }
