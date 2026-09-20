@@ -2509,11 +2509,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pushing_strength.push_ups",
                                     "shared": false,
-                                    "xp": 204,
+                                    "xp": 255,
                                     "level": 1,
-                                    "level_progress": 36.7,
-                                    "xp_into_level": 104,
-                                    "xp_to_next_level": 179,
+                                    "level_progress": 54.8,
+                                    "xp_into_level": 155,
+                                    "xp_to_next_level": 128,
                                     "next_level_xp": 383
                                 },
                                 "Bench Press": {
@@ -3284,11 +3284,11 @@
                                     "node_type": "skill",
                                     "competency_id": "disc.consistency.routine_adherence.daily_practice",
                                     "shared": false,
-                                    "xp": 110,
+                                    "xp": 119,
                                     "level": 1,
-                                    "level_progress": 3.5,
-                                    "xp_into_level": 10,
-                                    "xp_to_next_level": 273,
+                                    "level_progress": 6.7,
+                                    "xp_into_level": 19,
+                                    "xp_to_next_level": 264,
                                     "next_level_xp": 383
                                 },
                                 "Weekly Review": {
@@ -4384,11 +4384,11 @@
             }
         }
     },
-    "total_xp": 2146,
+    "total_xp": 2206,
     "level": 4,
-    "level_progress": 39.6,
-    "xp_into_level": 443,
-    "xp_to_next_level": 675,
+    "level_progress": 45.0,
+    "xp_into_level": 503,
+    "xp_to_next_level": 615,
     "next_level_xp": 2821,
     "level_xp_required": 1118,
     "competency_count": 284,

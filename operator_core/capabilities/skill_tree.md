@@ -235,6 +235,41 @@
       - Note Taking
       - Reflection
       - Knowledge Mapping
+  - Aviation
+    - Flight Theory
+      - Aerodynamics & Lift
+      - Aircraft Performance Limits
+      - UAS General Knowledge
+    - Navigation
+      - Airspace Classification
+      - Charts & Charting
+      - GPS Navigation
+      - Waypoint Planning
+    - Meteorology
+      - Weather Interpretation
+      - Wind & Turbulence Effects
+      - Flight-limiting Conditions
+    - Mission Planning
+      - Risk Assessment
+      - Operating Procedures
+      - Site Survey
+      - Flight Authorisation
+    - Piloting
+      - Manual Flight Control
+      - Takeoff & Landing
+      - Emergency Procedures
+    - FPV Operations
+      - FPV Flight Control
+      - Racing / Freestyle Technique
+      - Goggles & Video Link Setup
+    - BVLOS
+      - Airspace Authorisation
+      - Detect & Avoid
+      - Beyond-VLOS Risk Mitigation
+    - Autonomy
+      - Autonomous Mission Execution
+      - Failsafe & Return-to-Home Behaviour
+      - Geofencing
 
 - STR
   - Muscular Strength

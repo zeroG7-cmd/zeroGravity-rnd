@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "receipt_count": 20,
+    "receipt_count": 32,
     "by_source_event": {
         "evt_e24847fb08394e13b80ee874dd2712b9::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp9kwdbxu3\\receipts\\evt_e24847fb08394e13b80ee874dd2712b9__v1.json",
         "evt_2d6c33d24fa84bdd914cb01d7716a7e5::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmpxzj93emu\\receipts\\evt_2d6c33d24fa84bdd914cb01d7716a7e5__v1.json",
@@ -21,7 +21,19 @@
         "evt_e9cc9e06272a48f3bcec029b6cfdfb27::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_e9cc9e06272a48f3bcec029b6cfdfb27__v1.json",
         "evt_8f3ca76030b84f6a9422a7618e6c90b2::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_8f3ca76030b84f6a9422a7618e6c90b2__v1.json",
         "evt_2fee58df60474e738430ec80a19a5a72::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_2fee58df60474e738430ec80a19a5a72__v1.json",
-        "evt_b756d5aa3aaf43cd902f524db7a8ac24::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b756d5aa3aaf43cd902f524db7a8ac24__v1.json"
+        "evt_b756d5aa3aaf43cd902f524db7a8ac24::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b756d5aa3aaf43cd902f524db7a8ac24__v1.json",
+        "evt_74745732700c4ae58e4ade51a0bace08::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_74745732700c4ae58e4ade51a0bace08__v1.json",
+        "evt_5bba0646a6814174a35805057da11377::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_5bba0646a6814174a35805057da11377__v1.json",
+        "evt_b0838aa5b2ac4eb593e95329186d35ac::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_b0838aa5b2ac4eb593e95329186d35ac__v1.json",
+        "evt_86242d49f3044bc38ec81d90f6760ecd::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_86242d49f3044bc38ec81d90f6760ecd__v1.json",
+        "evt_7f26a76f041943baa03f9c7f800f6f4e::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_7f26a76f041943baa03f9c7f800f6f4e__v1.json",
+        "evt_b5b0c53e5d3e4838bc92d1420d35f70f::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_b5b0c53e5d3e4838bc92d1420d35f70f__v1.json",
+        "evt_f5eba1d2bdee489daf63c231b52b6a6e::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_f5eba1d2bdee489daf63c231b52b6a6e__v1.json",
+        "evt_188d4f3c9b65485abd99c1ce67f1358b::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_188d4f3c9b65485abd99c1ce67f1358b__v1.json",
+        "evt_0896a2c598db4984aec036c464fbc57e::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_0896a2c598db4984aec036c464fbc57e__v1.json",
+        "evt_907b3050dfd0456b820596faf6a79ea7::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_907b3050dfd0456b820596faf6a79ea7__v1.json",
+        "evt_9615a69661564b8d970e8d29d31df5b0::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_9615a69661564b8d970e8d29d31df5b0__v1.json",
+        "evt_ea0d7b75ac644031a9e888e7145d9ca2::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_ea0d7b75ac644031a9e888e7145d9ca2__v1.json"
     },
     "by_receipt_id": {
         "xpr_9f8a1a8c037e4e26a339576e54edb188": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp9kwdbxu3\\receipts\\evt_e24847fb08394e13b80ee874dd2712b9__v1.json",
@@ -43,6 +55,18 @@
         "xpr_0e0eb9e0263e44c8aec976e99adc8403": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_e9cc9e06272a48f3bcec029b6cfdfb27__v1.json",
         "xpr_1ac0784789e5424697f43c389702f471": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_8f3ca76030b84f6a9422a7618e6c90b2__v1.json",
         "xpr_ac8666b6eff941e88dda703e723bf2b4": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_2fee58df60474e738430ec80a19a5a72__v1.json",
-        "xpr_68316ed56ccf45c292e515cd35e43a0f": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b756d5aa3aaf43cd902f524db7a8ac24__v1.json"
+        "xpr_68316ed56ccf45c292e515cd35e43a0f": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b756d5aa3aaf43cd902f524db7a8ac24__v1.json",
+        "xpr_9a13de27236149a2b5fcde6c3146d3ec": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_74745732700c4ae58e4ade51a0bace08__v1.json",
+        "xpr_e88daf7bb20d437ba7069b363ffeee00": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_5bba0646a6814174a35805057da11377__v1.json",
+        "xpr_a0d49a71b5d8498ab6c5a837d613a190": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_b0838aa5b2ac4eb593e95329186d35ac__v1.json",
+        "xpr_1dc533311c2b4c0c81a1b63055347399": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_86242d49f3044bc38ec81d90f6760ecd__v1.json",
+        "xpr_a738e8a2384343cc98cffc5fe5b6cee8": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_7f26a76f041943baa03f9c7f800f6f4e__v1.json",
+        "xpr_37e720ab278042ce86358203ca71f1ed": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_b5b0c53e5d3e4838bc92d1420d35f70f__v1.json",
+        "xpr_94de849877954738ac4cc878732a98c2": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_f5eba1d2bdee489daf63c231b52b6a6e__v1.json",
+        "xpr_8c2b725e54f94d4c84819be22f1343b1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_188d4f3c9b65485abd99c1ce67f1358b__v1.json",
+        "xpr_c79ed4b295214319bc131f01bd0296ff": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_0896a2c598db4984aec036c464fbc57e__v1.json",
+        "xpr_2f84a08daf30407aaa7ae3fb4b78e4fd": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_907b3050dfd0456b820596faf6a79ea7__v1.json",
+        "xpr_c56ed31d93ff4c92ad1a5cbfadef4648": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_9615a69661564b8d970e8d29d31df5b0__v1.json",
+        "xpr_d64bc8b8da9f4369b889b1ee9ddf2684": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_ea0d7b75ac644031a9e888e7145d9ca2__v1.json"
     }
 }

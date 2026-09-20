@@ -4,13 +4,13 @@
         "stat": {
             "CON": 64,
             "INT": 1380,
-            "STR": 549,
+            "STR": 600,
             "DEX": 13,
-            "DISC": 110,
+            "DISC": 119,
             "WILL": 0,
             "SPIRIT": 30
         }
     },
-    "updated_at": "2026-09-09T20:03:22.834354+00:00",
+    "updated_at": "2026-09-12T22:32:51.255061+00:00",
     "source": "learning_stats.json (auto-synced on every XP update)"
 }

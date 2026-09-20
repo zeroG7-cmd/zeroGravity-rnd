@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "event_count": 36,
+    "event_count": 56,
     "event_ids": {
         "evt_0896a2c598db4984aec036c464fbc57e": {
             "event_type": "learning_completed",
@@ -145,6 +145,86 @@
         "evt_4658e079a4314f0d9f7bb6ed6427a0e1": {
             "event_type": "xp_distributed",
             "recorded_at": "2026-09-07T16:38:15.666154+00:00"
+        },
+        "evt_74745732700c4ae58e4ade51a0bace08": {
+            "event_type": "fitness_habit_logged",
+            "recorded_at": "2026-09-12T22:32:51.208045+00:00"
+        },
+        "evt_bdb0575883e3443e9874fd5c85aab2af": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-12T22:32:51.222412+00:00"
+        },
+        "evt_5bba0646a6814174a35805057da11377": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-19T17:34:48.155627+00:00"
+        },
+        "evt_8e252ac54c9a4cad92a84bdfec8fddfc": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.158652+00:00"
+        },
+        "evt_b0838aa5b2ac4eb593e95329186d35ac": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-19T17:34:48.159999+00:00"
+        },
+        "evt_28b9104b681f4e5090b63e8b9266430f": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.161847+00:00"
+        },
+        "evt_86242d49f3044bc38ec81d90f6760ecd": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-19T17:34:48.163059+00:00"
+        },
+        "evt_fba00c7c92674c7b90f862c25140a1e9": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.164843+00:00"
+        },
+        "evt_7f26a76f041943baa03f9c7f800f6f4e": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-19T17:34:48.166069+00:00"
+        },
+        "evt_24416acefb9f4c30bbe61e02c6b64c38": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.168070+00:00"
+        },
+        "evt_b5b0c53e5d3e4838bc92d1420d35f70f": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-19T17:34:48.169287+00:00"
+        },
+        "evt_59ac5547db8740689a5dccace7373be9": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.171068+00:00"
+        },
+        "evt_f5eba1d2bdee489daf63c231b52b6a6e": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-19T17:34:48.172333+00:00"
+        },
+        "evt_9dc76eba1ccd4c5b874b459acaf30dab": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.174162+00:00"
+        },
+        "evt_188d4f3c9b65485abd99c1ce67f1358b": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-19T17:34:48.175424+00:00"
+        },
+        "evt_a753788e0d5644209b905a00c214eb3a": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.177224+00:00"
+        },
+        "evt_444d2c010b804687bd497d7962b39feb": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.179075+00:00"
+        },
+        "evt_6f1f5c647e8343e68a67dfa67f826a7f": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.180936+00:00"
+        },
+        "evt_dd84a2ca0a2c4b37b1de31147c4a2404": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.183018+00:00"
+        },
+        "evt_64d70262813648e89685518a24f3e7a9": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-19T17:34:48.184841+00:00"
         }
     },
     "idempotency_keys": {
@@ -183,6 +263,26 @@
         "gym:2026-09-03": "evt_2fee58df60474e738430ec80a19a5a72",
         "xp_distribution:evt_2fee58df60474e738430ec80a19a5a72:1": "evt_227416ad07094b2bbae5e39df7fe36db",
         "fitness:2026-09-07:pushups": "evt_b756d5aa3aaf43cd902f524db7a8ac24",
-        "xp_distribution:evt_b756d5aa3aaf43cd902f524db7a8ac24:1": "evt_4658e079a4314f0d9f7bb6ed6427a0e1"
+        "xp_distribution:evt_b756d5aa3aaf43cd902f524db7a8ac24:1": "evt_4658e079a4314f0d9f7bb6ed6427a0e1",
+        "fitness:2026-09-12:pushups": "evt_74745732700c4ae58e4ade51a0bace08",
+        "xp_distribution:evt_74745732700c4ae58e4ade51a0bace08:1": "evt_bdb0575883e3443e9874fd5c85aab2af",
+        "learning-history-backfill:bootdev_learn_python:section:1": "evt_5bba0646a6814174a35805057da11377",
+        "xp_distribution:evt_5bba0646a6814174a35805057da11377:1": "evt_8e252ac54c9a4cad92a84bdfec8fddfc",
+        "learning-history-backfill:bootdev_learn_python:section:2": "evt_b0838aa5b2ac4eb593e95329186d35ac",
+        "xp_distribution:evt_b0838aa5b2ac4eb593e95329186d35ac:1": "evt_28b9104b681f4e5090b63e8b9266430f",
+        "learning-history-backfill:bootdev_learn_python:section:3": "evt_86242d49f3044bc38ec81d90f6760ecd",
+        "xp_distribution:evt_86242d49f3044bc38ec81d90f6760ecd:1": "evt_fba00c7c92674c7b90f862c25140a1e9",
+        "learning-history-backfill:bootdev_learn_linux:section:1": "evt_7f26a76f041943baa03f9c7f800f6f4e",
+        "xp_distribution:evt_7f26a76f041943baa03f9c7f800f6f4e:1": "evt_24416acefb9f4c30bbe61e02c6b64c38",
+        "learning-history-backfill:bootdev_learn_sql:section:1": "evt_b5b0c53e5d3e4838bc92d1420d35f70f",
+        "xp_distribution:evt_b5b0c53e5d3e4838bc92d1420d35f70f:1": "evt_59ac5547db8740689a5dccace7373be9",
+        "learning-history-backfill:bootdev_learn_sql:section:2": "evt_f5eba1d2bdee489daf63c231b52b6a6e",
+        "xp_distribution:evt_f5eba1d2bdee489daf63c231b52b6a6e:1": "evt_9dc76eba1ccd4c5b874b459acaf30dab",
+        "learning-history-backfill:bootdev_learn_python:reconcile:3:17": "evt_188d4f3c9b65485abd99c1ce67f1358b",
+        "xp_distribution:evt_188d4f3c9b65485abd99c1ce67f1358b:1": "evt_a753788e0d5644209b905a00c214eb3a",
+        "xp_distribution:evt_0896a2c598db4984aec036c464fbc57e:1": "evt_444d2c010b804687bd497d7962b39feb",
+        "xp_distribution:evt_907b3050dfd0456b820596faf6a79ea7:1": "evt_6f1f5c647e8343e68a67dfa67f826a7f",
+        "xp_distribution:evt_9615a69661564b8d970e8d29d31df5b0:1": "evt_dd84a2ca0a2c4b37b1de31147c4a2404",
+        "xp_distribution:evt_ea0d7b75ac644031a9e888e7145d9ca2:1": "evt_64d70262813648e89685518a24f3e7a9"
     }
 }

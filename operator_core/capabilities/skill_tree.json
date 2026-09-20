@@ -1466,6 +1466,225 @@
                             }
                         }
                     }
+                },
+                "Aviation": {
+                    "name": "Aviation",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Flight Theory": {
+                            "name": "Flight Theory",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Aerodynamics & Lift": {
+                                    "name": "Aerodynamics & Lift",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.flight_theory.aerodynamics_and_lift",
+                                    "shared": false
+                                },
+                                "Aircraft Performance Limits": {
+                                    "name": "Aircraft Performance Limits",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.flight_theory.aircraft_performance_limits",
+                                    "shared": false
+                                },
+                                "UAS General Knowledge": {
+                                    "name": "UAS General Knowledge",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.flight_theory.uas_general_knowledge",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "Navigation": {
+                            "name": "Navigation",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Airspace Classification": {
+                                    "name": "Airspace Classification",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.navigation.airspace_classification",
+                                    "shared": false
+                                },
+                                "Charts & Charting": {
+                                    "name": "Charts & Charting",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.navigation.charts_and_charting",
+                                    "shared": false
+                                },
+                                "GPS Navigation": {
+                                    "name": "GPS Navigation",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.navigation.gps_navigation",
+                                    "shared": false
+                                },
+                                "Waypoint Planning": {
+                                    "name": "Waypoint Planning",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.navigation.waypoint_planning",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "Meteorology": {
+                            "name": "Meteorology",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Weather Interpretation": {
+                                    "name": "Weather Interpretation",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.meteorology.weather_interpretation",
+                                    "shared": false
+                                },
+                                "Wind & Turbulence Effects": {
+                                    "name": "Wind & Turbulence Effects",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.meteorology.wind_and_turbulence_effects",
+                                    "shared": false
+                                },
+                                "Flight-limiting Conditions": {
+                                    "name": "Flight-limiting Conditions",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.meteorology.flight_limiting_conditions",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "Mission Planning": {
+                            "name": "Mission Planning",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Risk Assessment": {
+                                    "name": "Risk Assessment",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.mission_planning.risk_assessment",
+                                    "shared": false
+                                },
+                                "Operating Procedures": {
+                                    "name": "Operating Procedures",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.mission_planning.operating_procedures",
+                                    "shared": false
+                                },
+                                "Site Survey": {
+                                    "name": "Site Survey",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.mission_planning.site_survey",
+                                    "shared": false
+                                },
+                                "Flight Authorisation": {
+                                    "name": "Flight Authorisation",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.mission_planning.flight_authorisation",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "Piloting": {
+                            "name": "Piloting",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Manual Flight Control": {
+                                    "name": "Manual Flight Control",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.piloting.manual_flight_control",
+                                    "shared": false
+                                },
+                                "Takeoff & Landing": {
+                                    "name": "Takeoff & Landing",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.piloting.takeoff_and_landing",
+                                    "shared": false
+                                },
+                                "Emergency Procedures": {
+                                    "name": "Emergency Procedures",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.piloting.emergency_procedures",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "FPV Operations": {
+                            "name": "FPV Operations",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "FPV Flight Control": {
+                                    "name": "FPV Flight Control",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.fpv_operations.fpv_flight_control",
+                                    "shared": false
+                                },
+                                "Racing / Freestyle Technique": {
+                                    "name": "Racing / Freestyle Technique",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.fpv_operations.racing_freestyle_technique",
+                                    "shared": false
+                                },
+                                "Goggles & Video Link Setup": {
+                                    "name": "Goggles & Video Link Setup",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.fpv_operations.goggles_and_video_link_setup",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "BVLOS": {
+                            "name": "BVLOS",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Airspace Authorisation": {
+                                    "name": "Airspace Authorisation",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.bvlos.airspace_authorisation",
+                                    "shared": false
+                                },
+                                "Detect & Avoid": {
+                                    "name": "Detect & Avoid",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.bvlos.detect_and_avoid",
+                                    "shared": false
+                                },
+                                "Beyond-VLOS Risk Mitigation": {
+                                    "name": "Beyond-VLOS Risk Mitigation",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.bvlos.beyond_vlos_risk_mitigation",
+                                    "shared": false
+                                }
+                            }
+                        },
+                        "Autonomy": {
+                            "name": "Autonomy",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Autonomous Mission Execution": {
+                                    "name": "Autonomous Mission Execution",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.autonomy.autonomous_mission_execution",
+                                    "shared": false
+                                },
+                                "Failsafe & Return-to-Home Behaviour": {
+                                    "name": "Failsafe & Return-to-Home Behaviour",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.autonomy.failsafe_and_return_to_home_behaviour",
+                                    "shared": false
+                                },
+                                "Geofencing": {
+                                    "name": "Geofencing",
+                                    "node_type": "competency_reference",
+                                    "competency_id": "int.aviation.autonomy.geofencing",
+                                    "shared": false
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },

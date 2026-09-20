@@ -312,7 +312,7 @@
         "disc.consistency.routine_adherence.daily_practice": {
             "id": "disc.consistency.routine_adherence.daily_practice",
             "name": "Daily Practice",
-            "xp": 110,
+            "xp": 119,
             "level": 1,
             "shared": false
         },
@@ -1809,7 +1809,7 @@
         "str.muscular_strength.pushing_strength.push_ups": {
             "id": "str.muscular_strength.pushing_strength.push_ups",
             "name": "Push-ups",
-            "xp": 204,
+            "xp": 255,
             "level": 1,
             "shared": false
         },
@@ -1991,6 +1991,188 @@
         "int.creative_production.three_d_modelling.blender": {
             "id": "int.creative_production.three_d_modelling.blender",
             "name": "Blender",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.flight_theory.aerodynamics_and_lift": {
+            "id": "int.aviation.flight_theory.aerodynamics_and_lift",
+            "name": "Aerodynamics & Lift",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.flight_theory.aircraft_performance_limits": {
+            "id": "int.aviation.flight_theory.aircraft_performance_limits",
+            "name": "Aircraft Performance Limits",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.flight_theory.uas_general_knowledge": {
+            "id": "int.aviation.flight_theory.uas_general_knowledge",
+            "name": "UAS General Knowledge",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.navigation.airspace_classification": {
+            "id": "int.aviation.navigation.airspace_classification",
+            "name": "Airspace Classification",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.navigation.charts_and_charting": {
+            "id": "int.aviation.navigation.charts_and_charting",
+            "name": "Charts & Charting",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.navigation.gps_navigation": {
+            "id": "int.aviation.navigation.gps_navigation",
+            "name": "GPS Navigation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.navigation.waypoint_planning": {
+            "id": "int.aviation.navigation.waypoint_planning",
+            "name": "Waypoint Planning",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.meteorology.weather_interpretation": {
+            "id": "int.aviation.meteorology.weather_interpretation",
+            "name": "Weather Interpretation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.meteorology.wind_and_turbulence_effects": {
+            "id": "int.aviation.meteorology.wind_and_turbulence_effects",
+            "name": "Wind & Turbulence Effects",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.meteorology.flight_limiting_conditions": {
+            "id": "int.aviation.meteorology.flight_limiting_conditions",
+            "name": "Flight-limiting Conditions",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.mission_planning.risk_assessment": {
+            "id": "int.aviation.mission_planning.risk_assessment",
+            "name": "Risk Assessment",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.mission_planning.operating_procedures": {
+            "id": "int.aviation.mission_planning.operating_procedures",
+            "name": "Operating Procedures",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.mission_planning.site_survey": {
+            "id": "int.aviation.mission_planning.site_survey",
+            "name": "Site Survey",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.mission_planning.flight_authorisation": {
+            "id": "int.aviation.mission_planning.flight_authorisation",
+            "name": "Flight Authorisation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.piloting.manual_flight_control": {
+            "id": "int.aviation.piloting.manual_flight_control",
+            "name": "Manual Flight Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.piloting.takeoff_and_landing": {
+            "id": "int.aviation.piloting.takeoff_and_landing",
+            "name": "Takeoff & Landing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.piloting.emergency_procedures": {
+            "id": "int.aviation.piloting.emergency_procedures",
+            "name": "Emergency Procedures",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.fpv_operations.fpv_flight_control": {
+            "id": "int.aviation.fpv_operations.fpv_flight_control",
+            "name": "FPV Flight Control",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.fpv_operations.racing_freestyle_technique": {
+            "id": "int.aviation.fpv_operations.racing_freestyle_technique",
+            "name": "Racing / Freestyle Technique",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.fpv_operations.goggles_and_video_link_setup": {
+            "id": "int.aviation.fpv_operations.goggles_and_video_link_setup",
+            "name": "Goggles & Video Link Setup",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.bvlos.airspace_authorisation": {
+            "id": "int.aviation.bvlos.airspace_authorisation",
+            "name": "Airspace Authorisation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.bvlos.detect_and_avoid": {
+            "id": "int.aviation.bvlos.detect_and_avoid",
+            "name": "Detect & Avoid",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.bvlos.beyond_vlos_risk_mitigation": {
+            "id": "int.aviation.bvlos.beyond_vlos_risk_mitigation",
+            "name": "Beyond-VLOS Risk Mitigation",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.autonomy.autonomous_mission_execution": {
+            "id": "int.aviation.autonomy.autonomous_mission_execution",
+            "name": "Autonomous Mission Execution",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.autonomy.failsafe_and_return_to_home_behaviour": {
+            "id": "int.aviation.autonomy.failsafe_and_return_to_home_behaviour",
+            "name": "Failsafe & Return-to-Home Behaviour",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.aviation.autonomy.geofencing": {
+            "id": "int.aviation.autonomy.geofencing",
+            "name": "Geofencing",
             "xp": 0,
             "level": 0,
             "shared": false

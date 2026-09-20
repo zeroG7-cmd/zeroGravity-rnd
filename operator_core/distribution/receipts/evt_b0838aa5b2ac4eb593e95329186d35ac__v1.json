@@ -1,0 +1,20 @@
+{
+  "source_event_id": "evt_b0838aa5b2ac4eb593e95329186d35ac",
+  "total_xp": 320,
+  "allocations": [
+    {
+      "target_id": "int.software_engineering.programming_languages.python",
+      "target_type": "competency",
+      "weight": 1.0,
+      "xp": 320,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_a0d49a71b5d8498ab6c5a837d613a190",
+  "ruleset_version": "1",
+  "created_at": "2026-09-19T17:34:48.161298+00:00",
+  "source_event_type": "learning_completed",
+  "source": "operator_core.backfill.learning_history",
+  "metadata": {}
+}

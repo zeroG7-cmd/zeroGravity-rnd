@@ -1,0 +1,20 @@
+{
+  "source_event_id": "evt_7f26a76f041943baa03f9c7f800f6f4e",
+  "total_xp": 180,
+  "allocations": [
+    {
+      "target_id": "int.robotics.robot_software.robot_middleware.linux",
+      "target_type": "competency",
+      "weight": 1.0,
+      "xp": 180,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_a738e8a2384343cc98cffc5fe5b6cee8",
+  "ruleset_version": "1",
+  "created_at": "2026-09-19T17:34:48.167355+00:00",
+  "source_event_type": "learning_completed",
+  "source": "operator_core.backfill.learning_history",
+  "metadata": {}
+}

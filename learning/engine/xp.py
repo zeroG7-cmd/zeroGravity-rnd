@@ -4,6 +4,7 @@ Responsibilities:
 - Calculate the base XP value of one completed unit.
 - Resolve inherited competency mappings.
 - Split XP across multiple competencies without losing XP to rounding.
+- Convert logged hours (Weekly Ops) into an XP pool on the same scale.
 """
 
 from __future__ import annotations
@@ -23,8 +24,27 @@ DEFAULT_XP_RULES = {
     "challenge": 50,
     "lab": 55,
     "assignment": 60,
+    "experiment": 80,
     "project": 100,
 }
+
+# Hours-based XP (Weekly Ops / time-logged activity)
+#
+# Every rule above rewards a *completed unit* - a finished video, quiz,
+# lab, project, and so on. The weekly planner isn't unit-shaped: a study
+# or build block is just hours spent inside a focus area, so it needs its
+# own rate rather than being forced through DEFAULT_XP_RULES.
+#
+# HOURLY_XP_RATE is set deliberately BELOW every rate above - the cheapest
+# unit ("article") is worth 25 XP. Hours are self-reported and trivial to
+# inflate by just leaving a session logged open; unit completions require
+# actually finishing something, and they need to stay the more valuable
+# path or the whole economy tilts toward clock-sitting over output. At 20
+# XP/hour, a typical 1-2 hour Weekly Ops block earns 20-40 XP - in the
+# same neighbourhood as a video or article, never more than a real
+# lab/assignment/project, and it still rewards showing up honestly on
+# weeks where nothing gets formally "completed."
+HOURLY_XP_RATE = 20
 
 
 def get_track_xp_rules(metadata: dict[str, Any]) -> dict[str, int]:
@@ -56,6 +76,18 @@ def calculate_unit_xp(metadata: dict[str, Any], unit: dict[str, Any]) -> int:
 
     unit_type = str(unit.get("source_type", "manual"))
     return rules.get(unit_type, rules["manual"])
+
+
+def calculate_hourly_xp(hours: float, rate: int = HOURLY_XP_RATE) -> int:
+    """Convert logged hours into a whole XP pool for distribute_xp().
+
+    Rounds to the nearest XP rather than flooring, so a short, honestly
+    logged block (e.g. 0.25h) still registers something instead of
+    silently rounding to zero.
+    """
+    if hours < 0:
+        raise ValueError("Hours cannot be negative.")
+    return round(float(hours) * rate)
 
 
 def _normalise_awards(raw_awards: Any) -> list[dict[str, Any]]:

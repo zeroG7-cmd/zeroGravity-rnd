@@ -1,0 +1,142 @@
+{
+    "schema_version": 3,
+    "resource": {
+        "id": "youtube_blenderguru_donut_v5",
+        "title": "Blender Beginner Donut Tutorial (v5.0)",
+        "provider": "YouTube",
+        "instructor": "Blender Guru",
+        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD"
+    },
+    "operator_mapping": {
+        "stat": "INT",
+        "hierarchy": ["Creative Production", "3D Modelling", "Blender"],
+        "competency_id": "int.creative_production.three_d_modelling.blender",
+        "capability_id": "int.creative_production.three_d_modelling.blender",
+        "mapping_confidence": "medium",
+        "default_competency_awards": [
+            {"competency_id": "int.creative_production.three_d_modelling.blender", "weight": 1.0}
+        ],
+        "default_concept_awards": [
+            {"concept_id": "blender.interface_basics", "weight": 1.0}
+        ],
+        "section_concept_awards": {}
+    },
+    "course": {
+        "difficulty": "Beginner",
+        "xp_rules": {"video": 50},
+        "sections": [
+            {
+                "title": "Part 1 - Getting Started & Modeling",
+                "lectures": [
+                    {
+                        "id": "part_01_intro_and_setup",
+                        "title": "Introduction, Blender Setup and Basic Navigation",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.interface_basics", "weight": 1.0}
+                        ]
+                    },
+                    {
+                        "id": "part_02_modeling_the_donut",
+                        "title": "Modeling the Donut (torus, bevel, subdivision surface, deform)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.basic_modeling", "weight": 0.6},
+                            {"concept_id": "blender.organic_modeling", "weight": 0.4}
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Part 2 - Materials & Lighting",
+                "lectures": [
+                    {
+                        "id": "part_03_materials_and_shading",
+                        "title": "Shading the Donut and Icing (Principled BSDF, shader editor)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.materials_shading", "weight": 1.0}
+                        ]
+                    },
+                    {
+                        "id": "part_04_procedural_texture_detail",
+                        "title": "Procedural Texture Detail (noise/wave nodes for icing drips)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.procedural_texturing", "weight": 1.0}
+                        ]
+                    },
+                    {
+                        "id": "part_05_lighting_the_scene",
+                        "title": "Lighting the Scene",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.lighting", "weight": 1.0}
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Part 3 - Sprinkles",
+                "lectures": [
+                    {
+                        "id": "part_06_sprinkle_texture_painting",
+                        "title": "Modeling and Painting the Sprinkles",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.basic_modeling", "weight": 0.4},
+                            {"concept_id": "blender.uv_texture_painting", "weight": 0.6}
+                        ]
+                    },
+                    {
+                        "id": "part_07_particle_systems",
+                        "title": "Scattering Sprinkles with a Particle System",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.particle_systems", "weight": 1.0}
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Part 4 - Camera, Rendering & Compositing",
+                "lectures": [
+                    {
+                        "id": "part_08_camera_and_composition",
+                        "title": "Setting Up the Camera and Composition",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.cameras", "weight": 1.0}
+                        ]
+                    },
+                    {
+                        "id": "part_09_rendering_and_compositing",
+                        "title": "Final Rendering and Compositing",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [
+                            {"concept_id": "blender.rendering_export", "weight": 1.0}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

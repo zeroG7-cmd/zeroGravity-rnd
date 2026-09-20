@@ -1140,6 +1140,48 @@
                         "blender.cameras",
                         "blender.lighting"
                     ]
+                },
+                "blender.basic_modeling": {
+                    "name": "Basic Modeling",
+                    "description": "Building shapes from primitives using extrude, bevel, subdivision surface and other core mesh-editing tools.",
+                    "prerequisites": [
+                        "blender.interface_basics"
+                    ]
+                },
+                "blender.organic_modeling": {
+                    "name": "Organic Modeling",
+                    "description": "Shaping soft, irregular forms with sculpting tools and deformation for a natural, hand-made look.",
+                    "prerequisites": [
+                        "blender.basic_modeling"
+                    ]
+                },
+                "blender.materials_shading": {
+                    "name": "Materials and Shading",
+                    "description": "Building materials with the shader editor and Principled BSDF to define how a surface looks.",
+                    "prerequisites": [
+                        "blender.interface_basics"
+                    ]
+                },
+                "blender.procedural_texturing": {
+                    "name": "Procedural Texturing",
+                    "description": "Using node-based procedural textures (noise, wave, voronoi and similar) to add surface detail without painting.",
+                    "prerequisites": [
+                        "blender.materials_shading"
+                    ]
+                },
+                "blender.uv_texture_painting": {
+                    "name": "UV Unwrapping and Texture Painting",
+                    "description": "Unwrapping a mesh's UVs and hand-painting texture detail onto its surface.",
+                    "prerequisites": [
+                        "blender.materials_shading"
+                    ]
+                },
+                "blender.particle_systems": {
+                    "name": "Particle Systems",
+                    "description": "Scattering objects (hair, debris, small props) across a surface using particle systems.",
+                    "prerequisites": [
+                        "blender.basic_modeling"
+                    ]
                 }
             },
             "relationships": [
