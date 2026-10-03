@@ -970,6 +970,130 @@
                     "prerequisites": [
                         "premiere_pro.editing"
                     ]
+                },
+                "premiere_pro.workspace_navigation": {
+                    "name": "Workspace Navigation",
+                    "description": "Finding your way around Premiere's panels, layout and core workflow.",
+                    "prerequisites": []
+                },
+                "premiere_pro.media_import": {
+                    "name": "Media Import",
+                    "description": "Bringing footage in and working with the Project and Source panels.",
+                    "prerequisites": [
+                        "premiere_pro.workspace_navigation"
+                    ]
+                },
+                "premiere_pro.markers": {
+                    "name": "Markers",
+                    "description": "Placing and using markers in the Source panel and on the timeline.",
+                    "prerequisites": [
+                        "premiere_pro.media_import"
+                    ]
+                },
+                "premiere_pro.timeline_editing": {
+                    "name": "Timeline Editing",
+                    "description": "Core cutting tools: track selectors, the razor, trimming, insert/overwrite, ripple/rolling edits, slip/slide, lift/extract.",
+                    "prerequisites": [
+                        "premiere_pro.media_import"
+                    ]
+                },
+                "premiere_pro.speed_and_duration": {
+                    "name": "Speed and Duration",
+                    "description": "Changing clip speed/duration and remapping time for variable-speed effects.",
+                    "prerequisites": [
+                        "premiere_pro.timeline_editing"
+                    ]
+                },
+                "premiere_pro.audio_editing": {
+                    "name": "Audio Editing",
+                    "description": "Unlinking audio from video and working with audio directly on the timeline.",
+                    "prerequisites": [
+                        "premiere_pro.timeline_editing"
+                    ]
+                },
+                "premiere_pro.cropping_and_composition": {
+                    "name": "Cropping and Composition",
+                    "description": "Cropping frames and building picture-in-picture composites.",
+                    "prerequisites": [
+                        "premiere_pro.timeline_editing"
+                    ]
+                },
+                "premiere_pro.titles_and_captions": {
+                    "name": "Titles and Captions",
+                    "description": "Adding titles and captions to a sequence.",
+                    "prerequisites": [
+                        "premiere_pro.timeline_editing"
+                    ]
+                },
+                "premiere_pro.still_images": {
+                    "name": "Still Images",
+                    "description": "Working with still images alongside video on the timeline.",
+                    "prerequisites": [
+                        "premiere_pro.media_import"
+                    ]
+                },
+                "premiere_pro.transitions": {
+                    "name": "Transitions",
+                    "description": "Applying and adjusting transitions between clips.",
+                    "prerequisites": [
+                        "premiere_pro.timeline_editing"
+                    ]
+                },
+                "premiere_pro.pan_zoom_effects": {
+                    "name": "Pan and Zoom Effects",
+                    "description": "Panning and zooming effects for still or motion footage.",
+                    "prerequisites": [
+                        "premiere_pro.transitions"
+                    ]
+                },
+                "premiere_pro.export_and_rendering": {
+                    "name": "Export and Rendering",
+                    "description": "Exporting and rendering a finished sequence.",
+                    "prerequisites": [
+                        "premiere_pro.timeline_editing"
+                    ]
+                },
+                "premiere_pro.ui_customization": {
+                    "name": "UI Customization",
+                    "description": "Customizing playback controls and adding custom buttons to the Program/Source panels.",
+                    "prerequisites": [
+                        "premiere_pro.workspace_navigation"
+                    ]
+                },
+                "premiere_pro.subclips": {
+                    "name": "Subclips",
+                    "description": "Creating and working with subclips of a larger source clip.",
+                    "prerequisites": [
+                        "premiere_pro.media_import"
+                    ]
+                },
+                "premiere_pro.color_correction": {
+                    "name": "Color Correction",
+                    "description": "Brightness/contrast, Lumetri Color grading, saved effect presets and adjustment layers.",
+                    "prerequisites": [
+                        "premiere_pro.timeline_editing"
+                    ]
+                },
+                "premiere_pro.masking_and_keyframes": {
+                    "name": "Masking and Keyframes",
+                    "description": "Keyframed movement, 3D and blur effects, and masking (including blurring faces).",
+                    "prerequisites": [
+                        "premiere_pro.color_correction"
+                    ]
+                },
+                "premiere_pro.text_animation": {
+                    "name": "Text Animation",
+                    "description": "Animated text: 3D and blur effects, shape drawing, clipping masks, appear/disappear masking, and Adobe Stock text templates.",
+                    "prerequisites": [
+                        "premiere_pro.masking_and_keyframes"
+                    ]
+                },
+                "premiere_pro.green_screen": {
+                    "name": "Green Screen",
+                    "description": "Keying out a green screen background.",
+                    "prerequisites": [
+                        "premiere_pro.masking_and_keyframes"
+                    ]
                 }
             },
             "relationships": []
@@ -1236,8 +1360,8 @@
             "last_source": "bootdev_historical_import"
         },
         "linux.files": {
-            "xp": 81,
-            "level": 1,
+            "xp": 117,
+            "level": 2,
             "status": "Developing",
             "last_mapping_confidence": "medium",
             "last_source": "provider_event"
@@ -1278,7 +1402,7 @@
             "last_source": "bootdev_historical_import"
         },
         "linux.filesystem": {
-            "xp": 44,
+            "xp": 88,
             "level": 1,
             "status": "Developing",
             "last_mapping_confidence": "medium",

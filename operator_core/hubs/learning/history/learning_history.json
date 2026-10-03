@@ -542,6 +542,224 @@
             "concept_distribution": [],
             "mapping_confidence": "low",
             "completed_at": "2026-08-11T17:05:15.841609+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "cad_fusion_360_beginners_course",
+            "track_title": "Fusion 360 Beginners Course",
+            "stat": "INT",
+            "hierarchy": [
+                "Robotics",
+                "Mechanical Design",
+                "CAD"
+            ],
+            "skill": "CAD",
+            "unit_id": "section_01_unit_003_getting_familiar_with_user_interface",
+            "unit_title": "Section 1: Introduction to Fusion 360 - Getting familiar with User Interface",
+            "unit_type": "video",
+            "completion_source": "tracker",
+            "provider": "Udemy",
+            "external_id": null,
+            "xp_awarded": 30,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.robotics.mechanical_design.cad",
+                    "weight": 1.0,
+                    "xp": 30
+                }
+            ],
+            "concept_distribution": [],
+            "mapping_confidence": "low",
+            "completed_at": "2026-09-22T21:35:55.748952+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "premiere_pro_premiere_pro_full_course_tutorial_6_hours",
+            "track_title": "Premiere Pro Full Course Tutorial (6+ Hours)",
+            "stat": "INT",
+            "hierarchy": [
+                "Creative Production",
+                "Video Production",
+                "Premiere Pro"
+            ],
+            "skill": "Premiere Pro",
+            "unit_id": "section_01_unit_001_start",
+            "unit_title": "Section 1: Interface, Import & Timeline Editing - Start",
+            "unit_type": "framing",
+            "completion_source": "tracker",
+            "provider": "YouTube (DashLearn)",
+            "external_id": "lesson_001",
+            "xp_awarded": 40,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.creative_production.video_production.premiere_pro",
+                    "weight": 1.0,
+                    "xp": 40
+                }
+            ],
+            "concept_distribution": [],
+            "mapping_confidence": "low",
+            "completed_at": "2026-09-27T12:33:23.208641+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "skill": "Linux",
+            "unit_id": "section_02_unit_006_tab_completion_back_next",
+            "unit_title": "Tab Completion Back Next",
+            "unit_type": "exercise",
+            "completion_source": "provider_event",
+            "provider": "Boot.dev",
+            "external_id": "https://www.boot.dev/lessons/dffc2161-7c72-419a-8786-9c0c6cc5c9db",
+            "xp_awarded": 20,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.computer_science.operating_systems.linux",
+                    "weight": 1.0,
+                    "xp": 20
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.filesystem",
+                    "weight": 0.55,
+                    "xp": 11
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.45,
+                    "xp": 9
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-09-30T23:32:04.274537+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "skill": "Linux",
+            "unit_id": "section_02_unit_007_head_and_tail_back_next",
+            "unit_title": "head and tail Back Next",
+            "unit_type": "exercise",
+            "completion_source": "provider_event",
+            "provider": "Boot.dev",
+            "external_id": "https://www.boot.dev/lessons/96b5e0ce-37f8-44c2-b219-ebdae3655f23",
+            "xp_awarded": 20,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.computer_science.operating_systems.linux",
+                    "weight": 1.0,
+                    "xp": 20
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.filesystem",
+                    "weight": 0.55,
+                    "xp": 11
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.45,
+                    "xp": 9
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-09-30T23:32:04.421841+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "skill": "Linux",
+            "unit_id": "section_02_unit_009_touch_back_next",
+            "unit_title": "Touch Back Next",
+            "unit_type": "exercise",
+            "completion_source": "provider_event",
+            "provider": "Boot.dev",
+            "external_id": "https://www.boot.dev/lessons/2dada879-c1e5-4b4f-99b1-0165c5062b7f",
+            "xp_awarded": 20,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.computer_science.operating_systems.linux",
+                    "weight": 1.0,
+                    "xp": 20
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.filesystem",
+                    "weight": 0.55,
+                    "xp": 11
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.45,
+                    "xp": 9
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-09-30T23:37:53.209914+00:00"
+        },
+        {
+            "event_type": "unit_completed",
+            "track_id": "bootdev_learn_linux",
+            "track_title": "Learn Linux",
+            "stat": "INT",
+            "hierarchy": [
+                "Computer Science",
+                "Operating Systems",
+                "Linux"
+            ],
+            "skill": "Linux",
+            "unit_id": "section_02_unit_010_directories_back_next",
+            "unit_title": "Directories Back Next",
+            "unit_type": "exercise",
+            "completion_source": "provider_event",
+            "provider": "Boot.dev",
+            "external_id": "https://www.boot.dev/lessons/98abd6eb-c33b-467c-b692-2c0a97b875f2",
+            "xp_awarded": 20,
+            "xp_distribution": [
+                {
+                    "competency_id": "int.computer_science.operating_systems.linux",
+                    "weight": 1.0,
+                    "xp": 20
+                }
+            ],
+            "concept_distribution": [
+                {
+                    "concept_id": "linux.filesystem",
+                    "weight": 0.55,
+                    "xp": 11
+                },
+                {
+                    "concept_id": "linux.files",
+                    "weight": 0.45,
+                    "xp": 9
+                }
+            ],
+            "mapping_confidence": "medium",
+            "completed_at": "2026-09-30T23:44:34.437283+00:00"
         }
     ],
     "schema_version": 3

@@ -114,18 +114,13 @@
     - Navigation & Mapping
       - Navigation
       - Path Planning
-      - Localisation
+      - SLAM
+      - GPS
     - Robot Software
-      - Robot Middleware
-        - ROS2
-      - Simulation
-        - Gazebo
-      - Localisation
-        - SLAM
-        - GPS
-      - Deployment
-        - Runtime Services
-        - Telemetry
+      - ROS2
+      - Gazebo
+      - Runtime Services
+      - Telemetry
   - Networking
     - Network Fundamentals
       - TCP/IP

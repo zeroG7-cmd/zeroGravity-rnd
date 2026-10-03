@@ -1,0 +1,1290 @@
+{
+    "id": "premiere_pro_premiere_pro_full_course_tutorial_6_hours",
+    "title": "Premiere Pro Full Course Tutorial (6+ Hours)",
+    "provider": "YouTube (DashLearn)",
+    "instructor": "",
+    "stat": "INT",
+    "hierarchy": [
+        "Creative Production",
+        "Video Production",
+        "Premiere Pro"
+    ],
+    "domain": "Creative Production",
+    "skill": "Premiere Pro",
+    "difficulty": "Beginner",
+    "resource": "learning/resources/youtube/video_editing/premiere_pro_full_course_tutorial_6_hours",
+    "manifest": "learning/resources/youtube/video_editing/premiere_pro_full_course_tutorial_6_hours/premiere_pro_full_course_tutorial_6_hours.json",
+    "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+    "resource_id": "premiere_pro_full_course_dashlearn",
+    "competency_id": "int.creative_production.video_production.premiere_pro",
+    "capability_id": "int.creative_production.video_production.premiere_pro",
+    "default_competency_awards": [
+        {
+            "competency_id": "int.creative_production.video_production.premiere_pro",
+            "weight": 1.0
+        }
+    ],
+    "section_competency_awards": {},
+    "default_concept_awards": [],
+    "section_concept_awards": {},
+    "mapping_confidence": "high",
+    "manifest_schema_version": 3,
+    "xp_rules": {},
+    "import_method": "manifest",
+    "structure_type": "imported",
+    "section_count": 3,
+    "unit_count": 53,
+    "units": [
+        {
+            "id": "section_01_unit_001_start",
+            "title": "Section 1: Interface, Import & Timeline Editing - Start",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 1,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_001_start",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "framing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [],
+            "mapping_confidence": "n/a",
+            "external_id": "lesson_001",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_002_introduction",
+            "title": "Section 1: Interface, Import & Timeline Editing - Introduction",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 2,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_002_introduction",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "framing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [],
+            "mapping_confidence": "n/a",
+            "external_id": "lesson_002",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_003_premiere_workspace",
+            "title": "Section 1: Interface, Import & Timeline Editing - Premiere Workspace",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 3,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_003_premiere_workspace",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.workspace_navigation",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_003",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_004_importing_media",
+            "title": "Section 1: Interface, Import & Timeline Editing - Importing Media",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 4,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_004_importing_media",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.media_import",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_004",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_005_project_panel",
+            "title": "Section 1: Interface, Import & Timeline Editing - Project Panel",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 5,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_005_project_panel",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.media_import",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_005",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_006_source_panel",
+            "title": "Section 1: Interface, Import & Timeline Editing - Source Panel",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 6,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_006_source_panel",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.media_import",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_006",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_007_adding_markers_in_the_source_panel",
+            "title": "Section 1: Interface, Import & Timeline Editing - Adding Markers in the Source Panel",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 7,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_007_adding_markers_in_the_source_panel",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.markers",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_007",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_008_timeline_and_sequences",
+            "title": "Section 1: Interface, Import & Timeline Editing - Timeline and Sequences",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 8,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_008_timeline_and_sequences",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.timeline_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_008",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_009_track_selectors_on_the_timeline",
+            "title": "Section 1: Interface, Import & Timeline Editing - Track Selectors on the Timeline",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 9,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_009_track_selectors_on_the_timeline",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.timeline_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_009",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_010_razor_tool",
+            "title": "Section 1: Interface, Import & Timeline Editing - Razor Tool",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 10,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_010_razor_tool",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.timeline_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_010",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_011_trimming_on_the_timeline",
+            "title": "Section 1: Interface, Import & Timeline Editing - Trimming on the Timeline",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 11,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_011_trimming_on_the_timeline",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.timeline_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_011",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_012_inserting_and_overwriting_on_the_timeline",
+            "title": "Section 1: Interface, Import & Timeline Editing - Inserting and Overwriting on the Timeline",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 12,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_012_inserting_and_overwriting_on_the_timeline",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.timeline_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_012",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_013_ripple_and_rolling_edit_tools",
+            "title": "Section 1: Interface, Import & Timeline Editing - Ripple and Rolling Edit Tools",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 13,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_013_ripple_and_rolling_edit_tools",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.timeline_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_013",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_014_slip_and_slide_edits",
+            "title": "Section 1: Interface, Import & Timeline Editing - Slip and Slide Edits",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 14,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_014_slip_and_slide_edits",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.timeline_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_014",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_015_speed_and_duration",
+            "title": "Section 1: Interface, Import & Timeline Editing - Speed and Duration",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 15,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_015_speed_and_duration",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.speed_and_duration",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_015",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_016_unlinking_audio_and_video",
+            "title": "Section 1: Interface, Import & Timeline Editing - Unlinking Audio and Video",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 16,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_016_unlinking_audio_and_video",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.audio_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_016",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_017_lift_and_extract_tools",
+            "title": "Section 1: Interface, Import & Timeline Editing - Lift and Extract Tools",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 17,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_017_lift_and_extract_tools",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.timeline_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_017",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_018_markers_on_the_program_and_timeline_panel",
+            "title": "Section 1: Interface, Import & Timeline Editing - Markers on the Program and Timeline Panel",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 18,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_018_markers_on_the_program_and_timeline_panel",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.markers",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_018",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_019_cropping",
+            "title": "Section 1: Interface, Import & Timeline Editing - Cropping",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 19,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_019_cropping",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.cropping_and_composition",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_019",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_020_picture_in_picture",
+            "title": "Section 1: Interface, Import & Timeline Editing - Picture in Picture",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 20,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_020_picture_in_picture",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.cropping_and_composition",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_020",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_01_unit_021_conclusion",
+            "title": "Section 1: Interface, Import & Timeline Editing - Conclusion",
+            "section_number": 1,
+            "section_title": "Interface, Import & Timeline Editing",
+            "unit_number": 21,
+            "path": "sections/section_01_interface_import_and_timeline_editing/unit_021_conclusion",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "framing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [],
+            "mapping_confidence": "n/a",
+            "external_id": "lesson_021",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_001_introduction",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Introduction",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 1,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_001_introduction",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "framing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [],
+            "mapping_confidence": "n/a",
+            "external_id": "lesson_022",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_002_titles_and_captions",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Titles and Captions",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 2,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_002_titles_and_captions",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.titles_and_captions",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_023",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_003_working_with_still_images",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Working with Still Images",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 3,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_003_working_with_still_images",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.still_images",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "medium",
+            "external_id": "lesson_024",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_004_transitions",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Transitions",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 4,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_004_transitions",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.transitions",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_025",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_005_panning_and_zooming_effects",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Panning and Zooming Effects",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 5,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_005_panning_and_zooming_effects",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.pan_zoom_effects",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_026",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_006_working_with_audio",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Working with Audio",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 6,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_006_working_with_audio",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.audio_editing",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_027",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_007_exporting_and_rendering",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Exporting and Rendering",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 7,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_007_exporting_and_rendering",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.export_and_rendering",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_028",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_008_customizing_playback_controls",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Customizing Playback Controls",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 8,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_008_customizing_playback_controls",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.ui_customization",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_029",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_009_adding_custom_buttons_to_program_and_source_panel",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Adding Custom Buttons to Program and Source Panel",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 9,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_009_adding_custom_buttons_to_program_and_source_panel",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.ui_customization",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_030",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_010_transitions",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Transitions",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 10,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_010_transitions",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.transitions",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_031",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_011_subclips",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Subclips",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 11,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_011_subclips",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.subclips",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_032",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_012_time_remapping_for_variable_clip_speed",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Time Remapping for Variable Clip Speed",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 12,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_012_time_remapping_for_variable_clip_speed",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.speed_and_duration",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_033",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_013_brightness_and_contrast_effects",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Brightness and Contrast Effects",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 13,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_013_brightness_and_contrast_effects",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.color_correction",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_034",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_02_unit_014_conclusion",
+            "title": "Section 2: Titles, Transitions, Effects & Export - Conclusion",
+            "section_number": 2,
+            "section_title": "Titles, Transitions, Effects & Export",
+            "unit_number": 14,
+            "path": "sections/section_02_titles_transitions_effects_and_export/unit_014_conclusion",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "framing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [],
+            "mapping_confidence": "n/a",
+            "external_id": "lesson_035",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_001_introduction",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Introduction",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 1,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_001_introduction",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "framing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [],
+            "mapping_confidence": "n/a",
+            "external_id": "lesson_036",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_002_introduction_to_masking_and_keyframes",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Introduction to Masking and Keyframes",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 2,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_002_introduction_to_masking_and_keyframes",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.masking_and_keyframes",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_037",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_003_color_correction_lumetri_color",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Color Correction - Lumetri Color",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 3,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_003_color_correction_lumetri_color",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.color_correction",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_038",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_004_saving_effect_presets",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Saving Effect Presets",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 4,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_004_saving_effect_presets",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.color_correction",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_039",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_005_adjustment_layers",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Adjustment Layers",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 5,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_005_adjustment_layers",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.color_correction",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_040",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_006_creating_movement_with_keyframes",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Creating Movement with Keyframes",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 6,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_006_creating_movement_with_keyframes",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.masking_and_keyframes",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_041",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_007_3d_effect",
+            "title": "Section 3: Masking, Keyframes, Color & Text - 3D Effect",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 7,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_007_3d_effect",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.masking_and_keyframes",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_042",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_008_blur_effect",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Blur Effect",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 8,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_008_blur_effect",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.masking_and_keyframes",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_043",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_009_blurring_faces",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Blurring Faces",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 9,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_009_blurring_faces",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.masking_and_keyframes",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "medium",
+            "external_id": "lesson_044",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_010_introduction_to_text",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Introduction to Text",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 10,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_010_introduction_to_text",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.text_animation",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_045",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_011_text_3d_effect_and_keyframing",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Text - 3D Effect and Keyframing",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 11,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_011_text_3d_effect_and_keyframing",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.text_animation",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_046",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_012_text_blur_effect_and_masking",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Text - Blur Effect and Masking",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 12,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_012_text_blur_effect_and_masking",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.text_animation",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_047",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_013_drawing_and_animating_shapes",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Drawing and Animating Shapes",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 13,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_013_drawing_and_animating_shapes",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.text_animation",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_048",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_014_text_clipping_mask",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Text Clipping Mask",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 14,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_014_text_clipping_mask",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.text_animation",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_049",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_015_masking_text_to_appear_and_disappear",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Masking Text to Appear and Disappear",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 15,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_015_masking_text_to_appear_and_disappear",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.text_animation",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_050",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_016_text_templates_with_adobe_stock",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Text Templates with Adobe Stock",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 16,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_016_text_templates_with_adobe_stock",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.text_animation",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_051",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_017_green_screen",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Green Screen",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 17,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_017_green_screen",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "video",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [
+                {
+                    "concept_id": "premiere_pro.green_screen",
+                    "weight": 1.0
+                }
+            ],
+            "mapping_confidence": "high",
+            "external_id": "lesson_052",
+            "provider_unit_id": null,
+            "xp_value": null
+        },
+        {
+            "id": "section_03_unit_018_conclusion",
+            "title": "Section 3: Masking, Keyframes, Color & Text - Conclusion",
+            "section_number": 3,
+            "section_title": "Masking, Keyframes, Color & Text",
+            "unit_number": 18,
+            "path": "sections/section_03_masking_keyframes_color_and_text/unit_018_conclusion",
+            "source": "premiere_pro_full_course_tutorial_6_hours.json",
+            "source_type": "framing",
+            "duration": null,
+            "duration_minutes": null,
+            "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+            "competency_awards": [],
+            "concept_awards": [],
+            "mapping_confidence": "n/a",
+            "external_id": "lesson_053",
+            "provider_unit_id": null,
+            "xp_value": null
+        }
+    ],
+    "evidence_requirements": [
+        {
+            "name": "Notes",
+            "path": "notes.md"
+        },
+        {
+            "name": "Reflection",
+            "path": "reflection.md"
+        },
+        {
+            "name": "Practical Evidence",
+            "path": "evidence/practical_evidence.md"
+        }
+    ]
+}

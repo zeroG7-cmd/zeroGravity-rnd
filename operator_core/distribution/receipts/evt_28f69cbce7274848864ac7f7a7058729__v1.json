@@ -1,0 +1,28 @@
+{
+  "source_event_id": "evt_28f69cbce7274848864ac7f7a7058729",
+  "total_xp": 30,
+  "allocations": [
+    {
+      "target_id": "spirit.reflection.reflective_practice.self_assessment",
+      "target_type": "competency",
+      "weight": 0.5,
+      "xp": 15,
+      "label": null,
+      "metadata": {}
+    },
+    {
+      "target_id": "will.decisiveness.decision_execution.commitment",
+      "target_type": "competency",
+      "weight": 0.5,
+      "xp": 15,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_643a659d926f434cbf5244513c8f161f",
+  "ruleset_version": "1",
+  "created_at": "2026-09-25T19:51:55.637839+00:00",
+  "source_event_type": "journal_created",
+  "source": "journal.engine",
+  "metadata": {}
+}

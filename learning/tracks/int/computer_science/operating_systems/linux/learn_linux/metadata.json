@@ -199,6 +199,58 @@
             "provider_unit_id": null,
             "mapping_confidence": "medium",
             "xp_value": 20
+        },
+        {
+            "id": "section_02_unit_006_tab_completion_back_next",
+            "title": "Tab Completion Back Next",
+            "section_number": 2,
+            "section_title": "Filesystems L6: Tab Completion Back Next",
+            "unit_number": 6,
+            "source_type": "exercise",
+            "source_url": "https://www.boot.dev/lessons/dffc2161-7c72-419a-8786-9c0c6cc5c9db",
+            "external_id": "https://www.boot.dev/lessons/dffc2161-7c72-419a-8786-9c0c6cc5c9db",
+            "provider_unit_id": null,
+            "mapping_confidence": "medium",
+            "xp_value": 20
+        },
+        {
+            "id": "section_02_unit_007_head_and_tail_back_next",
+            "title": "head and tail Back Next",
+            "section_number": 2,
+            "section_title": "Filesystems L7: head and tail Back Next",
+            "unit_number": 7,
+            "source_type": "exercise",
+            "source_url": "https://www.boot.dev/lessons/96b5e0ce-37f8-44c2-b219-ebdae3655f23",
+            "external_id": "https://www.boot.dev/lessons/96b5e0ce-37f8-44c2-b219-ebdae3655f23",
+            "provider_unit_id": null,
+            "mapping_confidence": "medium",
+            "xp_value": 20
+        },
+        {
+            "id": "section_02_unit_009_touch_back_next",
+            "title": "Touch Back Next",
+            "section_number": 2,
+            "section_title": "Filesystems L9: Touch Back Next",
+            "unit_number": 9,
+            "source_type": "exercise",
+            "source_url": "https://www.boot.dev/lessons/2dada879-c1e5-4b4f-99b1-0165c5062b7f",
+            "external_id": "https://www.boot.dev/lessons/2dada879-c1e5-4b4f-99b1-0165c5062b7f",
+            "provider_unit_id": null,
+            "mapping_confidence": "medium",
+            "xp_value": 20
+        },
+        {
+            "id": "section_02_unit_010_directories_back_next",
+            "title": "Directories Back Next",
+            "section_number": 2,
+            "section_title": "Filesystems L10: Directories Back Next",
+            "unit_number": 10,
+            "source_type": "exercise",
+            "source_url": "https://www.boot.dev/lessons/98abd6eb-c33b-467c-b692-2c0a97b875f2",
+            "external_id": "https://www.boot.dev/lessons/98abd6eb-c33b-467c-b692-2c0a97b875f2",
+            "provider_unit_id": null,
+            "mapping_confidence": "medium",
+            "xp_value": 20
         }
     ],
     "unit_count": 64,

@@ -291,9 +291,11 @@
         "disc.accountability.evidence.logging": {
             "id": "disc.accountability.evidence.logging",
             "name": "Logging",
-            "xp": 0,
+            "xp": 15,
             "level": 0,
-            "shared": false
+            "shared": false,
+            "level_progress": 15.0,
+            "xp_to_next_level": 85
         },
         "disc.accountability.evidence.reporting": {
             "id": "disc.accountability.evidence.reporting",
@@ -312,7 +314,7 @@
         "disc.consistency.routine_adherence.daily_practice": {
             "id": "disc.consistency.routine_adherence.daily_practice",
             "name": "Daily Practice",
-            "xp": 119,
+            "xp": 128,
             "level": 1,
             "shared": false
         },
@@ -760,9 +762,11 @@
         "int.computer_science.operating_systems.linux": {
             "id": "int.computer_science.operating_systems.linux",
             "name": "Linux",
-            "xp": 260,
+            "xp": 345,
             "level": 1,
-            "shared": false
+            "shared": false,
+            "level_progress": 86.6,
+            "xp_to_next_level": 38
         },
         "int.computer_science.operating_systems.memory_management": {
             "id": "int.computer_science.operating_systems.memory_management",
@@ -956,9 +960,11 @@
         "int.learning_practice.learning_systems.reflection": {
             "id": "int.learning_practice.learning_systems.reflection",
             "name": "Reflection",
-            "xp": 0,
+            "xp": 30,
             "level": 0,
-            "shared": false
+            "shared": false,
+            "level_progress": 30.0,
+            "xp_to_next_level": 70
         },
         "int.networking.client_server.mqtt": {
             "id": "int.networking.client_server.mqtt",
@@ -1082,9 +1088,11 @@
         "int.robotics.mechanical_design.cad": {
             "id": "int.robotics.mechanical_design.cad",
             "name": "CAD",
-            "xp": 60,
-            "level": 0,
-            "shared": false
+            "xp": 110,
+            "level": 1,
+            "shared": false,
+            "level_progress": 3.5,
+            "xp_to_next_level": 273
         },
         "int.robotics.mechanical_design.dynamics": {
             "id": "int.robotics.mechanical_design.dynamics",
@@ -1124,13 +1132,6 @@
         "int.robotics.mechatronics.sensors": {
             "id": "int.robotics.mechatronics.sensors",
             "name": "Sensors",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.robotics.navigation_and_mapping.localisation": {
-            "id": "int.robotics.navigation_and_mapping.localisation",
-            "name": "Localisation",
             "xp": 0,
             "level": 0,
             "shared": false
@@ -1194,48 +1195,6 @@
         "int.robotics.perception.sensor_fusion": {
             "id": "int.robotics.perception.sensor_fusion",
             "name": "Sensor Fusion",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.robotics.robot_software.deployment.runtime_services": {
-            "id": "int.robotics.robot_software.deployment.runtime_services",
-            "name": "Runtime Services",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.robotics.robot_software.deployment.telemetry": {
-            "id": "int.robotics.robot_software.deployment.telemetry",
-            "name": "Telemetry",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.robotics.robot_software.localisation.gps": {
-            "id": "int.robotics.robot_software.localisation.gps",
-            "name": "GPS",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.robotics.robot_software.localisation.slam": {
-            "id": "int.robotics.robot_software.localisation.slam",
-            "name": "SLAM",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.robotics.robot_software.robot_middleware.ros2": {
-            "id": "int.robotics.robot_software.robot_middleware.ros2",
-            "name": "ROS2",
-            "xp": 0,
-            "level": 0,
-            "shared": false
-        },
-        "int.robotics.robot_software.simulation.gazebo": {
-            "id": "int.robotics.robot_software.simulation.gazebo",
-            "name": "Gazebo",
             "xp": 0,
             "level": 0,
             "shared": false
@@ -1551,9 +1510,11 @@
         "spirit.identity.self_knowledge.authenticity": {
             "id": "spirit.identity.self_knowledge.authenticity",
             "name": "Authenticity",
-            "xp": 0,
+            "xp": 15,
             "level": 0,
-            "shared": false
+            "shared": false,
+            "level_progress": 15.0,
+            "xp_to_next_level": 85
         },
         "spirit.identity.self_knowledge.personal_narrative": {
             "id": "spirit.identity.self_knowledge.personal_narrative",
@@ -1623,20 +1584,20 @@
         "spirit.reflection.reflective_practice.meaning_making": {
             "id": "spirit.reflection.reflective_practice.meaning_making",
             "name": "Meaning Making",
-            "xp": 10,
+            "xp": 25,
             "level": 0,
             "shared": false,
-            "level_progress": 10.0,
-            "xp_to_next_level": 90
+            "level_progress": 25.0,
+            "xp_to_next_level": 75
         },
         "spirit.reflection.reflective_practice.self_assessment": {
             "id": "spirit.reflection.reflective_practice.self_assessment",
             "name": "Self-Assessment",
-            "xp": 10,
-            "level": 0,
+            "xp": 100,
+            "level": 1,
             "shared": false,
-            "level_progress": 10.0,
-            "xp_to_next_level": 90
+            "level_progress": 0.0,
+            "xp_to_next_level": 283
         },
         "str.power.explosive_movement.acceleration": {
             "id": "str.power.explosive_movement.acceleration",
@@ -1704,9 +1665,11 @@
         "will.decisiveness.decision_execution.commitment": {
             "id": "will.decisiveness.decision_execution.commitment",
             "name": "Commitment",
-            "xp": 0,
+            "xp": 45,
             "level": 0,
-            "shared": false
+            "shared": false,
+            "level_progress": 45.0,
+            "xp_to_next_level": 55
         },
         "will.decisiveness.decision_execution.risk_acceptance": {
             "id": "will.decisiveness.decision_execution.risk_acceptance",
@@ -1809,7 +1772,7 @@
         "str.muscular_strength.pushing_strength.push_ups": {
             "id": "str.muscular_strength.pushing_strength.push_ups",
             "name": "Push-ups",
-            "xp": 255,
+            "xp": 306,
             "level": 1,
             "shared": false
         },
@@ -1970,9 +1933,11 @@
         "int.creative_production.video_production.premiere_pro": {
             "id": "int.creative_production.video_production.premiere_pro",
             "name": "Premiere Pro",
-            "xp": 0,
+            "xp": 40,
             "level": 0,
-            "shared": false
+            "shared": false,
+            "level_progress": 40.0,
+            "xp_to_next_level": 60
         },
         "int.creative_production.camera_drone.drone": {
             "id": "int.creative_production.camera_drone.drone",
@@ -2173,6 +2138,48 @@
         "int.aviation.autonomy.geofencing": {
             "id": "int.aviation.autonomy.geofencing",
             "name": "Geofencing",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.ros2": {
+            "id": "int.robotics.robot_software.ros2",
+            "name": "ROS2",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.gazebo": {
+            "id": "int.robotics.robot_software.gazebo",
+            "name": "Gazebo",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.runtime_services": {
+            "id": "int.robotics.robot_software.runtime_services",
+            "name": "Runtime Services",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.robot_software.telemetry": {
+            "id": "int.robotics.robot_software.telemetry",
+            "name": "Telemetry",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.navigation_and_mapping.slam": {
+            "id": "int.robotics.navigation_and_mapping.slam",
+            "name": "SLAM",
+            "xp": 0,
+            "level": 0,
+            "shared": false
+        },
+        "int.robotics.navigation_and_mapping.gps": {
+            "id": "int.robotics.navigation_and_mapping.gps",
+            "name": "GPS",
             "xp": 0,
             "level": 0,
             "shared": false

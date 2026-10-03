@@ -583,7 +583,22 @@ def update_operator_competencies(
         competency["xp_to_next_level"] = progress["xp_to_next_level"]
 
     save_json(COMPETENCIES_PATH, competencies_data)
-    return build_operator_stats()
+    result = build_operator_stats()
+
+    # Curated achievements (milestone levels, course completions) hang off
+    # this exact choke point on purpose - every XP award anywhere in the
+    # app (fitness, learning, journal, tasks, execution) ends up here, so
+    # this is the one place a newly-crossed achievement can never be missed
+    # no matter which hub triggered the XP. See operator_core/achievements -
+    # it's re-entrancy-guarded and never raises, so it can't break an XP
+    # award even if the achievement catalog itself has a bug.
+    try:
+        from operator_core.achievements import check_and_award_all
+        check_and_award_all()
+    except Exception:
+        pass
+
+    return result
 
 
 def update_operator_stats(

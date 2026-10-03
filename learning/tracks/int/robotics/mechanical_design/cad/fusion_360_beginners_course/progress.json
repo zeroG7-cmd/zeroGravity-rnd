@@ -1,9 +1,10 @@
 {
-    "current_unit_index": 2,
+    "current_unit_index": 3,
     "completed_units": [
         "section_01_unit_001_introduction_to_fusion_360",
-        "section_01_unit_002_introduction_to_fusion_360"
+        "section_01_unit_002_introduction_to_fusion_360",
+        "section_01_unit_003_getting_familiar_with_user_interface"
     ],
-    "total_xp": 60,
+    "total_xp": 90,
     "status": "In Progress"
 }

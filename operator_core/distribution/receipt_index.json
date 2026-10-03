@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "receipt_count": 32,
+    "receipt_count": 48,
     "by_source_event": {
         "evt_e24847fb08394e13b80ee874dd2712b9::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp9kwdbxu3\\receipts\\evt_e24847fb08394e13b80ee874dd2712b9__v1.json",
         "evt_2d6c33d24fa84bdd914cb01d7716a7e5::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmpxzj93emu\\receipts\\evt_2d6c33d24fa84bdd914cb01d7716a7e5__v1.json",
@@ -33,7 +33,23 @@
         "evt_0896a2c598db4984aec036c464fbc57e::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_0896a2c598db4984aec036c464fbc57e__v1.json",
         "evt_907b3050dfd0456b820596faf6a79ea7::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_907b3050dfd0456b820596faf6a79ea7__v1.json",
         "evt_9615a69661564b8d970e8d29d31df5b0::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_9615a69661564b8d970e8d29d31df5b0__v1.json",
-        "evt_ea0d7b75ac644031a9e888e7145d9ca2::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_ea0d7b75ac644031a9e888e7145d9ca2__v1.json"
+        "evt_ea0d7b75ac644031a9e888e7145d9ca2::1": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_ea0d7b75ac644031a9e888e7145d9ca2__v1.json",
+        "evt_ded40041af4143a1908aeb640457a40d::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_ded40041af4143a1908aeb640457a40d__v1.json",
+        "evt_55bf857362554ab6aeee67b10718da48::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_55bf857362554ab6aeee67b10718da48__v1.json",
+        "evt_b9914e4321874569824ac74d7886cb84::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b9914e4321874569824ac74d7886cb84__v1.json",
+        "evt_16ff7d2e76074c4794e03f330c005e4f::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_16ff7d2e76074c4794e03f330c005e4f__v1.json",
+        "evt_4944487eecde4592aa65b5fd22be7a49::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_4944487eecde4592aa65b5fd22be7a49__v1.json",
+        "evt_062b52cf4d624a06a5306825da481f36::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_062b52cf4d624a06a5306825da481f36__v1.json",
+        "evt_fb988ea65cbe4927aa354f3abd5006e8::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_fb988ea65cbe4927aa354f3abd5006e8__v1.json",
+        "evt_66561060bbc24e28b13e85113b43d992::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_66561060bbc24e28b13e85113b43d992__v1.json",
+        "evt_28f69cbce7274848864ac7f7a7058729::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_28f69cbce7274848864ac7f7a7058729__v1.json",
+        "evt_b233f4fa061542d8ad9169e73cf54d42::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b233f4fa061542d8ad9169e73cf54d42__v1.json",
+        "evt_6a96afcbfbc542b4ab07250f2995ea57::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_6a96afcbfbc542b4ab07250f2995ea57__v1.json",
+        "evt_1f881e85bd494ad1a02a84ffe5fa3664::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_1f881e85bd494ad1a02a84ffe5fa3664__v1.json",
+        "evt_b4fa12b23d41498193eab1d8f1037251::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b4fa12b23d41498193eab1d8f1037251__v1.json",
+        "evt_1b6891b5f8164e5d91e0de0ec9c22480::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_1b6891b5f8164e5d91e0de0ec9c22480__v1.json",
+        "evt_cf70e45a047741cfad46439983556e35::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_cf70e45a047741cfad46439983556e35__v1.json",
+        "evt_c52f2ecbfdb14432857b287e1fd83e2e::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_c52f2ecbfdb14432857b287e1fd83e2e__v1.json"
     },
     "by_receipt_id": {
         "xpr_9f8a1a8c037e4e26a339576e54edb188": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp9kwdbxu3\\receipts\\evt_e24847fb08394e13b80ee874dd2712b9__v1.json",
@@ -67,6 +83,22 @@
         "xpr_c79ed4b295214319bc131f01bd0296ff": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_0896a2c598db4984aec036c464fbc57e__v1.json",
         "xpr_2f84a08daf30407aaa7ae3fb4b78e4fd": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_907b3050dfd0456b820596faf6a79ea7__v1.json",
         "xpr_c56ed31d93ff4c92ad1a5cbfadef4648": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_9615a69661564b8d970e8d29d31df5b0__v1.json",
-        "xpr_d64bc8b8da9f4369b889b1ee9ddf2684": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_ea0d7b75ac644031a9e888e7145d9ca2__v1.json"
+        "xpr_d64bc8b8da9f4369b889b1ee9ddf2684": "/tmp/backfill_sandbox/repo/operator_core/distribution/receipts/evt_ea0d7b75ac644031a9e888e7145d9ca2__v1.json",
+        "xpr_af513e8fbda346ce82955db3f59915f6": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_ded40041af4143a1908aeb640457a40d__v1.json",
+        "xpr_c47c2d3ce5064c85889f114a5f6f8589": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_55bf857362554ab6aeee67b10718da48__v1.json",
+        "xpr_d206c774557e4b3ab78b2508d769e046": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b9914e4321874569824ac74d7886cb84__v1.json",
+        "xpr_44df3890c71c448eb8a73ae3af307362": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_16ff7d2e76074c4794e03f330c005e4f__v1.json",
+        "xpr_47bdfc22bb10427f8b40f8bb5c1df8c2": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_4944487eecde4592aa65b5fd22be7a49__v1.json",
+        "xpr_b67c5eed9cf2447a8b6d3b021acc4f3a": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_062b52cf4d624a06a5306825da481f36__v1.json",
+        "xpr_c1e97544a678433594e9cacf7baecff3": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_fb988ea65cbe4927aa354f3abd5006e8__v1.json",
+        "xpr_1762328b1935449ca526927e371230ab": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_66561060bbc24e28b13e85113b43d992__v1.json",
+        "xpr_643a659d926f434cbf5244513c8f161f": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_28f69cbce7274848864ac7f7a7058729__v1.json",
+        "xpr_ba7c78c0117649b9b607605c55d86f6b": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b233f4fa061542d8ad9169e73cf54d42__v1.json",
+        "xpr_8120744b8d004e5cb6996ac17fc8e511": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_6a96afcbfbc542b4ab07250f2995ea57__v1.json",
+        "xpr_a316cb50387a4c008049d1511bb92541": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_1f881e85bd494ad1a02a84ffe5fa3664__v1.json",
+        "xpr_65c941551204427a829aa0d556a6a654": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b4fa12b23d41498193eab1d8f1037251__v1.json",
+        "xpr_f1747f54493342739f206331395ad868": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_1b6891b5f8164e5d91e0de0ec9c22480__v1.json",
+        "xpr_13cfc1232c6d48b9871c6c939182ec47": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_cf70e45a047741cfad46439983556e35__v1.json",
+        "xpr_4a38d60ea40f421e8d4d1d94ada656b5": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_c52f2ecbfdb14432857b287e1fd83e2e__v1.json"
     }
 }

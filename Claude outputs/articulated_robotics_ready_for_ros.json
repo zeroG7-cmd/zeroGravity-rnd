@@ -1,0 +1,97 @@
+{
+    "schema_version": 3,
+    "resource": {
+        "id": "youtube_articulatedrobotics_ready_for_ros",
+        "title": "Getting Ready to Build a ROS Robot (ROS2 Fundamentals)",
+        "provider": "YouTube",
+        "instructor": "Articulated Robotics",
+        "source_url": "https://www.youtube.com/playlist?list=PLunhqkrRNRhYYCaSTVP-qJnyUPkTxJnBt"
+    },
+    "operator_mapping": {
+        "stat": "INT",
+        "hierarchy": ["Robotics", "Robot Software", "Robot Middleware", "ROS2"],
+        "competency_id": "int.robotics.robot_software.robot_middleware.ros2",
+        "capability_id": "int.robotics.robot_software.robot_middleware.ros2",
+        "mapping_confidence": "high",
+        "default_competency_awards": [
+            {"competency_id": "int.robotics.robot_software.robot_middleware.ros2", "weight": 1.0}
+        ],
+        "default_concept_awards": [],
+        "section_concept_awards": {}
+    },
+    "course": {
+        "difficulty": "Beginner",
+        "xp_rules": {"video": 50},
+        "sections": [
+            {
+                "title": "Getting Ready to Build a ROS Robot",
+                "lectures": [
+                    {
+                        "id": "part_01_what_you_need",
+                        "title": "What Do You Need? (hardware and software prerequisites)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=2lIV3dRvHmQ",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "ros2.prerequisites", "weight": 1.0}]
+                    },
+                    {
+                        "id": "part_02_networking",
+                        "title": "Networking (setting up your dev machine and robot to talk to each other)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=NW97xLF7CYQ",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [{"concept_id": "ros2.networking", "weight": 1.0}]
+                    },
+                    {
+                        "id": "part_03_installing_ros",
+                        "title": "Installing ROS",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=uWzOk0nkTcI",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "ros2.installation", "weight": 1.0}]
+                    },
+                    {
+                        "id": "part_04_ros_overview",
+                        "title": "ROS Overview (nodes, topics, the core concepts)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=KAASuA3_4eg",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "ros2.core_concepts", "weight": 1.0}]
+                    },
+                    {
+                        "id": "part_05_packages",
+                        "title": "Packages (structuring and building your own ROS packages)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=Y_SyQXTL2XU",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "ros2.packages", "weight": 1.0}]
+                    },
+                    {
+                        "id": "part_06_tf2",
+                        "title": "The Transform System (tf2)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=QyvHhY4Y_Y8",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "ros2.tf2", "weight": 1.0}]
+                    },
+                    {
+                        "id": "part_07_urdf",
+                        "title": "Describing Robots with URDF",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=CwdbsvcpOHM",
+                        "mapping_confidence": "high",
+                        "concept_awards": [{"concept_id": "ros2.urdf", "weight": 1.0}]
+                    },
+                    {
+                        "id": "part_08_gazebo_intro",
+                        "title": "Simulating with Gazebo (first pass - a fuller Gazebo track can follow this one)",
+                        "source_type": "video",
+                        "source_url": "https://www.youtube.com/watch?v=laWn7_cj434",
+                        "mapping_confidence": "medium",
+                        "concept_awards": [{"concept_id": "ros2.simulation_intro", "weight": 1.0}]
+                    }
+                ]
+            }
+        ]
+    }
+}

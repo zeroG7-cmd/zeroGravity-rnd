@@ -1,0 +1,1375 @@
+{
+  "schema_version": 3,
+  "resource": {
+    "id": "udemy_edouard_renard_ros2_for_beginners",
+    "title": "ROS 2 for Beginners (ROS Jazzy - 2026)",
+    "provider": "Udemy",
+    "instructor": "Edouard Renard",
+    "source_url": "https://www.udemy.com/course/ros2-for-beginners/"
+  },
+  "operator_mapping": {
+    "stat": "INT",
+    "hierarchy": [
+      "Robotics",
+      "Robot Software",
+      "ROS2"
+    ],
+    "competency_id": "int.robotics.robot_software.ros2",
+    "capability_id": "int.robotics.robot_software.ros2",
+    "mapping_confidence": "high",
+    "default_competency_awards": [
+      {
+        "competency_id": "int.robotics.robot_software.ros2",
+        "weight": 1.0
+      }
+    ],
+    "default_concept_awards": [],
+    "section_concept_awards": {}
+  },
+  "course": {
+    "difficulty": "Beginner",
+    "xp_rules": {
+      "video": 20
+    },
+    "sections": [
+      {
+        "title": "Introduction",
+        "lectures": [
+          {
+            "id": "s01_l01_welcome",
+            "title": "Welcome!",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s01_l02_what_is_ros2_when_to_use_it_and_why",
+            "title": "What is ROS2, When to use it, and Why?",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s01_l03_how_to_get_the_most_out_of_this_course",
+            "title": "How to get the most out of this course",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Install ROS2 and Setup Your Environment",
+        "lectures": [
+          {
+            "id": "s02_l01_intro",
+            "title": "Intro",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s02_l02_which_ros_2_distribution_to_use",
+            "title": "Which ROS 2 Distribution to Use",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s02_l03_install_ubuntu_2404_on_a_virtual_machine_virtualbox",
+            "title": "Install Ubuntu 24.04 on a Virtual Machine (VirtualBox)",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s02_l04_note_new_extension_for_vs_code",
+            "title": "Note - New extension for VS Code",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s02_l05_programming_tools_i_will_use_during_this_course",
+            "title": "Programming Tools I Will Use During this Course",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s02_l06_install_ros_2_jazzy_on_ubuntu_2404",
+            "title": "Install ROS 2 Jazzy on Ubuntu 24.04",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s02_l07_set_up_your_environment_for_ros_2",
+            "title": "Set up your Environment for ROS 2",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s02_l08_launch_a_ros_2_program",
+            "title": "Launch a ROS 2 Program!",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.nodes",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s02_l09_section_conclusion",
+            "title": "Section Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Write Your First ROS 2 Program",
+        "lectures": [
+          {
+            "id": "s03_l01_intro",
+            "title": "Intro",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s03_l02_create_a_ros_2_workspace",
+            "title": "Create a ROS 2 Workspace",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.workspaces_packages",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s03_l03_create_a_python_package",
+            "title": "Create a Python Package",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.workspaces_packages",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s03_l04_create_a_c_package",
+            "title": "Create a C++ Package",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.workspaces_packages",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s03_l05_what_is_a_ros2_node",
+            "title": "What is a ROS2 Node?",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.nodes",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s03_l06_write_a_python_node_minimal_code",
+            "title": "Write a Python Node - Minimal Code",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.nodes",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s03_l07_write_a_python_node_with_oop",
+            "title": "Write a Python Node - With OOP",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s03_l08_write_a_c_node_minimal_code",
+            "title": "Write a C++ Node - Minimal Code",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.nodes",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s03_l09_write_a_c_node_with_oop",
+            "title": "Write a C++ Node - With OOP",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s03_l10_oop_template_for_your_nodes",
+            "title": "OOP Template for Your Nodes",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s03_l11_more_about_the_ros_2_client_libraries_for_different_languages",
+            "title": "More about the ROS 2 Client Libraries for Different Languages",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s03_l12_section_conclusion",
+            "title": "Section Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Introduction to ROS 2 Tools",
+        "lectures": [
+          {
+            "id": "s04_l01_intro",
+            "title": "Intro",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s04_l02_introspect_your_nodes_with_ros2_cli",
+            "title": "Introspect Your Nodes With ros2 cli",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s04_l03_rename_a_node_at_runtime",
+            "title": "Rename a Node at Runtime",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s04_l04_colcon",
+            "title": "Colcon",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.workspaces_packages",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s04_l05_rqt_and_rqt_graph",
+            "title": "Rqt and rqt_graph",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s04_l06_discover_turtlesim",
+            "title": "Discover Turtlesim",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.nodes",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s04_l07_activity_01",
+            "title": "Activity 01",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.nodes",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s04_l08_activity_01_solution",
+            "title": "Activity 01 - Solution",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.nodes",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s04_l09_section_conclusion",
+            "title": "Section Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "ROS 2 Topics",
+        "lectures": [
+          {
+            "id": "s05_l01_intro",
+            "title": "Intro",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s05_l02_what_is_a_ros_2_topic",
+            "title": "What is a ROS 2 Topic?",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l03_write_a_python_publisher",
+            "title": "Write a Python Publisher",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l04_write_a_python_subscriber",
+            "title": "Write a Python Subscriber",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l05_write_a_c_publisher",
+            "title": "Write a C++ Publisher",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l06_write_a_c_subscriber",
+            "title": "Write a C++ Subscriber",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l07_introspect_ros_2_topics_with_command_line_tools",
+            "title": "Introspect ROS 2 Topics with Command Line Tools",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l08_remap_a_topic_at_runtime",
+            "title": "Remap a Topic at Runtime",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.topics",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s05_l09_monitor_topics_with_rqt_and_rqt_graph",
+            "title": "Monitor Topics With rqt and rqt_graph",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l10_experiment_on_topics_with_turtlesim",
+            "title": "Experiment on Topics with Turtlesim",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l11_activity_02_ros2_topics",
+            "title": "Activity 02 - ROS2 Topics",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l12_activity_02_solution_1_2",
+            "title": "Activity 02 - Solution [1/2]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l13_activity_02_solution_2_2",
+            "title": "Activity 02 - Solution [2/2]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l14_extra_replay_topic_data_with_bags",
+            "title": "Extra: Replay Topic Data with Bags",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.bags",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s05_l15_section_conclusion",
+            "title": "Section Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "ROS 2 Services",
+        "lectures": [
+          {
+            "id": "s06_l01_intro",
+            "title": "Intro",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s06_l02_what_is_a_ros_2_service",
+            "title": "What is a ROS 2 Service?",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l03_write_a_python_service_server",
+            "title": "Write a Python Service Server",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l04_write_a_python_service_client_no_oop",
+            "title": "Write a Python Service Client - no OOP",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l05_write_a_python_service_client_oop",
+            "title": "Write a Python Service Client - OOP",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s06_l06_write_a_c_service_server",
+            "title": "Write a C++ Service Server",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l07_write_a_c_service_client_no_oop",
+            "title": "Write a C++ Service Client - no OOP",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l08_write_a_c_service_client_oop",
+            "title": "Write a C++ Service Client - OOP",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.client_libraries",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s06_l09_introspect_services_with_the_ros2_command_line",
+            "title": "Introspect Services with the ros2 Command Line",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l10_remap_a_service_at_runtime",
+            "title": "Remap a Service at Runtime",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.services",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s06_l11_experiment_on_services_with_turtlesim",
+            "title": "Experiment on Services with Turtlesim",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l12_activity_03_ros_2_services",
+            "title": "Activity 03 - ROS 2 Services",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l13_activity_03_solution",
+            "title": "Activity 03 - Solution",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s06_l14_section_conclusion",
+            "title": "Section Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Create Custom ROS 2 Interfaces",
+        "lectures": [
+          {
+            "id": "s07_l01_intro",
+            "title": "Intro",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s07_l02_what_are_ros_2_interfaces",
+            "title": "What are ROS 2 Interfaces?",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s07_l03_create_and_build_your_first_custom_msg",
+            "title": "Create and Build Your First Custom Msg",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s07_l04_use_your_custom_msg_in_a_python_node",
+            "title": "Use Your Custom Msg in a Python Node",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.topics",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s07_l05_use_your_custom_msg_in_a_c_node",
+            "title": "Use Your Custom Msg in a C++ Node",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.topics",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s07_l06_create_and_build_your_first_custom_srv",
+            "title": "Create and Build Your First Custom Srv",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.services",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s07_l07_introspect_interfaces_with_the_ros2_command_line",
+            "title": "Introspect Interfaces with the ros2 Command Line",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.cli_introspection",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s07_l08_activity_04_ros_2_custom_interfaces",
+            "title": "Activity 04 - ROS 2 Custom Interfaces",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s07_l09_activity_04_solution_1_3",
+            "title": "Activity 04 - Solution [1/3]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s07_l10_activity_04_solution_2_3",
+            "title": "Activity 04 - Solution [2/3]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s07_l11_activity_04_solution_3_3",
+            "title": "Activity 04 - Solution [3/3]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s07_l12_section_conclusion",
+            "title": "Section Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Change Node Settings at Runtime with ROS 2 Parameters",
+        "lectures": [
+          {
+            "id": "s08_l01_intro",
+            "title": "Intro",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s08_l02_what_is_a_ros_2_parameter",
+            "title": "What is a ROS 2 Parameter?",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l03_using_parameters_in_your_python_nodes",
+            "title": "Using Parameters in your Python Nodes",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l04_using_parameters_in_your_c_nodes",
+            "title": "Using Parameters in your C++ Nodes",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l05_experiment_on_parameters_with_turtlesim",
+            "title": "Experiment on Parameters with Turtlesim",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l06_yaml_parameter_files",
+            "title": "YAML Parameter Files",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l07_activity_05_ros_2_parameters",
+            "title": "Activity 05 - ROS 2 Parameters",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l08_activity_05_solution_1_2",
+            "title": "Activity 05 - Solution [1/2]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l09_activity_05_solution_2_2",
+            "title": "Activity 05 - Solution [2/2]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l10_extra_parameter_callbacks",
+            "title": "Extra: Parameter Callbacks",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s08_l11_section_conclusion",
+            "title": "Section Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Scale Your Application With ROS 2 Launch Files",
+        "lectures": [
+          {
+            "id": "s09_l01_intro",
+            "title": "Intro",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s09_l02_what_is_a_ros_2_launch_file",
+            "title": "What is a ROS 2 Launch File?",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s09_l03_create_and_install_a_launch_file_xml",
+            "title": "Create and Install a Launch File (XML)",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s09_l04_python_launch_files_python_vs_xml",
+            "title": "Python Launch Files (Python vs XML)",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s09_l05_remappings_in_a_launch_file",
+            "title": "Remappings in a Launch File",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s09_l06_load_parameters_in_a_launch_file",
+            "title": "Load Parameters in a Launch File",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s09_l07_add_namespaces_to_your_nodes",
+            "title": "Add Namespaces to Your Nodes",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s09_l08_activity_06_ros_2_launch_files",
+            "title": "Activity 06 - ROS 2 Launch Files",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s09_l09_activity_06_solution",
+            "title": "Activity 06 - Solution",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s09_l10_section_conclusion",
+            "title": "Section Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Complete Project With Turtlesim",
+        "lectures": [
+          {
+            "id": "s10_l01_turtlesim_project_final_result_overview",
+            "title": "Turtlesim Project - Final Result Overview",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s10_l02_your_challenge",
+            "title": "Your Challenge",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s10_l03_some_tips_to_get_started",
+            "title": "Some Tips to Get Started",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "s10_l04_project_solution_1_6",
+            "title": "Project Solution [1/6]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.nodes",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.topics",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s10_l05_project_solution_2_6",
+            "title": "Project Solution [2/6]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.topics",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.services",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s10_l06_project_solution_3_6",
+            "title": "Project Solution [3/6]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.services",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s10_l07_project_solution_4_6",
+            "title": "Project Solution [4/6]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.parameters",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.launch",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s10_l08_project_solution_5_6",
+            "title": "Project Solution [5/6]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "s10_l09_project_solution_6_6",
+            "title": "Project Solution [6/6]",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "ros2.launch",
+                "weight": 0.5
+              },
+              {
+                "concept_id": "ros2.interfaces",
+                "weight": 0.5
+              }
+            ]
+          },
+          {
+            "id": "s10_l10_project_conclusion",
+            "title": "Project Conclusion",
+            "source_type": "video",
+            "source_url": "https://www.udemy.com/course/ros2-for-beginners/",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      }
+    ]
+  }
+}

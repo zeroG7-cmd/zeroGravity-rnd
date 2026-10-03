@@ -1,0 +1,168 @@
+{
+    "schema_version": 1,
+    "_note": "Hand-authored achievement catalog. Nothing here is generated automatically - a new achievement only exists because it was added to this file on purpose. 'confirmed': false marks an entry zer0 has not explicitly signed off on yet (currently just the CAD tiers, proposed as a mirror of Premiere's tiers) - safe to leave in place, but check with him before treating the CAD numbers as final.",
+    "bonus_split": {
+        "_note": "Every achievement pays the same 60/20/20 split, always to these three exact competencies. Craft is unambiguous (spirit.identity.founder_identity.craft). WILL>Persistence>Goal Commitment and DISC>Accountability>Evidence are subcategories with multiple leaf competencies underneath in skill_tree.json - long_term_projects and verification were picked as the single best-fitting leaf under each. Easy to repoint at a sibling leaf (delayed_gratification / logging / reporting) later, just by editing the ids below.",
+        "targets": [
+            {"competency_id": "spirit.identity.founder_identity.craft", "weight": 0.6},
+            {"competency_id": "will.persistence.goal_commitment.long_term_projects", "weight": 0.2},
+            {"competency_id": "disc.accountability.evidence.verification", "weight": 0.2}
+        ]
+    },
+    "achievements": [
+        {
+            "id": "python_level_25",
+            "track": "python",
+            "kind": "milestone",
+            "competency_id": "int.software_engineering.programming_languages.python",
+            "level_threshold": 25,
+            "base_xp": 200,
+            "title": "Journeyman",
+            "description": "Reached Level 25 in Python.",
+            "confirmed": true
+        },
+        {
+            "id": "python_level_50",
+            "track": "python",
+            "kind": "milestone",
+            "competency_id": "int.software_engineering.programming_languages.python",
+            "level_threshold": 50,
+            "base_xp": 400,
+            "title": "Forgemaster",
+            "description": "Reached Level 50 in Python.",
+            "confirmed": true
+        },
+        {
+            "id": "python_level_75",
+            "track": "python",
+            "kind": "milestone",
+            "competency_id": "int.software_engineering.programming_languages.python",
+            "level_threshold": 75,
+            "base_xp": 800,
+            "title": "Vessel of Ogun",
+            "description": "Reached Level 75 in Python - a mythic tier that may never be reached.",
+            "confirmed": true
+        },
+        {
+            "id": "python_course_30_days",
+            "track": "python",
+            "kind": "course_completion",
+            "resource_id": "python_30_days",
+            "track_path": "int/software_engineering/programming_languages/python/30_days_of_python",
+            "base_xp": 120,
+            "title": "Apprentice",
+            "description": "Completed 30 Days of Python.",
+            "confirmed": true
+        },
+        {
+            "id": "premiere_level_10",
+            "track": "premiere_pro",
+            "kind": "milestone",
+            "competency_id": "int.creative_production.video_production.premiere_pro",
+            "level_threshold": 10,
+            "base_xp": 100,
+            "title": "Apprentice Cutter",
+            "description": "Reached Level 10 in Premiere Pro.",
+            "confirmed": true
+        },
+        {
+            "id": "premiere_level_25",
+            "track": "premiere_pro",
+            "kind": "milestone",
+            "competency_id": "int.creative_production.video_production.premiere_pro",
+            "level_threshold": 25,
+            "base_xp": 200,
+            "title": "Journeyman Editor",
+            "description": "Reached Level 25 in Premiere Pro.",
+            "confirmed": true
+        },
+        {
+            "id": "premiere_level_50",
+            "track": "premiere_pro",
+            "kind": "milestone",
+            "competency_id": "int.creative_production.video_production.premiere_pro",
+            "level_threshold": 50,
+            "base_xp": 400,
+            "title": "Reel-Smith",
+            "description": "Reached Level 50 in Premiere Pro.",
+            "confirmed": true
+        },
+        {
+            "id": "premiere_level_75",
+            "track": "premiere_pro",
+            "kind": "milestone",
+            "competency_id": "int.creative_production.video_production.premiere_pro",
+            "level_threshold": 75,
+            "base_xp": 800,
+            "title": "Master of the Cut",
+            "description": "Reached Level 75 in Premiere Pro - a mythic tier that may never be reached.",
+            "confirmed": true
+        },
+        {
+            "id": "premiere_course_full_tutorial",
+            "track": "premiere_pro",
+            "kind": "course_completion",
+            "resource_id": "premiere_pro_full_course_dashlearn",
+            "track_path": "int/creative_production/video_production/premiere_pro/premiere_pro_full_course_tutorial_6_hours",
+            "base_xp": 120,
+            "title": "Splicer",
+            "description": "Completed the Premiere Pro Full Course Tutorial (6+ Hours).",
+            "confirmed": true
+        },
+        {
+            "id": "cad_level_10",
+            "track": "cad",
+            "kind": "milestone",
+            "competency_id": "int.robotics.mechanical_design.cad",
+            "level_threshold": 10,
+            "base_xp": 100,
+            "title": "Apprentice Draftsman",
+            "description": "Reached Level 10 in CAD.",
+            "confirmed": false
+        },
+        {
+            "id": "cad_level_25",
+            "track": "cad",
+            "kind": "milestone",
+            "competency_id": "int.robotics.mechanical_design.cad",
+            "level_threshold": 25,
+            "base_xp": 200,
+            "title": "Journeyman Machinist",
+            "description": "Reached Level 25 in CAD.",
+            "confirmed": false
+        },
+        {
+            "id": "cad_level_50",
+            "track": "cad",
+            "kind": "milestone",
+            "competency_id": "int.robotics.mechanical_design.cad",
+            "level_threshold": 50,
+            "base_xp": 400,
+            "title": "Toolsmith",
+            "description": "Reached Level 50 in CAD.",
+            "confirmed": false
+        },
+        {
+            "id": "cad_level_75",
+            "track": "cad",
+            "kind": "milestone",
+            "competency_id": "int.robotics.mechanical_design.cad",
+            "level_threshold": 75,
+            "base_xp": 800,
+            "title": "Master Fabricator",
+            "description": "Reached Level 75 in CAD - a mythic tier that may never be reached.",
+            "confirmed": false
+        },
+        {
+            "id": "cad_course_fusion_360",
+            "track": "cad",
+            "kind": "course_completion",
+            "resource_id": "cad_fusion_360_beginners_course",
+            "track_path": "int/robotics/mechanical_design/cad/fusion_360_beginners_course",
+            "base_xp": 120,
+            "title": "Blueprint Initiate",
+            "description": "Completed the Fusion 360 Beginners Course.",
+            "confirmed": false
+        }
+    ]
+}

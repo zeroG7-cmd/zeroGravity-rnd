@@ -1,14 +1,14 @@
 {
     "level": 4,
-    "total_xp": 2206,
+    "total_xp": 2651,
     "level_start_xp": 1703,
     "next_level_xp": 2821,
-    "xp_into_level": 503,
-    "xp_to_next_level": 615,
+    "xp_into_level": 948,
+    "xp_to_next_level": 170,
     "level_xp_required": 1118,
-    "progress_percentage": 45.0,
+    "progress_percentage": 84.8,
     "schema_version": 1,
     "applied_receipts": [],
-    "updated_at": "2026-09-12T22:32:51.255061+00:00",
+    "updated_at": "2026-09-30T23:47:01.031349+00:00",
     "source": "learning_stats.json (auto-synced on every XP update)"
 }

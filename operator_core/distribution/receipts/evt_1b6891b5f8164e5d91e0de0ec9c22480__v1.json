@@ -1,0 +1,20 @@
+{
+  "source_event_id": "evt_1b6891b5f8164e5d91e0de0ec9c22480",
+  "total_xp": 20,
+  "allocations": [
+    {
+      "target_id": "int.computer_science.operating_systems.linux",
+      "target_type": "competency",
+      "weight": 1.0,
+      "xp": 20,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_f1747f54493342739f206331395ad868",
+  "ruleset_version": "1",
+  "created_at": "2026-09-30T23:37:53.168283+00:00",
+  "source_event_type": "learning_completed",
+  "source": "learning.engine.provider",
+  "metadata": {}
+}

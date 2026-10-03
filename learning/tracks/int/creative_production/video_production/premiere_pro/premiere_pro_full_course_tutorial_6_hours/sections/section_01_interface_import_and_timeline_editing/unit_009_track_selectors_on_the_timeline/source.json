@@ -1,0 +1,12 @@
+{
+    "source_type": "video",
+    "provider": "YouTube (DashLearn)",
+    "instructor": "",
+    "manifest": "learning/resources/youtube/video_editing/premiere_pro_full_course_tutorial_6_hours/premiere_pro_full_course_tutorial_6_hours.json",
+    "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4",
+    "section_number": 1,
+    "section_title": "Interface, Import & Timeline Editing",
+    "unit_number": 9,
+    "duration": null,
+    "duration_minutes": null
+}

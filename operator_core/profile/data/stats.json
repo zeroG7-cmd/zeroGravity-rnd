@@ -5,24 +5,24 @@
             "xp": 64
         },
         "INT": {
-            "xp": 1380
+            "xp": 1585
         },
         "STR": {
-            "xp": 600
+            "xp": 651
         },
         "DEX": {
             "xp": 13
         },
         "DISC": {
-            "xp": 119
+            "xp": 143
         },
         "WILL": {
-            "xp": 0
+            "xp": 45
         },
         "SPIRIT": {
-            "xp": 30
+            "xp": 150
         }
     },
-    "updated_at": "2026-09-12T22:32:51.255061+00:00",
+    "updated_at": "2026-09-30T23:47:01.031349+00:00",
     "source": "learning_stats.json (auto-synced on every XP update)"
 }

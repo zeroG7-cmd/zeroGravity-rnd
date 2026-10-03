@@ -1,7 +1,7 @@
 {
   "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\learning\\tracks\\int\\robotics\\mechanical_design\\cad\\fusion_360_beginners_course": {
-    "section_01_unit_003_getting_familiar_with_user_interface": {
-      "Notes": true,
+    "section_01_unit_004_navigation_tools": {
+      "Notes": false,
       "Reflection": false,
       "Practical Evidence": false
     }
@@ -22,6 +22,13 @@
       "Python Solution": false,
       "Reflection": false,
       "Terminal Output": false
+    }
+  },
+  "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\learning\\tracks\\int\\creative_production\\3d_modelling\\blender\\character_animation_in_blender_for_beginners": {
+    "section_01_unit_001_blender_basics_incl_intro": {
+      "Notes": false,
+      "Reflection": false,
+      "Practical Evidence": false
     }
   }
 }

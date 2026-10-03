@@ -89,6 +89,25 @@
             "track_path": "learning/tracks/int/creative_production/3d_modelling/blender/character_animation_in_blender_for_beginners",
             "import_method": "manifest",
             "date_added": "2026-08-30T22:56:30.515871+00:00"
+        },
+        {
+            "id": "premiere_pro_premiere_pro_full_course_tutorial_6_hours",
+            "title": "Premiere Pro Full Course Tutorial (6+ Hours)",
+            "provider": "YouTube (DashLearn)",
+            "instructor": "",
+            "stat": "INT",
+            "hierarchy": [
+                "Creative Production",
+                "Video Production",
+                "Premiere Pro"
+            ],
+            "skill": "Premiere Pro",
+            "difficulty": "Beginner",
+            "resource": "learning/resources/youtube/video_editing/premiere_pro_full_course_tutorial_6_hours",
+            "manifest": "learning/resources/youtube/video_editing/premiere_pro_full_course_tutorial_6_hours/premiere_pro_full_course_tutorial_6_hours.json",
+            "track_path": "learning/tracks/int/creative_production/video_production/premiere_pro/premiere_pro_full_course_tutorial_6_hours",
+            "import_method": "manifest",
+            "date_added": "2026-09-26T17:35:35.999023+00:00"
         }
     ]
 }

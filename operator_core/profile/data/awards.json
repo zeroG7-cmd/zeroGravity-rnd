@@ -3,14 +3,14 @@
     "target_totals": {
         "stat": {
             "CON": 64,
-            "INT": 1380,
-            "STR": 600,
+            "INT": 1585,
+            "STR": 651,
             "DEX": 13,
-            "DISC": 119,
-            "WILL": 0,
-            "SPIRIT": 30
+            "DISC": 143,
+            "WILL": 45,
+            "SPIRIT": 150
         }
     },
-    "updated_at": "2026-09-12T22:32:51.255061+00:00",
+    "updated_at": "2026-09-30T23:47:01.031349+00:00",
     "source": "learning_stats.json (auto-synced on every XP update)"
 }

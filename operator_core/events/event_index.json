@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "event_count": 56,
+    "event_count": 88,
     "event_ids": {
         "evt_0896a2c598db4984aec036c464fbc57e": {
             "event_type": "learning_completed",
@@ -225,6 +225,134 @@
         "evt_64d70262813648e89685518a24f3e7a9": {
             "event_type": "xp_distributed",
             "recorded_at": "2026-09-19T17:34:48.184841+00:00"
+        },
+        "evt_ded40041af4143a1908aeb640457a40d": {
+            "event_type": "fitness_habit_logged",
+            "recorded_at": "2026-09-22T18:36:28.520684+00:00"
+        },
+        "evt_a0e4fa78990c4baebb4e04c3acb161f1": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-22T18:36:28.533330+00:00"
+        },
+        "evt_55bf857362554ab6aeee67b10718da48": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-22T21:35:55.686309+00:00"
+        },
+        "evt_d118f5006b1f48f2887ffd9b546745bd": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-22T21:35:55.696439+00:00"
+        },
+        "evt_b9914e4321874569824ac74d7886cb84": {
+            "event_type": "journal_created",
+            "recorded_at": "2026-09-24T16:39:54.102681+00:00"
+        },
+        "evt_8a4499e5561c43ea862e1d57f56d05ba": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-24T16:39:54.122410+00:00"
+        },
+        "evt_16ff7d2e76074c4794e03f330c005e4f": {
+            "event_type": "journal_created",
+            "recorded_at": "2026-09-24T18:39:03.360899+00:00"
+        },
+        "evt_5f1fdb1ce9ab4e618bd5e44f1916bb01": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-24T18:39:03.369990+00:00"
+        },
+        "evt_4944487eecde4592aa65b5fd22be7a49": {
+            "event_type": "task_session_logged",
+            "recorded_at": "2026-09-24T20:34:34.649591+00:00"
+        },
+        "evt_1e22595300ca4335a51bcc98432edc39": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-24T20:34:34.656356+00:00"
+        },
+        "evt_062b52cf4d624a06a5306825da481f36": {
+            "event_type": "journal_created",
+            "recorded_at": "2026-09-24T21:50:33.726227+00:00"
+        },
+        "evt_a30d766baa0c4bfda208159fc09b9663": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-24T21:50:33.736194+00:00"
+        },
+        "evt_fb988ea65cbe4927aa354f3abd5006e8": {
+            "event_type": "journal_created",
+            "recorded_at": "2026-09-25T19:50:04.196129+00:00"
+        },
+        "evt_d97109a9e624445da6bb070f3fd0f269": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-25T19:50:04.216120+00:00"
+        },
+        "evt_66561060bbc24e28b13e85113b43d992": {
+            "event_type": "journal_created",
+            "recorded_at": "2026-09-25T19:50:37.531898+00:00"
+        },
+        "evt_58046e0e8ba7497f9a28530a71020d00": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-25T19:50:37.539968+00:00"
+        },
+        "evt_28f69cbce7274848864ac7f7a7058729": {
+            "event_type": "journal_created",
+            "recorded_at": "2026-09-25T19:51:55.631542+00:00"
+        },
+        "evt_5e478523c80f4f51838d9279088e251c": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-25T19:51:55.640509+00:00"
+        },
+        "evt_b233f4fa061542d8ad9169e73cf54d42": {
+            "event_type": "journal_created",
+            "recorded_at": "2026-09-25T19:52:40.210687+00:00"
+        },
+        "evt_174e20a088ab46f493a52ee009cd08d4": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-25T19:52:40.218880+00:00"
+        },
+        "evt_6a96afcbfbc542b4ab07250f2995ea57": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-27T12:33:23.133401+00:00"
+        },
+        "evt_085adfdc3dcb4afead945c3580d2e0c2": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-27T12:33:23.146188+00:00"
+        },
+        "evt_1f881e85bd494ad1a02a84ffe5fa3664": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-30T23:32:04.125398+00:00"
+        },
+        "evt_ce87fcc443f8476abb6690e87ab01c2b": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-30T23:32:04.142805+00:00"
+        },
+        "evt_b4fa12b23d41498193eab1d8f1037251": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-30T23:32:04.369559+00:00"
+        },
+        "evt_e30514e8daf644dab542e97f073cee12": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-30T23:32:04.378101+00:00"
+        },
+        "evt_1b6891b5f8164e5d91e0de0ec9c22480": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-30T23:37:53.164234+00:00"
+        },
+        "evt_03b70579213a4329b652ab4b0cfbe739": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-30T23:37:53.171398+00:00"
+        },
+        "evt_cf70e45a047741cfad46439983556e35": {
+            "event_type": "learning_completed",
+            "recorded_at": "2026-09-30T23:44:34.388468+00:00"
+        },
+        "evt_f92db962127f47e0b1cce2e79ae56114": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-30T23:44:34.395939+00:00"
+        },
+        "evt_c52f2ecbfdb14432857b287e1fd83e2e": {
+            "event_type": "task_session_logged",
+            "recorded_at": "2026-09-30T23:47:01.001508+00:00"
+        },
+        "evt_6a40b7c6155f4a7e8d3646afb41afd7f": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-09-30T23:47:01.008712+00:00"
         }
     },
     "idempotency_keys": {
@@ -283,6 +411,38 @@
         "xp_distribution:evt_0896a2c598db4984aec036c464fbc57e:1": "evt_444d2c010b804687bd497d7962b39feb",
         "xp_distribution:evt_907b3050dfd0456b820596faf6a79ea7:1": "evt_6f1f5c647e8343e68a67dfa67f826a7f",
         "xp_distribution:evt_9615a69661564b8d970e8d29d31df5b0:1": "evt_dd84a2ca0a2c4b37b1de31147c4a2404",
-        "xp_distribution:evt_ea0d7b75ac644031a9e888e7145d9ca2:1": "evt_64d70262813648e89685518a24f3e7a9"
+        "xp_distribution:evt_ea0d7b75ac644031a9e888e7145d9ca2:1": "evt_64d70262813648e89685518a24f3e7a9",
+        "fitness:2026-09-22:pushups": "evt_ded40041af4143a1908aeb640457a40d",
+        "xp_distribution:evt_ded40041af4143a1908aeb640457a40d:1": "evt_a0e4fa78990c4baebb4e04c3acb161f1",
+        "learning:udemy:cad_fusion_360_beginners_course:section_01_unit_003_getting_familiar_with_user_interface:completed": "evt_55bf857362554ab6aeee67b10718da48",
+        "xp_distribution:evt_55bf857362554ab6aeee67b10718da48:1": "evt_d118f5006b1f48f2887ffd9b546745bd",
+        "journal_created:journal_e8c11c3ccd0347fa9d9b0d600f0e1438": "evt_b9914e4321874569824ac74d7886cb84",
+        "xp_distribution:evt_b9914e4321874569824ac74d7886cb84:1": "evt_8a4499e5561c43ea862e1d57f56d05ba",
+        "journal_created:journal_2f41e33c2f024d1ebe4bb9633ca38371": "evt_16ff7d2e76074c4794e03f330c005e4f",
+        "xp_distribution:evt_16ff7d2e76074c4794e03f330c005e4f:1": "evt_5f1fdb1ce9ab4e618bd5e44f1916bb01",
+        "task_session:wo-1790282074649": "evt_4944487eecde4592aa65b5fd22be7a49",
+        "xp_distribution:evt_4944487eecde4592aa65b5fd22be7a49:1": "evt_1e22595300ca4335a51bcc98432edc39",
+        "journal_created:journal_cb3405b3c17245c0a75afd7e6fffe164": "evt_062b52cf4d624a06a5306825da481f36",
+        "xp_distribution:evt_062b52cf4d624a06a5306825da481f36:1": "evt_a30d766baa0c4bfda208159fc09b9663",
+        "journal_created:journal_56c96ed5b72c4ae38a7c6db01b5e29b6": "evt_fb988ea65cbe4927aa354f3abd5006e8",
+        "xp_distribution:evt_fb988ea65cbe4927aa354f3abd5006e8:1": "evt_d97109a9e624445da6bb070f3fd0f269",
+        "journal_created:journal_059d3b78caeb4052b788a261ac4561ab": "evt_66561060bbc24e28b13e85113b43d992",
+        "xp_distribution:evt_66561060bbc24e28b13e85113b43d992:1": "evt_58046e0e8ba7497f9a28530a71020d00",
+        "journal_created:journal_36d209088c8e48e98489af8e1e5a0fa2": "evt_28f69cbce7274848864ac7f7a7058729",
+        "xp_distribution:evt_28f69cbce7274848864ac7f7a7058729:1": "evt_5e478523c80f4f51838d9279088e251c",
+        "journal_created:journal_1a87870dec0548e8ba365d369af42c80": "evt_b233f4fa061542d8ad9169e73cf54d42",
+        "xp_distribution:evt_b233f4fa061542d8ad9169e73cf54d42:1": "evt_174e20a088ab46f493a52ee009cd08d4",
+        "learning:youtube (dashlearn):premiere_pro_full_course_dashlearn:section_01_unit_001_start:completed": "evt_6a96afcbfbc542b4ab07250f2995ea57",
+        "xp_distribution:evt_6a96afcbfbc542b4ab07250f2995ea57:1": "evt_085adfdc3dcb4afead945c3580d2e0c2",
+        "learning:boot.dev:bootdev_learn_linux:section_02_unit_006_tab_completion_back_next:completed": "evt_1f881e85bd494ad1a02a84ffe5fa3664",
+        "xp_distribution:evt_1f881e85bd494ad1a02a84ffe5fa3664:1": "evt_ce87fcc443f8476abb6690e87ab01c2b",
+        "learning:boot.dev:bootdev_learn_linux:section_02_unit_007_head_and_tail_back_next:completed": "evt_b4fa12b23d41498193eab1d8f1037251",
+        "xp_distribution:evt_b4fa12b23d41498193eab1d8f1037251:1": "evt_e30514e8daf644dab542e97f073cee12",
+        "learning:boot.dev:bootdev_learn_linux:section_02_unit_009_touch_back_next:completed": "evt_1b6891b5f8164e5d91e0de0ec9c22480",
+        "xp_distribution:evt_1b6891b5f8164e5d91e0de0ec9c22480:1": "evt_03b70579213a4329b652ab4b0cfbe739",
+        "learning:boot.dev:bootdev_learn_linux:section_02_unit_010_directories_back_next:completed": "evt_cf70e45a047741cfad46439983556e35",
+        "xp_distribution:evt_cf70e45a047741cfad46439983556e35:1": "evt_f92db962127f47e0b1cce2e79ae56114",
+        "task_session:wo-1790812021001": "evt_c52f2ecbfdb14432857b287e1fd83e2e",
+        "xp_distribution:evt_c52f2ecbfdb14432857b287e1fd83e2e:1": "evt_6a40b7c6155f4a7e8d3646afb41afd7f"
     }
 }

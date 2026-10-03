@@ -1,0 +1,809 @@
+{
+  "schema_version": 3,
+  "resource": {
+    "id": "premiere_pro_full_course_dashlearn",
+    "title": "Premiere Pro Full Course Tutorial (6+ Hours)",
+    "provider": "YouTube (DashLearn)",
+    "source_url": "https://www.youtube.com/watch?v=eCsM0r3RNc4"
+  },
+  "operator_mapping": {
+    "stat": "INT",
+    "hierarchy": [
+      "Creative Production",
+      "Video Production",
+      "Premiere Pro"
+    ],
+    "competency_id": "int.creative_production.video_production.premiere_pro",
+    "capability_id": "int.creative_production.video_production.premiere_pro",
+    "mapping_confidence": "high",
+    "default_competency_awards": [
+      {
+        "competency_id": "int.creative_production.video_production.premiere_pro",
+        "weight": 1.0
+      }
+    ],
+    "default_concept_awards": [],
+    "section_concept_awards": {},
+    "_concept_catalog_note": "premiere_pro.* concepts are new - no prior catalog existed for this domain (checked learning/config/competency_mapping_rules.json and learning/catalog/resources.json, neither has anything for video editing). 18 concepts defined here for the first time, grounded in this course's real chapter list. Framing chapters (Start/Introduction/Conclusion) carry no concept_awards on purpose - they're not skill content."
+  },
+  "course": {
+    "difficulty": "Beginner",
+    "sections": [
+      {
+        "title": "Interface, Import & Timeline Editing",
+        "lectures": [
+          {
+            "id": "lesson_001",
+            "title": "Start",
+            "source_type": "framing",
+            "start_time": "0:00",
+            "start_time_seconds": 0,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=0s",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "lesson_002",
+            "title": "Introduction",
+            "source_type": "framing",
+            "start_time": "0:03",
+            "start_time_seconds": 3,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=3s",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "lesson_003",
+            "title": "Premiere Workspace",
+            "source_type": "video",
+            "start_time": "1:22",
+            "start_time_seconds": 82,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=82s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.workspace_navigation",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_004",
+            "title": "Importing Media",
+            "source_type": "video",
+            "start_time": "11:09",
+            "start_time_seconds": 669,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=669s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.media_import",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_005",
+            "title": "Project Panel",
+            "source_type": "video",
+            "start_time": "16:09",
+            "start_time_seconds": 969,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=969s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.media_import",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_006",
+            "title": "Source Panel",
+            "source_type": "video",
+            "start_time": "30:44",
+            "start_time_seconds": 1844,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=1844s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.media_import",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_007",
+            "title": "Adding Markers in the Source Panel",
+            "source_type": "video",
+            "start_time": "48:13",
+            "start_time_seconds": 2893,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=2893s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.markers",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_008",
+            "title": "Timeline and Sequences",
+            "source_type": "video",
+            "start_time": "52:47",
+            "start_time_seconds": 3167,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=3167s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.timeline_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_009",
+            "title": "Track Selectors on the Timeline",
+            "source_type": "video",
+            "start_time": "1:09:58",
+            "start_time_seconds": 4198,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=4198s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.timeline_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_010",
+            "title": "Razor Tool",
+            "source_type": "video",
+            "start_time": "1:14:47",
+            "start_time_seconds": 4487,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=4487s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.timeline_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_011",
+            "title": "Trimming on the Timeline",
+            "source_type": "video",
+            "start_time": "1:18:32",
+            "start_time_seconds": 4712,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=4712s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.timeline_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_012",
+            "title": "Inserting and Overwriting on the Timeline",
+            "source_type": "video",
+            "start_time": "1:23:09",
+            "start_time_seconds": 4989,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=4989s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.timeline_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_013",
+            "title": "Ripple and Rolling Edit Tools",
+            "source_type": "video",
+            "start_time": "1:28:30",
+            "start_time_seconds": 5310,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=5310s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.timeline_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_014",
+            "title": "Slip and Slide Edits",
+            "source_type": "video",
+            "start_time": "1:33:17",
+            "start_time_seconds": 5597,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=5597s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.timeline_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_015",
+            "title": "Speed and Duration",
+            "source_type": "video",
+            "start_time": "1:37:34",
+            "start_time_seconds": 5854,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=5854s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.speed_and_duration",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_016",
+            "title": "Unlinking Audio and Video",
+            "source_type": "video",
+            "start_time": "1:41:36",
+            "start_time_seconds": 6096,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=6096s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.audio_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_017",
+            "title": "Lift and Extract Tools",
+            "source_type": "video",
+            "start_time": "1:44:52",
+            "start_time_seconds": 6292,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=6292s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.timeline_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_018",
+            "title": "Markers on the Program and Timeline Panel",
+            "source_type": "video",
+            "start_time": "1:47:19",
+            "start_time_seconds": 6439,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=6439s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.markers",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_019",
+            "title": "Cropping",
+            "source_type": "video",
+            "start_time": "1:51:36",
+            "start_time_seconds": 6696,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=6696s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.cropping_and_composition",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_020",
+            "title": "Picture in Picture",
+            "source_type": "video",
+            "start_time": "1:56:04",
+            "start_time_seconds": 6964,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=6964s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.cropping_and_composition",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_021",
+            "title": "Conclusion",
+            "source_type": "framing",
+            "start_time": "2:02:03",
+            "start_time_seconds": 7323,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=7323s",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Titles, Transitions, Effects & Export",
+        "lectures": [
+          {
+            "id": "lesson_022",
+            "title": "Introduction",
+            "source_type": "framing",
+            "start_time": "2:02:50",
+            "start_time_seconds": 7370,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=7370s",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "lesson_023",
+            "title": "Titles and Captions",
+            "source_type": "video",
+            "start_time": "2:03:33",
+            "start_time_seconds": 7413,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=7413s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.titles_and_captions",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_024",
+            "title": "Working with Still Images",
+            "source_type": "video",
+            "start_time": "2:25:39",
+            "start_time_seconds": 8739,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=8739s",
+            "mapping_confidence": "medium",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.still_images",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_025",
+            "title": "Transitions",
+            "source_type": "video",
+            "start_time": "2:35:09",
+            "start_time_seconds": 9309,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=9309s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.transitions",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_026",
+            "title": "Panning and Zooming Effects",
+            "source_type": "video",
+            "start_time": "2:47:52",
+            "start_time_seconds": 10072,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=10072s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.pan_zoom_effects",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_027",
+            "title": "Working with Audio",
+            "source_type": "video",
+            "start_time": "2:57:30",
+            "start_time_seconds": 10650,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=10650s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.audio_editing",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_028",
+            "title": "Exporting and Rendering",
+            "source_type": "video",
+            "start_time": "3:07:21",
+            "start_time_seconds": 11241,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=11241s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.export_and_rendering",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_029",
+            "title": "Customizing Playback Controls",
+            "source_type": "video",
+            "start_time": "3:12:12",
+            "start_time_seconds": 11532,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=11532s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.ui_customization",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_030",
+            "title": "Adding Custom Buttons to Program and Source Panel",
+            "source_type": "video",
+            "start_time": "3:16:38",
+            "start_time_seconds": 11798,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=11798s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.ui_customization",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_031",
+            "title": "Transitions",
+            "source_type": "video",
+            "start_time": "3:21:00",
+            "start_time_seconds": 12060,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=12060s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.transitions",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_032",
+            "title": "Subclips",
+            "source_type": "video",
+            "start_time": "3:32:33",
+            "start_time_seconds": 12753,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=12753s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.subclips",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_033",
+            "title": "Time Remapping for Variable Clip Speed",
+            "source_type": "video",
+            "start_time": "3:39:51",
+            "start_time_seconds": 13191,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=13191s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.speed_and_duration",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_034",
+            "title": "Brightness and Contrast Effects",
+            "source_type": "video",
+            "start_time": "3:48:12",
+            "start_time_seconds": 13692,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=13692s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.color_correction",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_035",
+            "title": "Conclusion",
+            "source_type": "framing",
+            "start_time": "3:55:10",
+            "start_time_seconds": 14110,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=14110s",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      },
+      {
+        "title": "Masking, Keyframes, Color & Text",
+        "lectures": [
+          {
+            "id": "lesson_036",
+            "title": "Introduction",
+            "source_type": "framing",
+            "start_time": "3:55:31",
+            "start_time_seconds": 14131,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=14131s",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          },
+          {
+            "id": "lesson_037",
+            "title": "Introduction to Masking and Keyframes",
+            "source_type": "video",
+            "start_time": "3:56:58",
+            "start_time_seconds": 14218,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=14218s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.masking_and_keyframes",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_038",
+            "title": "Color Correction - Lumetri Color",
+            "source_type": "video",
+            "start_time": "4:06:25",
+            "start_time_seconds": 14785,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=14785s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.color_correction",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_039",
+            "title": "Saving Effect Presets",
+            "source_type": "video",
+            "start_time": "4:13:45",
+            "start_time_seconds": 15225,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=15225s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.color_correction",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_040",
+            "title": "Adjustment Layers",
+            "source_type": "video",
+            "start_time": "4:17:57",
+            "start_time_seconds": 15477,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=15477s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.color_correction",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_041",
+            "title": "Creating Movement with Keyframes",
+            "source_type": "video",
+            "start_time": "4:26:42",
+            "start_time_seconds": 16002,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=16002s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.masking_and_keyframes",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_042",
+            "title": "3D Effect",
+            "source_type": "video",
+            "start_time": "4:37:05",
+            "start_time_seconds": 16625,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=16625s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.masking_and_keyframes",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_043",
+            "title": "Blur Effect",
+            "source_type": "video",
+            "start_time": "4:44:50",
+            "start_time_seconds": 17090,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=17090s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.masking_and_keyframes",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_044",
+            "title": "Blurring Faces",
+            "source_type": "video",
+            "start_time": "4:55:03",
+            "start_time_seconds": 17703,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=17703s",
+            "mapping_confidence": "medium",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.masking_and_keyframes",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_045",
+            "title": "Introduction to Text",
+            "source_type": "video",
+            "start_time": "5:00:46",
+            "start_time_seconds": 18046,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=18046s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.text_animation",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_046",
+            "title": "Text - 3D Effect and Keyframing",
+            "source_type": "video",
+            "start_time": "5:10:56",
+            "start_time_seconds": 18656,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=18656s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.text_animation",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_047",
+            "title": "Text - Blur Effect and Masking",
+            "source_type": "video",
+            "start_time": "5:20:21",
+            "start_time_seconds": 19221,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=19221s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.text_animation",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_048",
+            "title": "Drawing and Animating Shapes",
+            "source_type": "video",
+            "start_time": "5:29:54",
+            "start_time_seconds": 19794,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=19794s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.text_animation",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_049",
+            "title": "Text Clipping Mask",
+            "source_type": "video",
+            "start_time": "5:38:51",
+            "start_time_seconds": 20331,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=20331s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.text_animation",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_050",
+            "title": "Masking Text to Appear and Disappear",
+            "source_type": "video",
+            "start_time": "5:44:04",
+            "start_time_seconds": 20644,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=20644s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.text_animation",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_051",
+            "title": "Text Templates with Adobe Stock",
+            "source_type": "video",
+            "start_time": "5:54:16",
+            "start_time_seconds": 21256,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=21256s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.text_animation",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_052",
+            "title": "Green Screen",
+            "source_type": "video",
+            "start_time": "6:02:19",
+            "start_time_seconds": 21739,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=21739s",
+            "mapping_confidence": "high",
+            "concept_awards": [
+              {
+                "concept_id": "premiere_pro.green_screen",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "id": "lesson_053",
+            "title": "Conclusion",
+            "source_type": "framing",
+            "start_time": "6:09:12",
+            "start_time_seconds": 22152,
+            "url": "https://www.youtube.com/watch?v=eCsM0r3RNc4&t=22152s",
+            "mapping_confidence": "n/a",
+            "concept_awards": []
+          }
+        ]
+      }
+    ]
+  }
+}

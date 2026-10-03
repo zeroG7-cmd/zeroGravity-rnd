@@ -1,0 +1,20 @@
+{
+  "source_event_id": "evt_c52f2ecbfdb14432857b287e1fd83e2e",
+  "total_xp": 5,
+  "allocations": [
+    {
+      "target_id": "int.computer_science.operating_systems.linux",
+      "target_type": "competency",
+      "weight": 1.0,
+      "xp": 5,
+      "label": null,
+      "metadata": {}
+    }
+  ],
+  "receipt_id": "xpr_4a38d60ea40f421e8d4d1d94ada656b5",
+  "ruleset_version": "1",
+  "created_at": "2026-09-30T23:47:01.005902+00:00",
+  "source_event_type": "task_session_logged",
+  "source": "operator_core.tasks",
+  "metadata": {}
+}

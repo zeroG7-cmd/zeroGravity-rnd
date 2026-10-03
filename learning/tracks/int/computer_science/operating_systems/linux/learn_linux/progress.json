@@ -1,5 +1,5 @@
 {
-    "current_unit_index": 13,
+    "current_unit_index": 17,
     "completed_units": [
         "history_section_01_unit_001",
         "history_section_01_unit_002",
@@ -13,10 +13,14 @@
         "section_02_unit_001_what_is_a_filesystem_back_next",
         "section_02_unit_002_filepaths_back_next",
         "section_02_unit_003_parent_directories_back_next",
-        "section_02_unit_005_files_back_next"
+        "section_02_unit_005_files_back_next",
+        "section_02_unit_006_tab_completion_back_next",
+        "section_02_unit_007_head_and_tail_back_next",
+        "section_02_unit_009_touch_back_next",
+        "section_02_unit_010_directories_back_next"
     ],
-    "total_xp": 260,
+    "total_xp": 340,
     "status": "In Progress",
     "external_total_units": 64,
-    "external_completed_units": 13
+    "external_completed_units": 17
 }

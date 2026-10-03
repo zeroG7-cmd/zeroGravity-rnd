@@ -278,7 +278,7 @@
         "INT": {
             "name": "INT",
             "node_type": "main_stat",
-            "average_level": 0.02,
+            "average_level": 0.03,
             "children": {
                 "Software Engineering": {
                     "name": "Software Engineering",
@@ -898,11 +898,11 @@
                                     "node_type": "skill",
                                     "competency_id": "int.computer_science.operating_systems.linux",
                                     "shared": false,
-                                    "xp": 260,
+                                    "xp": 345,
                                     "level": 1,
-                                    "level_progress": 56.5,
-                                    "xp_into_level": 160,
-                                    "xp_to_next_level": 123,
+                                    "level_progress": 86.6,
+                                    "xp_into_level": 245,
+                                    "xp_to_next_level": 38,
                                     "next_level_xp": 383
                                 }
                             }
@@ -986,12 +986,12 @@
                 "Robotics": {
                     "name": "Robotics",
                     "node_type": "parent",
-                    "average_level": 0.0,
+                    "average_level": 0.05,
                     "children": {
                         "Mechanical Design": {
                             "name": "Mechanical Design",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.25,
                             "children": {
                                 "Statics": {
                                     "name": "Statics",
@@ -1034,12 +1034,12 @@
                                     "node_type": "skill",
                                     "competency_id": "int.robotics.mechanical_design.cad",
                                     "shared": false,
-                                    "xp": 60,
-                                    "level": 0,
-                                    "level_progress": 60.0,
-                                    "xp_into_level": 60,
-                                    "xp_to_next_level": 40,
-                                    "next_level_xp": 100
+                                    "xp": 110,
+                                    "level": 1,
+                                    "level_progress": 3.5,
+                                    "xp_into_level": 10,
+                                    "xp_to_next_level": 273,
+                                    "next_level_xp": 383
                                 }
                             }
                         },
@@ -1206,10 +1206,22 @@
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
                                 },
-                                "Localisation": {
-                                    "name": "Localisation",
+                                "SLAM": {
+                                    "name": "SLAM",
                                     "node_type": "skill",
-                                    "competency_id": "int.robotics.navigation_and_mapping.localisation",
+                                    "competency_id": "int.robotics.navigation_and_mapping.slam",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "GPS": {
+                                    "name": "GPS",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.navigation_and_mapping.gps",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -1225,105 +1237,53 @@
                             "node_type": "parent",
                             "average_level": 0.0,
                             "children": {
-                                "Robot Middleware": {
-                                    "name": "Robot Middleware",
-                                    "node_type": "parent",
-                                    "average_level": 0.0,
-                                    "children": {
-                                        "ROS2": {
-                                            "name": "ROS2",
-                                            "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.robot_middleware.ros2",
-                                            "shared": false,
-                                            "xp": 0,
-                                            "level": 0,
-                                            "level_progress": 0.0,
-                                            "xp_into_level": 0,
-                                            "xp_to_next_level": 100,
-                                            "next_level_xp": 100
-                                        }
-                                    }
+                                "ROS2": {
+                                    "name": "ROS2",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.robot_software.ros2",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
-                                "Simulation": {
-                                    "name": "Simulation",
-                                    "node_type": "parent",
-                                    "average_level": 0.0,
-                                    "children": {
-                                        "Gazebo": {
-                                            "name": "Gazebo",
-                                            "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.simulation.gazebo",
-                                            "shared": false,
-                                            "xp": 0,
-                                            "level": 0,
-                                            "level_progress": 0.0,
-                                            "xp_into_level": 0,
-                                            "xp_to_next_level": 100,
-                                            "next_level_xp": 100
-                                        }
-                                    }
+                                "Gazebo": {
+                                    "name": "Gazebo",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.robot_software.gazebo",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
-                                "Localisation": {
-                                    "name": "Localisation",
-                                    "node_type": "parent",
-                                    "average_level": 0.0,
-                                    "children": {
-                                        "SLAM": {
-                                            "name": "SLAM",
-                                            "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.localisation.slam",
-                                            "shared": false,
-                                            "xp": 0,
-                                            "level": 0,
-                                            "level_progress": 0.0,
-                                            "xp_into_level": 0,
-                                            "xp_to_next_level": 100,
-                                            "next_level_xp": 100
-                                        },
-                                        "GPS": {
-                                            "name": "GPS",
-                                            "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.localisation.gps",
-                                            "shared": false,
-                                            "xp": 0,
-                                            "level": 0,
-                                            "level_progress": 0.0,
-                                            "xp_into_level": 0,
-                                            "xp_to_next_level": 100,
-                                            "next_level_xp": 100
-                                        }
-                                    }
+                                "Runtime Services": {
+                                    "name": "Runtime Services",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.robot_software.runtime_services",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 },
-                                "Deployment": {
-                                    "name": "Deployment",
-                                    "node_type": "parent",
-                                    "average_level": 0.0,
-                                    "children": {
-                                        "Runtime Services": {
-                                            "name": "Runtime Services",
-                                            "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.deployment.runtime_services",
-                                            "shared": false,
-                                            "xp": 0,
-                                            "level": 0,
-                                            "level_progress": 0.0,
-                                            "xp_into_level": 0,
-                                            "xp_to_next_level": 100,
-                                            "next_level_xp": 100
-                                        },
-                                        "Telemetry": {
-                                            "name": "Telemetry",
-                                            "node_type": "skill",
-                                            "competency_id": "int.robotics.robot_software.deployment.telemetry",
-                                            "shared": false,
-                                            "xp": 0,
-                                            "level": 0,
-                                            "level_progress": 0.0,
-                                            "xp_into_level": 0,
-                                            "xp_to_next_level": 100,
-                                            "next_level_xp": 100
-                                        }
-                                    }
+                                "Telemetry": {
+                                    "name": "Telemetry",
+                                    "node_type": "skill",
+                                    "competency_id": "int.robotics.robot_software.telemetry",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
                                 }
                             }
                         }
@@ -2357,11 +2317,11 @@
                                     "node_type": "skill",
                                     "competency_id": "int.creative_production.video_production.premiere_pro",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 40,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 40.0,
+                                    "xp_into_level": 40,
+                                    "xp_to_next_level": 60,
                                     "next_level_xp": 100
                                 }
                             }
@@ -2464,6 +2424,44 @@
                                     "node_type": "skill",
                                     "competency_id": "int.learning_practice.learning_systems.reflection",
                                     "shared": false,
+                                    "xp": 30,
+                                    "level": 0,
+                                    "level_progress": 30.0,
+                                    "xp_into_level": 30,
+                                    "xp_to_next_level": 70,
+                                    "next_level_xp": 100
+                                },
+                                "Knowledge Mapping": {
+                                    "name": "Knowledge Mapping",
+                                    "node_type": "skill",
+                                    "competency_id": "int.learning_practice.learning_systems.knowledge_mapping",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        }
+                    }
+                },
+                "Aviation": {
+                    "name": "Aviation",
+                    "node_type": "parent",
+                    "average_level": 0.0,
+                    "children": {
+                        "Flight Theory": {
+                            "name": "Flight Theory",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Aerodynamics & Lift": {
+                                    "name": "Aerodynamics & Lift",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.flight_theory.aerodynamics_and_lift",
+                                    "shared": false,
                                     "xp": 0,
                                     "level": 0,
                                     "level_progress": 0.0,
@@ -2471,10 +2469,347 @@
                                     "xp_to_next_level": 100,
                                     "next_level_xp": 100
                                 },
-                                "Knowledge Mapping": {
-                                    "name": "Knowledge Mapping",
+                                "Aircraft Performance Limits": {
+                                    "name": "Aircraft Performance Limits",
                                     "node_type": "skill",
-                                    "competency_id": "int.learning_practice.learning_systems.knowledge_mapping",
+                                    "competency_id": "int.aviation.flight_theory.aircraft_performance_limits",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "UAS General Knowledge": {
+                                    "name": "UAS General Knowledge",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.flight_theory.uas_general_knowledge",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Navigation": {
+                            "name": "Navigation",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Airspace Classification": {
+                                    "name": "Airspace Classification",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.navigation.airspace_classification",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Charts & Charting": {
+                                    "name": "Charts & Charting",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.navigation.charts_and_charting",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "GPS Navigation": {
+                                    "name": "GPS Navigation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.navigation.gps_navigation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Waypoint Planning": {
+                                    "name": "Waypoint Planning",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.navigation.waypoint_planning",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Meteorology": {
+                            "name": "Meteorology",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Weather Interpretation": {
+                                    "name": "Weather Interpretation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.meteorology.weather_interpretation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Wind & Turbulence Effects": {
+                                    "name": "Wind & Turbulence Effects",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.meteorology.wind_and_turbulence_effects",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Flight-limiting Conditions": {
+                                    "name": "Flight-limiting Conditions",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.meteorology.flight_limiting_conditions",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Mission Planning": {
+                            "name": "Mission Planning",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Risk Assessment": {
+                                    "name": "Risk Assessment",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.mission_planning.risk_assessment",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Operating Procedures": {
+                                    "name": "Operating Procedures",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.mission_planning.operating_procedures",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Site Survey": {
+                                    "name": "Site Survey",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.mission_planning.site_survey",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Flight Authorisation": {
+                                    "name": "Flight Authorisation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.mission_planning.flight_authorisation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Piloting": {
+                            "name": "Piloting",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Manual Flight Control": {
+                                    "name": "Manual Flight Control",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.piloting.manual_flight_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Takeoff & Landing": {
+                                    "name": "Takeoff & Landing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.piloting.takeoff_and_landing",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Emergency Procedures": {
+                                    "name": "Emergency Procedures",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.piloting.emergency_procedures",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "FPV Operations": {
+                            "name": "FPV Operations",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "FPV Flight Control": {
+                                    "name": "FPV Flight Control",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.fpv_operations.fpv_flight_control",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Racing / Freestyle Technique": {
+                                    "name": "Racing / Freestyle Technique",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.fpv_operations.racing_freestyle_technique",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Goggles & Video Link Setup": {
+                                    "name": "Goggles & Video Link Setup",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.fpv_operations.goggles_and_video_link_setup",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "BVLOS": {
+                            "name": "BVLOS",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Airspace Authorisation": {
+                                    "name": "Airspace Authorisation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.bvlos.airspace_authorisation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Detect & Avoid": {
+                                    "name": "Detect & Avoid",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.bvlos.detect_and_avoid",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Beyond-VLOS Risk Mitigation": {
+                                    "name": "Beyond-VLOS Risk Mitigation",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.bvlos.beyond_vlos_risk_mitigation",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                }
+                            }
+                        },
+                        "Autonomy": {
+                            "name": "Autonomy",
+                            "node_type": "parent",
+                            "average_level": 0.0,
+                            "children": {
+                                "Autonomous Mission Execution": {
+                                    "name": "Autonomous Mission Execution",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.autonomy.autonomous_mission_execution",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Failsafe & Return-to-Home Behaviour": {
+                                    "name": "Failsafe & Return-to-Home Behaviour",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.autonomy.failsafe_and_return_to_home_behaviour",
+                                    "shared": false,
+                                    "xp": 0,
+                                    "level": 0,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 100,
+                                    "next_level_xp": 100
+                                },
+                                "Geofencing": {
+                                    "name": "Geofencing",
+                                    "node_type": "skill",
+                                    "competency_id": "int.aviation.autonomy.geofencing",
                                     "shared": false,
                                     "xp": 0,
                                     "level": 0,
@@ -2509,11 +2844,11 @@
                                     "node_type": "skill",
                                     "competency_id": "str.muscular_strength.pushing_strength.push_ups",
                                     "shared": false,
-                                    "xp": 255,
+                                    "xp": 306,
                                     "level": 1,
-                                    "level_progress": 54.8,
-                                    "xp_into_level": 155,
-                                    "xp_to_next_level": 128,
+                                    "level_progress": 72.8,
+                                    "xp_into_level": 206,
+                                    "xp_to_next_level": 77,
                                     "next_level_xp": 383
                                 },
                                 "Bench Press": {
@@ -3284,11 +3619,11 @@
                                     "node_type": "skill",
                                     "competency_id": "disc.consistency.routine_adherence.daily_practice",
                                     "shared": false,
-                                    "xp": 119,
+                                    "xp": 128,
                                     "level": 1,
-                                    "level_progress": 6.7,
-                                    "xp_into_level": 19,
-                                    "xp_to_next_level": 264,
+                                    "level_progress": 9.9,
+                                    "xp_into_level": 28,
+                                    "xp_to_next_level": 255,
                                     "next_level_xp": 383
                                 },
                                 "Weekly Review": {
@@ -3577,11 +3912,11 @@
                                     "node_type": "skill",
                                     "competency_id": "disc.accountability.evidence.logging",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 15,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 15.0,
+                                    "xp_into_level": 15,
+                                    "xp_to_next_level": 85,
                                     "next_level_xp": 100
                                 },
                                 "Reporting": {
@@ -3922,11 +4257,11 @@
                                     "node_type": "skill",
                                     "competency_id": "will.decisiveness.decision_execution.commitment",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 45,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 45.0,
+                                    "xp_into_level": 45,
+                                    "xp_to_next_level": 55,
                                     "next_level_xp": 100
                                 },
                                 "Risk Acceptance": {
@@ -3950,7 +4285,7 @@
         "SPIRIT": {
             "name": "SPIRIT",
             "node_type": "main_stat",
-            "average_level": 0.0,
+            "average_level": 0.04,
             "children": {
                 "Identity": {
                     "name": "Identity",
@@ -3991,11 +4326,11 @@
                                     "node_type": "skill",
                                     "competency_id": "spirit.identity.self_knowledge.authenticity",
                                     "shared": false,
-                                    "xp": 0,
+                                    "xp": 15,
                                     "level": 0,
-                                    "level_progress": 0.0,
-                                    "xp_into_level": 0,
-                                    "xp_to_next_level": 100,
+                                    "level_progress": 15.0,
+                                    "xp_into_level": 15,
+                                    "xp_to_next_level": 85,
                                     "next_level_xp": 100
                                 }
                             }
@@ -4222,12 +4557,12 @@
                 "Reflection": {
                     "name": "Reflection",
                     "node_type": "parent",
-                    "average_level": 0.0,
+                    "average_level": 0.25,
                     "children": {
                         "Reflective Practice": {
                             "name": "Reflective Practice",
                             "node_type": "parent",
-                            "average_level": 0.0,
+                            "average_level": 0.25,
                             "children": {
                                 "Journaling": {
                                     "name": "Journaling",
@@ -4246,23 +4581,23 @@
                                     "node_type": "skill",
                                     "competency_id": "spirit.reflection.reflective_practice.self_assessment",
                                     "shared": false,
-                                    "xp": 10,
-                                    "level": 0,
-                                    "level_progress": 10.0,
-                                    "xp_into_level": 10,
-                                    "xp_to_next_level": 90,
-                                    "next_level_xp": 100
+                                    "xp": 100,
+                                    "level": 1,
+                                    "level_progress": 0.0,
+                                    "xp_into_level": 0,
+                                    "xp_to_next_level": 283,
+                                    "next_level_xp": 383
                                 },
                                 "Meaning Making": {
                                     "name": "Meaning Making",
                                     "node_type": "skill",
                                     "competency_id": "spirit.reflection.reflective_practice.meaning_making",
                                     "shared": false,
-                                    "xp": 10,
+                                    "xp": 25,
                                     "level": 0,
-                                    "level_progress": 10.0,
-                                    "xp_into_level": 10,
-                                    "xp_to_next_level": 90,
+                                    "level_progress": 25.0,
+                                    "xp_into_level": 25,
+                                    "xp_to_next_level": 75,
                                     "next_level_xp": 100
                                 },
                                 "Epiphanies": {
@@ -4384,13 +4719,13 @@
             }
         }
     },
-    "total_xp": 2206,
+    "total_xp": 2651,
     "level": 4,
-    "level_progress": 45.0,
-    "xp_into_level": 503,
-    "xp_to_next_level": 615,
+    "level_progress": 84.8,
+    "xp_into_level": 948,
+    "xp_to_next_level": 170,
     "next_level_xp": 2821,
     "level_xp_required": 1118,
-    "competency_count": 284,
+    "competency_count": 309,
     "migrated_competencies": []
 }

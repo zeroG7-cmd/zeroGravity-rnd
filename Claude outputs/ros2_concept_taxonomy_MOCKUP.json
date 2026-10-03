@@ -1,0 +1,14 @@
+{
+  "concepts": {
+    "ros2.nodes": "The node as ROS2's basic unit of computation, and the node graph.",
+    "ros2.workspaces_packages": "Colcon workspaces and ament package structure, for Python and C++.",
+    "ros2.client_libraries": "rclpy/rclcpp and writing nodes with them, minimal and OOP patterns.",
+    "ros2.cli_introspection": "The ros2 command-line tools, rqt/rqt_graph, and inspecting a running system.",
+    "ros2.topics": "Publish/subscribe messaging between nodes.",
+    "ros2.services": "Client/server request-response calls between nodes.",
+    "ros2.interfaces": "Defining and using custom message (.msg) and service (.srv) types.",
+    "ros2.parameters": "Runtime node configuration, YAML parameter files, and parameter callbacks.",
+    "ros2.launch": "Launch files (XML and Python), remapping, and namespacing to start multi-node systems.",
+    "ros2.bags": "Recording and replaying topic data with ros2 bag."
+  }
+}
