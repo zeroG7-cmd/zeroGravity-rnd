@@ -986,12 +986,12 @@
                 "Robotics": {
                     "name": "Robotics",
                     "node_type": "parent",
-                    "average_level": 0.05,
+                    "average_level": 0.1,
                     "children": {
                         "Mechanical Design": {
                             "name": "Mechanical Design",
                             "node_type": "parent",
-                            "average_level": 0.25,
+                            "average_level": 0.5,
                             "children": {
                                 "Statics": {
                                     "name": "Statics",
@@ -1034,12 +1034,12 @@
                                     "node_type": "skill",
                                     "competency_id": "int.robotics.mechanical_design.cad",
                                     "shared": false,
-                                    "xp": 110,
-                                    "level": 1,
-                                    "level_progress": 3.5,
-                                    "xp_into_level": 10,
-                                    "xp_to_next_level": 273,
-                                    "next_level_xp": 383
+                                    "xp": 470,
+                                    "level": 2,
+                                    "level_progress": 16.7,
+                                    "xp_into_level": 87,
+                                    "xp_to_next_level": 433,
+                                    "next_level_xp": 903
                                 }
                             }
                         },
@@ -4719,13 +4719,13 @@
             }
         }
     },
-    "total_xp": 2651,
-    "level": 4,
-    "level_progress": 84.8,
-    "xp_into_level": 948,
-    "xp_to_next_level": 170,
-    "next_level_xp": 2821,
-    "level_xp_required": 1118,
+    "total_xp": 3011,
+    "level": 5,
+    "level_progress": 12.9,
+    "xp_into_level": 190,
+    "xp_to_next_level": 1280,
+    "next_level_xp": 4291,
+    "level_xp_required": 1470,
     "competency_count": 309,
     "migrated_competencies": []
 }

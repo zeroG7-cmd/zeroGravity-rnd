@@ -3,7 +3,7 @@
     "target_totals": {
         "stat": {
             "CON": 64,
-            "INT": 1585,
+            "INT": 1945,
             "STR": 651,
             "DEX": 13,
             "DISC": 143,
@@ -11,6 +11,6 @@
             "SPIRIT": 150
         }
     },
-    "updated_at": "2026-09-30T23:47:01.031349+00:00",
+    "updated_at": "2026-10-25T04:18:08.261806+00:00",
     "source": "learning_stats.json (auto-synced on every XP update)"
 }

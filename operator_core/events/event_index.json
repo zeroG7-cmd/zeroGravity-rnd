@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "event_count": 88,
+    "event_count": 92,
     "event_ids": {
         "evt_0896a2c598db4984aec036c464fbc57e": {
             "event_type": "learning_completed",
@@ -353,6 +353,22 @@
         "evt_6a40b7c6155f4a7e8d3646afb41afd7f": {
             "event_type": "xp_distributed",
             "recorded_at": "2026-09-30T23:47:01.008712+00:00"
+        },
+        "evt_4988832380394a6d9770c05749983a2f": {
+            "event_type": "execution_completed",
+            "recorded_at": "2026-10-25T04:16:38.525610+00:00"
+        },
+        "evt_d6830980d0054b29b88fe5778be99c0a": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-10-25T04:16:38.547531+00:00"
+        },
+        "evt_81d1110f6bda4d5caaba44374a1dc11a": {
+            "event_type": "task_session_logged",
+            "recorded_at": "2026-10-25T04:18:08.219779+00:00"
+        },
+        "evt_58f698ccb9c440d1a2b46e3cb4014929": {
+            "event_type": "xp_distributed",
+            "recorded_at": "2026-10-25T04:18:08.234385+00:00"
         }
     },
     "idempotency_keys": {
@@ -443,6 +459,10 @@
         "learning:boot.dev:bootdev_learn_linux:section_02_unit_010_directories_back_next:completed": "evt_cf70e45a047741cfad46439983556e35",
         "xp_distribution:evt_cf70e45a047741cfad46439983556e35:1": "evt_f92db962127f47e0b1cce2e79ae56114",
         "task_session:wo-1790812021001": "evt_c52f2ecbfdb14432857b287e1fd83e2e",
-        "xp_distribution:evt_c52f2ecbfdb14432857b287e1fd83e2e:1": "evt_6a40b7c6155f4a7e8d3646afb41afd7f"
+        "xp_distribution:evt_c52f2ecbfdb14432857b287e1fd83e2e:1": "evt_6a40b7c6155f4a7e8d3646afb41afd7f",
+        "execution:b4ece6c444b4c47ddc1d922a5a1f2c4e556fcd839f0f9af98f6f05fe94af9826": "evt_4988832380394a6d9770c05749983a2f",
+        "xp_distribution:evt_4988832380394a6d9770c05749983a2f:1": "evt_d6830980d0054b29b88fe5778be99c0a",
+        "task_session:wo-1792901888219": "evt_81d1110f6bda4d5caaba44374a1dc11a",
+        "xp_distribution:evt_81d1110f6bda4d5caaba44374a1dc11a:1": "evt_58f698ccb9c440d1a2b46e3cb4014929"
     }
 }

@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "receipt_count": 48,
+    "receipt_count": 50,
     "by_source_event": {
         "evt_e24847fb08394e13b80ee874dd2712b9::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp9kwdbxu3\\receipts\\evt_e24847fb08394e13b80ee874dd2712b9__v1.json",
         "evt_2d6c33d24fa84bdd914cb01d7716a7e5::1": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmpxzj93emu\\receipts\\evt_2d6c33d24fa84bdd914cb01d7716a7e5__v1.json",
@@ -49,7 +49,9 @@
         "evt_b4fa12b23d41498193eab1d8f1037251::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b4fa12b23d41498193eab1d8f1037251__v1.json",
         "evt_1b6891b5f8164e5d91e0de0ec9c22480::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_1b6891b5f8164e5d91e0de0ec9c22480__v1.json",
         "evt_cf70e45a047741cfad46439983556e35::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_cf70e45a047741cfad46439983556e35__v1.json",
-        "evt_c52f2ecbfdb14432857b287e1fd83e2e::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_c52f2ecbfdb14432857b287e1fd83e2e__v1.json"
+        "evt_c52f2ecbfdb14432857b287e1fd83e2e::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_c52f2ecbfdb14432857b287e1fd83e2e__v1.json",
+        "evt_4988832380394a6d9770c05749983a2f::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_4988832380394a6d9770c05749983a2f__v1.json",
+        "evt_81d1110f6bda4d5caaba44374a1dc11a::1": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_81d1110f6bda4d5caaba44374a1dc11a__v1.json"
     },
     "by_receipt_id": {
         "xpr_9f8a1a8c037e4e26a339576e54edb188": "C:\\Users\\Zero\\AppData\\Local\\Temp\\tmp9kwdbxu3\\receipts\\evt_e24847fb08394e13b80ee874dd2712b9__v1.json",
@@ -99,6 +101,8 @@
         "xpr_65c941551204427a829aa0d556a6a654": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_b4fa12b23d41498193eab1d8f1037251__v1.json",
         "xpr_f1747f54493342739f206331395ad868": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_1b6891b5f8164e5d91e0de0ec9c22480__v1.json",
         "xpr_13cfc1232c6d48b9871c6c939182ec47": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_cf70e45a047741cfad46439983556e35__v1.json",
-        "xpr_4a38d60ea40f421e8d4d1d94ada656b5": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_c52f2ecbfdb14432857b287e1fd83e2e__v1.json"
+        "xpr_4a38d60ea40f421e8d4d1d94ada656b5": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_c52f2ecbfdb14432857b287e1fd83e2e__v1.json",
+        "xpr_fdbd055f8a204516a188a068f570b597": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_4988832380394a6d9770c05749983a2f__v1.json",
+        "xpr_32f312b7a79e42838e1aa913de969537": "C:\\Users\\Zero\\zero Gravity\\zeroGravity-rnd\\operator_core\\distribution\\receipts\\evt_81d1110f6bda4d5caaba44374a1dc11a__v1.json"
     }
 }

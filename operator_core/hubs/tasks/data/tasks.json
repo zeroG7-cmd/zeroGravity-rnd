@@ -32,5 +32,22 @@
     "leveled_up": false,
     "event_id": "evt_c52f2ecbfdb14432857b287e1fd83e2e",
     "receipt_id": "xpr_4a38d60ea40f421e8d4d1d94ada656b5"
+  },
+  {
+    "id": "wo-1792901888219",
+    "created_at": "2026-10-25T04:18:08.219260+00:00",
+    "day_key": "tue",
+    "stat": "INT",
+    "category": "Robotics",
+    "subcategory": "Mechanical Design",
+    "capability": "CAD",
+    "competency_id": "int.robotics.mechanical_design.cad",
+    "hours": 10.0,
+    "xp": 200,
+    "level_before": 1,
+    "level_after": 2,
+    "leveled_up": true,
+    "event_id": "evt_81d1110f6bda4d5caaba44374a1dc11a",
+    "receipt_id": "xpr_32f312b7a79e42838e1aa913de969537"
   }
 ]
