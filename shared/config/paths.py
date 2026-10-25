@@ -38,6 +38,21 @@ LAB_ARCHIVE = LAB_ROOT / "archive"
 LAB_REPORTS = LAB_ROOT / "reports"
 LAB_DATASETS = LAB_ROOT / "datasets"
 
+# Oct 24, 2026 - shadow_ws/src/shadow_drone/nodes/telemetry_publisher.py
+# writes Shadow's live sim snapshot here at ~20Hz (connected/armed/mode,
+# plus odometry/rc_out/imu when available), atomically (temp file +
+# os.replace). This repo's own get_shadow() never actually read it -
+# "telemetry.latest" was hardcoded to None - which is why Zero Command's
+# Simulation Bay HUD was permanently stuck on "Awaiting live telemetry"
+# and, since the FPV camera panel is gated on that same signal, the front
+# camera never showed either, even though the camera stream itself was
+# working fine on :5002/video the whole time. Matches
+# ~/shadow_sim_runtime living as a sibling of this repo and shadow_ws
+# under the user's home directory, not a guess - confirmed against
+# telemetry_publisher.py's own DEFAULT_OUTPUT_PATH.
+SHADOW_SIM_RUNTIME_ROOT = REPO_ROOT.parent / "shadow_sim_runtime"
+SHADOW_TELEMETRY_JSON = SHADOW_SIM_RUNTIME_ROOT / "telemetry" / "latest.json"
+
 JOURNAL_ROOT = REPO_ROOT / "journal"
 JOURNAL_ENTRIES = JOURNAL_ROOT / "entries"
 JOURNAL_ARCHIVE = JOURNAL_ROOT / "archive"

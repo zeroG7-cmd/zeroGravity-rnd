@@ -7,6 +7,7 @@ know the repository's database schemas or directory layout.
 from __future__ import annotations
 
 import sqlite3
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Iterable
@@ -20,6 +21,7 @@ from shared.config.paths import (
     REPO_ROOT,
     SHADOW_DATA,
     SHADOW_ROOT,
+    SHADOW_TELEMETRY_JSON,
     SHADOW_URDF,
 )
 from shared.libraries.json_store import load_json
@@ -200,19 +202,52 @@ def get_projects() -> list[dict[str, Any]]:
     return projects
 
 
+# Oct 24, 2026 - telemetry_publisher.py (shadow_drone) writes a fresh
+# snapshot every 1/20s while the sim is running, but never deletes the
+# file when the sim stops - so "latest.json exists" alone can't tell a
+# live run from a run that ended an hour ago. 5s is generously larger
+# than the 1/20s write period (any live run rewrites the file many
+# times a second) while still being short enough that a stopped sim
+# goes back to "no telemetry" within a few seconds, not indefinitely.
+TELEMETRY_STALE_AFTER_SECONDS = 5.0
+
+
+def _live_telemetry() -> dict[str, Any] | None:
+    """Shadow's live sim snapshot (connected/armed/mode, plus
+    odometry/rc_out/imu when available) - previously this whole function
+    didn't exist and get_shadow() hardcoded "latest": None unconditionally,
+    which is why the Simulation Bay HUD was always stuck on "Awaiting live
+    telemetry" regardless of whether a simulation was actually running."""
+    try:
+        if not SHADOW_TELEMETRY_JSON.exists():
+            return None
+        age_seconds = time.time() - SHADOW_TELEMETRY_JSON.stat().st_mtime
+        if age_seconds > TELEMETRY_STALE_AFTER_SECONDS:
+            return None
+        return load_json(SHADOW_TELEMETRY_JSON, None)
+    except (OSError, ValueError):
+        return None
+
+
 def get_shadow() -> dict[str, Any]:
+    telemetry_latest = _live_telemetry()
     return {
         "database_online": LAB_DB.exists(),
         "vehicle": {
             "name": "Shadow MK1",
             "type": "Companion Aerial Robot",
             "model": "MK1",
+            # "Development" here means "this vehicle's project folder
+            # exists in the repo" (a fixed project-maturity label), not a
+            # live connection indicator - the dashboard's "LINK" chip next
+            # to it is genuinely about telemetry.latest below, which is
+            # what was broken.
             "status": "Development" if SHADOW_ROOT.exists() else "Unavailable",
             "last_seen": None,
         },
         "telemetry": {
             "samples": _scalar("SELECT COUNT(*) FROM telemetry_logs"),
-            "latest": None,
+            "latest": telemetry_latest,
         },
         "missions": {
             "total": _scalar("SELECT COUNT(*) FROM mission_logs"),
