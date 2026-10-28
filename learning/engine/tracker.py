@@ -167,7 +167,31 @@ def complete_progress(
     return True
 
 
-def track_selected_course(track_path: Path) -> None:
+def complete_unit(track_path: Path, unit_index: int) -> dict[str, Any]:
+    """Complete ANY unit in a track by its index - out of order is fine.
+
+    This is the one place that actually awards a unit completion; both the
+    CLI (track_selected_course(), below - which still only ever passes the
+    current index, since its stdin prompt has no way to pick another one)
+    and the Flask Learning Hub UI (learning/engine/complete_unit.py, which
+    can pass any unit's index once the operator unlocks out-of-order work)
+    call this same function, so the two can never drift apart.
+
+    Every downstream accounting layer this touches - the completion
+    ledger's idempotency key, learning_history.json's completion_exists()
+    check, and even progress['completed_units'] itself - is already keyed
+    by unit_id, not by sequential position, so nothing here needed to
+    change to make out-of-order completion safe at that layer. What WAS
+    hard-wired to strict order was (1) unit *selection* (the old
+    track_selected_course() only ever looked at current_unit_index) and
+    (2) the post-award *advance* step (the old complete_progress() always
+    moved current_unit_index forward by exactly one). This function fixes
+    both: it takes an explicit unit_index, and it advances
+    current_unit_index to the first unit that still isn't in
+    completed_units (not blindly +1), so "current" keeps meaning "the
+    earliest thing you haven't finished yet" even after finishing
+    something later out of order.
+    """
     metadata_path = track_path / "metadata.json"
     progress_path = track_path / "progress.json"
     metadata = load_json(metadata_path)
@@ -176,42 +200,27 @@ def track_selected_course(track_path: Path) -> None:
     ensure_progress(progress)
 
     units = metadata["units"]
-    current_index = int(progress["current_unit_index"])
-    if not 0 <= current_index < len(units):
-        raise ValueError("Current unit index is out of range.")
-
-    unit = units[current_index]
+    if not 0 <= unit_index < len(units):
+        raise ValueError("Unit index is out of range.")
+    unit = units[unit_index]
     unit_path = track_path / unit["path"]
 
-    print(f"\nTrack          : {metadata.get('title', 'Unknown')}")
-    print(f"Provider       : {metadata.get('provider', 'Unknown')}")
-    print(f"Knowledge path : {build_knowledge_path(metadata)}")
-    print(f"Difficulty     : {metadata.get('difficulty', 'Unknown')}")
-    print(f"Current unit   : {unit['title']}")
-    print(f"Unit type      : {unit.get('source_type', 'manual')}")
-    print(f"Progress       : {len(progress['completed_units'])}/{len(units)}")
-    print(f"Track XP       : {progress['total_xp']}")
-    print(f"Track status   : {progress['status']}")
+    result: dict[str, Any] = {
+        "ok": False,
+        "reason": None,
+        "track_title": metadata.get("title", "Unknown"),
+        "unit": unit,
+        "unit_index": unit_index,
+    }
 
-    if progress["status"] == "Complete":
-        print("\nThis track is already complete.")
-        return
     if not unit_path.exists():
         raise FileNotFoundError(f"Unit folder does not exist:\n{unit_path}")
 
-    evidence_status = check_evidence(
-        unit_path,
-        metadata["evidence_requirements"],
-    )
-    print("\nEvidence check")
-    print("-" * 68)
-    for name, passed in evidence_status.items():
-        print(f"{name:<32}{'[PASS]' if passed else '[MISSING]'}")
-    print("-" * 68)
-
+    evidence_status = check_evidence(unit_path, metadata["evidence_requirements"])
+    result["evidence_status"] = evidence_status
     if not evidence_status or not all(evidence_status.values()):
-        print("Unit is still in progress.")
-        return
+        result["reason"] = "evidence_incomplete"
+        return result
 
     total_xp = calculate_unit_xp(metadata, unit)
     mappings = resolve_competency_awards(metadata, unit)
@@ -221,19 +230,27 @@ def track_selected_course(track_path: Path) -> None:
             "competency_awards, section_competency_awards, "
             "default_competency_awards, or competency_id."
         )
+
+    if unit["id"] in progress["completed_units"]:
+        result["reason"] = "already_completed"
+        return result
+
     completion_service = LearningCompletionService(
         progression_updater=update_operator_competencies
     )
 
-    if not complete_progress(
-        progress,
-        unit["id"],
-        current_index,
-        len(units),
-        total_xp,
-    ):
-        print("\nThis unit was already completed. No XP was awarded.")
-        return
+    progress["completed_units"].append(unit["id"])
+    progress["total_xp"] += total_xp
+    completed_ids = set(progress["completed_units"])
+    next_index = next(
+        (index for index, candidate in enumerate(units) if candidate["id"] not in completed_ids),
+        None,
+    )
+    if next_index is None:
+        progress["status"] = "Complete"
+        progress["current_unit_index"] = max(0, len(units) - 1)
+    else:
+        progress["current_unit_index"] = next_index
 
     completion_result = completion_service.complete(
         source="learning.engine.tracker",
@@ -258,7 +275,6 @@ def track_selected_course(track_path: Path) -> None:
         for item in completion_result.receipt.allocations
         if item.target_type == "competency"
     ]
-    display_distribution(distribution)
     operator_stats = dict(completion_result.progression or {})
     concept_resolution = resolve_concept_awards(metadata, unit)
     concept_distribution = distribute_concept_xp(total_xp, concept_resolution["concept_awards"])
@@ -279,9 +295,76 @@ def track_selected_course(track_path: Path) -> None:
     )
     save_json(progress_path, progress)
 
+    result.update(
+        {
+            "ok": True,
+            "total_xp": total_xp,
+            "distribution": distribution,
+            "concept_distribution": concept_distribution,
+            "operator_stats": operator_stats,
+            "status": progress["status"],
+            "new_current_unit_index": progress["current_unit_index"],
+            "next_unit_title": (
+                None
+                if progress["status"] == "Complete"
+                else units[progress["current_unit_index"]].get("title")
+            ),
+        }
+    )
+    return result
+
+
+def track_selected_course(track_path: Path) -> None:
+    metadata_path = track_path / "metadata.json"
+    progress_path = track_path / "progress.json"
+    metadata = load_json(metadata_path)
+    progress = load_json(progress_path)
+    validate_metadata(metadata)
+    ensure_progress(progress)
+
+    units = metadata["units"]
+    current_index = int(progress["current_unit_index"])
+    if not 0 <= current_index < len(units):
+        raise ValueError("Current unit index is out of range.")
+
+    unit = units[current_index]
+
+    print(f"\nTrack          : {metadata.get('title', 'Unknown')}")
+    print(f"Provider       : {metadata.get('provider', 'Unknown')}")
+    print(f"Knowledge path : {build_knowledge_path(metadata)}")
+    print(f"Difficulty     : {metadata.get('difficulty', 'Unknown')}")
+    print(f"Current unit   : {unit['title']}")
+    print(f"Unit type      : {unit.get('source_type', 'manual')}")
+    print(f"Progress       : {len(progress['completed_units'])}/{len(units)}")
+    print(f"Track XP       : {progress['total_xp']}")
+    print(f"Track status   : {progress['status']}")
+
+    if progress["status"] == "Complete":
+        print("\nThis track is already complete.")
+        return
+
+    result = complete_unit(track_path, current_index)
+
+    evidence_status = result.get("evidence_status") or {}
+    print("\nEvidence check")
+    print("-" * 68)
+    for name, passed in evidence_status.items():
+        print(f"{name:<32}{'[PASS]' if passed else '[MISSING]'}")
+    print("-" * 68)
+
+    if result["reason"] == "evidence_incomplete":
+        print("Unit is still in progress.")
+        return
+    if result["reason"] == "already_completed":
+        print("\nThis unit was already completed. No XP was awarded.")
+        return
+
+    display_distribution(result["distribution"])
+    operator_stats = result["operator_stats"]
+
     print("\nUNIT COMPLETE")
     print("-" * 68)
-    print(f"+{total_xp} total XP awarded across {len(distribution)} competencies.")
+    print(f"+{result['total_xp']} total XP awarded across {len(result['distribution'])} competencies.")
     print(f"Operator Total XP: {operator_stats['total_xp']}")
     print(f"Operator Level: {operator_stats['level']}")
     print(
@@ -293,11 +376,10 @@ def track_selected_course(track_path: Path) -> None:
     print("stats.json updated.")
     print("history.json updated.")
 
-    if progress["status"] == "Complete":
+    if result["status"] == "Complete":
         print("\nTRACK COMPLETE")
     else:
-        next_unit = units[int(progress["current_unit_index"])]
-        print(f"\nNext unit: {next_unit['title']}")
+        print(f"\nNext unit: {result['next_unit_title']}")
 
 
 def main() -> None:
